@@ -1,0 +1,46 @@
+table_name,fieldname,value,description,system,code,display,comment
+Participant,Family Type,Control-only,"Unrelated control, no Down syndrome family members"
+Participant,Family Type,Duo,Proband + one parent
+Participant,Family Type,Other,"Other family structure, e.g. one parent + twins"
+Participant,Family Type,Proband-only,"Proband only, no family members participating in study"
+Participant,Family Type,Trio,Proband + two parents
+Participant,Family Type,Trio+,Proband + two parents + other relatives
+Participant,Family Relationship,Proband,The first affected family member to join the study
+Participant,Family Relationship,Father,Father
+Participant,Family Relationship,Mother,Mother
+Participant,Family Relationship,Sibling,Sibling
+Participant,Family Relationship,Other relative,Other relative
+Participant,Family Relationship,Unrelated control,Unrelated control
+Participant,Sex,Female,Female
+Participant,Sex,Male,Male
+Participant,Sex,Other,Other
+Participant,Sex,Unknown,Unknown
+Participant,Race,American Indian or Alaska Native,American Indian or Alaska Native
+Participant,Race,Asian,Asian
+Participant,Race,Black or African American,Black or African American
+Participant,Race,More than one race,More than one race
+Participant,Race,Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific Islander
+Participant,Race,Other,Other
+Participant,Race,White,White
+Participant,Race,Prefer not to answer,Prefer not to answer
+Participant,Race,Unknown,Unknown
+Participant,Race,East Asian,UK only; do not use for US data
+Participant,Race,Latin American,UK only; do not use for US data
+Participant,Race,Middle Eastern or North African,UK only; do not use for US data
+Participant,Race,South Asian,UK only; do not use for US data
+Participant,Ethnicity,Hispanic or Latino,Hispanic or Latino
+Participant,Ethnicity,Not Hispanic or Latino,Not Hispanic or Latino
+Participant,Ethnicity,Prefer not to answer,Prefer not to answer
+Participant,Ethnicity,Unknown,Unknown
+Participant,Down Syndrome Status,D21,Disomy 21 (euploid)
+Participant,Down Syndrome Status,T21,Trisomy 21 (Down syndrome)
+Participant,Outcomes Vital Status,Dead,Dead
+Participant,Outcomes Vital Status,Alive,Alive
+Participant,Outcomes Vital Status,Unknown or not available,Unknown or not available
+Condition,Condition Interpretation,Observed,Condition was observed or reported (this will be the case for most conditions)
+Condition,Condition Interpretation,Not Observed,Participant was specifically examined or medical record queried for condition and found to be negative
+Condition,Condition Status,Current,Condition is ongoing
+Condition,Condition Status,Resolved,Condition has been resolved
+Condition,Condition Status,History Of,"This is a general history of the condition, without known dates"
+Condition,Condition Data Source,Clinical,Information about condition was obtained from medical records or reported by investigator
+Condition,Condition Data Source,Self-reported,Information about condition was reported by participant or family member
