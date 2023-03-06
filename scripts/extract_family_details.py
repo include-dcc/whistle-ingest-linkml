@@ -53,6 +53,17 @@ class Family:
             "Relationship"
         ])
 
+    @classmethod
+    def write_relationship(cls, writer, line, pid, otherid, relationship):
+        if pid != "NA" and otherid != "NA":
+            writer.writerow([
+                line['Family ID'], 
+                line['Family Type'],
+                pid, 
+                otherid, 
+                relationship
+            ])
+
     def write(self, writer):
         observed_probands = set()
         for proband in self.proband_ids:
@@ -73,6 +84,8 @@ class Family:
                 # For now, let's skip the sibling list and only create 
                 # relationships that involve a proband
 
+# After talking to Robert Mar 6, 2023, I think trying to infer parent IDs is 
+# undesirable, so we'll not use this going forward...until we change our mind
 if __name__=="__main__":
     parser = ArgumentParser(description="After looking through the file, this "
                             "script will attempt to create a data dictionary")
@@ -92,27 +105,40 @@ if __name__=="__main__":
 
         filedir = Path(filename).parent
 
-        families = {}
-
-        # Pull Condition events out and build out our discrete event list
-        with open(filename, "rt") as condf:
-            participants = csv.DictReader(condf, delimiter=',', quotechar='"')
-
-            for line in participants:
-                fid = line["Family ID"]
-
-                if fid not in families:
-                    families[fid] = Family(line)
-                
-                families[fid].add_participant(line)
-
         family_path = filedir / "family.csv"
-        print(family_path)
-        #pdb.set_trace()
-        # For now, we won't worry if the file exists
-        with family_path.open('wt') as outf:
-            fwriter = csv.writer(outf, delimiter=',', quotechar='"')
-            Family.write_header(fwriter)
 
-            for fam in families:
-                families[fam].write(fwriter)
+        with family_path.open('wt') as famfile:
+            fwriter = csv.writer(famfile, delimiter=',', quotechar='"')
+            Family.write_header(fwriter)
+            observed_siblings = set()
+
+            with open(filename, "rt") as condf:
+                participants = csv.DictReader(condf, delimiter=',', quotechar='"')
+
+                for line in participants:
+                    fid = line["Family ID"]
+                    # We have two forms to consider: Family Relationships and 
+                    # Family Relationship Type
+                    #
+                    # Family Relationships have two ids and are defined by rows 
+                    # where Father ID, Mother ID, Sibling ID, Other..ID present
+                    pid = line['Participant External ID']
+                    Family.write_relationship(fwriter, line, pid, line['Father ID'], "Father")
+                    Family.write_relationship(fwriter, line, pid, line['Mother ID'], "Mother")
+                    siblings = [x.strip() for x in line['Sibling ID'].split(",")]
+                    for sibling in siblings:
+                        if sibling != "NA" and sibling not in observed_siblings:
+                            Family.write_relationship(fwriter, line, pid, sibling, "Sibling")
+                    others = [x.strip() for x in line['Other Family Member ID'].split(",")]
+                    for other in others:
+                        if other != "NA" and other not in observed_siblings:
+                            Family.write_relationship(fwriter, line, pid, other, "Other relative")
+
+                    fwriter.writerow([
+                        fid,
+                        line['Family Type'],
+                        pid, 
+                        "NA",
+                        line['Family Relationship']
+                    ])
+                    observed_siblings.add(pid)
