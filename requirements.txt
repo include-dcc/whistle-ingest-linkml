@@ -1,3 +1,4 @@
+# The following libraries are used by the terminology lookup in the scripts directory
 obonet
 networkx
 wget
