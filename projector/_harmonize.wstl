@@ -1,0 +1,9 @@
+// Description: Get all matching codes, including self references
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def Harmonize(code, system) {
+    $this: $HarmonizeCode("$Local", code, system, "data-harmony");
+}

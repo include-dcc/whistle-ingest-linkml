@@ -1,0 +1,20 @@
+// Description: Uniform method to create IDs associated with terminologies associated
+//              with categorical variables
+//
+// Arguments:
+//  study_id - Study's id
+//  table_name - Table from which the variable is to be found
+//  varname - The variable's name / id
+def BuildVariableTerminologyId(study_id, table_name, varname) {
+    $this: $StrCat(study_id, ".", table_name, ".", varname);
+}
+
+// Description: Uniform method to create IDs associated with terminologies associated
+//              with dataset tables
+//
+// Arguments:
+//  study_id - Study's id
+//  table_name - Table name. The contents will be the variable's themselves
+def BuildTableTerminologyId(study_id, table_name) {
+    $this: $StrCat(study_id, ".", table_name);
+}

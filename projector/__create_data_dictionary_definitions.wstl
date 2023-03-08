@@ -1,0 +1,9 @@
+// This is the high-level wrapper function to create
+// the data-dictionary definitions for tables and variables. 
+def CreateDataDictionaryDefinitions(resource) {
+	if (resource.study?) {
+		$this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+	}
+}
+
+

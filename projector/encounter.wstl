@@ -1,0 +1,54 @@
+
+
+
+def Encounter(study, encounter) {
+    meta.tag[]: StudyMeta(study);
+
+    identifier[]: Build_Encounter_Identifier(study, encounter);
+    identifier[0].use: "official";
+
+    resourceType: "Encounter";
+
+    // I'm making the assumption that these are all outpatient encounters since
+    // I have no information to believe otherwise and these fields are required
+    // for the encounter resource to validate. 
+    status: "finished";
+    class: BuildCoding("AMB", "ambulatory", "http://terminology.hl7.org/CodeSystem/v3-ActCode");
+
+
+    // There is a bit of risk of change regarding some of the IDs since
+    // we have an ID minting service that is slowly coming online. So, unlike
+    // some of the prior approaches, we'll try to cordon off those id 
+    // references to singular functions to avoid multi-point changes. 
+    subject: Patient_Reference(study, encounter);
+
+    type[].coding[]: BuildCoding("C1512346", "Patient Visit", "http://purl.obolibrary.org/obo/ncit.owl");
+    
+    if (encounter.first_encounter = "True") {
+        type[]: HarmonizeAsCoding("Age at First Patient Engagement", "participant");
+        //type[]: BuildCoding("FirstPatientEngagement", \
+        //            "https://includedcc.org/htp/fhir/CodeSystem/eventType");
+    }
+
+    if (encounter.last_known_encounter = "True") {
+        type[]: HarmonizeAsCoding("Age at Last Vital Status", "participant");
+        //type[]: BuildCoding("LastKnownEngagement", "Last Known Engagement",\
+        //            "https://includedcc.org/htp/fhir/CodeSystem/eventType");
+    }
+
+    // For now, I think it's safe to assume that we will always have an 
+    // "Age at Event"
+    period._start.extension[0]: AgeAtExtension(study, encounter.participant_external_id, encounter.age_at_event, "days");
+}
+
+// Description: Wrapper for generating encounters
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  patient - we must have the one or more encounters
+// 
+def ProcessEncounters(study, encounter) {
+    //out patient: AgeAtEnrollmentObservation(study, demo);
+    //out patient: AgeAt(study, demo, "AgeAtLastVitalStatus", "participant", demo.age_at_last_vital_status);
+    out patient: Encounter(study, encounter);
+}

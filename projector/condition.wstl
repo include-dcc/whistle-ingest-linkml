@@ -1,0 +1,87 @@
+
+def BuildDSConditionId(study, participant) {
+    $this: $StrCat(participant.participant_id, ".", "Down Syndrome Status", ".", "MONDO:0008608");
+}
+
+// Definition: Construct a Condition resource for T21 (Down Syndrome) from 
+// participant table
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  participant - Row containing Down Syndrome Status (T21 is "case")
+//
+def DownSyndrome(study, participant) {
+    var subject_id: participant.participant_id;
+    var coding: HarmonizeMapped(participant.down_syndrome_status, "Down Syndrome Status");
+
+    if (participant.down_syndrome_status = "T21") {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[]: Key_Identifier(study, "Condition", BuildDSConditionId(study, participant));
+        identifier[0].use: "official";
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        // Strip out the local coding. DS status is different. We can't get 
+        // here if it's not confirmed so we'll hard code the term we would
+        // have gotten for a normal condition.
+        verificationStatus.coding: HarmonizeWithFilter("Observed", "Condition Interpretation", "hl7.org");
+
+        category[].coding[]: BuildCoding("encounter-diagnosis", "Encounter Diagnosis", "http://terminology.hl7.org/CodeSystem/condition-category");
+
+        code.coding[]: coding;
+        code.coding[]: HarmonizeMapped("Down Syndrome Status", "participant");
+        code.text: participant.down_syndrome_status;
+
+        resourceType: "Condition";
+    }
+}
+
+// Definition: Construct a Condition record. These will have either Mondo and/or HP code
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  condition - Row containing condition code and it's response (condition_status)
+//
+def Condition(study, condition) {
+    var subject_id: condition.participant_external_id;
+    var coding: HarmonizeMapped(condition.condition_or_measure_source_text, "condition_description");
+
+    //if (~$IsNil(coding) and condition.condition_interpretation = "Observed") {
+    if (~$IsNil(coding)) {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition));
+        identifier[0].use: "official";
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        // Strip out the local coding
+        verificationStatus.coding: HarmonizeWithFilter(condition.condition_interpretation, "Condition Interpretation", "hl7.org");
+
+        category[].coding[]: BuildCoding("encounter-diagnosis", "Encounter Diagnosis", "http://terminology.hl7.org/CodeSystem/condition-category");
+
+        code.coding[]: coding;
+        code.coding[]: HarmonizeMapped("Condition or Measure Source Text", "condition");
+        code.text: condition.condition_or_measure_source_text;
+
+        resourceType: "Condition";
+    }
+}
+
+def ProcessCondition(study, condition) {
+    // Measurements have an Event ID, Conditions do not
+    out condition (if condition.event_id = "NA"): Condition(study, condition);
+    
+    if (condition.measure_value ~= "NA") {
+        out measurement (if condition.event_id ~= "NA"): BodyMeasurement(study, condition);
+    }
+}
+
+def ProcessPatientConditions(study, participant) {
+    $this: ProcessCondition(study, participant.condition[]);
+}
+def ProcessDownSyndromeStatus(study, participant) {
+    // DROPPING this 2022-09-22 because the DS code is already present in the 
+    // conditions and having this present as well is creating dupes
+    //
+    //out ds_condition: DownSyndrome(study, participant);
+}

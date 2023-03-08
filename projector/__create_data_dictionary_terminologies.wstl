@@ -1,0 +1,9 @@
+
+// This is the high-level wrapper function to create
+// the data-dictionary terms, which function as the 
+// foundation of all data-dictionary based content. 
+def CreateDataDictionaryTerminologies(resource) {
+	if (resource.study?) {
+		$this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+	}
+}

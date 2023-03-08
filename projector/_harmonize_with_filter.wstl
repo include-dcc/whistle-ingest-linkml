@@ -1,0 +1,6 @@
+
+// Filter specified codings on system using wildcards
+def HarmonizeWithFilter(code, system, filter) {
+    var codings: Harmonize(code, system);
+    $this: HarmonizeSelection(codings[], filter);
+}

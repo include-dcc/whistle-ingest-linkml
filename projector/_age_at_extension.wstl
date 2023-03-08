@@ -1,0 +1,43 @@
+// represent age using FHIR's cqf-relativeDateTime extension
+
+
+
+// Definition: return extension suitable to replace a DateTime property
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - This is the participant ID which will be used to build a proper reference to the Patient resource
+//  age - The data coming in from the dataset. This is expected to be an integer 
+//  age_unit - years/days - indicate the units associated with age (above)
+//  
+def AgeAtExtension(study, subject_id, required age, age_unit) {
+    if (age_unit = "years"){
+        url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+        extension[0].url: "target";
+        extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
+        extension[1].url: "targetPath";
+        extension[1].valueString: "birthDate";
+        extension[2].url: "relationship";
+        extension[2].valueCode: "after";
+        extension[3].url: "offset";
+        extension[3].valueDuration.value: $ParseInt(age);
+        extension[3].valueDuration.system: "http://unitsofmeasure.org";
+        extension[3].valueDuration.code: "a";
+    }
+    if (age_unit = "days"){
+        var days: $ParseFloat(age);
+        
+        url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+        extension[0].url: "target";
+        extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
+        extension[1].url: "targetPath";
+        extension[1].valueString: "birthDate";
+        extension[2].url: "relationship";
+        extension[2].valueCode: "after";
+        extension[3].url: "offset";
+        extension[3].valueDuration.value: days;
+        extension[3].valueDuration.unit: "d";
+        extension[3].valueDuration.system: "http://unitsofmeasure.org";
+        extension[3].valueDuration.code: "days";
+    }
+}

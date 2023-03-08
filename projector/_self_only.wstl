@@ -1,0 +1,16 @@
+// Description: We are creating a concept map "self" which contains a complete
+//              display for the local code. This function strips out non-self
+//              entries from the return
+//
+// Arguments:
+//  coding - This is a single result from $HarmonizeCode
+def SelfOnly(coding) {
+  if (coding.system = "self") {
+    $this: coding;
+  }
+}
+
+def HarmonizedLocal(code, system) {
+    var coding: Harmonize(code, system);
+    $this: SelfOnly(coding[]);
+}

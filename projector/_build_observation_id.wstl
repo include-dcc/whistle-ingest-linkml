@@ -1,0 +1,11 @@
+// Definition: Uniform method for building Observation (and Condition) IDs associated with a patient
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  participantid - The id assocaited with patient (this isn't likely to be an actual FHIR id)
+//  visit_name - The name associated with the observation's visit
+//  varname - The variable name associated with the observation (bmi, height, etc)
+
+def BuildObservationId(study, participantid, visit_name, varname) {
+    $this (if $IsNotNil(varname)): $StrCat(study.id, ".", participantid, ".", visit_name, ".", varname);
+}

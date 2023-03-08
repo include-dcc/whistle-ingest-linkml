@@ -1,0 +1,16 @@
+// Description: Uniform method to generate Identifier structures. 
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  resourceType - The string value representing the FHIR's 
+//                 resource type such as Observation or Condition
+//  value - Most likely an id such as a subject_id 
+//
+// Please note that identifier-prefix is a Whistler attribute
+// that is defined as part of the YAML configuration associated
+// with the project/dataset itself. This can be defined however
+// is appropriate. 
+def Key_Identifier(study, required resourceType, required value) {
+    value: value;
+    system: $StrCat(study.identifier-prefix, "/", $ToLower(resourceType));
+}

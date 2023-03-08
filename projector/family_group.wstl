@@ -1,0 +1,57 @@
+// Group to represent a family
+
+// Description: Build the group entry
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  subjects - array of subjects, each of which should have a participantid 
+//
+// We don't currently have access to consent details, so this just builds the 
+// entire enrollment for the study. 
+def FamilyGroup(study, subjects, famid) {
+    if (famid ~= "Not provided") {
+        var familymembers: subjects[where $.family_id=famid];
+        var member_count: $ListLen(familymembers);
+
+        if (member_count > 0) {
+            meta.tag[]: StudyMeta(study);
+
+            identifier[0]: Key_Identifier(study, "Group", $StrCat(study.id, ".", famid));
+            identifier[1]: Key_Identifier(study, "Group/id", famid);
+            identifier[1].use: "official";
+            type: "person";
+            actual: true;
+            member: Reference_Enrollment(study, familymembers[]);
+            quantity: member_count;
+
+            code.coding[]: BuildCoding("FAMMEMB", "family member", "http://terminology.hl7.org/CodeSystem/v3-RoleCode");
+            code.coding[]: HarmonizeMapped(familymembers[0].family_type, "Family Type");
+
+            resourceType: "Group";
+        }
+    }
+}
+
+
+
+// Description: Wrapper to create the group(s)
+// 
+//  study - This is the full study object created by Whistler
+//  demo - Array of demo objects  
+def ProcessFamilyGroups(study, participants, familyid) {
+    if (familyid ~= "Not provided") {
+        out family_members: FamilyGroup(study, participants, familyid);
+
+        var familymembers: participants[where $.family_id=familyid];
+        var subjectids: $Unique(familymembers[*].participant_id);
+
+        // For now, we don't actually have any relationships in the new data
+        // So, only grouping folks as being members of the same family not
+        // mother/son/etc.
+        //out family_members: ProcessFamilyRelationships(study, subjectids[], subjectids[*], "FAMMEMB");
+
+        // This is requested by portal team to help annotate the different family IDs
+        // inside the portal
+        out family_ids: FamilyIdObservation(study, "participant", "Family ID", familyid, familymembers[0].family_type);
+    }
+}

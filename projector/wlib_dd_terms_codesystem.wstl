@@ -1,0 +1,81 @@
+// Build up the code systems associated with the data dictionary 
+// and the individual variable's values
+
+
+// Description: Minimal code entry without a system (suitable for entry in CodeSystem content)
+// 
+// Arguments:
+//  entry - Actual object with code and description field 
+//
+// We do require a code, obviously, but the display is not required...but
+// is that OK?
+def BuildCodeSystemConcept(entry) {
+    if ($IsNotNil(entry.code)) {
+        code: entry.code;
+        display: entry.description;
+    }
+}
+
+// Description: Build actual CodeSystem resources
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  cs_entry - This is the object from the Whistler code system array. It contains the following: 
+//      * study - ID associated with the study
+//      * table_name - The table from which this code system can be found
+//      * varname - The variable associated with this code system. This may be nil/non-existant, in which
+//                  case the code system will be for the table instead of the contents of the variable
+//      * url - The system defined for this particular code system. 
+//      * values - The values to be added to the code system (each will have a code and a display)
+def BuildCodeSystem(study, cs_entry) {
+    // We don't want to build code systems for variables that don't have any 
+    // categorical values...
+    var entry_count: $ListLen(cs_entry.values[*]);
+    if (entry_count > 0) {
+        meta.tag[]: StudyMeta(study);
+
+        if (cs_entry.varname) {
+            identifier[]: Key_Identifier(study, "CodeSystem", $StrCat(cs_entry.study, ".", cs_entry.table_name, ".", cs_entry.varname));
+            identifier[0].use: "official";
+            name: $StrCat(cs_entry.study, ".", cs_entry.table_name, ".", cs_entry.varname);
+            title: $StrCat("Values associated with variable, ", cs_entry.table_name, ".", cs_entry.varname, ", from study, ", cs_entry.study, ".");
+        } else {
+            identifier[]: Key_Identifier(study, "CodeSystem", $StrCat(cs_entry.study, ".", cs_entry.table_name));
+            identifier[0].use: "official";
+            name: $StrCat(cs_entry.study, ".", cs_entry.table_name);
+            title: $StrCat("Variables associated with table, ", cs_entry.table_name, ", from study, ", cs_entry.study, ".");
+        }
+        url: cs_entry.url;
+        status: "active";
+        publisher: study.publisher;
+        content: "complete";
+        count: $ListLen(cs_entry.values[*]);
+        concept: BuildCodeSystemConcept(cs_entry.values[]);
+        resourceType: "CodeSystem";
+    } 
+}
+
+
+
+
+
+// Description: Wrapper function to build all code systems and value sets
+// 
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  cs_entry - This is the object from the Whistler code system array. It contains the following: 
+//      * study - ID associated with the study
+//      * table_name - The table from which this code system can be found
+//      * varname - The variable associated with this code system. This may be nil/non-existant, in which
+//                  case the code system will be for the table instead of the contents of the variable
+//      * values - The values to be added to the code system (each will have a code and a display)
+//
+// Notice that we only generate value sets if there a code system was created
+def ProcessCodeSystem(study, cs_entry) {
+    var codesystem: BuildCodeSystem(study, cs_entry);
+    if (codesystem?) {
+        out ddmeta: codesystem;
+        out ddmeta: BuildValueSet(study, cs_entry);
+    } 
+
+}

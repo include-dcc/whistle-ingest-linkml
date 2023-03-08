@@ -1,0 +1,10 @@
+// Description: Filter out self references (return array of codings)
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizeMapped(code, system) {
+    var coding: Harmonize(code, system);
+    $this: NonSelfOnly(coding[]);
+}

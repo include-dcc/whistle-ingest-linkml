@@ -1,0 +1,9 @@
+
+// This is the high-level wrapper function to create
+// the data-dictionary terms, which function as the 
+// foundation of all data-dictionary based content. 
+def CreateDataDictionaryConceptMap(resource) {
+	if (resource.study?) {
+		$this (if resource.harmony?): ProcessDDHarmony(resource.study, resource.harmony[]);
+	}
+}

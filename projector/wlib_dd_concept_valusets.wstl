@@ -1,0 +1,52 @@
+// Harmony ValueSets represent the codes on either side of the
+// harmony ConceptMap. 
+
+// Generate the individual code/display pairs that go into the 
+// concept property 
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  code - The coding data to be added to the concept
+def VsExpansion(study, code) {
+    code: code.code;
+    display: code.display;
+}
+
+// There can be more than a single system from which the valueset 
+// originates. Each will be result in it's own VsInclude call
+// If the system represents a dataset table/variable, then it will
+// be a constructed system property. Otherwise, it will be a formal
+// ontology and the system will be a true system. 
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  code_group - The code group object with study/system details as well
+//               as a listing of all codings that should be added to the 
+//               valueset
+def VsInclude(study, code_group) {
+    if (code_group.table_name? or code_group.system?) {
+        system: code_group.system;
+        concept[]: VsExpansion(study, code_group.codes[]);
+    }
+}
+
+// Build the complete ValueSet 
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  code_groups - One or more chunks of codes with a common source (system)
+//  vs_name - The name to be assigned to the ValueSet 
+def HarmonyValueSet(study, code_groups, vs_name) {
+    meta.tag[]: StudyMeta(study);
+    identifier[]: Key_Identifier(study, "ValueSet", $StrCat(study.id, ".cm-valueset.", vs_name));
+    identifier[0].use: "official";
+    name: BuildVariableTerminologyId(study.id, "concept-map-vs", vs_name);
+    title: $StrCat("ValueSet for values associated with ", vs_name, " codes in data harmonization from study, ", study.id, ".");
+    url: DataDictionaryVocabularyURL(study, vs_name);
+
+    compose.include[]: VsInclude(study, code_groups[]);
+
+    status: "active";
+    publisher: "INCLUDE FHIR Working Group";
+    resourceType: "ValueSet";
+}

@@ -1,0 +1,138 @@
+// ObservationDefinition is used to describe individual dataset variables 
+// for use in dataset summarization
+
+// Description: Build the ActivityDefinition URL
+//
+// Arguments:
+//   dd_entry - Variable's entry from the whistle input data-dictionary array
+//
+// This just replaces CodeSystem with ActivityDefinition so that the URLs can
+// be distinct. 
+//
+def BuildActivityDefinitionUrl(dd_entry) {
+    $this: StringReplace(dd_entry.url, "/CodeSystem/", "/ActivityDefinition/");
+}
+
+
+// Description: Uniform ID generation
+// 
+// Arguments:
+//  study_id - unique study id
+//  table_name - table name (demo, ihq, etc)
+//  varname - name of the variable for which the identifier is created
+def DdVariableId(study_id, table_name, varname) {
+    $this: $StrCat(study_id, ".", table_name, ".", varname);
+}
+
+// Description: Build ObservationDefinition to represent a variable from the data-dictionary
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  table_name - The table where the variable is found
+//  dd_entry - The object containing the variable entry
+//      - varname is the name associated with the dd entry itself
+//      - desc is the descriptive text associated with it (such as the original question)
+//  permDataType - The data type(s) expected to be found for the variable's value
+def DdVariable(study, table_name, dd_entry, permDataType, code_system) {
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable"
+    identifier[]: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_entry.varname));
+    identifier[0].use: "official";
+    permittedDataType: permDataType;
+    
+    code.coding[0].code: dd_entry.varname;
+    code.coding[0].system: code_system;
+    code.coding[0].display: dd_entry.desc;
+    code.text: dd_entry.desc;
+
+    if (permDataType = "Quantity") {
+        quantitativeDetails.unit[] (if dd_entry.units?):  HarmonizeMappedFirst(dd_entry.units, "Units");
+        qualifiedInterval.range.low (if dd_entry.min?): dd_entry.min;
+        qualifiedInterval.range.high (if dd_entry.max?): dd_entry.max;
+    }
+    if ($ListLen(dd_entry.values[*]) > 1) {
+        validCodedValueSet: Reference_Key_Identifier(study, "ValueSet", BuildVariableTerminologyId(study.id, dd_entry.values-details.table-name, dd_entry.values-details.varname));
+    }
+    resourceType: "ObservationDefinition";
+}
+
+// Description: Uniform method for creating Observation Definition IDs
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  table_name - The table where the variable is found
+//  dd_var - The object containing the variable entry
+//      - varname is the name associated with the dd entry itself
+//      - desc is the descriptive text associated with it (such as the original question)
+def BuildObservationDefReference(study, table_name, dd_var) {
+    $this: Reference_Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_var.varname));
+}
+
+// Description: Build ActivityDefinition which acts as the data-dictionary representation 
+//              of an entire table's set of ObservationDefinitions
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  dd_entry - The object containing the data dictionary entry for the entire table
+//      - table_name is the table associated with the var (and thus, the dd itself)
+//      - variables is an array with all contained varables
+
+def DdTable(study, dd_entry) {
+    meta.tag[]: StudyMeta(study);
+
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table"
+    
+ 
+    identifier[]: Key_Identifier(study, "ActivityDefinition", dd_entry.table_name);
+    identifier[0].use: "official";
+    name: $StrCat(study.id, ".", dd_entry.table_name, "-vars");
+    title: $StrCat("Variables for table ", study.id, ".", dd_entry.table_name);
+    url: BuildActivityDefinitionUrl(dd_entry);
+    topic[0].coding[0].code: "C0035168";
+    topic[0].coding[0].display: "Research";
+    topic[0].coding[0].system: "https://uts.nlm.nih.gov/uts/umls";
+    observationResultRequirement: BuildObservationDefReference(study, dd_entry.table_name, dd_entry.variables[]);
+    status: "active";
+    resourceType: "ActivityDefinition";
+}
+
+// Description: Wrapper script for individual variables- Decides which data type to use 
+//              based on the local type
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  table_name - The table where the variable is found
+//  dd_var - The object containing the variable entry
+//      - varname is the name associated with the dd entry itself
+//      - desc is the descriptive text associated with it (such as the original question)
+//  
+def ProcessDatasetDefinition(study, table_name, dd_entry, code_system) {
+    var entry_type: $ToLower(dd_entry.type);
+    var entry (if entry_type = "string" and $ListLen(dd_entry.values) < 2): DdVariable(study, table_name, dd_entry, ["string"], code_system);
+    var entry (if entry_type = "string" and $ListLen(dd_entry.values) > 1): DdVariable(study, table_name, dd_entry, ["CodeableConcept"], code_system);
+    var entry (if entry_type = "number" or entry_type = "int" or dd_entry.type="year(4)"): DdVariable(study, table_name, dd_entry, ["Quantity"], code_system);
+    var entry (if entry_type = "boolean"): DdVariable(study, table_name, dd_entry, ["boolean"], code_system);
+    var entry (if entry_type = "timestamp" or entry_type = "date" ): DdVariable(study, table_name, dd_entry, ["dateTime"], code_system);
+       
+    var entry (if $IsNil(dd_entry.type)): DdVariable(study, table_name, dd_entry, ["CodeableConcept"], code_system);
+    if ($IsNil(entry)) {
+        out broken: entry;
+    } else {
+        out ddmeta: entry;
+    }
+}
+
+// Description: Wrapper script for variables and the activity definition
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  dd_entry - The object containing the data dictionary entry for the entire table
+//      - table_name is the table associated with the var (and thus, the dd itself)
+//      - variables is an array with all contained varables
+
+def ProcessDatasetDefinitions(study, dd_table) {
+    if (dd_table.table_name ~= "DataSet") {
+        out ddmeta: ProcessDatasetDefinition(study, dd_table.table_name, dd_table.variables[], dd_table.url);
+        out ddmeta: DdTable(study, dd_table);
+    }
+}

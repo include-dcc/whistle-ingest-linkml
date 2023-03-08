@@ -1,0 +1,12 @@
+// Description: Return self's display value (useful for determining the
+//              original question associated with a substituted question varname)
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizedLocalDisplay(code, system) {
+    var coding: Harmonize(code, system);
+    var local_coding: SelfOnly(coding[]);
+    $this: local_coding[0].display;
+}

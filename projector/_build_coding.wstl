@@ -1,0 +1,12 @@
+// Just a sprinkle of sugar to avoid having to write out all of the
+// pieces of a coding where you can provide the information without
+// using whistle's concept maps or pulling the directly from a table
+
+// With exception of _code, the others can be empty strings, however,
+// they must be provided in the call (as empty strings) or whistle will
+// complain.
+def BuildCoding(_code, _display, _system) {
+    code: _code;
+    display (if _display?): _display;
+    system (if _system?): _system;
+}

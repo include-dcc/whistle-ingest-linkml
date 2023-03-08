@@ -1,0 +1,28 @@
+// Definition: Construct observation containing the family ID
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - This is the participant ID which will be used to build a proper reference to the Patient resource
+//  tablename - The table where the variable's data was originally captured
+//  varname - the name of the variable being represented
+//  value - The value (of varname) being recorded
+//  
+def FamilyIdObservation(study, tablename, varname, value, family_type) {
+    if (value ~= "Not provided") {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", tablename, ".", varname, ".", value));
+        identifier[]: Key_Identifier(study, "family_id", value);
+        identifier[1].use: "official";
+        subject: Reference_Key_Identifier(study, "Group", $StrCat(study.id, ".", value));
+        
+        // This is technically how you are expected to link to ODs, but it isn't working in the current version of FHIR
+        // basdOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
+        code.coding[]: HarmonizeMapped("Family ID", "participant");
+        code.coding[]: HarmonizeMapped(family_type, "Family Type");
+        valueString: value;
+        
+        status: "final";
+        resourceType: "Observation";
+    }
+}

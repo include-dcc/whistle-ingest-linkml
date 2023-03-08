@@ -1,0 +1,11 @@
+// Definition: Uniform method for building Condition IDs associated with a patient
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  participant_id - The id associated with patient (this isn't likely to be an actual FHIR id)
+//  varname - The variable name associated with the observation (bmi, height, etc)
+//
+def BuildConditionId(study, participant_id, condition) {
+    $this (if $IsNotNil(condition.condition_or_measure_source_text)): $StrCat(participant_id, ".", condition.condition_or_measure_source_text, ".", condition.hpo_code, ".", condition.mondo_code, ".", condition.maxo_code);
+}
+

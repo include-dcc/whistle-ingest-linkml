@@ -1,0 +1,92 @@
+
+// ConceptMaps are used to provide a native FHIR method for 
+// "translating" codes from the Data-Dictionary to their corresponding
+// public ontological terms. These ConceptMaps can be used as
+// formal documentation to describe the transformations that were
+// employed during the ingestion process.
+
+// Description: Constructs a valid local vocabulary URL 
+//
+// NOTE: These URLs are specific only to ConceptMap terms and not standard 
+//       data dictionary terms which derive their URLs from the whistler 
+//       system directly. 
+//
+// Arguments:
+//  study_id - unique ID associated with that study
+//  role - The type of vocabulary: sources or targets (these relate to the VS 
+//         associated with the ConceptMap)
+//  varname - The variable if this vocabulary describes the values associated 
+//            with an actual variable's contents as opposed to members in a 
+//            table
+//   
+// Please note that currently, varname can be an empty string, but it MUST 
+// be present. 
+def DataDictionaryVocabularyURL(required study, role) {
+    var vocab_type: "ValueSet";
+    $this: $StrCat(study.identifier-prefix, "/data-dictionary/ConceptMap/", vocab_type, "/", study.id, "/", role);
+}
+
+// Add target entry to the element.target
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  target - Coding to be added to the target array
+def BuildHarmonyTarget(study, target) {
+    code: target.code;
+    display: target.display;
+    equivalence: "equivalent";
+}
+
+// Create the element which represents a single coding on the 
+// left-hand side of the mapping. It's targets are the right hand
+// side of the translation
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  element - Each element contains all components for that vocabulary entry (LHS)
+def BuildHarmonyElement(study, element) {
+    code: element.code;
+    display: element.display;
+    target[]: BuildHarmonyTarget(study, element.target[]);
+}
+
+// Create the mappings associated with a single source or system
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  mapping - Contains details necessary to generate the source and all
+//            members on both sides associated with codes from that 
+//            source system
+def BuildHarmonyMapping(study, mapping) {
+    source: mapping.source;
+    target: mapping.target;
+    element[]: BuildHarmonyElement(study, mapping.element[]);
+}
+
+// Build out the complete ConceptMap
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  harmony - The complete contents of the harmony concept map
+def BuildHarmonyConceptMap(study, harmony) {
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony"
+    
+
+    identifier: Key_Identifier(study, "ConceptMap", $StrCat(study.id, ".concept-map"));
+    identifier.use: "official";
+    status: "active";
+    purpose: "Represent transformations applied to the dataset";
+    url:  $StrCat("https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/conceptmap/", study.id, "/data-to-public");
+    sourceUri: DataDictionaryVocabularyURL(study, "sources");
+    targetUri: DataDictionaryVocabularyURL(study, "targets");
+    group[]: BuildHarmonyMapping(study, harmony.mappings[])
+    resourceType: "ConceptMap";
+}
+
+
+def ProcessDDHarmony(study, harmony_data) {
+    out harmony: HarmonyValueSet(study, harmony_data.source_codes[*], "sources");
+    out harmony: HarmonyValueSet(study, harmony_data.target_codes[*], "targets");
+    out harmony: BuildHarmonyConceptMap(study, harmony_data);
+}

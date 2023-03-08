@@ -1,0 +1,9 @@
+// Description: Filtered out self references, as coding: [codeableConcept, ...]
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizeAsCoding(code, system) {
+    coding: HarmonizeMapped(code, system);
+}

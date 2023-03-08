@@ -1,0 +1,49 @@
+study_id: HTP
+study_accession: phs002330 
+study_title: Crnic Institute Human Trisome Project
+study_desc: TBD
+url: https://includedcc.org/studies/human-trisome-project
+identifier_prefix: https://includedcc.org/fhir/htp
+dd_prefix: https://includedcc.org/fhir
+output_filename: htp
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/htp
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/htp/htp_participant_DRAFT.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+  condition:
+    filename: data/htp/test_condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/htp/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/htp/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/htp/data-harmony.csv

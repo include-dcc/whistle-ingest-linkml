@@ -1,0 +1,13 @@
+
+def Build_Encounter_ID(study, encounter) {
+    // If we end up getting identifiers from the KF dewrangler, or they shift
+    // to using the global ID for these. To do this, we'll need to drop all 
+    // encounters for those studies as well as anything that references them. 
+    $this: $StrCat(encounter.participant_external_id, ".", encounter.event_id);
+            
+}
+
+def Build_Encounter_Identifier(study, encounter) {
+    var id: Build_Encounter_ID(study, encounter);
+    $this: Key_Identifier(study, "Encounter", id);
+}

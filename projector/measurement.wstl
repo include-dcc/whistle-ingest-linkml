@@ -1,0 +1,163 @@
+
+
+def BodyMeasurement(study, measurement) {
+    var subject_id: measurement.participant_external_id;
+    var value: measurement.measure_value;
+    var measure_type: measurement.condition_or_measure_source_text;
+
+    if (measurement.measure_unit ~= "NA") {
+        var unitcode: HarmonizeMappedFirst(measurement.measure_unit, "units");
+    }
+
+    // Some rows have units and others don't so we'll just use the measurement
+    // type and assume that they didn't use something weird
+    if (measurement.measure_unit = "NA") {
+        var unitcode: HarmonizeMappedFirst(measure_type, "units");
+    }
+
+    identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, measurement.event_id, measure_type));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+    meta.tag[]: StudyMeta(study);
+
+    code.coding[0]: HarmonizeMapped(measure_type, "encounter");
+    if (measure_type = "BMI") {
+        //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi";
+        code.coding[0]!: BuildCoding("39156-5", "BMI", "http://loinc.org");
+
+        
+    }
+    if (measure_type = "Weight") {
+        //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"
+        code.coding[0]!: BuildCoding("29463-7", "Body weight", "http://loinc.org");
+    }
+    if (measure_type = "Height") {
+        //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"
+        code.coding[0]!: BuildCoding("8302-2", "Body height", "http://loinc.org");
+    }
+    code.text: measurement.other_label;
+
+    category[].coding[]: BuildCoding("vital-signs", "Vital Signs", "http://terminology.hl7.org/CodeSystem/observation-category");
+
+    encounter: Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
+
+    if (measurement.age_at_condition_or_measure_observation?) {
+        _effectiveDateTime.extension[0]: AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
+    }
+
+    status: "final";
+    resourceType: "Observation";
+
+    valueQuantity.value: $ParseFloat(value);
+    valueQuantity.unit: unitcode.display;
+    valueQuantity.system: unitcode.system;
+    valueQuantity.code: unitcode.code;
+}
+
+def BodyWeight(study, measurement) {
+    var subject_id: measurement.participant_external_id;
+    var unitcode: HarmonizeMappedFirst(measurement.measure_units, "units");
+    var value: measurement.measure_value;
+
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"
+
+    code.coding[]: BuildCoding("29463-7", "Body weight", "http://loinc.org");
+    code.text: measurement.other_label;
+
+    category[].coding[]: BuildCoding("vital-signs", "Vital Signs", "http://terminology.hl7.org/CodeSystem/observation-category");
+
+    encounter: Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
+
+    if (measurement.age_at_condition_or_measure_observation?) {
+        _effectiveDateTime.extension[0]: AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
+    }
+
+    status: "final";
+    resourceType: "Observation";
+
+    valueQuantity.value (if value ): $ParseInt(value);
+    valueQuantity.unit: measurement.measure_units;
+    valueQuantity.system: unitcode.system;
+    valueQuantity.code: unitcode.code;
+}
+
+def BMI(study, measurement) {
+    var subject_id: measurement.participant_external_id;
+    var unitcode: HarmonizeMappedFirst(measurement.measure_units, "units");
+    var value: measurement.measure_value;
+
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"
+
+    code.coding[]: BuildCoding("39156-5", "BMI", "http://loinc.org");
+    code.text: measurement.other_label;
+
+    category[].coding[]: BuildCoding("vital-signs", "Vital Signs", "http://terminology.hl7.org/CodeSystem/observation-category");
+
+    encounter: Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
+
+    if (measurement.age_at_condition_or_measure_observation?) {
+        _effectiveDateTime.extension[0]: AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
+    }
+
+    status: "final";
+    resourceType: "Observation";
+
+    valueQuantity.value (if value ): $ParseFloat(value);
+    valueQuantity.unit: measurement.measure_units;
+    valueQuantity.system: unitcode.system;
+    valueQuantity.code: unitcode.code;
+}
+
+
+// Definition: Construct basic Observation whose response is a code from a local vocabulary (i.e. categorial value)
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  encounter - data from the relevant row in the encounter table
+//  varname - The variable being recorded
+//  value - the value for the given variable
+//  units - the units associated with the variable
+//  
+def Measurement(study, measurement) {
+    var subject_id: measurement.participant_external_id;
+    var varcode: HarmonizeMapped(measurement.condition_or_measure_source_text, "encounter");
+    var unitcode: HarmonizeMappedFirst(measurement.measure_units, "units");
+    var varname: measurement.condition_or_measure_source_text;
+    var value: measurement.measure_value;
+
+    meta.tag[]: StudyMeta(study);
+
+    category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/observation-category";
+    category[0].coding[0].code: "vital-signs";
+    category[0].coding[0].display: "Vital Signs";
+
+    identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, measurement.event_id, varname));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    // This is technically how you are expected to link to ODs, but it isn't working in the current version of FHIR
+    // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "condition", varname));
+
+    code.text: measurement.other_label;
+    //code.coding[]: BuildCoding("363787002", "Observable entity (observable entity)", "http://snomed.info/sct");
+    code.coding[]: varcode;
+    
+    if (value ~= "NA") {
+        valueQuantity.value (if value ): $ParseFloat(value);
+        valueQuantity.unit: measurement.measure_units;
+        valueQuantity.system: unitcode.system;
+        valueQuantity.code: unitcode.code;
+    } else {
+        valueString: value;
+    }
+    encounter: Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
+
+    if (measurement.age_at_condition_or_measure_observation?) {
+        _effectiveDateTime.extension[0]: AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
+    }
+
+    status: "final";
+    resourceType: "Observation";
+}

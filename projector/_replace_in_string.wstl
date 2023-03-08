@@ -1,0 +1,7 @@
+// String Replace
+// 
+// Match the string within another and replace it with another string
+def StringReplace(string, old, new) {
+    var pieces: $StrSplit(string, old);
+    $this: $StrJoin(new, pieces);
+}

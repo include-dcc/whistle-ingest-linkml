@@ -1,0 +1,6 @@
+// For data-dictionary valuesets, we must replace the /CodeSystem/ portion of
+// the URL with /ValueSet/
+
+def ConvertForValueSetURL(url) {
+    $this: StringReplace(url, "/CodeSystem/", "/ValueSet/");
+}
