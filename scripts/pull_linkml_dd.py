@@ -32,17 +32,17 @@ class DdVariable:
 
         if data.get('range') in enums:
             self.enums = enums[data.get('range')]
-            self.data_type = "enum"
+            self.data_type = "enumeration"
 
             self.enums.write_harmony_seed(harmony_seed, table_name, self.title)
 
     @classmethod
     def print_header(cls, writer):
         writer.writerow([
-            "varname",
-            "vardesc",
-            "type",
-            "values"
+            "variable_name",
+            "description",
+            "data_type",
+            "enumerations"
         ])
 
     def print(self, writer):
@@ -50,8 +50,13 @@ class DdVariable:
 
         if self.enums is not None:
             enums = self.enums.as_string()
+
+        title = self.title
+
+        if title == "Has Participant":
+            title = "Study Code"
         writer.writerow([
-            self.title, 
+            title, 
             self.description,
             self.data_type, 
             enums
@@ -94,13 +99,14 @@ class DdCodeEnumeration:
     @classmethod
     def harmony_seed_header(cls, writer):
         writer.writerow([
+            'local code',
+            'text',
             'table_name',
-            'fieldname',
-            'value',
-            'description',
-            'system',
+            'parent_varname',
+            'local code system',
             'code',
             'display',
+            'code system',
             'comment'
         ])
 
@@ -108,10 +114,11 @@ class DdCodeEnumeration:
         if writer is not None:
             print(f"{table_name}:{fieldname}:{self.title}")
             writer.writerow([
+                self.title,
+                self.description,
                 table_name,
                 fieldname,
-                self.title,
-                self.description
+                fieldname
             ])
 
 class DdCodeSystem:
@@ -179,7 +186,7 @@ if __name__=='__main__':
     enums, tables = pull_from_github(participant_url, tables_of_interest, common_slots=base_slots)   
 
     for table_name, table in tables.items():
-        filename = outdir / f"{table_name}.csv"
+        filename = outdir / f"{table_name.lower()}.csv"
         with filename.open('wt') as f:
             writer = csv.writer(f, delimiter=',', quotechar='"')
             DdVariable.print_header(writer)
