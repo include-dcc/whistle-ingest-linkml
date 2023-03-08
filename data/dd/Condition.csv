@@ -1,12 +1,12 @@
-varname,vardesc,type,values
-Has Participant,Link to a Participant,Participant,
+variable_name,description,data_type,enumerations
+Participant External ID,"Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",string,
 Event ID,"Identifier for event (Visit, Survey completion, Sample collection, etc.) to which the Condition data are linked, if applicable. There may be multiple events linked to a Participant.",string,
 Event Type,"Type of event for which Event ID is given (Visit, Survey completion, Sample collection, etc.)",string,
 Condition or Measure Source Text,"Co-occurring Condition (phenotype or diagnosis) or Measure (observation with numeric value), as described by data contributor. The Down Syndrome Genetic Diagnosis will be rolled into this field.",string,
 Age At Condition or Measure Observation,"Age in days at which Condition or Measure was observed, recorded, or diagnosed",integer,
-Condition Interpretation,Whether Condition was observed or not,enum,Observed;Not Observed
-Condition Status,"Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",enum,Current;Resolved;History Of
-Condition Data Source,Whether Condition information was obtained by the investigator or reported by participant/family member,enum,Clinical;Self-reported
+Condition Interpretation,Whether Condition was observed or not,enumeration,Observed;Not Observed
+Condition Status,"Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",enumeration,Current;Resolved;History Of
+Condition Data Source,Whether Condition information was obtained by the investigator or reported by participant/family member,enumeration,Clinical;Self-reported
 HPO Label,Label for Condition in the Human Phenotype Ontology (HPO),string,
 HPO Code,Code for Condition in the Human Phenotype Ontology (HPO),string,
 MONDO Label,Label for Condition in the Mondo Disease Ontology (MONDO),string,

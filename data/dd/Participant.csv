@@ -1,19 +1,19 @@
-varname,vardesc,type,values
-Has Study,Link to a Study,Study,
+variable_name,description,data_type,enumerations
+Study Code,"Unique identifer for the study, assigned by DCC",enumeration,HTP
 Participant Global ID,"Unique INCLUDE global identifier for the participant, assigned by DCC",string,
 Participant External ID,"Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",string,
 Family ID,"Unique identifer for family to which Participant belongs, assigned by data contributor",string,
-Family Type,Structure of family members participating in the study,enum,Control-only;Duo;Other;Proband-only;Trio;Trio+
+Family Type,Structure of family members participating in the study,enumeration,Control-only;Duo;Other;Proband-only;Trio;Trio+
 Father ID,Participant External ID for Participant's father (NA if Participant is not the proband),string,
 Mother ID,Participant External ID for Participant's mother (NA if Participant is not the proband),string,
 Sibling ID,Participant External ID for Participant's sibling(s) (NA if Participant is not the proband),string,
 Other Family Member ID,Participant External ID for Participant's other family members (NA if Participant is not the proband),string,
-Family Relationship,Relationship of Participant to proband,enum,Proband;Father;Mother;Sibling;Other relative;Unrelated control
-Sex,Sex of Participant,enum,Female;Male;Other;Unknown
-Race,Race of Participant,enum,American Indian or Alaska Native;Asian;Black or African American;More than one race;Native Hawaiian or Other Pacific Islander;Other;White;Prefer not to answer;Unknown;East Asian;Latin American;Middle Eastern or North African;South Asian
-Ethnicity,Ethnicity of Participant,enum,Hispanic or Latino;Not Hispanic or Latino;Prefer not to answer;Unknown
-Down Syndrome Status,Down Syndrome status of participant,enum,D21;T21
+Family Relationship,Relationship of Participant to proband,enumeration,Proband;Father;Mother;Sibling;Other relative;Unrelated control
+Sex,Sex of Participant,enumeration,Female;Male;Other;Unknown
+Race,Race of Participant,enumeration,American Indian or Alaska Native;Asian;Black or African American;More than one race;Native Hawaiian or Other Pacific Islander;Other;White;Prefer not to answer;Unknown;East Asian;Latin American;Middle Eastern or North African;South Asian
+Ethnicity,Ethnicity of Participant,enumeration,Hispanic or Latino;Not Hispanic or Latino;Prefer not to answer;Unknown
+Down Syndrome Status,Down Syndrome status of participant,enumeration,D21;T21
 Age at First Patient Engagement,"Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",integer,
 First Patient Engagement Event,"Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",string,
-Outcomes Vital Status,Whether participant is alive or dead,enum,Dead;Alive;Unknown or not available
+Outcomes Vital Status,Whether participant is alive or dead,enumeration,Dead;Alive;Unknown or not available
 Age at Last Vital Status,Age in days when participant's vital status was last recorded,integer,
