@@ -9,11 +9,15 @@ def BodyMeasurement(study, measurement) {
         var unitcode: HarmonizeMappedFirst(measurement.measure_unit, "units");
     }
 
+    // EST - 2023-3-9 - After talking with Pierrette, she will make sure that
+    //     all of the units are present, but I'm leaving this in for now in case
+    //     that doesn't happen and I need to resort back to this approach to fill
+    //     in gaps while I await her fixes. 
     // Some rows have units and others don't so we'll just use the measurement
     // type and assume that they didn't use something weird
-    if (measurement.measure_unit = "NA") {
-        var unitcode: HarmonizeMappedFirst(measure_type, "units");
-    }
+    //if (measurement.measure_unit = "NA") {
+    //    var unitcode: HarmonizeMappedFirst(measure_type, "units");
+    //}
 
     identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, measurement.event_id, measure_type));
     identifier[0].use: "official";
