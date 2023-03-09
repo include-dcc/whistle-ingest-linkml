@@ -28,7 +28,7 @@ Other,Other,Participant,Race,Race,OTH,other,http://terminology.hl7.org/CodeSyste
 White,White,Participant,Race,Race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,
 Prefer not to answer,Prefer not to answer,Participant,Race,Race,ASKU,asked but unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
 Unknown,Unknown,Participant,Race,Race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
-East Asian,UK only; do not use for US data,Participant,Race,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,
+East Asian,UK only; do not use for US data,Participant,Race,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://hl7.org/fhir/us/core/stu4/CodeSystem-cdcrec.html
 Latin American,UK only; do not use for US data,Participant,Race,Race,2178-2,Latin American,urn:oid:2.16.840.1.113883.6.238,
 Middle Eastern or North African,UK only; do not use for US data,Participant,Race,Race,2131-1,Other Race,urn:oid:2.16.840.1.113883.6.238,
 South Asian,UK only; do not use for US data,Participant,Race,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,
