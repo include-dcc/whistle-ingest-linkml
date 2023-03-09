@@ -19,6 +19,10 @@ Other,Other,Participant,Race,Race,OTH,other,http://terminology.hl7.org/CodeSyste
 White,White,Participant,Race,Race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,
 Prefer not to answer,Prefer not to answer,Participant,Race,Race,ASKU,asked but unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
 Unknown,Unknown,Participant,Race,Race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+East Asian,UK only; do not use for US data,Participant,Race,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,
+Latin American,UK only; do not use for US data,Participant,Race,Race,2178-2,Latin American,urn:oid:2.16.840.1.113883.6.238,
+Middle Eastern or North African,UK only; do not use for US data,Participant,Race,Race,2131-1,Other Race,urn:oid:2.16.840.1.113883.6.238,
+South Asian,UK only; do not use for US data,Participant,Race,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,
 Hispanic or Latino,Hispanic or Latino,Participant,Ethnicity,Ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
 Not Hispanic or Latino,Not Hispanic or Latino,Participant,Ethnicity,Ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
 Prefer not to answer,Prefer not to answer,Participant,Ethnicity,Ethnicity,ASKU,asked but unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
@@ -29,6 +33,17 @@ ml,ml,,,units,ml,ml,http://unitsofmeasure.org,
 ml,ml,,,Vial_Volume,ml,ml,http://unitsofmeasure.org,
 permL,/mL,,,units,/mL,/mL,http://unitsofmeasure.org,
 kg/m2,kg/m2,,,units,kg/m2,kg/m2,http://unitsofmeasure.org,
+10^9 cells/L,10^9 cells/L,,,units,10*9/L,billion per liter,http://unitsofmeasure.org,
+L of red blood cells/L of blood,L of red blood cells/L of blood,,,units,L/L,liter per liter,http://unitsofmeasure.org,
+g/dL,g/dL,,,units,g/dL,g/dL,http://unitsofmeasure.org,
+Hemoglobin level at birth,Hemoglobin level at birth,encounter,,encounter,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,https://loinc.org/718-7
+White blood cell count at birth,White blood cell count at birth,encounter,,encounter,26464-8,Leukocytes [#/volume] in Blood,http://loinc.org,https://loinc.org/26464-8/
+Platelet count at birth,Platelet count at birth,encounter,,encounter,26515-7,Platelets [#/volume] in Blood,http://loinc.org,https://loinc.org/26515-7/
+Peripheral blood blast percentage at birth,Peripheral blood blast percentage at birth,encounter,,encounter,30376-8,Blasts [#/volume] in Blood,http://loinc.org,https://loinc.org/30376-8/
+Hematocrit,Hematocrit,encounter,,encounter,20570-8,Hematocrit [Volume Fraction] of Blood,http://loinc.org,https://loinc.org/20570-8/
+Gestational age at birth,Gestational age at birth,encounter,,encounter,76516-4,Gestational age--at birth,http://loinc.org,https://loinc.org/76516-4/
+Birth weight,Birth weight,encounter,,encounter,8339-4,Birth weight Measured,http://loinc.org,https://loinc.org/8339-4/
+"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?","In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",encounter,,encounter,LL5926-2,Hospital stay,http://loinc.org,https://loinc.org/LL5926-2/
 Weight,Kilograms,,,units,kg,Kilograms,http://unitsofmeasure.org,
 Height,cm,,,units,cm,cm,http://unitsofmeasure.org,
 BMI,kg/m2,,,units,kg/m2,kg/m2,http://unitsofmeasure.org,

@@ -6,12 +6,23 @@ Other relative,Other relative,Participant,Family Relationship,Inverse Family Rel
 kg,Kilograms,,,units,kg,Kilograms,http://unitsofmeasure.org,
 cm,cm,,,units,cm,cm,http://unitsofmeasure.org,
 kg/m2,kg/m2,,,units,kg/m2,kg/m2,http://unitsofmeasure.org,
+10^9 cells/L,10^9 cells/L,,,units,10*9/L,billion per liter,http://unitsofmeasure.org,
+L of red blood cells/L of blood,L of red blood cells/L of blood,,,units,L/L,liter per liter,http://unitsofmeasure.org,
+g/dL,g/dL,,,units,g/dL,g/dL,http://unitsofmeasure.org,
 Weight,Kilograms,,,units,kg,Kilograms,http://unitsofmeasure.org,
 Height,cm,,,units,cm,cm,http://unitsofmeasure.org,
 BMI,kg/m2,,,units,kg/m2,kg/m2,http://unitsofmeasure.org,
 ml,ml,,,units,ml,ml,http://unitsofmeasure.org,
 ml,ml,,,Vial_Volume,ml,ml,http://unitsofmeasure.org,
 permL,/mL,,,units,/mL,/mL,http://unitsofmeasure.org,
+Hemoglobin level at birth,Hemoglobin level at birth,encounter,,encounter,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,https://loinc.org/718-7
+White blood cell count at birth,White blood cell count at birth,encounter,,encounter,26464-8,Leukocytes [#/volume] in Blood,http://loinc.org,https://loinc.org/26464-8/
+Platelet count at birth,Platelet count at birth,encounter,,encounter,26515-7,Platelets [#/volume] in Blood,http://loinc.org,https://loinc.org/26515-7/
+Peripheral blood blast percentage at birth,Peripheral blood blast percentage at birth,encounter,,encounter,30376-8,Blasts [#/volume] in Blood,http://loinc.org,https://loinc.org/30376-8/
+Hematocrit,Hematocrit,encounter,,encounter,20570-8,Hematocrit [Volume Fraction] of Blood,http://loinc.org,https://loinc.org/20570-8/
+Gestational age at birth,Gestational age at birth,encounter,,encounter,76516-4,Gestational age--at birth,http://loinc.org,https://loinc.org/76516-4/
+Birth weight,Birth weight,encounter,,encounter,8339-4,Birth weight Measured,http://loinc.org,https://loinc.org/8339-4/
+"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?","In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",encounter,,encounter,LL5926-2,Hospital stay,http://loinc.org,https://loinc.org/LL5926-2/
 Weight,Body Weight,encounter,,encounter,29463-7,Body weight,http://loinc.org,
 Height,Body Height,encounter,,encounter,8303-3,Body height,http://loinc.org,
 BMI,Body Mass Index,encounter,,encounter,39156-5,Body mass index (BMI) [Ratio],http://loinc.org,
