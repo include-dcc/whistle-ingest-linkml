@@ -25,12 +25,11 @@ def BodyMeasurement(study, measurement) {
 
     meta.tag[]: StudyMeta(study);
 
-    code.coding[0]: HarmonizeMapped(measure_type, "encounter");
+    code.coding[]: HarmonizeMapped(measure_type, "encounter");
     if (measure_type = "BMI") {
         //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi";
         code.coding[0]!: BuildCoding("39156-5", "BMI", "http://loinc.org");
 
-        
     }
     if (measure_type = "Weight") {
         //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"

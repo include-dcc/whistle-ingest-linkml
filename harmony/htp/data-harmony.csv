@@ -43,13 +43,23 @@ Peripheral blood blast percentage at birth,Peripheral blood blast percentage at 
 Hematocrit,Hematocrit,encounter,,encounter,20570-8,Hematocrit [Volume Fraction] of Blood,http://loinc.org,https://loinc.org/20570-8/
 Gestational age at birth,Gestational age at birth,encounter,,encounter,76516-4,Gestational age--at birth,http://loinc.org,https://loinc.org/76516-4/
 Birth weight,Birth weight,encounter,,encounter,8339-4,Birth weight Measured,http://loinc.org,https://loinc.org/8339-4/
-"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?","In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",encounter,,encounter,LL5926-2,Hospital stay,http://loinc.org,https://loinc.org/LL5926-2/
 Weight,Kilograms,,,units,kg,Kilograms,http://unitsofmeasure.org,
 Height,cm,,,units,cm,cm,http://unitsofmeasure.org,
 BMI,kg/m2,,,units,kg/m2,kg/m2,http://unitsofmeasure.org,
 Weight,Body Weight,encounter,,encounter,29463-7,Body weight,http://loinc.org,
 Height,Body Height,encounter,,encounter,8303-3,Body height,http://loinc.org,
 BMI,Body Mass Index,encounter,,encounter,39156-5,Body mass index (BMI) [Ratio],http://loinc.org,
+Hemoglobin level at birth,Hemoglobin level at birth,encounter,,encounter,Hemoglobin-level-at-birth,Hemoglobin level at birth,http://includedcc.org/fhir/code-systems/measurement_codes,
+White blood cell count at birth,White blood cell count at birth,encounter,,encounter,White-blood-cell-count-at-birth,White blood cell count at birth,http://includedcc.org/fhir/code-systems/measurement_codes,
+Platelet count at birth,Platelet count at birth,encounter,,encounter,Platelet-count-at-birth,Platelet count at birth,http://includedcc.org/fhir/code-systems/measurement_codes,
+Peripheral blood blast percentage at birth,Peripheral blood blast percentage at birth,encounter,,encounter,Peripheral-blood-blast-percentage-at-birth,Peripheral blood blast percentage at birth,http://includedcc.org/fhir/code-systems/measurement_codes,
+Hematocrit,Hematocrit,encounter,,encounter,Hematocrit,Hematocrit,http://includedcc.org/fhir/code-systems/measurement_codes,
+Gestational age at birth,Gestational age at birth,encounter,,encounter,Gestational-age-at-birth,Gestational age at birth,http://includedcc.org/fhir/code-systems/measurement_codes,
+Birth weight,Birth weight,encounter,,encounter,Birth-weight,Birth weight,http://includedcc.org/fhir/code-systems/measurement_codes,
+"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?","In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",encounter,,encounter,Visit-count-for-year,"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",http://includedcc.org/fhir/code-systems/measurement_codes,
+Weight,Body Weight,encounter,,encounter,Weight,Body Weight,http://includedcc.org/fhir/code-systems/measurement_codes,
+Height,Body Height,encounter,,encounter,Height,Body Height,http://includedcc.org/fhir/code-systems/measurement_codes,
+BMI,Body Mass Index,encounter,,encounter,BMI,Body Mass Index,http://includedcc.org/fhir/code-systems/measurement_codes,
 T21,Trisomy 21 (Down syndrome),Participant,Down Syndrome Status,Down Syndrome Status,8608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Dead,Dead,Participant,Outcomes Vital Status,Outcomes Vital Status,LA9627-6,Dead,http://loinc.org,
 Alive,Alive,Participant,Outcomes Vital Status,Outcomes Vital Status,LA4247-8,Alive,http://loinc.org,

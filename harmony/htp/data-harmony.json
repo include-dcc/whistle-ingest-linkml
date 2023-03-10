@@ -357,6 +357,50 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2178-2",
+              "display": "Latin American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2131-1",
+              "display": "Other Race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -459,6 +503,50 @@
             {
               "code": "Unknown",
               "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "East Asian",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Latin American",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Middle Eastern or North African",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "South Asian",
+              "display": "UK only; do not use for US data",
               "equivalence": "equivalent"
             }
           ]
@@ -681,6 +769,39 @@
           ]
         },
         {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10*9/L",
+              "display": "billion per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L/L",
+              "display": "liter per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Weight",
           "display": "Kilograms",
           "target": [
@@ -775,6 +896,39 @@
           ]
         },
         {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10^9 cells/L",
+              "display": "10^9 cells/L",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L of red blood cells/L of blood",
+              "display": "L of red blood cells/L of blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Weight",
           "display": "Kilograms",
           "target": [
@@ -848,6 +1002,83 @@
       "target": "http://loinc.org",
       "element": [
         {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "26464-8",
+              "display": "Leukocytes [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "26515-7",
+              "display": "Platelets [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "30376-8",
+              "display": "Blasts [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "20570-8",
+              "display": "Hematocrit [Volume Fraction] of Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "76516-4",
+              "display": "Gestational age--at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "8339-4",
+              "display": "Birth weight Measured",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Weight",
           "display": "Body Weight",
           "target": [
@@ -886,6 +1117,331 @@
       "source": "encounter",
       "target": "self",
       "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "http://includedcc.org/fhir/code-systems/measurement_codes",
+      "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin-level-at-birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White-blood-cell-count-at-birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet-count-at-birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral-blood-blast-percentage-at-birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational-age-at-birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth-weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "Visit-count-for-year",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
         {
           "code": "Weight",
           "display": "Body Weight",
