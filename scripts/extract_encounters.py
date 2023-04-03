@@ -83,7 +83,7 @@ if __name__=="__main__":
             for line in conditions:
                 # For actual conditions, there is no actual event, so we have
                 # neither age nor event id. So, those are ignored for these
-                if line[AGE_COLNAME] != "NA":
+                if line[AGE_COLNAME] not in ["NA", "Not collected"]:
                     key = "-".join([line[PID_COLNAME], line[AGE_COLNAME]])
                     if key not in encounters:
                         encounters[key] = Encounter(line[PID_COLNAME],
@@ -100,15 +100,16 @@ if __name__=="__main__":
                 age1_type = line[FIRST_ENCOUNTER_TYPE]
                 age2 = line[LAST_ENCOUNTER]
 
-                k1 = "-".join([pid, age1])
-                if k1 not in encounters:
-                    encounters[k1] = Encounter(pid, age1, event_type=age1_type)
+                if age1 not in ["NA", "Not collected"]:
+                    k1 = "-".join([pid, age1])
+                    if k1 not in encounters:
+                        encounters[k1] = Encounter(pid, age1, event_type=age1_type)
 
-                encounters[k1].first_encounter = True
+                    encounters[k1].first_encounter = True
 
                 # These won't always exist
-                if age2 != "NA":
-                    pdb.set_trace()
+                if age2 not in ["NA", "Not collected"]:
+                    #pdb.set_trace()
                     k2 = "-".join([pid, age2])
                     if k2 not in encounters:
                         encounters[k2] = Encounter(pid, age2)
