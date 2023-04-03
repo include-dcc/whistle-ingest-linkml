@@ -8,6 +8,7 @@ import csv
 
 import pdb
 
+# We'll get biospecimen and datafile stuff from this when it's time
 assay_url = "https://raw.githubusercontent.com/include-dcc/include-linkml/main/src/linkml/include_assay.yaml"
 
 # Participant contains Participant and Condition table definitions
