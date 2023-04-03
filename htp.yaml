@@ -1,7 +1,7 @@
 study_id: HTP
 study_accession: phs002330 
 study_title: Crnic Institute Human Trisome Project
-study_desc: TBD
+study_desc: The Crnic Institute Human Trisome Project® (HTP) is an in-depth study of people with Down syndrome using the latest technologies in precision medicine. 
 url: https://includedcc.org/studies/human-trisome-project
 identifier_prefix: https://includedcc.org/fhir/htp
 dd_prefix: https://includedcc.org/fhir
@@ -22,12 +22,12 @@ env:
   prod: prod-kf-inc
 dataset:
   participant:
-    filename: data/htp/htp_participant_DRAFT.csv
+    filename: data/tables/HTP/participant.csv
     data_dictionary: 
       filename: data/dd/participant.csv
     code_harmonization: harmony/htp/data-harmony.csv
   condition:
-    filename: data/htp/test_condition.csv
+    filename: data/tables/HTP/condition.csv
     embed:
       dataset: participant
       colname: Participant External ID
@@ -36,14 +36,14 @@ dataset:
     code_harmonization: harmony/htp/data-harmony.csv
   encounter:
     hidden: true
-    filename: data/htp/encounter.csv    
+    filename: data/tables/HTP/encounter.csv    
     data_dictionary: 
       filename: data/dd/encounter.csv
     code_harmonization: harmony/htp/data-harmony.csv
   family:
     hidden: true
     #group_by: Family ID,Family Type
-    filename: data/htp/family.csv    
+    filename: data/tables/HTP/family.csv    
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/htp/data-harmony.csv
