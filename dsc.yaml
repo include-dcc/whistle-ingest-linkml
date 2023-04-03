@@ -1,0 +1,49 @@
+study_id: DSC
+study_accession:  
+study_title: DS-Connect-The Down Syndrome Registry
+study_desc: The Down Syndrome Registry are to better understand the health of people with Down syndrome and to inform eligible participants who, based on their health history, may be a match for research studies or new clinical trials.
+url: https://includedcc.org/studies/ds-connect
+identifier_prefix: https://includedcc.org/fhir/dsc
+dd_prefix: https://includedcc.org/fhir
+output_filename: dsc
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/dsc
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/tables/DSC/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+  condition:
+    filename: data/tables/DSC/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/DSC/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/DSC/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/dsc/data-harmony.csv

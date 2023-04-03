@@ -1,0 +1,49 @@
+study_id: DS-Sleep
+study_accession:  
+study_title: Dimensional, Sleep, and Genomic Analyses of Down Syndrome to Elucidate Phenotypic Variability
+study_desc: 
+url: 
+identifier_prefix: https://includedcc.org/fhir/ds-sleep
+dd_prefix: https://includedcc.org/fhir
+output_filename: ds-sleep
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/ds-sleep
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/tables/DS-Sleep/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv
+  condition:
+    filename: data/tables/DS-Sleep/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/DS-Sleep/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/DS-Sleep/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv

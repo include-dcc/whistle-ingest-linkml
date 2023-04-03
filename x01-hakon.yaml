@@ -1,0 +1,49 @@
+study_id: X01-Hakon
+study_accession:  
+study_title: Genetic Underpinnings of the Multifactorial Phenotype of Trisomy 21 Patients Unveiled by Multi-Omics Approaches
+study_desc: 
+url: 
+identifier_prefix: https://includedcc.org/fhir/x01-hakon
+dd_prefix: https://includedcc.org/fhir
+output_filename: x01-hakon
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/x01-hakon
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/tables/X01-Hakon/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+  condition:
+    filename: data/tables/X01-Hakon/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/X01-Hakon/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/X01-Hakon/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv

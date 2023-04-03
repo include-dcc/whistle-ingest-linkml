@@ -1,0 +1,49 @@
+study_id: X01-deSmith
+study_accession:  
+study_title: Alzheimer's Biomarker Consortium - Down Syndrome
+study_desc: The goal of the Alzheimer Biomarker Consortium – Down Syndrome (X01-deSmith) is to study a group of adults with Down syndrome over their lives to single out early biomarkers of the onset of Alzheimer's disease.
+url: https://includedcc.org/studies/alzheimer-biomarker-consortium-down-syndrome-abc-ds
+identifier_prefix: https://includedcc.org/fhir/x01-desmith
+dd_prefix: https://includedcc.org/fhir
+output_filename: x01-desmith
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/x01-desmith
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/tables/X01-deSmith/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+  condition:
+    filename: data/tables/X01-deSmith/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/X01-deSmith/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/X01-deSmith/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
