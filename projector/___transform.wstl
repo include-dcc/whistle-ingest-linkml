@@ -3,7 +3,13 @@ def Transform_Dataset(resource) {
     $this: CreateDataDictionaryConceptMap(resource);
     $this: CreateDataDictionaryDefinitions(resource);
 
+    if resource.study? {
+        $this: ProcessStudy(resource.study);
+    }
+
     if resource.participant? {
+        $this: ProcessGroup(resource.study, resource.participant[*]);
+        $this: ProcessResearchSubject(resource.study, resource.participant[]);
         $this: ProcessEncounters(resource.study, resource.encounter[]);
         $this: ProcessParticipant(resource.study, resource.participant[]);
         var familyids: $Unique(resource.participant[*].family_id);

@@ -72,7 +72,11 @@ def ProcessCondition(study, condition) {
     out condition (if condition.event_id = "NA"): Condition(study, condition);
     
     if (condition.measure_value ~= "NA") {
-        out measurement (if condition.event_id ~= "NA"): BodyMeasurement(study, condition);
+        //out measurement (if condition.event_id ~= "NA"): BodyMeasurement(study, condition);
+        // I didn't have data for these before, but it looks like testing for 
+        // measure_value is the only reliable way to capture these non-lab 
+        // type measurements
+        out measurement: BodyMeasurement(study, condition);
     }
 }
 

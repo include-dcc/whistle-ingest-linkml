@@ -30,7 +30,7 @@ def Participant(study, subject) {
         // able to use that with the current version of the participant file. 
         // Hopefully, I won't forget to drop the affected study prior to reload
         // since those IDs will definitely not match. 
-        id: subject.participant_global_id;
+        id: StringReplace(subject.participant_global_id, "_", "-");
     } else {
         identifier[0].use: "official";
     }

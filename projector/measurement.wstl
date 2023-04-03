@@ -28,25 +28,25 @@ def BodyMeasurement(study, measurement) {
     code.coding[]: HarmonizeMapped(measure_type, "encounter");
     if (measure_type = "BMI") {
         //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi";
-        code.coding[0]!: BuildCoding("39156-5", "BMI", "http://loinc.org");
+        //code.coding[0]!: BuildCoding("39156-5", "BMI", "http://loinc.org");
 
     }
     if (measure_type = "Weight") {
         //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"
-        code.coding[0]!: BuildCoding("29463-7", "Body weight", "http://loinc.org");
+        //code.coding[0]!: BuildCoding("29463-7", "Body weight", "http://loinc.org");
     }
     if (measure_type = "Height") {
         //meta.profile[]: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"
-        code.coding[0]!: BuildCoding("8302-2", "Body height", "http://loinc.org");
+        //code.coding[0]!: BuildCoding("8302-2", "Body height", "http://loinc.org");
     }
     code.text: measurement.other_label;
 
     category[].coding[]: BuildCoding("vital-signs", "Vital Signs", "http://terminology.hl7.org/CodeSystem/observation-category");
 
-    encounter: Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
+    encounter (if measurement.event_id ~= "NA"): Reference_Key_Identifier(study, "Encounter", Build_Encounter_ID(study, measurement));
 
     if (measurement.age_at_condition_or_measure_observation?) {
-        _effectiveDateTime.extension[0]: AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
+        _effectiveDateTime.extension[0] (if measurement.age_at_condition_or_measure_observation ~= "NA"): AgeAtExtension(study, subject_id, measurement.age_at_condition_or_measure_observation, "days");
     }
 
     status: "final";
