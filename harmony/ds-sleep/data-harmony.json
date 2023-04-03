@@ -1,0 +1,2712 @@
+{
+  "id": "data-harmony",
+  "resourceType": "ConceptMap",
+  "version": "v1",
+  "group": [
+    {
+      "source": "units",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "kg",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cm",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m2",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m^2",
+          "display": "kg/m^2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "%",
+          "display": "%",
+          "target": [
+            {
+              "code": "%",
+              "display": "%",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "weeks",
+          "display": "weeks",
+          "target": [
+            {
+              "code": "wk",
+              "display": "weeks",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10*9/L",
+              "display": "billion per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L/L",
+              "display": "liter per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permL",
+          "display": "/mL",
+          "target": [
+            {
+              "code": "/mL",
+              "display": "/mL",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "units",
+      "target": "self",
+      "element": [
+        {
+          "code": "kg",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cm",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m2",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m^2",
+          "display": "kg/m^2",
+          "target": [
+            {
+              "code": "kg/m^2",
+              "display": "kg/m^2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "%",
+          "display": "%",
+          "target": [
+            {
+              "code": "%",
+              "display": "%",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "weeks",
+          "display": "weeks",
+          "target": [
+            {
+              "code": "weeks",
+              "display": "weeks",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10^9 cells/L",
+              "display": "10^9 cells/L",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L of red blood cells/L of blood",
+              "display": "L of red blood cells/L of blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "cm",
+          "target": [
+            {
+              "code": "Height",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permL",
+          "display": "/mL",
+          "target": [
+            {
+              "code": "permL",
+              "display": "/mL",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Vial_Volume",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Vial_Volume",
+      "target": "self",
+      "element": [
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "26464-8",
+              "display": "Leukocytes [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "26515-7",
+              "display": "Platelets [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "26446-5",
+              "display": "Blasts/100 leukocytes in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "20570-8",
+              "display": "Hematocrit [Volume Fraction] of Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "76516-4",
+              "display": "Gestational age--at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "8339-4",
+              "display": "Birth weight Measured",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "8303-3",
+              "display": "Body height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin-level-at-birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "http://includedcc.org/fhir/code-systems/measurement_codes",
+      "element": [
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White-blood-cell-count-at-birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet-count-at-birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral-blood-blast-percentage-at-birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational-age-at-birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth-weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "Visit-count-for-year",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Condition was observed or reported (this will be the case for most conditions)",
+          "target": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "self",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Condition was observed or reported (this will be the case for most conditions)",
+          "target": [
+            {
+              "code": "Observed",
+              "display": "Condition was observed or reported (this will be the case for most conditions)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Condition is ongoing",
+          "target": [
+            {
+              "code": "LA9040-2",
+              "display": "Ongoing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Condition has been resolved",
+          "target": [
+            {
+              "code": "LA9041-0",
+              "display": "Resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Condition is ongoing",
+          "target": [
+            {
+              "code": "Current",
+              "display": "Condition is ongoing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Condition has been resolved",
+          "target": [
+            {
+              "code": "Resolved",
+              "display": "Condition has been resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "CHILD",
+              "display": "child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "CHILD",
+              "display": "child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "SIB",
+              "display": "sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "element": [
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "self",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "1002-5",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "2054-5",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "2076-8",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2178-2",
+              "display": "Latin American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "self",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "Black or African American",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "East Asian",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Latin American",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Middle Eastern or North African",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "South Asian",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "OTH",
+              "display": "other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "2186-5",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "T21",
+          "display": "Trisomy 21 (Down syndrome)",
+          "target": [
+            {
+              "code": "MONDO:8608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "T21",
+          "display": "Trisomy 21 (Down syndrome)",
+          "target": [
+            {
+              "code": "T21",
+              "display": "Trisomy 21 (Down syndrome)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "LA9627-6",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "LA4247-8",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "Dead",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "Alive",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "Unknown or not available",
+              "display": "Unknown or not available",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "Complete trisomy 21",
+          "display": "complete trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0700030",
+              "display": "complete trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mosaic trisomy 21",
+          "display": "mosaic trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0700127",
+              "display": "mosaic trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "self",
+      "element": [
+        {
+          "code": "Complete trisomy 21",
+          "display": "complete trisomy 21",
+          "target": [
+            {
+              "code": "Complete trisomy 21",
+              "display": "complete trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mosaic trisomy 21",
+          "display": "mosaic trisomy 21",
+          "target": [
+            {
+              "code": "Mosaic trisomy 21",
+              "display": "mosaic trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataSet",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/dataset",
+      "element": [
+        {
+          "code": "participant",
+          "display": "participant",
+          "target": [
+            {
+              "code": "participant",
+              "display": "participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition",
+          "display": "condition",
+          "target": [
+            {
+              "code": "condition",
+              "display": "condition",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "participant",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant",
+      "element": [
+        {
+          "code": "Study Code",
+          "display": "Unique identifer for the study, assigned by DCC",
+          "target": [
+            {
+              "code": "Study Code",
+              "display": "Unique identifer for the study, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant Global ID",
+          "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+          "target": [
+            {
+              "code": "Participant Global ID",
+              "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family ID",
+          "display": "Unique identifer for family to which Participant belongs, assigned by data contributor",
+          "target": [
+            {
+              "code": "Family ID",
+              "display": "Unique identifer for family to which Participant belongs, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family Type",
+          "display": "Structure of family members participating in the study",
+          "target": [
+            {
+              "code": "Family Type",
+              "display": "Structure of family members participating in the study",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father ID",
+          "display": "Participant External ID for Participant's father (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Father ID",
+              "display": "Participant External ID for Participant's father (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother ID",
+          "display": "Participant External ID for Participant's mother (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Mother ID",
+              "display": "Participant External ID for Participant's mother (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling ID",
+          "display": "Participant External ID for Participant's sibling(s) (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Sibling ID",
+              "display": "Participant External ID for Participant's sibling(s) (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Family Member ID",
+          "display": "Participant External ID for Participant's other family members (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Other Family Member ID",
+              "display": "Participant External ID for Participant's other family members (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family Relationship",
+          "display": "Relationship of Participant to proband",
+          "target": [
+            {
+              "code": "Family Relationship",
+              "display": "Relationship of Participant to proband",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sex",
+          "display": "Sex of Participant",
+          "target": [
+            {
+              "code": "Sex",
+              "display": "Sex of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Race",
+          "display": "Race of Participant",
+          "target": [
+            {
+              "code": "Race",
+              "display": "Race of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ethnicity",
+          "display": "Ethnicity of Participant",
+          "target": [
+            {
+              "code": "Ethnicity",
+              "display": "Ethnicity of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Down Syndrome Status",
+          "display": "Down Syndrome status of participant",
+          "target": [
+            {
+              "code": "Down Syndrome Status",
+              "display": "Down Syndrome status of participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at First Patient Engagement",
+          "display": "Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+          "target": [
+            {
+              "code": "Age at First Patient Engagement",
+              "display": "Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "First Patient Engagement Event",
+          "display": "Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+          "target": [
+            {
+              "code": "First Patient Engagement Event",
+              "display": "Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Outcomes Vital Status",
+          "display": "Whether participant is alive or dead",
+          "target": [
+            {
+              "code": "Outcomes Vital Status",
+              "display": "Whether participant is alive or dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at Last Vital Status",
+          "display": "Age in days when participant's vital status was last recorded",
+          "target": [
+            {
+              "code": "Age at Last Vital Status",
+              "display": "Age in days when participant's vital status was last recorded",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/family_type",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control-only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/family_relationship",
+      "element": [
+        {
+          "code": "Proband",
+          "display": "Proband",
+          "target": [
+            {
+              "code": "Proband",
+              "display": "Proband",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unrelated control",
+          "display": "Unrelated control",
+          "target": [
+            {
+              "code": "Unrelated control",
+              "display": "Unrelated control",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/sex",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/race",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "Black or African American",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "East Asian",
+          "target": [
+            {
+              "code": "East Asian",
+              "display": "East Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "Latin American",
+          "target": [
+            {
+              "code": "Latin American",
+              "display": "Latin American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "Middle Eastern or North African",
+          "target": [
+            {
+              "code": "Middle Eastern or North African",
+              "display": "Middle Eastern or North African",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "South Asian",
+          "target": [
+            {
+              "code": "South Asian",
+              "display": "South Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/ethnicity",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/down_syndrome_status",
+      "element": [
+        {
+          "code": "D21",
+          "display": "D21",
+          "target": [
+            {
+              "code": "D21",
+              "display": "D21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T21",
+          "display": "T21",
+          "target": [
+            {
+              "code": "T21",
+              "display": "T21",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/participant/outcomes_vital_status",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "Dead",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "Alive",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "Unknown or not available",
+              "display": "Unknown or not available",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/condition",
+      "element": [
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Event ID",
+          "display": "Identifier for event (Visit, Survey completion, Sample collection, etc.) to which the Condition data are linked, if applicable. There may be multiple events linked to a Participant.",
+          "target": [
+            {
+              "code": "Event ID",
+              "display": "Identifier for event (Visit, Survey completion, Sample collection, etc.) to which the Condition data are linked, if applicable. There may be multiple events linked to a Participant.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Event Type",
+          "display": "Type of event for which Event ID is given (Visit, Survey completion, Sample collection, etc.)",
+          "target": [
+            {
+              "code": "Event Type",
+              "display": "Type of event for which Event ID is given (Visit, Survey completion, Sample collection, etc.)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition or Measure Source Text",
+          "display": "Co-occurring Condition (phenotype or diagnosis) or Measure (observation with numeric value), as described by data contributor. The Down Syndrome Genetic Diagnosis will be rolled into this field.",
+          "target": [
+            {
+              "code": "Condition or Measure Source Text",
+              "display": "Co-occurring Condition (phenotype or diagnosis) or Measure (observation with numeric value), as described by data contributor. The Down Syndrome Genetic Diagnosis will be rolled into this field.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age At Condition or Measure Observation",
+          "display": "Age in days at which Condition or Measure was observed, recorded, or diagnosed",
+          "target": [
+            {
+              "code": "Age At Condition or Measure Observation",
+              "display": "Age in days at which Condition or Measure was observed, recorded, or diagnosed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Interpretation",
+          "display": "Whether Condition was observed or not",
+          "target": [
+            {
+              "code": "Condition Interpretation",
+              "display": "Whether Condition was observed or not",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Status",
+          "display": "Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",
+          "target": [
+            {
+              "code": "Condition Status",
+              "display": "Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Data Source",
+          "display": "Whether Condition information was obtained by the investigator or reported by participant/family member",
+          "target": [
+            {
+              "code": "Condition Data Source",
+              "display": "Whether Condition information was obtained by the investigator or reported by participant/family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPO Label",
+          "display": "Label for Condition in the Human Phenotype Ontology (HPO)",
+          "target": [
+            {
+              "code": "HPO Label",
+              "display": "Label for Condition in the Human Phenotype Ontology (HPO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPO Code",
+          "display": "Code for Condition in the Human Phenotype Ontology (HPO)",
+          "target": [
+            {
+              "code": "HPO Code",
+              "display": "Code for Condition in the Human Phenotype Ontology (HPO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MONDO Label",
+          "display": "Label for Condition in the Mondo Disease Ontology (MONDO)",
+          "target": [
+            {
+              "code": "MONDO Label",
+              "display": "Label for Condition in the Mondo Disease Ontology (MONDO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MONDO Code",
+          "display": "Code for Condition in the Mondo Disease Ontology (Mondo)",
+          "target": [
+            {
+              "code": "MONDO Code",
+              "display": "Code for Condition in the Mondo Disease Ontology (Mondo)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAXO Label",
+          "display": "Label for Condition in the Medical Action Ontology (MAXO)",
+          "target": [
+            {
+              "code": "MAXO Label",
+              "display": "Label for Condition in the Medical Action Ontology (MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAXO Code",
+          "display": "Code for condition in the Medical Action Ontology (MAXO)",
+          "target": [
+            {
+              "code": "MAXO Code",
+              "display": "Code for condition in the Medical Action Ontology (MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Label",
+          "display": "Label for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+          "target": [
+            {
+              "code": "Other Label",
+              "display": "Label for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Code",
+          "display": "Code for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+          "target": [
+            {
+              "code": "Other Code",
+              "display": "Code for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Measure Value",
+          "display": "Numeric value of Measure",
+          "target": [
+            {
+              "code": "Measure Value",
+              "display": "Numeric value of Measure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Measure Unit",
+          "display": "Unit that is associated with Measure Value (e.g. kg, cm, %, x10^9/L, etc.)",
+          "target": [
+            {
+              "code": "Measure Unit",
+              "display": "Unit that is associated with Measure Value (e.g. kg, cm, %, x10^9/L, etc.)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/condition/condition_interpretation",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Observed",
+          "target": [
+            {
+              "code": "Observed",
+              "display": "Observed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Observed",
+          "display": "Not Observed",
+          "target": [
+            {
+              "code": "Not Observed",
+              "display": "Not Observed",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/condition/condition_status",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Current",
+          "target": [
+            {
+              "code": "Current",
+              "display": "Current",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Resolved",
+          "target": [
+            {
+              "code": "Resolved",
+              "display": "Resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "History Of",
+          "display": "History Of",
+          "target": [
+            {
+              "code": "History Of",
+              "display": "History Of",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Data Source",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DS-Sleep/condition/condition_data_source",
+      "element": [
+        {
+          "code": "Clinical",
+          "display": "Clinical",
+          "target": [
+            {
+              "code": "Clinical",
+              "display": "Clinical",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Self-reported",
+          "display": "Self-reported",
+          "target": [
+            {
+              "code": "Self-reported",
+              "display": "Self-reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

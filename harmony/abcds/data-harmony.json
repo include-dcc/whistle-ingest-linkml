@@ -1,0 +1,5218 @@
+{
+  "id": "data-harmony",
+  "resourceType": "ConceptMap",
+  "version": "v1",
+  "group": [
+    {
+      "source": "units",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "kg",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cm",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m2",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m^2",
+          "display": "kg/m^2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "%",
+          "display": "%",
+          "target": [
+            {
+              "code": "%",
+              "display": "%",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "weeks",
+          "display": "weeks",
+          "target": [
+            {
+              "code": "wk",
+              "display": "weeks",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10*9/L",
+              "display": "billion per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L/L",
+              "display": "liter per liter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permL",
+          "display": "/mL",
+          "target": [
+            {
+              "code": "/mL",
+              "display": "/mL",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "units",
+      "target": "self",
+      "element": [
+        {
+          "code": "kg",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "kg",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cm",
+          "display": "cm",
+          "target": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m2",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kg/m^2",
+          "display": "kg/m^2",
+          "target": [
+            {
+              "code": "kg/m^2",
+              "display": "kg/m^2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "%",
+          "display": "%",
+          "target": [
+            {
+              "code": "%",
+              "display": "%",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "weeks",
+          "display": "weeks",
+          "target": [
+            {
+              "code": "weeks",
+              "display": "weeks",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10^9 cells/L",
+          "display": "10^9 cells/L",
+          "target": [
+            {
+              "code": "10^9 cells/L",
+              "display": "10^9 cells/L",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L of red blood cells/L of blood",
+          "display": "L of red blood cells/L of blood",
+          "target": [
+            {
+              "code": "L of red blood cells/L of blood",
+              "display": "L of red blood cells/L of blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "g/dL",
+          "display": "g/dL",
+          "target": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Kilograms",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Kilograms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "cm",
+          "target": [
+            {
+              "code": "Height",
+              "display": "cm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "kg/m2",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "kg/m2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permL",
+          "display": "/mL",
+          "target": [
+            {
+              "code": "permL",
+              "display": "/mL",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Vial_Volume",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Vial_Volume",
+      "target": "self",
+      "element": [
+        {
+          "code": "ml",
+          "display": "ml",
+          "target": [
+            {
+              "code": "ml",
+              "display": "ml",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "26464-8",
+              "display": "Leukocytes [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "26515-7",
+              "display": "Platelets [#/volume] in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "26446-5",
+              "display": "Blasts/100 leukocytes in Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "20570-8",
+              "display": "Hematocrit [Volume Fraction] of Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "76516-4",
+              "display": "Gestational age--at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "8339-4",
+              "display": "Birth weight Measured",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "8303-3",
+              "display": "Body height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin-level-at-birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hemoglobin level at birth",
+          "display": "Hemoglobin level at birth",
+          "target": [
+            {
+              "code": "Hemoglobin level at birth",
+              "display": "Hemoglobin level at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White blood cell count at birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet count at birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral blood blast percentage at birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational age at birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "encounter",
+      "target": "http://includedcc.org/fhir/code-systems/measurement_codes",
+      "element": [
+        {
+          "code": "White blood cell count at birth",
+          "display": "White blood cell count at birth",
+          "target": [
+            {
+              "code": "White-blood-cell-count-at-birth",
+              "display": "White blood cell count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Platelet count at birth",
+          "display": "Platelet count at birth",
+          "target": [
+            {
+              "code": "Platelet-count-at-birth",
+              "display": "Platelet count at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral blood blast percentage at birth",
+          "display": "Peripheral blood blast percentage at birth",
+          "target": [
+            {
+              "code": "Peripheral-blood-blast-percentage-at-birth",
+              "display": "Peripheral blood blast percentage at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematocrit",
+          "display": "Hematocrit",
+          "target": [
+            {
+              "code": "Hematocrit",
+              "display": "Hematocrit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gestational age at birth",
+          "display": "Gestational age at birth",
+          "target": [
+            {
+              "code": "Gestational-age-at-birth",
+              "display": "Gestational age at birth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Birth weight",
+          "display": "Birth weight",
+          "target": [
+            {
+              "code": "Birth-weight",
+              "display": "Birth weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+          "target": [
+            {
+              "code": "Visit-count-for-year",
+              "display": "In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Weight",
+          "display": "Body Weight",
+          "target": [
+            {
+              "code": "Weight",
+              "display": "Body Weight",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Height",
+          "display": "Body Height",
+          "target": [
+            {
+              "code": "Height",
+              "display": "Body Height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMI",
+          "display": "Body Mass Index",
+          "target": [
+            {
+              "code": "BMI",
+              "display": "Body Mass Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Condition was observed or reported (this will be the case for most conditions)",
+          "target": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "self",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Condition was observed or reported (this will be the case for most conditions)",
+          "target": [
+            {
+              "code": "Observed",
+              "display": "Condition was observed or reported (this will be the case for most conditions)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Condition is ongoing",
+          "target": [
+            {
+              "code": "LA9040-2",
+              "display": "Ongoing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Condition has been resolved",
+          "target": [
+            {
+              "code": "LA9041-0",
+              "display": "Resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Condition is ongoing",
+          "target": [
+            {
+              "code": "Current",
+              "display": "Condition is ongoing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Condition has been resolved",
+          "target": [
+            {
+              "code": "Resolved",
+              "display": "Condition has been resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "CHILD",
+              "display": "child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "CHILD",
+              "display": "child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "SIB",
+              "display": "sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Inverse Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "element": [
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "self",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "1002-5",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "2054-5",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "2076-8",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2178-2",
+              "display": "Latin American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "self",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "Black or African American",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "East Asian",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Latin American",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "Middle Eastern or North African",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "UK only; do not use for US data",
+          "target": [
+            {
+              "code": "South Asian",
+              "display": "UK only; do not use for US data",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "OTH",
+              "display": "other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "2186-5",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "T21",
+          "display": "Trisomy 21 (Down syndrome)",
+          "target": [
+            {
+              "code": "MONDO:8608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "T21",
+          "display": "Trisomy 21 (Down syndrome)",
+          "target": [
+            {
+              "code": "T21",
+              "display": "Trisomy 21 (Down syndrome)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "LA9627-6",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "LA4247-8",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "Dead",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "Alive",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "Unknown or not available",
+              "display": "Unknown or not available",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "Depression",
+          "display": "Depression",
+          "target": [
+            {
+              "code": "HP:0000716",
+              "display": "Depression",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Bipolar Disorder",
+          "display": "Bipolar affective disorder",
+          "target": [
+            {
+              "code": "HP:0007302",
+              "display": "Bipolar affective disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cataracts",
+          "display": "Cataract",
+          "target": [
+            {
+              "code": "HP:0000518",
+              "display": "Cataract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - normal with hearing aid(s)",
+          "display": "Hearing impairment",
+          "target": [
+            {
+              "code": "HP:0000365",
+              "display": "Hearing impairment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cardiovascular condition",
+          "display": "Abnormal cardiovascular system physiology",
+          "target": [
+            {
+              "code": "HP:0011025",
+              "display": "Abnormal cardiovascular system physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VSD",
+          "display": "Ventricular septal defect",
+          "target": [
+            {
+              "code": "HP:0001629",
+              "display": "Ventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other congenital heart disease",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperlipidemia",
+          "display": "Hyperlipidemia",
+          "target": [
+            {
+              "code": "HP:0003077",
+              "display": "Hyperlipidemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pneumonia",
+          "display": "Pneumonia",
+          "target": [
+            {
+              "code": "HP:0002090",
+              "display": "Pneumonia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Obstructive sleep apnea",
+          "display": "Obstructive sleep apnea",
+          "target": [
+            {
+              "code": "HP:0002870",
+              "display": "Obstructive sleep apnea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Fracture",
+          "display": "Bone fracture",
+          "target": [
+            {
+              "code": "HP:0020110",
+              "display": "Bone fracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Incontinence",
+          "display": "Impaired continence",
+          "target": [
+            {
+              "code": "HP:0031064",
+              "display": "Impaired continence",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Psoriasis",
+          "display": "Psoriasiform dermatitis",
+          "target": [
+            {
+              "code": "HP:0003765",
+              "display": "Psoriasiform dermatitis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoporosis/Osteopenia",
+          "display": "Reduced bone mineral density",
+          "target": [
+            {
+              "code": "HP:0004349",
+              "display": "Reduced bone mineral density",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypothyroidism",
+          "display": "Hypothyroidism",
+          "target": [
+            {
+              "code": "HP:0000821",
+              "display": "Hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ASD",
+          "display": "Atrial septal defect",
+          "target": [
+            {
+              "code": "HP:0001631",
+              "display": "Atrial septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypertension",
+          "display": "Hypertension",
+          "target": [
+            {
+              "code": "HP:0000822",
+              "display": "Hypertension",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rosacea",
+          "display": "Facial erythema",
+          "target": [
+            {
+              "code": "HP:0001041",
+              "display": "Facial erythema",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 2 (adult onset)",
+          "display": "Type II diabetes mellitus",
+          "target": [
+            {
+              "code": "HP:0005978",
+              "display": "Type II diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin D deficiency",
+          "display": "Low levels of vitamin D",
+          "target": [
+            {
+              "code": "HP:0100512",
+              "display": "Low levels of vitamin D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoarthritis",
+          "display": "Osteoarthritis",
+          "target": [
+            {
+              "code": "HP:0002758",
+              "display": "Osteoarthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Atlanto-axial (C1-C2) subluxation",
+          "display": "Atlantoaxial instability",
+          "target": [
+            {
+              "code": "HP:0003467",
+              "display": "Atlantoaxial instability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Leukemia",
+          "display": "Leukemia",
+          "target": [
+            {
+              "code": "HP:0001909",
+              "display": "Leukemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin B12 deficiency",
+          "display": "Vitamin B12 deficiency",
+          "target": [
+            {
+              "code": "HP:0100502",
+              "display": "Vitamin B12 deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Autoimmune Conditions Other",
+          "display": "Autoimmunity",
+          "target": [
+            {
+              "code": "HP:0002960",
+              "display": "Autoimmunity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tetralogy of Fallot",
+          "display": "Tetralogy of Fallot",
+          "target": [
+            {
+              "code": "HP:0001636",
+              "display": "Tetralogy of Fallot",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Urinary Tract Infection",
+          "display": "Recurrent urinary tract infections",
+          "target": [
+            {
+              "code": "HP:0000010",
+              "display": "Recurrent urinary tract infections",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vision - Impaired",
+          "display": "Abnormality of vision",
+          "target": [
+            {
+              "code": "HP:0000504",
+              "display": "Abnormality of vision",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AV canal",
+          "display": "Atrioventricular canal defect",
+          "target": [
+            {
+              "code": "HP:0006695",
+              "display": "Atrioventricular canal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gout",
+          "display": "Gout",
+          "target": [
+            {
+              "code": "HP:0001997",
+              "display": "Gout",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Seizure Disorder",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "HP:0001250",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Syncope",
+          "display": "Syncope",
+          "target": [
+            {
+              "code": "HP:0001279",
+              "display": "Syncope",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Iron deficiency",
+          "display": "Iron deficiency anemia",
+          "target": [
+            {
+              "code": "HP:0001891",
+              "display": "Iron deficiency anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tremor",
+          "display": "Tremor",
+          "target": [
+            {
+              "code": "HP:0001337",
+              "display": "Tremor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperthyroidism",
+          "display": "Hyperthyroidism",
+          "target": [
+            {
+              "code": "HP:0000836",
+              "display": "Hyperthyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Celiac Disease",
+          "display": "Celiac disease",
+          "target": [
+            {
+              "code": "HP:0002608",
+              "display": "Celiac disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Dementia",
+          "display": "Dementia",
+          "target": [
+            {
+              "code": "HP:0000726",
+              "display": "Dementia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alopecia (areata or universalis)",
+          "display": "Alopecia",
+          "target": [
+            {
+              "code": "HP:0001596",
+              "display": "Alopecia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hashimoto's Thyroiditis",
+          "display": "Hashimoto thyroiditis",
+          "target": [
+            {
+              "code": "HP:0000872",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Stroke",
+          "display": "Stroke",
+          "target": [
+            {
+              "code": "HP:0001297",
+              "display": "Stroke",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - significantly impaired",
+          "display": "Hearing impairment",
+          "target": [
+            {
+              "code": "HP:0000365",
+              "display": "Hearing impairment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rheumatoid arthritis",
+          "display": "Rheumatoid arthritis",
+          "target": [
+            {
+              "code": "HP:0001370",
+              "display": "Rheumatoid arthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypotension",
+          "display": "Hypotension",
+          "target": [
+            {
+              "code": "HP:0002615",
+              "display": "Hypotension",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Other type",
+          "display": "Anemia",
+          "target": [
+            {
+              "code": "HP:0001903",
+              "display": "Anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Lymphoma",
+          "display": "Lymphoma",
+          "target": [
+            {
+              "code": "HP:0002665",
+              "display": "Lymphoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 1 (juvenile)",
+          "display": "Type I diabetes mellitus",
+          "target": [
+            {
+              "code": "HP:0100651",
+              "display": "Type I diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Congenital heart disease",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Chronic neutropenia",
+          "display": "Chronic neutropenia",
+          "target": [
+            {
+              "code": "HP:0410252",
+              "display": "Chronic neutropenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia",
+          "display": "Anemia",
+          "target": [
+            {
+              "code": "HP:0001903",
+              "display": "Anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Myoclonus",
+          "display": "Myoclonus",
+          "target": [
+            {
+              "code": "HP:0001336",
+              "display": "Myoclonus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other cancer",
+          "display": "Neoplasm",
+          "target": [
+            {
+              "code": "HP:0002664",
+              "display": "Neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Skin cancer",
+          "display": "Neoplasm of the skin",
+          "target": [
+            {
+              "code": "HP:0008069",
+              "display": "Neoplasm of the skin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ovarian cancer",
+          "display": "Ovarian carcinoma",
+          "target": [
+            {
+              "code": "HP:0025318",
+              "display": "Ovarian carcinoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "self",
+      "element": [
+        {
+          "code": "Depression",
+          "display": "Depression",
+          "target": [
+            {
+              "code": "Depression",
+              "display": "Depression",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Depression",
+              "display": "depressive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Bipolar Disorder",
+          "display": "Bipolar affective disorder",
+          "target": [
+            {
+              "code": "Bipolar Disorder",
+              "display": "Bipolar affective disorder",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Bipolar Disorder",
+              "display": "bipolar disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cataracts",
+          "display": "Cataract",
+          "target": [
+            {
+              "code": "Cataracts",
+              "display": "Cataract",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Cataracts",
+              "display": "cataract (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vision - Normal with correction",
+          "display": "vision treatment",
+          "target": [
+            {
+              "code": "Vision - Normal with correction",
+              "display": "vision treatment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - normal with hearing aid(s)",
+          "display": "Hearing impairment",
+          "target": [
+            {
+              "code": "Hearing - normal with hearing aid(s)",
+              "display": "Hearing impairment",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hearing - normal with hearing aid(s)",
+              "display": "hearing loss disorder",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hearing - normal with hearing aid(s)",
+              "display": "hearing aid usage",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cardiovascular condition",
+          "display": "Abnormal cardiovascular system physiology",
+          "target": [
+            {
+              "code": "Cardiovascular condition",
+              "display": "Abnormal cardiovascular system physiology",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Cardiovascular condition",
+              "display": "cardiovascular disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VSD",
+          "display": "Ventricular septal defect",
+          "target": [
+            {
+              "code": "VSD",
+              "display": "Ventricular septal defect",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "VSD",
+              "display": "ventricular septal defect (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other congenital heart disease",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "Other congenital heart disease",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Other congenital heart disease",
+              "display": "congenital heart disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperlipidemia",
+          "display": "Hyperlipidemia",
+          "target": [
+            {
+              "code": "Hyperlipidemia",
+              "display": "Hyperlipidemia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hyperlipidemia",
+              "display": "hyperlipidemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pneumonia",
+          "display": "Pneumonia",
+          "target": [
+            {
+              "code": "Pneumonia",
+              "display": "Pneumonia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Pneumonia",
+              "display": "pneumonia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Obstructive sleep apnea",
+          "display": "Obstructive sleep apnea",
+          "target": [
+            {
+              "code": "Obstructive sleep apnea",
+              "display": "Obstructive sleep apnea",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Obstructive sleep apnea",
+              "display": "obstructive sleep apnea syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Fracture",
+          "display": "Bone fracture",
+          "target": [
+            {
+              "code": "Fracture",
+              "display": "Bone fracture",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Fracture",
+              "display": "bone fracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Incontinence",
+          "display": "Impaired continence",
+          "target": [
+            {
+              "code": "Incontinence",
+              "display": "Impaired continence",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Incontinence",
+              "display": "psychotropic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cardiac surgery",
+          "display": "cardiac surgery",
+          "target": [
+            {
+              "code": "Cardiac surgery",
+              "display": "cardiac surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Surgery",
+          "display": "surgical procedure",
+          "target": [
+            {
+              "code": "Other Surgery",
+              "display": "surgical procedure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anti-anxiety Medications",
+          "display": "anxiolytic agent therapy",
+          "target": [
+            {
+              "code": "Anti-anxiety Medications",
+              "display": "anxiolytic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Antidepressants",
+          "display": "antidepressant agent therapy",
+          "target": [
+            {
+              "code": "Antidepressants",
+              "display": "antidepressant agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anti-epileptic Medications",
+          "display": "anticonvulsant agent therapy",
+          "target": [
+            {
+              "code": "Anti-epileptic Medications",
+              "display": "anticonvulsant agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Antipsychotic Medications",
+          "display": "antipsychotic agent therapy",
+          "target": [
+            {
+              "code": "Antipsychotic Medications",
+              "display": "antipsychotic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proton Pump Inhibitors",
+          "display": "proton pump inhibitor agent therapy",
+          "target": [
+            {
+              "code": "Proton Pump Inhibitors",
+              "display": "proton pump inhibitor agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Statins (Cholesterol Lowering)",
+          "display": "HMG-CoA reductase inhibitor therapy",
+          "target": [
+            {
+              "code": "Statins (Cholesterol Lowering)",
+              "display": "HMG-CoA reductase inhibitor therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Trisomy 21",
+          "display": "complete trisomy 21",
+          "target": [
+            {
+              "code": "Karyotype - Trisomy 21",
+              "display": "complete trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anxiety Disorder/OCD",
+          "display": "anxiety disorder",
+          "target": [
+            {
+              "code": "Anxiety Disorder/OCD",
+              "display": "anxiety disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Psoriasis",
+          "display": "Psoriasiform dermatitis",
+          "target": [
+            {
+              "code": "Psoriasis",
+              "display": "Psoriasiform dermatitis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Psoriasis",
+              "display": "psoriasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoporosis/Osteopenia",
+          "display": "Reduced bone mineral density",
+          "target": [
+            {
+              "code": "Osteoporosis/Osteopenia",
+              "display": "Reduced bone mineral density",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Osteoporosis/Osteopenia",
+              "display": "osteoporosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypothyroidism",
+          "display": "Hypothyroidism",
+          "target": [
+            {
+              "code": "Hypothyroidism",
+              "display": "Hypothyroidism",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hypothyroidism",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Thyroid Replacement Medications",
+          "display": "thyroid-modifying hormonal agent therapy",
+          "target": [
+            {
+              "code": "Thyroid Replacement Medications",
+              "display": "thyroid-modifying hormonal agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ASD",
+          "display": "Atrial septal defect",
+          "target": [
+            {
+              "code": "ASD",
+              "display": "Atrial septal defect",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "ASD",
+              "display": "atrial septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypertension",
+          "display": "Hypertension",
+          "target": [
+            {
+              "code": "Hypertension",
+              "display": "Hypertension",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hypertension",
+              "display": "hypertensive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rosacea",
+          "display": "Facial erythema",
+          "target": [
+            {
+              "code": "Rosacea",
+              "display": "Facial erythema",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Rosacea",
+              "display": "rosacea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 2 (adult onset)",
+          "display": "Type II diabetes mellitus",
+          "target": [
+            {
+              "code": "Diabetes - Type 2 (adult onset)",
+              "display": "Type II diabetes mellitus",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Diabetes - Type 2 (adult onset)",
+              "display": "type 2 diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin D deficiency",
+          "display": "Low levels of vitamin D",
+          "target": [
+            {
+              "code": "Vitamin D deficiency",
+              "display": "Low levels of vitamin D",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Vitamin D deficiency",
+              "display": "vitamin D deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Schizophrenia/Psychosis",
+          "display": "psychotic disorder",
+          "target": [
+            {
+              "code": "Schizophrenia/Psychosis",
+              "display": "psychotic disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoarthritis",
+          "display": "Osteoarthritis",
+          "target": [
+            {
+              "code": "Osteoarthritis",
+              "display": "Osteoarthritis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Osteoarthritis",
+              "display": "osteoarthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Atlanto-axial (C1-C2) subluxation",
+          "display": "Atlantoaxial instability",
+          "target": [
+            {
+              "code": "Atlanto-axial (C1-C2) subluxation",
+              "display": "Atlantoaxial instability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Leukemia",
+          "display": "Leukemia",
+          "target": [
+            {
+              "code": "Leukemia",
+              "display": "Leukemia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Leukemia",
+              "display": "leukemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin B12 deficiency",
+          "display": "Vitamin B12 deficiency",
+          "target": [
+            {
+              "code": "Vitamin B12 deficiency",
+              "display": "Vitamin B12 deficiency",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Vitamin B12 deficiency",
+              "display": "vitamin B12 deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hormone replacement therapy (HRT)",
+          "display": "sex hormone modifying agent therapy",
+          "target": [
+            {
+              "code": "Hormone replacement therapy (HRT)",
+              "display": "sex hormone modifying agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Autoimmune Conditions Other",
+          "display": "Autoimmunity",
+          "target": [
+            {
+              "code": "Autoimmune Conditions Other",
+              "display": "Autoimmunity",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Autoimmune Conditions Other",
+              "display": "autoimmune disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Translocation",
+          "display": "translocation Down syndrome",
+          "target": [
+            {
+              "code": "Karyotype - Translocation",
+              "display": "translocation Down syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tetralogy of Fallot",
+          "display": "Tetralogy of Fallot",
+          "target": [
+            {
+              "code": "Tetralogy of Fallot",
+              "display": "Tetralogy of Fallot",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Tetralogy of Fallot",
+              "display": "tetralogy of fallot",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Urinary Tract Infection",
+          "display": "Recurrent urinary tract infections",
+          "target": [
+            {
+              "code": "Urinary Tract Infection",
+              "display": "Recurrent urinary tract infections",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Urinary Tract Infection",
+              "display": "urinary tract infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vision - Impaired",
+          "display": "Abnormality of vision",
+          "target": [
+            {
+              "code": "Vision - Impaired",
+              "display": "Abnormality of vision",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Vision - Impaired",
+              "display": "disorder of visual system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AV canal",
+          "display": "Atrioventricular canal defect",
+          "target": [
+            {
+              "code": "AV canal",
+              "display": "Atrioventricular canal defect",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "AV canal",
+              "display": "atrioventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gout",
+          "display": "Gout",
+          "target": [
+            {
+              "code": "Gout",
+              "display": "Gout",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Gout",
+              "display": "gout",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Acetylcholinesterase Inhibitors",
+          "display": "acetylcholinesterase inhibitor therapy",
+          "target": [
+            {
+              "code": "Acetylcholinesterase Inhibitors",
+              "display": "acetylcholinesterase inhibitor therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Mosaicism",
+          "display": "mosaic trisomy 21",
+          "target": [
+            {
+              "code": "Karyotype - Mosaicism",
+              "display": "mosaic trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Seizure Disorder",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "Seizure Disorder",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Syncope",
+          "display": "Syncope",
+          "target": [
+            {
+              "code": "Syncope",
+              "display": "Syncope",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Iron deficiency",
+          "display": "Iron deficiency anemia",
+          "target": [
+            {
+              "code": "Anemia - Iron deficiency",
+              "display": "Iron deficiency anemia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Anemia - Iron deficiency",
+              "display": "iron deficiency anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tremor",
+          "display": "Tremor",
+          "target": [
+            {
+              "code": "Tremor",
+              "display": "Tremor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperthyroidism",
+          "display": "Hyperthyroidism",
+          "target": [
+            {
+              "code": "Hyperthyroidism",
+              "display": "Hyperthyroidism",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hyperthyroidism",
+              "display": "hyperthyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Celiac Disease",
+          "display": "Celiac disease",
+          "target": [
+            {
+              "code": "Celiac Disease",
+              "display": "Celiac disease",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Celiac Disease",
+              "display": "celiac disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Thyroid surgery",
+          "display": "thyroidectomy",
+          "target": [
+            {
+              "code": "Thyroid surgery",
+              "display": "thyroidectomy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Bone surgery",
+          "display": "orthopedic surgery",
+          "target": [
+            {
+              "code": "Bone surgery",
+              "display": "orthopedic surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Dementia",
+          "display": "Dementia",
+          "target": [
+            {
+              "code": "Dementia",
+              "display": "Dementia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Dementia",
+              "display": "dementia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alopecia (areata or universalis)",
+          "display": "Alopecia",
+          "target": [
+            {
+              "code": "Alopecia (areata or universalis)",
+              "display": "Alopecia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Alopecia (areata or universalis)",
+              "display": "alopecia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hashimoto's Thyroiditis",
+          "display": "Hashimoto thyroiditis",
+          "target": [
+            {
+              "code": "Hashimoto's Thyroiditis",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hashimoto's Thyroiditis",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Stroke",
+          "display": "Stroke",
+          "target": [
+            {
+              "code": "Stroke",
+              "display": "Stroke",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Stroke",
+              "display": "stroke disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "History of Hepatitis B infection",
+          "display": "hepatitis B virus infection",
+          "target": [
+            {
+              "code": "History of Hepatitis B infection",
+              "display": "hepatitis B virus infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - significantly impaired",
+          "display": "Hearing impairment",
+          "target": [
+            {
+              "code": "Hearing - significantly impaired",
+              "display": "Hearing impairment",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hearing - significantly impaired",
+              "display": "hearing loss disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rheumatoid arthritis",
+          "display": "Rheumatoid arthritis",
+          "target": [
+            {
+              "code": "Rheumatoid arthritis",
+              "display": "Rheumatoid arthritis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Rheumatoid arthritis",
+              "display": "rheumatoid arthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypotension",
+          "display": "Hypotension",
+          "target": [
+            {
+              "code": "Hypotension",
+              "display": "Hypotension",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Hypotension",
+              "display": "hypotensive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Other type",
+          "display": "Anemia",
+          "target": [
+            {
+              "code": "Anemia - Other type",
+              "display": "Anemia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Anemia - Other type",
+              "display": "anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Lymphoma",
+          "display": "Lymphoma",
+          "target": [
+            {
+              "code": "Lymphoma",
+              "display": "Lymphoma",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Lymphoma",
+              "display": "lymphoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Parkinson's Disease",
+          "display": "Parkinson disease",
+          "target": [
+            {
+              "code": "Parkinson's Disease",
+              "display": "Parkinson disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Traumatic brain injury",
+          "display": "brain injury",
+          "target": [
+            {
+              "code": "Traumatic brain injury",
+              "display": "brain injury",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 1 (juvenile)",
+          "display": "Type I diabetes mellitus",
+          "target": [
+            {
+              "code": "Diabetes - Type 1 (juvenile)",
+              "display": "Type I diabetes mellitus",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Diabetes - Type 1 (juvenile)",
+              "display": "type 1 diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Congenital heart disease",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "Congenital heart disease",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Congenital heart disease",
+              "display": "congenital heart disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Chronic neutropenia",
+          "display": "Chronic neutropenia",
+          "target": [
+            {
+              "code": "Chronic neutropenia",
+              "display": "Chronic neutropenia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Chronic neutropenia",
+              "display": "neutropenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pacemaker",
+          "display": "pacemaker implantation",
+          "target": [
+            {
+              "code": "Pacemaker",
+              "display": "pacemaker implantation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia",
+          "display": "Anemia",
+          "target": [
+            {
+              "code": "Anemia",
+              "display": "Anemia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Anemia",
+              "display": "anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Myoclonus",
+          "display": "Myoclonus",
+          "target": [
+            {
+              "code": "Myoclonus",
+              "display": "Myoclonus",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Myoclonus",
+              "display": "primary myoclonus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other cancer",
+          "display": "Neoplasm",
+          "target": [
+            {
+              "code": "Other cancer",
+              "display": "Neoplasm",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Other cancer",
+              "display": "cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cancer surgery",
+          "display": "tumorectomy",
+          "target": [
+            {
+              "code": "Cancer surgery",
+              "display": "tumorectomy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Skin cancer",
+          "display": "Neoplasm of the skin",
+          "target": [
+            {
+              "code": "Skin cancer",
+              "display": "Neoplasm of the skin",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Skin cancer",
+              "display": "skin cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Spine surgery",
+          "display": "orthopedic surgery",
+          "target": [
+            {
+              "code": "Spine surgery",
+              "display": "orthopedic surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Folate deficiency",
+          "display": "folic acid deficiency anemia",
+          "target": [
+            {
+              "code": "Anemia - Folate deficiency",
+              "display": "folic acid deficiency anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ovarian cancer",
+          "display": "Ovarian carcinoma",
+          "target": [
+            {
+              "code": "Ovarian cancer",
+              "display": "Ovarian carcinoma",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Ovarian cancer",
+              "display": "ovarian cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "Depression",
+          "display": "depressive disorder",
+          "target": [
+            {
+              "code": "MONDO:0002050",
+              "display": "depressive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Bipolar Disorder",
+          "display": "bipolar disorder",
+          "target": [
+            {
+              "code": "MONDO:0004985",
+              "display": "bipolar disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cataracts",
+          "display": "cataract (disease)",
+          "target": [
+            {
+              "code": "MONDO:0005129",
+              "display": "cataract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - normal with hearing aid(s)",
+          "display": "hearing loss disorder",
+          "target": [
+            {
+              "code": "MONDO:0005365",
+              "display": "hearing loss disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cardiovascular condition",
+          "display": "cardiovascular disorder",
+          "target": [
+            {
+              "code": "MONDO:0004995",
+              "display": "cardiovascular disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VSD",
+          "display": "ventricular septal defect (disease)",
+          "target": [
+            {
+              "code": "MONDO:0002070",
+              "display": "ventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other congenital heart disease",
+          "display": "congenital heart disease",
+          "target": [
+            {
+              "code": "MONDO:0005453",
+              "display": "congenital heart disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperlipidemia",
+          "display": "hyperlipidemia",
+          "target": [
+            {
+              "code": "MONDO:0021187",
+              "display": "hyperlipidemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pneumonia",
+          "display": "pneumonia",
+          "target": [
+            {
+              "code": "MONDO:0005249",
+              "display": "pneumonia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Obstructive sleep apnea",
+          "display": "obstructive sleep apnea syndrome",
+          "target": [
+            {
+              "code": "MONDO:0007147",
+              "display": "obstructive sleep apnea syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Fracture",
+          "display": "bone fracture",
+          "target": [
+            {
+              "code": "MONDO:0005315",
+              "display": "bone fracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Trisomy 21",
+          "display": "complete trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0700030",
+              "display": "complete trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anxiety Disorder/OCD",
+          "display": "anxiety disorder",
+          "target": [
+            {
+              "code": "MONDO:0005618",
+              "display": "anxiety disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Psoriasis",
+          "display": "psoriasis",
+          "target": [
+            {
+              "code": "MONDO:0005083",
+              "display": "psoriasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoporosis/Osteopenia",
+          "display": "osteoporosis",
+          "target": [
+            {
+              "code": "MONDO:0005298",
+              "display": "osteoporosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypothyroidism",
+          "display": "hypothyroidism",
+          "target": [
+            {
+              "code": "MONDO:0005420",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ASD",
+          "display": "atrial septal defect",
+          "target": [
+            {
+              "code": "MONDO:0006664",
+              "display": "atrial septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypertension",
+          "display": "hypertensive disorder",
+          "target": [
+            {
+              "code": "MONDO:0005044",
+              "display": "hypertensive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rosacea",
+          "display": "rosacea",
+          "target": [
+            {
+              "code": "MONDO:0006604",
+              "display": "rosacea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 2 (adult onset)",
+          "display": "type 2 diabetes mellitus",
+          "target": [
+            {
+              "code": "MONDO:0005148",
+              "display": "type 2 diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin D deficiency",
+          "display": "vitamin D deficiency",
+          "target": [
+            {
+              "code": "MONDO:0100471",
+              "display": "vitamin D deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Schizophrenia/Psychosis",
+          "display": "psychotic disorder",
+          "target": [
+            {
+              "code": "MONDO:0005485",
+              "display": "psychotic disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Osteoarthritis",
+          "display": "osteoarthritis",
+          "target": [
+            {
+              "code": "MONDO:0005178",
+              "display": "osteoarthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Leukemia",
+          "display": "leukemia",
+          "target": [
+            {
+              "code": "MONDO:0005059",
+              "display": "leukemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vitamin B12 deficiency",
+          "display": "vitamin B12 deficiency",
+          "target": [
+            {
+              "code": "MONDO:0020696",
+              "display": "vitamin B12 deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Autoimmune Conditions Other",
+          "display": "autoimmune disease",
+          "target": [
+            {
+              "code": "MONDO:0007179",
+              "display": "autoimmune disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Translocation",
+          "display": "translocation Down syndrome",
+          "target": [
+            {
+              "code": "MONDO:0700128",
+              "display": "translocation Down syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tetralogy of Fallot",
+          "display": "tetralogy of fallot",
+          "target": [
+            {
+              "code": "MONDO:0008542",
+              "display": "tetralogy of fallot",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Urinary Tract Infection",
+          "display": "urinary tract infection",
+          "target": [
+            {
+              "code": "MONDO:0100338",
+              "display": "urinary tract infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Vision - Impaired",
+          "display": "disorder of visual system",
+          "target": [
+            {
+              "code": "MONDO:0024458",
+              "display": "disorder of visual system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AV canal",
+          "display": "atrioventricular septal defect",
+          "target": [
+            {
+              "code": "MONDO:0020290",
+              "display": "atrioventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gout",
+          "display": "gout",
+          "target": [
+            {
+              "code": "MONDO:0005393",
+              "display": "gout",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Karyotype - Mosaicism",
+          "display": "mosaic trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0700127",
+              "display": "mosaic trisomy 21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Iron deficiency",
+          "display": "iron deficiency anemia",
+          "target": [
+            {
+              "code": "MONDO:0001356",
+              "display": "iron deficiency anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hyperthyroidism",
+          "display": "hyperthyroidism",
+          "target": [
+            {
+              "code": "MONDO:0004425",
+              "display": "hyperthyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Celiac Disease",
+          "display": "celiac disease",
+          "target": [
+            {
+              "code": "MONDO:0005130",
+              "display": "celiac disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Dementia",
+          "display": "dementia",
+          "target": [
+            {
+              "code": "MONDO:0001627",
+              "display": "dementia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alopecia (areata or universalis)",
+          "display": "alopecia",
+          "target": [
+            {
+              "code": "MONDO:0004907",
+              "display": "alopecia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hashimoto's Thyroiditis",
+          "display": "Hashimoto thyroiditis",
+          "target": [
+            {
+              "code": "MONDO:0007699",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Stroke",
+          "display": "stroke disorder",
+          "target": [
+            {
+              "code": "MONDO:0005098",
+              "display": "stroke disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "History of Hepatitis B infection",
+          "display": "hepatitis B virus infection",
+          "target": [
+            {
+              "code": "MONDO:0005344",
+              "display": "hepatitis B virus infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - significantly impaired",
+          "display": "hearing loss disorder",
+          "target": [
+            {
+              "code": "MONDO:0005365",
+              "display": "hearing loss disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Rheumatoid arthritis",
+          "display": "rheumatoid arthritis",
+          "target": [
+            {
+              "code": "MONDO:0008383",
+              "display": "rheumatoid arthritis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hypotension",
+          "display": "hypotensive disorder",
+          "target": [
+            {
+              "code": "MONDO:0005468",
+              "display": "hypotensive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Other type",
+          "display": "anemia",
+          "target": [
+            {
+              "code": "MONDO:0002280",
+              "display": "anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Lymphoma",
+          "display": "lymphoma",
+          "target": [
+            {
+              "code": "MONDO:0005062",
+              "display": "lymphoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Parkinson's Disease",
+          "display": "Parkinson disease",
+          "target": [
+            {
+              "code": "MONDO:0005180",
+              "display": "Parkinson disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Traumatic brain injury",
+          "display": "brain injury",
+          "target": [
+            {
+              "code": "MONDO:0043510",
+              "display": "brain injury",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Diabetes - Type 1 (juvenile)",
+          "display": "type 1 diabetes mellitus",
+          "target": [
+            {
+              "code": "MONDO:0005147",
+              "display": "type 1 diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Congenital heart disease",
+          "display": "congenital heart disease",
+          "target": [
+            {
+              "code": "MONDO:0005453",
+              "display": "congenital heart disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Chronic neutropenia",
+          "display": "neutropenia",
+          "target": [
+            {
+              "code": "MONDO:0001475",
+              "display": "neutropenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia",
+          "display": "anemia",
+          "target": [
+            {
+              "code": "MONDO:0002280",
+              "display": "anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Myoclonus",
+          "display": "primary myoclonus",
+          "target": [
+            {
+              "code": "MONDO:0017651",
+              "display": "primary myoclonus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other cancer",
+          "display": "cancer",
+          "target": [
+            {
+              "code": "MONDO:0004992",
+              "display": "cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Skin cancer",
+          "display": "skin cancer",
+          "target": [
+            {
+              "code": "MONDO:0002898",
+              "display": "skin cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anemia - Folate deficiency",
+          "display": "folic acid deficiency anemia",
+          "target": [
+            {
+              "code": "MONDO:0001860",
+              "display": "folic acid deficiency anemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ovarian cancer",
+          "display": "ovarian cancer",
+          "target": [
+            {
+              "code": "MONDO:0008170",
+              "display": "ovarian cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/maxo.owl",
+      "element": [
+        {
+          "code": "Vision - Normal with correction",
+          "display": "vision treatment",
+          "target": [
+            {
+              "code": "MAXO:0025003",
+              "display": "vision treatment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hearing - normal with hearing aid(s)",
+          "display": "hearing aid usage",
+          "target": [
+            {
+              "code": "MAXO:0009030",
+              "display": "hearing aid usage",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Incontinence",
+          "display": "psychotropic agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0001022",
+              "display": "psychotropic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cardiac surgery",
+          "display": "cardiac surgery",
+          "target": [
+            {
+              "code": "MAXO:0025001",
+              "display": "cardiac surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Surgery",
+          "display": "surgical procedure",
+          "target": [
+            {
+              "code": "MAXO:0000004",
+              "display": "surgical procedure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anti-anxiety Medications",
+          "display": "anxiolytic agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000163",
+              "display": "anxiolytic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Antidepressants",
+          "display": "antidepressant agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000160",
+              "display": "antidepressant agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Anti-epileptic Medications",
+          "display": "anticonvulsant agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000167",
+              "display": "anticonvulsant agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Antipsychotic Medications",
+          "display": "antipsychotic agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000166",
+              "display": "antipsychotic agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proton Pump Inhibitors",
+          "display": "proton pump inhibitor agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000272",
+              "display": "proton pump inhibitor agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Statins (Cholesterol Lowering)",
+          "display": "HMG-CoA reductase inhibitor therapy",
+          "target": [
+            {
+              "code": "MAXO:0000739",
+              "display": "HMG-CoA reductase inhibitor therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Thyroid Replacement Medications",
+          "display": "thyroid-modifying hormonal agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000284",
+              "display": "thyroid-modifying hormonal agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hormone replacement therapy (HRT)",
+          "display": "sex hormone modifying agent therapy",
+          "target": [
+            {
+              "code": "MAXO:0000282",
+              "display": "sex hormone modifying agent therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Acetylcholinesterase Inhibitors",
+          "display": "acetylcholinesterase inhibitor therapy",
+          "target": [
+            {
+              "code": "MAXO:0000645",
+              "display": "acetylcholinesterase inhibitor therapy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Thyroid surgery",
+          "display": "thyroidectomy",
+          "target": [
+            {
+              "code": "MAXO:0001080",
+              "display": "thyroidectomy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Bone surgery",
+          "display": "orthopedic surgery",
+          "target": [
+            {
+              "code": "MAXO:0000479",
+              "display": "orthopedic surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pacemaker",
+          "display": "pacemaker implantation",
+          "target": [
+            {
+              "code": "MAXO:0009034",
+              "display": "pacemaker implantation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cancer surgery",
+          "display": "tumorectomy",
+          "target": [
+            {
+              "code": "MAXO:0001110",
+              "display": "tumorectomy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Spine surgery",
+          "display": "orthopedic surgery",
+          "target": [
+            {
+              "code": "MAXO:0000479",
+              "display": "orthopedic surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataSet",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/dataset",
+      "element": [
+        {
+          "code": "participant",
+          "display": "participant",
+          "target": [
+            {
+              "code": "participant",
+              "display": "participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition",
+          "display": "condition",
+          "target": [
+            {
+              "code": "condition",
+              "display": "condition",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "participant",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant",
+      "element": [
+        {
+          "code": "Study Code",
+          "display": "Unique identifer for the study, assigned by DCC",
+          "target": [
+            {
+              "code": "Study Code",
+              "display": "Unique identifer for the study, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant Global ID",
+          "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+          "target": [
+            {
+              "code": "Participant Global ID",
+              "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family ID",
+          "display": "Unique identifer for family to which Participant belongs, assigned by data contributor",
+          "target": [
+            {
+              "code": "Family ID",
+              "display": "Unique identifer for family to which Participant belongs, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family Type",
+          "display": "Structure of family members participating in the study",
+          "target": [
+            {
+              "code": "Family Type",
+              "display": "Structure of family members participating in the study",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father ID",
+          "display": "Participant External ID for Participant's father (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Father ID",
+              "display": "Participant External ID for Participant's father (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother ID",
+          "display": "Participant External ID for Participant's mother (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Mother ID",
+              "display": "Participant External ID for Participant's mother (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling ID",
+          "display": "Participant External ID for Participant's sibling(s) (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Sibling ID",
+              "display": "Participant External ID for Participant's sibling(s) (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Family Member ID",
+          "display": "Participant External ID for Participant's other family members (NA if Participant is not the proband)",
+          "target": [
+            {
+              "code": "Other Family Member ID",
+              "display": "Participant External ID for Participant's other family members (NA if Participant is not the proband)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Family Relationship",
+          "display": "Relationship of Participant to proband",
+          "target": [
+            {
+              "code": "Family Relationship",
+              "display": "Relationship of Participant to proband",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sex",
+          "display": "Sex of Participant",
+          "target": [
+            {
+              "code": "Sex",
+              "display": "Sex of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Race",
+          "display": "Race of Participant",
+          "target": [
+            {
+              "code": "Race",
+              "display": "Race of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ethnicity",
+          "display": "Ethnicity of Participant",
+          "target": [
+            {
+              "code": "Ethnicity",
+              "display": "Ethnicity of Participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Down Syndrome Status",
+          "display": "Down Syndrome status of participant",
+          "target": [
+            {
+              "code": "Down Syndrome Status",
+              "display": "Down Syndrome status of participant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at First Patient Engagement",
+          "display": "Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+          "target": [
+            {
+              "code": "Age at First Patient Engagement",
+              "display": "Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "First Patient Engagement Event",
+          "display": "Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+          "target": [
+            {
+              "code": "First Patient Engagement Event",
+              "display": "Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Outcomes Vital Status",
+          "display": "Whether participant is alive or dead",
+          "target": [
+            {
+              "code": "Outcomes Vital Status",
+              "display": "Whether participant is alive or dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at Last Vital Status",
+          "display": "Age in days when participant's vital status was last recorded",
+          "target": [
+            {
+              "code": "Age at Last Vital Status",
+              "display": "Age in days when participant's vital status was last recorded",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/family_type",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control-only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/family_relationship",
+      "element": [
+        {
+          "code": "Proband",
+          "display": "Proband",
+          "target": [
+            {
+              "code": "Proband",
+              "display": "Proband",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unrelated control",
+          "display": "Unrelated control",
+          "target": [
+            {
+              "code": "Unrelated control",
+              "display": "Unrelated control",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/sex",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/race",
+      "element": [
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African American",
+          "display": "Black or African American",
+          "target": [
+            {
+              "code": "Black or African American",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "East Asian",
+          "display": "East Asian",
+          "target": [
+            {
+              "code": "East Asian",
+              "display": "East Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Latin American",
+          "display": "Latin American",
+          "target": [
+            {
+              "code": "Latin American",
+              "display": "Latin American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle Eastern or North African",
+          "display": "Middle Eastern or North African",
+          "target": [
+            {
+              "code": "Middle Eastern or North African",
+              "display": "Middle Eastern or North African",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "South Asian",
+          "display": "South Asian",
+          "target": [
+            {
+              "code": "South Asian",
+              "display": "South Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/ethnicity",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Down Syndrome Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/down_syndrome_status",
+      "element": [
+        {
+          "code": "D21",
+          "display": "D21",
+          "target": [
+            {
+              "code": "D21",
+              "display": "D21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T21",
+          "display": "T21",
+          "target": [
+            {
+              "code": "T21",
+              "display": "T21",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Outcomes Vital Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/outcomes_vital_status",
+      "element": [
+        {
+          "code": "Dead",
+          "display": "Dead",
+          "target": [
+            {
+              "code": "Dead",
+              "display": "Dead",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alive",
+          "display": "Alive",
+          "target": [
+            {
+              "code": "Alive",
+              "display": "Alive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown or not available",
+          "display": "Unknown or not available",
+          "target": [
+            {
+              "code": "Unknown or not available",
+              "display": "Unknown or not available",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition",
+      "element": [
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Event ID",
+          "display": "Identifier for event (Visit, Survey completion, Sample collection, etc.) to which the Condition data are linked, if applicable. There may be multiple events linked to a Participant.",
+          "target": [
+            {
+              "code": "Event ID",
+              "display": "Identifier for event (Visit, Survey completion, Sample collection, etc.) to which the Condition data are linked, if applicable. There may be multiple events linked to a Participant.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Event Type",
+          "display": "Type of event for which Event ID is given (Visit, Survey completion, Sample collection, etc.)",
+          "target": [
+            {
+              "code": "Event Type",
+              "display": "Type of event for which Event ID is given (Visit, Survey completion, Sample collection, etc.)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition or Measure Source Text",
+          "display": "Co-occurring Condition (phenotype or diagnosis) or Measure (observation with numeric value), as described by data contributor. The Down Syndrome Genetic Diagnosis will be rolled into this field.",
+          "target": [
+            {
+              "code": "Condition or Measure Source Text",
+              "display": "Co-occurring Condition (phenotype or diagnosis) or Measure (observation with numeric value), as described by data contributor. The Down Syndrome Genetic Diagnosis will be rolled into this field.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age At Condition or Measure Observation",
+          "display": "Age in days at which Condition or Measure was observed, recorded, or diagnosed",
+          "target": [
+            {
+              "code": "Age At Condition or Measure Observation",
+              "display": "Age in days at which Condition or Measure was observed, recorded, or diagnosed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Interpretation",
+          "display": "Whether Condition was observed or not",
+          "target": [
+            {
+              "code": "Condition Interpretation",
+              "display": "Whether Condition was observed or not",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Status",
+          "display": "Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",
+          "target": [
+            {
+              "code": "Condition Status",
+              "display": "Whether the Condition is ongoing, has been resolved, or this is a general history of the condition without known dates",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Condition Data Source",
+          "display": "Whether Condition information was obtained by the investigator or reported by participant/family member",
+          "target": [
+            {
+              "code": "Condition Data Source",
+              "display": "Whether Condition information was obtained by the investigator or reported by participant/family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPO Label",
+          "display": "Label for Condition in the Human Phenotype Ontology (HPO)",
+          "target": [
+            {
+              "code": "HPO Label",
+              "display": "Label for Condition in the Human Phenotype Ontology (HPO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPO Code",
+          "display": "Code for Condition in the Human Phenotype Ontology (HPO)",
+          "target": [
+            {
+              "code": "HPO Code",
+              "display": "Code for Condition in the Human Phenotype Ontology (HPO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MONDO Label",
+          "display": "Label for Condition in the Mondo Disease Ontology (MONDO)",
+          "target": [
+            {
+              "code": "MONDO Label",
+              "display": "Label for Condition in the Mondo Disease Ontology (MONDO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MONDO Code",
+          "display": "Code for Condition in the Mondo Disease Ontology (Mondo)",
+          "target": [
+            {
+              "code": "MONDO Code",
+              "display": "Code for Condition in the Mondo Disease Ontology (Mondo)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAXO Label",
+          "display": "Label for Condition in the Medical Action Ontology (MAXO)",
+          "target": [
+            {
+              "code": "MAXO Label",
+              "display": "Label for Condition in the Medical Action Ontology (MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAXO Code",
+          "display": "Code for condition in the Medical Action Ontology (MAXO)",
+          "target": [
+            {
+              "code": "MAXO Code",
+              "display": "Code for condition in the Medical Action Ontology (MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Label",
+          "display": "Label for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+          "target": [
+            {
+              "code": "Other Label",
+              "display": "Label for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other Code",
+          "display": "Code for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+          "target": [
+            {
+              "code": "Other Code",
+              "display": "Code for Condition in another ontology (if no match in HPO, MONDO, or MAXO)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Measure Value",
+          "display": "Numeric value of Measure",
+          "target": [
+            {
+              "code": "Measure Value",
+              "display": "Numeric value of Measure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Measure Unit",
+          "display": "Unit that is associated with Measure Value (e.g. kg, cm, %, x10^9/L, etc.)",
+          "target": [
+            {
+              "code": "Measure Unit",
+              "display": "Unit that is associated with Measure Value (e.g. kg, cm, %, x10^9/L, etc.)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_interpretation",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Observed",
+          "target": [
+            {
+              "code": "Observed",
+              "display": "Observed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Observed",
+          "display": "Not Observed",
+          "target": [
+            {
+              "code": "Not Observed",
+              "display": "Not Observed",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_status",
+      "element": [
+        {
+          "code": "Current",
+          "display": "Current",
+          "target": [
+            {
+              "code": "Current",
+              "display": "Current",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Resolved",
+          "display": "Resolved",
+          "target": [
+            {
+              "code": "Resolved",
+              "display": "Resolved",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "History Of",
+          "display": "History Of",
+          "target": [
+            {
+              "code": "History Of",
+              "display": "History Of",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Data Source",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_data_source",
+      "element": [
+        {
+          "code": "Clinical",
+          "display": "Clinical",
+          "target": [
+            {
+              "code": "Clinical",
+              "display": "Clinical",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Self-reported",
+          "display": "Self-reported",
+          "target": [
+            {
+              "code": "Self-reported",
+              "display": "Self-reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
