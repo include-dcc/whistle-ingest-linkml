@@ -1,0 +1,54 @@
+// Research Study 
+// The research study acts as the Umbrella that covers all details associated with
+// a single study. Currently, we treat all of DS-Connect as one study. Patients 
+// are tied to a study by way of the ResearchSubject. 
+
+def StudyArtifact(artifact_type, artifact_label, artifact_url) {
+    if (artifact_url?) {
+        type: artifact_type;
+        label: artifact_label;
+        url: artifact_url;
+    }
+}
+
+// Definition: Build the ResearchStudy resource
+//
+// Argument:
+//  study - This is the full study object created by Whistler
+//
+def Study(study) {
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study";
+
+    title: study.title;
+    description: study.desc;
+    status: "completed"
+
+    enrollment[0]: Reference_Key_Identifier(study, "Group", study.id);
+    identifier[0]: Key_Identifier(study, "ResearchStudy", study.id);
+    identifier[0].use: "official";
+    identifier[1].value (if study.accession?): study.accession;
+    identifier[1].system (if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
+
+    // As per request 2022-03-15, we'll add a couple keywords 
+    keyword[0].coding: HarmonizeMapped(study.id, "IncludeProgram");
+    keyword[0].text: "INCLUDE";
+    keyword[].coding[].code: study.id;
+
+    // As per request 2022-03-26, we'll stash the URL for the project's website in relatedArtifact
+    relatedArtifact[] (if study.url?): StudyArtifact("documentation", "Study Website", study.url);
+    relatedArtifact[] (if study.remote_access?): StudyArtifact("derived-from", study.remote_access.type, study.remote_access.url);
+    relatedArtifact[] (if study.accession?): StudyArtifact("derived-from", "DbGaP", study.accession);
+
+    resourceType: "ResearchStudy";
+}
+
+
+
+// Description: Wrapper for all research studies in the dataset. For now, it's just the one
+//
+// Argument:
+//  study - This is the full study object created by Whistler
+def ProcessStudy(study) {
+    out research_study: Study(study);
+}

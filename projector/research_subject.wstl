@@ -1,0 +1,28 @@
+// The ResearchSubject is used to associate a patient with a given ResearchStudy.
+// 
+
+// Description: Research Subject 
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject - Must have a participant_id
+def ResearchSubject(study, subject) {
+    meta.tag[]: StudyMeta(study);
+    identifier[]: Key_Identifier(study, "ResearchSubject", subject.participant_external_id);
+    identifier[0].use: "official";
+    status: "on-study";
+    study: Reference_Key_Identifier(study, "ResearchStudy", study.id);
+    individual: Reference_Key_Identifier(study, "Patient", subject.participant_external_id);
+    resourceType: "ResearchSubject";
+}
+
+
+// Description: Wrapper for generating ResearchSubject records
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  demo - Must have a participant_external_id
+// 
+def ProcessResearchSubject(study, demo) {
+    out research_study: ResearchSubject(study, demo);
+}

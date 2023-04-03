@@ -1,0 +1,37 @@
+// Groups
+//
+// We are using groups to represent consent and study membership
+
+
+// Description: Build the group entry
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  subjects - array of subjects, each of which should have a participantid 
+//
+// We don't currently have access to consent details, so this just builds the 
+// entire enrollment for the study. 
+def Group(study, subjects) {
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group";
+    
+    identifier[0]: Key_Identifier(study, "Group", study.id);
+    identifier[0].use: "official";
+    identifier[1].value (if study.accession?): study.accession;
+    identifier[1].system (if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id="
+
+    type: "person";
+    actual: true;
+    member: Reference_Enrollment(study, subjects[]);
+    quantity: $ListLen(subjects[*]);
+    resourceType: "Group";
+}
+
+// Description: Wrapper to create the group(s)
+// 
+//  study - This is the full study object created by Whistler
+//  demo - Array of demo objects  
+def ProcessGroup(study, participant) {
+    out research_study: Group(study, participant[*]);
+}
+
