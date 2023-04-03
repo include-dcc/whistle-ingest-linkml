@@ -1,0 +1,49 @@
+study_id: BRI-DSR
+study_accession:  
+study_title: Benaroya Research Institute Down Syndrome Registry
+study_desc: The Down syndrome registry at Benaroya Research Institute (BRI) builds on institutional expertise to collect and analyze longitudinal biological samples and concomitant clinical metadata across the lifespan of people with Down syndrome. 
+url: https://includedcc.org/studies/benaroya-research-institute-bri
+identifier_prefix: https://includedcc.org/fhir/bri-dsr
+dd_prefix: https://includedcc.org/fhir
+output_filename: bri-dsr
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/bri-dsr
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev
+  dev: dev
+  qa: qa-kf-inc
+  prod: prod-kf-inc
+dataset:
+  participant:
+    filename: data/tables/BRI-DSR/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv
+  condition:
+    filename: data/tables/BRI-DSR/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/BRI-DSR/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/BRI-DSR/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv
