@@ -148,7 +148,7 @@ class DefaultCodings:
         self.coding_list = defaultdict(dict)
 
         self.load(filename)
-    
+
     def empty(self):
         nomatch = {}
         for field in DefaultCodings._header:
@@ -222,6 +222,7 @@ print(f"Writing to file, {outfilename}")
 
 with outfilename.open('wt') as outf:
     writer = csv.writer(outf)
+    """
     writer.writerow(["local code",
                     "text",
                     "table_name",
@@ -231,6 +232,14 @@ with outfilename.open('wt') as outf:
                     "display",
                     "code system",
                     "comment"])
+    """
+
+    # Other are those that aren't necessarily found in the data-dictionary but are
+    # otherwise required for harmonizing certain parts of the data
+    with open(Path(__file__).parent / "_other_codes.csv", 'rt') as inf:
+        reader = csv.reader(inf, delimiter=",", quotechar='"')
+        for line in reader:
+            writer.writerow(line)
 
     # We'll cache the "Condition Description" and the specified code to avoid 
     # having redundant entries in the harmony file. 
