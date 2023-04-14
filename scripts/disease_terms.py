@@ -58,10 +58,12 @@ class MismatchedLabel:
     def report(self, terminology, writer):
         writer.writerow([terminology, self.code, self.label, self.other_label])
 
+#        "hp": "https://github.com/obophenotype/human-phenotype-ontology/raw/master/hp-full.obo",
+
 class TermLookup:
     obo_files = {
-        "hp": "https://github.com/obophenotype/human-phenotype-ontology/raw/master/hp-full.obo",
-        "maxo": "https://github.com/monarch-initiative/MAxO/raw/master/maxo-full.obo",
+        "hp": "https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo",
+        "maxo": "https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo-full.obo",
         "mondo": "http://purl.obolibrary.org/obo/mondo.obo"
     }
 
@@ -140,7 +142,10 @@ class TermLookup:
 
             if download_file:
                 print(f"Downloading file for ontology: {onto}")
-                wget.download(TermLookup.obo_files[onto], str(local_fn))
+                print(f"  -- {TermLookup.obo_files[onto]} - {local_fn}")
+                filename = wget.download(TermLookup.obo_files[onto], str(local_fn))
+                print(filename)
+                #pdb.set_trace()
                 """
                 response = requests.get(TermLookup.obo_files[onto], allow_redirects=True)
                 print(response)
