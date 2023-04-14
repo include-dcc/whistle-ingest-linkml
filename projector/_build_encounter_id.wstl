@@ -3,7 +3,15 @@ def Build_Encounter_ID(study, encounter) {
     // If we end up getting identifiers from the KF dewrangler, or they shift
     // to using the global ID for these. To do this, we'll need to drop all 
     // encounters for those studies as well as anything that references them. 
-    $this: $StrCat(encounter.participant_external_id, ".", encounter.event_id);
+
+    // Some encounters have "NA" for the event ID, which isn't very helpful, So
+    // we'll just assign the age as the event ID for those
+    if (encounter.event_id ~= "NA") {
+        var event_id: encounter.event_id;
+    } else {
+        var event_id: encounter.age_at_event;
+    }
+    $this: $StrCat(encounter.participant_external_id, ".", event_id);
             
 }
 
