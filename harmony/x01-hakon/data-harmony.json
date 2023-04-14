@@ -2501,7 +2501,7 @@
           "target": [
             {
               "code": "HP:0000517",
-              "display": "Abnormality of the lens",
+              "display": "Abnormal lens morphology",
               "equivalence": "equivalent"
             }
           ]
@@ -3447,7 +3447,7 @@
           "target": [
             {
               "code": "HP:0000517",
-              "display": "Abnormality of the lens",
+              "display": "Abnormal lens morphology",
               "equivalence": "equivalent"
             }
           ]
@@ -4778,7 +4778,7 @@
           "target": [
             {
               "code": "HP:0012888",
-              "display": "Abnormality of the uterine cervix",
+              "display": "Abnormal uterine cervix morphology",
               "equivalence": "equivalent"
             }
           ]
@@ -7928,11 +7928,6 @@
             {
               "code": "Symptoms of the muscles",
               "display": "Abnormality of the musculature",
-              "equivalence": "equivalent"
-            },
-            {
-              "code": "Symptoms of the muscles",
-              "display": "muscular disorder",
               "equivalence": "equivalent"
             }
           ]
@@ -12750,17 +12745,6 @@
             {
               "code": "MONDO:0006615",
               "display": "sweat gland disorder",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Symptoms of the muscles",
-          "display": "muscular disorder",
-          "target": [
-            {
-              "code": "MONDO:0005218",
-              "display": "muscular disorder",
               "equivalence": "equivalent"
             }
           ]

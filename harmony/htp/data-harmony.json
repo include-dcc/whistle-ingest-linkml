@@ -3305,6 +3305,17 @@
           ]
         },
         {
+          "code": "Sleep hypoxia",
+          "display": "Nocturnal hypoxemia",
+          "target": [
+            {
+              "code": "HP:0034312",
+              "display": "Nocturnal hypoxemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Anomalous pulmonary venous return",
           "display": "Anomalous pulmonary venous return",
           "target": [
@@ -6011,6 +6022,17 @@
           ]
         },
         {
+          "code": "Sleep hypoxia",
+          "display": "Nocturnal hypoxemia",
+          "target": [
+            {
+              "code": "Sleep hypoxia",
+              "display": "Nocturnal hypoxemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Anomalous pulmonary venous return",
           "display": "Anomalous pulmonary venous return",
           "target": [
@@ -6765,7 +6787,7 @@
           "target": [
             {
               "code": "MONDO:0000001",
-              "display": "disease or disorder",
+              "display": "disease",
               "equivalence": "equivalent"
             }
           ]

@@ -2144,7 +2144,7 @@
           "target": [
             {
               "code": "MONDO:0000001",
-              "display": "disease or disorder",
+              "display": "disease",
               "equivalence": "equivalent"
             }
           ]

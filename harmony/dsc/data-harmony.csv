@@ -159,7 +159,7 @@ Other neurologic condition(s),nervous system disorder,condition,MONDO Code,condi
 Ptosis (droopy eyelid),Ptosis,condition,HPO Code,condition_description,0000508,Ptosis,http://purl.obolibrary.org/obo/hp.owl,
 Ptosis (droopy eyelid),ptosis,condition,MONDO Code,condition_description,0000728,ptosis,http://purl.obolibrary.org/obo/mondo.owl,
 "Other metabolic, hormonal, or autoimmune condition(s) diagnosed",Phenotypic abnormality,condition,HPO Code,condition_description,0000118,Phenotypic abnormality,http://purl.obolibrary.org/obo/hp.owl,
-"Other metabolic, hormonal, or autoimmune condition(s) diagnosed",disease or disorder,condition,MONDO Code,condition_description,0000001,disease or disorder,http://purl.obolibrary.org/obo/mondo.owl,
+"Other metabolic, hormonal, or autoimmune condition(s) diagnosed",disease or disorder,condition,MONDO Code,condition_description,0000001,disease,http://purl.obolibrary.org/obo/mondo.owl,
 Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),Dysphagia,condition,HPO Code,condition_description,0002015,Dysphagia,http://purl.obolibrary.org/obo/hp.owl,
 Brain malformation,Abnormality of brain morphology,condition,HPO Code,condition_description,0012443,Abnormality of brain morphology,http://purl.obolibrary.org/obo/hp.owl,
 Brain malformation,cerebral malformation,condition,MONDO Code,condition_description,0016054,cerebral malformation,http://purl.obolibrary.org/obo/mondo.owl,
