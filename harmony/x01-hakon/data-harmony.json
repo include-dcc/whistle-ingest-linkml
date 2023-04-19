@@ -1662,6 +1662,212 @@
       ]
     },
     {
+      "source": "Sample Type",
+      "target": "http://purl.obolibrary.org/obo/obi.owl",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "OBI:0001051",
+              "display": "DNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "OBI:0000880",
+              "display": "RNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "http://purl.obolibrary.org/obo/ncit.owl",
+      "element": [
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "C12954",
+              "display": "Peripheral Blood Mononuclear Cell Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "C17610",
+              "display": "Blood Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva Sample",
+              "display": "C174119",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "http://hl7.org/fhir/specimen-status",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "unavailable",
+              "display": "Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "available",
+              "display": "Available",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "unavailable",
+              "display": "Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "self",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "In",
+              "display": "In",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "Out",
+              "display": "Out",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "condition_description",
       "target": "http://purl.obolibrary.org/obo/hp.owl",
       "element": [
@@ -14948,6 +15154,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "specimen",
+          "display": "specimen",
+          "target": [
+            {
+              "code": "specimen",
+              "display": "specimen",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -15908,6 +16125,200 @@
             {
               "code": "Self-reported",
               "display": "Self-reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "specimen",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/X01-Hakon/specimen",
+      "element": [
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at Biospecimen Collection",
+          "display": "Age in days of participant at time of biospecimen collection",
+          "target": [
+            {
+              "code": "Age at Biospecimen Collection",
+              "display": "Age in days of participant at time of biospecimen collection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Global ID",
+          "display": "INCLUDE global identifier for sample, assigned by DCC",
+          "target": [
+            {
+              "code": "Sample Global ID",
+              "display": "INCLUDE global identifier for sample, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample External ID",
+          "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+          "target": [
+            {
+              "code": "Sample External ID",
+              "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Type",
+          "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+          "target": [
+            {
+              "code": "Sample Type",
+              "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Parent Sample External ID",
+          "display": "Unique identifier for the parent sample, assigned by data contributor",
+          "target": [
+            {
+              "code": "Parent Sample External ID",
+              "display": "Unique identifier for the parent sample, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Laboratory Procedure",
+          "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+          "target": [
+            {
+              "code": "Laboratory Procedure",
+              "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In/Out",
+          "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+          "target": [
+            {
+              "code": "In/Out",
+              "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/X01-Hakon/specimen/sample_type",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/X01-Hakon/specimen/in_out",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "In",
+              "display": "In",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "Out",
+              "display": "Out",
               "equivalence": "equivalent"
             }
           ]
