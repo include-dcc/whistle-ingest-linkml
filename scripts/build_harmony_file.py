@@ -23,14 +23,16 @@ from pathlib import Path
 from collections import defaultdict
 from disease_terms import MONDO_SYSTEM, HP_SYSTEM, MAXO_SYSTEM, TermLookup
 
+from rich import print
+
 skip_cols = [
     "Study Code"
 ]
 
 
-def pull_values_from_dd(dd_table, writer):
+def pull_values_from_dd(dd_table, writer, empty_writer):
     for line in csv.DictReader(dd_table):
-        print(line)
+        #print(line)
         #pdb.set_trace()
         value_list = line['enumerations']
         varname = line['variable_name']
@@ -49,22 +51,20 @@ def pull_values_from_dd(dd_table, writer):
                     #pdb.set_trace()
                     if coding['code system'].strip() != "":
                         writer.writerow(coding.values())
-                        print("!!! Hurrah!")
                 else:
-                    print(coding)
                     print(f"Skipping {table_name}.{varname}.{value} because that var is listed under {coding['table_name']}")
-                    pdb.set_trace()
-                """writer.writerow([
-                    value, 
-                    desc,
-                    Path(dd_table.name).stem,
-                    varname,
-                    varname,
-                    coding['code'],
-                    coding['display'],
-                    coding['system'],
-                    ""
-                ])"""
+                    print(coding)
+                    empty_writer.writerow([
+                        value, 
+                        desc,
+                        Path(dd_table.name).stem,
+                        varname,
+                        varname,
+                        "",
+                        "",
+                        "",
+                        ""
+                    ])
 
 def write_coding(writer, condition, coding, varname, local_desc):
     writer.writerow([
@@ -166,7 +166,7 @@ class DefaultCodings:
                 DefaultCodings._header = reader.fieldnames
 
             for line in reader:
-                print(line)
+                #print(line)
                 #pdb.set_trace()
                 self.coding_list[line['parent_varname'].lower()][line['local code'].lower()] = line
 
@@ -215,37 +215,44 @@ parser.add_argument("-o",
                     "--output-filename",
                     default="harmony/data-harmony.csv",
                     help="Filename where we'll write our generated CSV file.")
+parser.add_argument("-u", 
+                    "--unmatched-filename", 
+                    default="harmony/empty-harmony.csv",
+                    help="Filename where we'll write our terms which don't have a meaningful harmony match")
 args = parser.parse_args()
 default_codings = DefaultCodings()
 outfilename = Path(args.output_filename)
+empties = Path(args.unmatched_filename)
 print(f"Writing to file, {outfilename}")
+print(f"Items without valid harmony to be written to: {empties}.")
 
 with outfilename.open('wt') as outf:
     writer = csv.writer(outf)
-    """
-    writer.writerow(["local code",
-                    "text",
-                    "table_name",
-                    "parent_varname",
-                    "local code system",
-                    "code",
-                    "display",
-                    "code system",
-                    "comment"])
-    """
 
-    # Other are those that aren't necessarily found in the data-dictionary but are
-    # otherwise required for harmonizing certain parts of the data
-    with open(Path(__file__).parent / "_other_codes.csv", 'rt') as inf:
-        reader = csv.reader(inf, delimiter=",", quotechar='"')
-        for line in reader:
-            writer.writerow(line)
+    with empties.open('wt') as emptyf:
+        empty_writer = csv.writer(emptyf)
+        empty_writer.writerow(["local code",
+                        "text",
+                        "table_name",
+                        "parent_varname",
+                        "local code system",
+                        "code",
+                        "display",
+                        "code system",
+                        "comment"])
+        
+        # Other are those that aren't necessarily found in the data-dictionary but are
+        # otherwise required for harmonizing certain parts of the data
+        with open(Path(__file__).parent / "_other_codes.csv", 'rt') as inf:
+            reader = csv.reader(inf, delimiter=",", quotechar='"')
+            for line in reader:
+                writer.writerow(line)
 
-    # We'll cache the "Condition Description" and the specified code to avoid 
-    # having redundant entries in the harmony file. 
-    harmonized_conditions = set()
-    for dd_table in args.table_dd:
-        pull_values_from_dd(dd_table, writer)
+        # We'll cache the "Condition Description" and the specified code to avoid 
+        # having redundant entries in the harmony file. 
+        harmonized_conditions = set()
+        for dd_table in args.table_dd:
+            pull_values_from_dd(dd_table, writer, empty_writer)
 
-    pull_codes_from_condition(args.conditions, writer, args.mismatched_report, args.invalid_report, args.obsolete_report)
+        pull_codes_from_condition(args.conditions, writer, args.mismatched_report, args.invalid_report, args.obsolete_report)
 
