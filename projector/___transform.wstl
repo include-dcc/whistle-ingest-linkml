@@ -15,11 +15,14 @@ def Transform_Dataset(resource) {
         var familyids: $Unique(resource.participant[*].family_id);
         $this: ProcessFamilyGroups(resource.study, resource.participant[*], familyids[]);
         $this: ProcessPatientConditions(resource.study, resource.participant[]);
-        
     }
 
     if resource.family? {
         $this: ProcessFamilyRelationships(resource.study, resource.family[])
+    }
+
+    if resource.specimen? {
+        $this: ProcessSpecimenData(resource.study, resource.specimen[]);
     }
 
 }
