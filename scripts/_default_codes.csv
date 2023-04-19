@@ -48,3 +48,23 @@ Resolved,Condition has been resolved,Condition,Condition Status,Condition Status
 History Of,"This is a general history of the condition, without known dates",Condition,Condition Status,Condition Status,,,,
 Clinical,Information about condition was obtained from medical records or reported by investigator,Condition,Condition Data Source,Condition Data Source,,,,
 Self-reported,Information about condition was reported by participant or family member,Condition,Condition Data Source,Condition Data Source,,,,
+DNA,DNA,specimen,Sample Type,Sample Type,OBI:0001051,DNA extract,http://purl.obolibrary.org/obo/obi.owl,
+PBMC,PBMC,specimen,Sample Type,Sample Type,C12954,Peripheral Blood Mononuclear Cell Sample,http://purl.obolibrary.org/obo/ncit.owl,
+Peripheral Whole Blood,Peripheral Whole Blood,specimen,Sample Type,Sample Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,
+RNA,RNA,specimen,Sample Type,Sample Type,OBI:0000880,RNA extract,http://purl.obolibrary.org/obo/obi.owl,
+Saliva,Saliva,specimen,Sample Type,Sample Type,Saliva Sample,C174119,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C174119
+WBCs,WBCs,specimen,sample_type,Sample_Type,C12529,Leukocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Whole blood,Whole blood,specimen,sample_type,Sample_Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C17610
+B Cells,B Cells,specimen,sample_type,Sample_Type,C12474,B-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12474
+Buffy coat,Buffy coat,specimen,sample_type,Sample_Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
+CD4+ Tconv Cells,CD4+ Tconv Cells,specimen,sample_type,Sample_Type,C12537,CD4-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12537
+CD8+ T Cells,CD8+ T Cells,specimen,sample_type,Sample_Type,C12542,CD8-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12542
+Granulocytes,Granulocytes,specimen,sample_type,Sample_Type,C12530,Granulocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Monocytes,Monocytes,specimen,sample_type,Sample_Type,C12547,Monocyte,http://purl.obolibrary.org/obo/ncit.owl,
+NK Cells,NK Cells,specimen,sample_type,Sample_Type,C12536,Natural Killer Cell,http://purl.obolibrary.org/obo/ncit.owl,
+Plasma,Plasma,specimen,sample_type,Sample_Type,C13356,Plasma,http://purl.obolibrary.org/obo/ncit.owl,
+Red Blood Cells,Red Blood Cells,specimen,sample_type,Sample_Type,C12521,Erythrocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Tregs,Tregs,specimen,sample_type,Sample_Type,CL:0000815,regulatory T cell,http://purl.obolibrary.org/obo/cl.owl,
+NA,NA,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
+In,In,specimen,In/Out,In/Out,available,Available,http://hl7.org/fhir/specimen-status,
+Out,Out,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
