@@ -47,3 +47,8 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/x01-hakon/data-harmony.csv
+  specimen:
+    filename: data/tables/X01-Hakon/FV_CFPDTD0T_hakon_biospecimen_manifest.csv
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
