@@ -170,7 +170,12 @@ def pull_from_github(url, tablenames, common_slots):
         slots = common_slots | content['slots']
 
         for name in tablenames:
-            tables[name] = DdTable(name, content['classes'][name], slots, enums, hseed)
+            try:
+                tables[name] = DdTable(name, content['classes'][name], slots, enums, hseed)
+            except:
+                print("An error was encountered building the DdTable object")
+                pdb.set_trace()
+                print(content['classes'][name])
 
     return enums, tables
 
@@ -183,8 +188,16 @@ if __name__=='__main__':
     outdir = Path("output/dd/")
     outdir.mkdir(parents=True, exist_ok=True)
     tables_of_interest = ["Participant", "Condition"]
+
+    # No single source for common slots, so you have to load slots from each 
+    # of the relevant files to get them all
+    base_slots = collect_slots(participant_url)
+    enums, biospecimen_tables = pull_from_github(assay_url, ["Biospecimen", "DataFile"], common_slots=base_slots)
+
     base_slots = collect_slots(assay_url)
-    enums, tables = pull_from_github(participant_url, tables_of_interest, common_slots=base_slots)   
+    enums, tables = pull_from_github(participant_url, tables_of_interest, common_slots=base_slots)  
+
+    tables = tables | biospecimen_tables
 
     for table_name, table in tables.items():
         filename = outdir / f"{table_name.lower()}.csv"
