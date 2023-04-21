@@ -47,3 +47,10 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/htp/data-harmony.csv
+  specimen:
+    filename: data/tables/HTP/FV_NGY8HVR3_htp-combined-samples-with-globals.csv
+    subject_id: participantid
+    key_columns: Sample ID
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/htp/data-harmony.csv   
