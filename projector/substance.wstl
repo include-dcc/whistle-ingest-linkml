@@ -1,0 +1,26 @@
+// Substances can be used for specimen processing additives
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  substance - The name of the substance to be produced
+def ProcessSubstance(study, substance) {
+    var substance_code: HarmonizeMapped(substance, "Preservation_Method");
+
+    if (substance_code?) {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[]: Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, substance));
+        identifier[0].use: "official";
+        status: "active";
+        category[0].text: "chemical";
+        category[0].coding[]: BuildCodeableConcept("chemical", "http://terminology.hl7.org/CodeSystem/substance-category", "Chemical");
+        code.coding[]: substance_code;
+        code.text: substance;
+        resourceType: "Substance";
+    }
+}
+
+def ProcessSubstanceData(study, substance) {
+    //magic: substance;
+    out substance: ProcessSubstance(study, substance.additive_id);
+}

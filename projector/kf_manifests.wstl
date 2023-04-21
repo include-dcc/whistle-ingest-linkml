@@ -1,0 +1,205 @@
+// 
+def DocumentReferenceID(study, labid) {
+    $this: $StrCat(study.id, ".", labid);
+}
+
+def KfDocAttachment(study, manifest) {
+    url: manifest.drs_url;
+    hash: manifest.hash_md5;
+    size: manifest.size_bytes;
+    title: manifest.filename;
+}
+
+def FileSizeExtension(study, manifest) {
+    if (manifest.file_size?) {
+        url: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/file-size";
+        valueDecimal: $ParseFloat(manifest.file_size);
+    }
+}
+
+def FileHashExtension(study, hash, hash_type) {
+    if (hash?) {
+        url: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/hashes";
+        valueCodeableConcept: {
+            coding[].display: hash_type;
+            text: hash;
+        }
+    }
+}
+
+def FileDetailExtension(study, manifest) {
+    extension[]: FileSizeExtension(study, manifest);
+
+    if (manifest.etag_hash?) {
+        extension[]: FileHashExtension(study, manifest.etag_hash, "etag");
+    }
+    if (manifest.md5_hash?) {
+        extension[]: FileHashExtension(study, manifest.md5_hash, "md5");
+    }
+    if (manifest.sha1_hash?) {
+        hash: manifest.sha1_hash;
+    }
+    url: manifest.drs_uri;
+    title: manifest.filename; 
+}
+
+def KfDocReference(study, manifest, category) {
+    var subject_id: manifest.participant_id;
+
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
+
+    identifier[]: Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, manifest.filename));
+    identifier[0].use: "official";
+
+    status: "current";
+    docStatus: "final";
+    type: manifest.data_category;
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    securityLabel: manifest.data_access;
+    category[].text: manifest.experimental_strategy;
+    category[].text: category;
+    //content[]: KfDocAttachment(study, manifest);
+    content[0].attachment.url: manifest.drs_uri;
+    if (manifest.sha1_hash?) {
+        content[0].attachment.hash: manifest.sha1_hash;
+    }
+    content[].attachment: KfFileDetailExtension(study, manifest);
+
+    format.display: manifest.file_format;
+
+    resourceType: "DocumentReference";
+}
+
+def FileSpecimenReference(study, manifest) {
+    $this: Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, manifest.subject_id, manifest.sample_id));
+}
+
+def FileSpecimenAsInput(study, manifest) {
+    type.text: "Specimen";
+    valueReference: Reference_Key_Identifier(study, "Specimen", SpecimenIdentifier(study, manifest.subject_id, manifest.sample_id));
+}
+
+def KfFileTask(study, fileid, all_manifests) {
+    // I'm not sure 
+    var manifests: all_manifests[where $.file_id=fileid];
+
+    meta.tag[]: StudyMeta(study);    
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task";
+    identifier[]: Key_Identifier(study, "Task", $StrCat(study.id, ".", fileid));
+    identifier[0].use: "official";
+
+    intent: "order";
+    status: "completed";
+
+    input[]: FileSpecimen(study, manifests[]);
+
+    output[0].type.text: "DocumentReference";
+    output[0].valueReference: Reference_Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, manifests[0].subject_id, manifests[0].file_id));
+
+    // This permits one to search for Tasks where the focus is a given specimen instance
+    focus (if $ListLen(manifests) = 1): Reference_Key_Identifier(study, "Specimen", SpecimenIdentifier(study, manifests[0].subject_id, manifests[0].sample_id));
+
+    // This is the patient, allowing one to query for all tasks associated with a given patient
+    for (if $ListLen(manifests) = 1): Reference_Key_Identifier(study, "Patient", manifests[0].subject_id);
+
+    resourceType: "Task";
+}
+
+def Reference_Doc_Enrollment(study, participantid) {
+    if ($IsNotNil(participantid)) {
+        entity: Reference_Key_Identifier(study, "Patient", participantid);
+    }
+}
+
+def SubjectGroup(study, subjectids, filename) {
+    meta.tag[]: StudyMeta(study);
+    
+    identifier[0]: Key_Identifier(study, "Group", filename);
+    identifier[0].use: "official";
+
+    type: "person";
+    actual: true;
+
+    member: Reference_Enrollment(study, subjectids[]);
+    quantity: $ListLen(subjectids[*]);
+    resourceType: "Group";
+}
+
+def FileCategoryMap(study, varname, value) {
+    var code: HarmonizeMappedFirst(value, varname);
+
+    if (code?) {
+        coding: [code];
+        text: value;
+    }
+}
+
+def FileAcl(study, acl) {
+    var pieces: $StrSplit(acl, ".");
+
+    if ($ListLen(pieces) = 1) {
+        text: acl
+    } else {
+        coding[0].code: pieces[1];
+        text: acl;
+    }
+}
+
+def FileDocumentReference(study, manifest) {
+    // I think this was an issue way back at the beginning when we had one file 
+    // for many subjects. That is no longer the case so we can ignore it. 
+    // var manifests: all_manifests[where $.file_id=fileid];
+    var subject_id: manifest.participant_external_id;
+    var specimen_id: manifest.sample_external_id;
+
+    meta.tag[]: StudyMeta(study);
+
+    // DRS DocRef requires an actual DRS ID, which can only happen if our magic 
+    // column is present and isn't just a placeholder
+    if (manifest.access_url? and manifest.access_url ~= "NA") {
+        meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
+    }
+
+    identifier[]: Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, manifest.file_name));
+    identifier[0].use: "official";
+
+    status: "current";
+    docStatus: "final";
+    type: FileCategoryMap(study, "Data Type", manifest.data_type);
+
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+    securityLabel[]: HarmonizeAsCoding(manifest.data_access_type, "Data Access");
+
+    // This doesn't seem to be present in the current data
+    if (manifest.acl_list?) {
+        var acls: $StrSplit(manifest.acl_list, ";");
+        securityLabel[]: FileAcl(study, acls[]);
+    }
+    category[]: FileCategoryMap(study, "Experimental Strategy", manifest.experimental_strategy);
+    category[]: FileCategoryMap(study, "Data Category", manifest.data_category);
+
+    content[0].attachment: FileDetailExtension(study, manifest);
+    content[0].format.display: manifest.file_format
+
+    // Makeshift mechanism to link Index files to their parent
+    if (manifest.source_file?) {
+        relatesTo[0].code: "transforms";
+        relatesTo[0].target: Reference_Key_Identifier(study, "DocumentReference",  DocumentReferenceID(study, manifest.source_file));
+    } else {
+        context.related[]: FileSpecimenReference(study, manifest);
+    }
+
+
+    resourceType: "DocumentReference";
+}
+
+def ProcessFileManifestData(study, file) {
+    // var fileids: $Unique(files[*].file_id);
+
+    //out files: KfFileTask(study, fileids[], files[*]);
+    // out files: FileDocumentReference(study, fileids[], files[*]);
+    out files: FileDocumentReference(study, file);
+    //out files: KfDocReference(study, files[], category);
+}

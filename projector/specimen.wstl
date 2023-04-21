@@ -1,0 +1,67 @@
+// Specimen use the standard FHIR Specimen resource with a few potential specialized 
+// interpretations of the standard properties:
+//   * parent - If the specimen type is derived from another, the "parent" specimen is referenced here
+//   * processing[x].additive - References to the appropriate Substance associated with the preservation_method
+//   * aliquots are stored inside the .container array
+//
+def ProcessSpecimen(study, specimen) {
+    // Aliquots should be embedded 
+    var aliquots: specimen.aliquots;
+    var subject_id: specimen.participant_external_id;
+    var sample_status: HarmonizeMappedFirst(specimen.in_out, "In/Out");
+
+    meta.tag[]: StudyMeta(study);
+    id (if specimen.sample_global_id?): StringReplace(specimen.sample_global_id, "_", "-");
+
+    status: sample_status.code;
+    resourceType: "Specimen";    
+
+    identifier[]: Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.sample_external_id));
+    
+    if (specimen.sample_global_id?) {
+        identifier[]: Key_Identifier(study, "Specimen", specimen.sample_global_id);
+        identifier[1].use: "official";
+    } else {
+        identifier[0].use: "official";
+    }
+
+    
+    if (specimen.parent_sample_external_id? and specimen.parent_sample_external_id ~= "NA") {
+        parent[] (if specimen.parent_sample_external_id ~= specimen.sample_id): Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.parent_sample_external_id));
+    }
+
+    // Do we actually want to consider the volume inside "vial volume"
+
+    var substance_code: HarmonizeMapped(specimen.preservation_method, "Specimen Additive");
+    if (substance_code?) {
+        processing[0].additive[0]: Reference_Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, specimen.preservation_method));
+    }
+
+    processing[0].description (if specimen.laboratory_procedure ~= "NA"): specimen.laboratory_procedure;
+    condition[0].coding[]: HarmonizeMapped(specimen.preservation_method, "Specimen Condition");
+    condition[0].text: specimen.preservation_method;
+
+    type.coding[]: HarmonizeMapped(specimen.sample_type, "Sample Type");
+    type.text: specimen.sample_type
+
+    collection._collectedDateTime.extension[0] (if specimen.age_at_biospecimen_collection?): AgeAtExtension(study, subject_id, specimen.age_at_biospecimen_collection, "days");
+    //container[]: ProcessAliquot(study, subject_id, aliquots[0].content[]);
+
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+}
+
+//
+// We are assuming that the aliquots and file data have been embedded inside  
+// the specimen table 
+def ProcessSpecimenData(study, specimen) {
+    // out files: ProcessFileManifestData(study, all_specimen[]);
+    out specimen: ProcessSpecimen(study, specimen);
+}
+
+
+def ProcessSpecimenData_(study, all_specimen, all_aliquots) {
+    //out file_tasks: SpecimenTask(study, all_specimen[]);
+    // out files: ProcessFileManifestData(study, all_specimen[]);
+    out specimen: ProcessSpecimen(study, all_specimen[], all_aliquots[*]);
+}

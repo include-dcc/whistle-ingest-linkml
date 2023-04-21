@@ -1,0 +1,7 @@
+// The Subject ID is currently baked into the sample_id but 
+// we'll pass it along on the off chance that we decide to 
+// change that rule and will only require a single change 
+// to handle it  
+def BuildSpecimenIdentifier(study, subject_id, sample_id) {
+    $this: $StrCat(sample_id);
+}
