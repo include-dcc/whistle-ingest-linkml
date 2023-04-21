@@ -31,11 +31,14 @@ skip_cols = [
 
 
 def pull_values_from_dd(dd_table, writer, empty_writer):
+
+        
     for line in csv.DictReader(dd_table):
         #print(line)
         #pdb.set_trace()
         value_list = line['enumerations']
         varname = line['variable_name']
+
         if value_list != "" and varname not in skip_cols:
             values = value_list.split(";")
 
