@@ -1662,6 +1662,1070 @@
       ]
     },
     {
+      "source": "Sample_Type",
+      "target": "http://purl.obolibrary.org/obo/ncit.owl",
+      "element": [
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "C12474",
+              "display": "B-Lymphocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy coat",
+          "target": [
+            {
+              "code": "C84507",
+              "display": "Buffy Coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "C12537",
+              "display": "CD4-Positive T-Lymphocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "C12542",
+              "display": "CD8-Positive T-Lymphocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "C12530",
+              "display": "Granulocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "C12547",
+              "display": "Monocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "C12536",
+              "display": "Natural Killer Cell",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "C13356",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "C12521",
+              "display": "Erythrocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "WBCs",
+          "target": [
+            {
+              "code": "C12529",
+              "display": "Leukocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Whole blood",
+          "target": [
+            {
+              "code": "C17610",
+              "display": "Blood Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample_Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "B Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy coat",
+          "target": [
+            {
+              "code": "Buffy coat",
+              "display": "Buffy coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+ Tconv Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+ T Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "Granulocytes",
+              "display": "Granulocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "Monocytes",
+              "display": "Monocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "NK Cells",
+              "display": "NK Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "Plasma",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "Red Blood Cells",
+              "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tregs",
+          "display": "Tregs",
+          "target": [
+            {
+              "code": "Tregs",
+              "display": "Tregs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "WBCs",
+          "target": [
+            {
+              "code": "WBCs",
+              "display": "WBCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Whole blood",
+          "target": [
+            {
+              "code": "Whole blood",
+              "display": "Whole blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample_Type",
+      "target": "http://purl.obolibrary.org/obo/cl.owl",
+      "element": [
+        {
+          "code": "Tregs",
+          "display": "Tregs",
+          "target": [
+            {
+              "code": "CL:0000815",
+              "display": "regulatory T cell",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "http://purl.obolibrary.org/obo/obi.owl",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "OBI:0001051",
+              "display": "DNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "OBI:0000880",
+              "display": "RNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "http://purl.obolibrary.org/obo/ncit.owl",
+      "element": [
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "C12954",
+              "display": "Peripheral Blood Mononuclear Cell Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "C12954",
+              "display": "Peripheral Blood Mononuclear Cell Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva Sample",
+              "display": "C174119",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "C17610",
+              "display": "Blood Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "http://hl7.org/fhir/specimen-status",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "unavailable",
+              "display": "Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "available",
+              "display": "Available",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "unavailable",
+              "display": "Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "self",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "In",
+              "display": "In",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "Out",
+              "display": "Out",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Access",
+      "target": "https://includedcc.org/fhir/code-systems/data_access_types",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Open",
+          "display": "Open",
+          "target": [
+            {
+              "code": "open",
+              "display": "Open",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Access",
+      "target": "self",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "Controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Open",
+          "display": "Open",
+          "target": [
+            {
+              "code": "Open",
+              "display": "Open",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "Registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Category",
+      "target": "https://includedcc.org/fhir/code-systems/data_categories",
+      "element": [
+        {
+          "code": "Genomics",
+          "display": "Genomics",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Category",
+      "target": "self",
+      "element": [
+        {
+          "code": "Genomics",
+          "display": "Genomics",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Type",
+      "target": "https://includedcc.org/fhir/code-systems/data_types",
+      "element": [
+        {
+          "code": "Aligned reads",
+          "display": "Aligned reads",
+          "target": [
+            {
+              "code": "Aligned-Reads",
+              "display": "Aligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Aligned reads index",
+          "display": "Aligned reads index",
+          "target": [
+            {
+              "code": "Aligned-Reads-Index",
+              "display": "Aligned Reads Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Gene Fusion",
+          "display": "Annotated Gene Fusion",
+          "target": [
+            {
+              "code": "Gene-Fusions",
+              "display": "Gene Fusions",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene expression quantifications",
+          "display": "Gene expression quantifications",
+          "target": [
+            {
+              "code": "Gene-Expression-Quantifications",
+              "display": "Gene Expression Quantifications",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Isoform Expression Quantification",
+          "display": "Isoform Expression Quantification",
+          "target": [
+            {
+              "code": "Isoform-Expression-Quantifications",
+              "display": "Isoform Expression Quantifications",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Raw Gene Fusion",
+          "display": "Raw Gene Fusion",
+          "target": [
+            {
+              "code": "Raw-Gene-Fusions",
+              "display": "Raw Gene Fusions",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant",
+          "display": "Genomic Variant",
+          "target": [
+            {
+              "code": "gVCF",
+              "display": "gVCF",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant Index",
+          "display": "Genomic Variant Index",
+          "target": [
+            {
+              "code": "gVCF-Index",
+              "display": "gVCF Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call",
+          "display": "Annotated Variant Call",
+          "target": [
+            {
+              "code": "Variant-Calls",
+              "display": "Variant Calls",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call Index",
+          "display": "Annotated Variant Call Index",
+          "target": [
+            {
+              "code": "Variant-Calls-Index",
+              "display": "Variant Calls",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Familial Relationships Report",
+          "display": "Familial Relationships Report",
+          "target": [
+            {
+              "code": "Peddy-Family-Sex",
+              "display": "Peddy - Family/Sex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene Expression Quantification",
+          "display": "Gene Expression Quantification",
+          "target": [
+            {
+              "code": "Gene-Expression-Quantifications",
+              "display": "Gene Expression Quantifications",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read",
+          "display": "Genome Aligned Read",
+          "target": [
+            {
+              "code": "Aligned-Reads",
+              "display": "Aligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read Index",
+          "display": "Genome Aligned Read Index",
+          "target": [
+            {
+              "code": "Aligned-Reads-Index",
+              "display": "Aligned Reads Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alternative Splicing",
+          "display": "Alternative Splicing",
+          "target": [
+            {
+              "code": "Alternative-Splicing",
+              "display": "Alternative Splicing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Aligned reads",
+          "display": "Aligned reads",
+          "target": [
+            {
+              "code": "Aligned reads",
+              "display": "Aligned reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Aligned reads index",
+          "display": "Aligned reads index",
+          "target": [
+            {
+              "code": "Aligned reads index",
+              "display": "Aligned reads index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Gene Fusion",
+          "display": "Annotated Gene Fusion",
+          "target": [
+            {
+              "code": "Annotated Gene Fusion",
+              "display": "Annotated Gene Fusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene expression quantifications",
+          "display": "Gene expression quantifications",
+          "target": [
+            {
+              "code": "Gene expression quantifications",
+              "display": "Gene expression quantifications",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Isoform Expression Quantification",
+          "display": "Isoform Expression Quantification",
+          "target": [
+            {
+              "code": "Isoform Expression Quantification",
+              "display": "Isoform Expression Quantification",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Raw Gene Fusion",
+          "display": "Raw Gene Fusion",
+          "target": [
+            {
+              "code": "Raw Gene Fusion",
+              "display": "Raw Gene Fusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant",
+          "display": "Genomic Variant",
+          "target": [
+            {
+              "code": "Genomic Variant",
+              "display": "Genomic Variant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant Index",
+          "display": "Genomic Variant Index",
+          "target": [
+            {
+              "code": "Genomic Variant Index",
+              "display": "Genomic Variant Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call",
+          "display": "Annotated Variant Call",
+          "target": [
+            {
+              "code": "Annotated Variant Call",
+              "display": "Annotated Variant Call",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call Index",
+          "display": "Annotated Variant Call Index",
+          "target": [
+            {
+              "code": "Annotated Variant Call Index",
+              "display": "Annotated Variant Call Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Familial Relationships Report",
+          "display": "Familial Relationships Report",
+          "target": [
+            {
+              "code": "Familial Relationships Report",
+              "display": "Familial Relationships Report",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene Expression Quantification",
+          "display": "Gene Expression Quantification",
+          "target": [
+            {
+              "code": "Gene Expression Quantification",
+              "display": "Gene Expression Quantification",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read",
+          "display": "Genome Aligned Read",
+          "target": [
+            {
+              "code": "Genome Aligned Read",
+              "display": "Genome Aligned Read",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read Index",
+          "display": "Genome Aligned Read Index",
+          "target": [
+            {
+              "code": "Genome Aligned Read Index",
+              "display": "Genome Aligned Read Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alternative Splicing",
+          "display": "Alternative Splicing",
+          "target": [
+            {
+              "code": "Alternative Splicing",
+              "display": "Alternative Splicing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Experimental Strategy",
+      "target": "https://includedcc.org/fhir/code-systems/experimental_strategies",
+      "element": [
+        {
+          "code": "RNAseq",
+          "display": "RNAseq",
+          "target": [
+            {
+              "code": "RNA-Seq",
+              "display": "RNA-Seq",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole genome sequencing",
+          "display": "Whole genome sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Experimental Strategy",
+      "target": "self",
+      "element": [
+        {
+          "code": "RNAseq",
+          "display": "RNAseq",
+          "target": [
+            {
+              "code": "RNAseq",
+              "display": "RNAseq",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole genome sequencing",
+          "display": "Whole genome sequencing",
+          "target": [
+            {
+              "code": "Whole genome sequencing",
+              "display": "Whole genome sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "condition_description",
       "target": "http://purl.obolibrary.org/obo/hp.owl",
       "element": [
@@ -8090,6 +9154,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "specimen",
+          "display": "specimen",
+          "target": [
+            {
+              "code": "specimen",
+              "display": "specimen",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -9050,6 +10125,343 @@
             {
               "code": "Self-reported",
               "display": "Self-reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "specimen",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/HTP/specimen",
+      "element": [
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at Biospecimen Collection",
+          "display": "Age in days of participant at time of biospecimen collection",
+          "target": [
+            {
+              "code": "Age at Biospecimen Collection",
+              "display": "Age in days of participant at time of biospecimen collection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Global ID",
+          "display": "INCLUDE global identifier for sample, assigned by DCC",
+          "target": [
+            {
+              "code": "Sample Global ID",
+              "display": "INCLUDE global identifier for sample, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample External ID",
+          "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+          "target": [
+            {
+              "code": "Sample External ID",
+              "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Type",
+          "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+          "target": [
+            {
+              "code": "Sample Type",
+              "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Parent Sample External ID",
+          "display": "Unique identifier for the parent sample, assigned by data contributor",
+          "target": [
+            {
+              "code": "Parent Sample External ID",
+              "display": "Unique identifier for the parent sample, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Laboratory Procedure",
+          "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+          "target": [
+            {
+              "code": "Laboratory Procedure",
+              "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In/Out",
+          "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+          "target": [
+            {
+              "code": "In/Out",
+              "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/HTP/specimen/sample_type",
+      "element": [
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "B Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy coat",
+          "target": [
+            {
+              "code": "Buffy coat",
+              "display": "Buffy coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+ Tconv Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+ T Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "Granulocytes",
+              "display": "Granulocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "Monocytes",
+              "display": "Monocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "NK Cells",
+              "display": "NK Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "Plasma",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "Red Blood Cells",
+              "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tregs",
+          "display": "Tregs",
+          "target": [
+            {
+              "code": "Tregs",
+              "display": "Tregs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "WBCs",
+          "target": [
+            {
+              "code": "WBCs",
+              "display": "WBCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Whole blood",
+          "target": [
+            {
+              "code": "Whole blood",
+              "display": "Whole blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/HTP/specimen/in_out",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "In",
+              "display": "In",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "Out",
+              "display": "Out",
               "equivalence": "equivalent"
             }
           ]
