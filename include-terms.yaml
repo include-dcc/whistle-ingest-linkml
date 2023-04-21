@@ -1,0 +1,15 @@
+# This is intended only for when there has been a change to the terms in the 
+# include model forget github repo but the the system already has the NCPI IG
+# already loaded
+INCLUDE-Terms:
+  source_type: FILES
+
+  # When you want to be selective about the individual resources to load
+  # whether they are local file references or URLs, they can be enumerated
+  # under resources. 
+  resources:
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-experimental-strategy.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-categories.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-access-types.json
+

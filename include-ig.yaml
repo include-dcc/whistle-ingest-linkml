@@ -31,14 +31,15 @@ NCPI-FHIR-IG:
   # Each entry will be treated as surrounded by wildcards. 
   exclude-wildcards:
   -  example
-US-CORE-MEASUREMENTS:
+INCLUDE-Terms:
   source_type: FILES
 
   # When you want to be selective about the individual resources to load
   # whether they are local file references or URLs, they can be enumerated
   # under resources. 
   resources:
-  - http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-bmi.json
-  - https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-body-height.json
-  - https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-body-weight.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-experimental-strategy.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-categories.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-access-types.json
 
