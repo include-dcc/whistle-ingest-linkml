@@ -13,7 +13,7 @@
 // entire enrollment for the study. 
 def Group(study, subjects) {
     meta.tag[]: StudyMeta(study);
-    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group";
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group";
     
     identifier[0]: Key_Identifier(study, "Group", study.id);
     identifier[0].use: "official";

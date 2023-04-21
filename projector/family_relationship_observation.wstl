@@ -14,7 +14,7 @@ def FamilyRelationshipObservation(study, relationship, subject_id, focus_id, loc
         var varcode: HarmonizeMappedFirst(relationship, local_system);
 
         meta.tag[]: StudyMeta(study);
-        meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+        meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
 
         identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", relationship, ".", focus_id));
         identifier[0].use: "official";
@@ -36,7 +36,7 @@ def FamilyRelationshipTypeObservation(study, family_relationship) {
     var varcode: HarmonizeMappedFirst(family_relationship.relationship, "Family Relationship");
 
     meta.tag[]: StudyMeta(study);
-    //meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+    //meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
 
     identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", family_relationship.relationship));
     identifier[0].use: "official";

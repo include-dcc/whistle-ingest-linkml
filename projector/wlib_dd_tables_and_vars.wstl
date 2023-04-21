@@ -35,7 +35,7 @@ def DdVariableId(study_id, table_name, varname) {
 //  permDataType - The data type(s) expected to be found for the variable's value
 def DdVariable(study, table_name, dd_entry, permDataType, code_system) {
     meta.tag[]: StudyMeta(study);
-    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable"
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
     identifier[]: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_entry.varname));
     identifier[0].use: "official";
     permittedDataType: permDataType;
@@ -80,11 +80,14 @@ def BuildObservationDefReference(study, table_name, dd_var) {
 def DdTable(study, dd_entry) {
     meta.tag[]: StudyMeta(study);
 
-    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table"
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table"
     
  
     identifier[]: Key_Identifier(study, "ActivityDefinition", dd_entry.table_name);
     identifier[0].use: "official";
+
+    code.coding: HarmonizeMapped(dd_entry.table_name, "DataSet");
+
     name: $StrCat(study.id, ".", dd_entry.table_name, "-vars");
     title: $StrCat("Variables for table ", study.id, ".", dd_entry.table_name);
     url: BuildActivityDefinitionUrl(dd_entry);

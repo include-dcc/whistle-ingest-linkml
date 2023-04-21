@@ -18,7 +18,7 @@ def StudyArtifact(artifact_type, artifact_label, artifact_url) {
 //
 def Study(study) {
     meta.tag[]: StudyMeta(study);
-    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study";
+    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study";
 
     title: study.title;
     description: study.desc;
