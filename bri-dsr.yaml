@@ -47,3 +47,13 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/bri-dsr/data-harmony.csv
+  specimen:
+    filename: data/tables/BRI-DSR/FV_8ZY1CTV2_khor_biospecimen_manifest_draft.csv
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv
+  file_manifest:
+    filename: data/tables/BRI-DSR/FV_XS4Q6649_FV_XAS6JTHQ_brids_data_file_manifest_v3.csv
+    data_dictionary:
+      filename: data/dd/datafile.csv
+    code_harmonization: harmony/bri-dsr/data-harmony.csv

@@ -47,3 +47,13 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/x01-desmith/data-harmony.csv
+  specimen:
+    filename: data/tables/X01-deSmith/FV_JKH8GE6D_desmith_biospecimen_manifest_v2.csv
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+  file_manifest:
+    filename: data/tables/X01-deSmith/FV_W3Q8JV32_desmith_data_file_manifest_v3.csv
+    data_dictionary:
+      filename: data/dd/datafile.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
