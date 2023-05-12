@@ -69,7 +69,8 @@ def Condition(study, condition) {
 
 def ProcessCondition(study, condition) {
     // Measurements have an Event ID, Conditions do not
-    out condition (if condition.event_id = "NA"): Condition(study, condition);
+    // out condition (if condition.event_id = "NA"): Condition(study, condition);
+    out condition: Condition(study, condition);
     
     if (condition.measure_value ~= "NA") {
         //out measurement (if condition.event_id ~= "NA"): BodyMeasurement(study, condition);
