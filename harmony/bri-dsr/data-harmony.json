@@ -3142,6 +3142,172 @@
       ]
     },
     {
+      "source": "IncludeProgram",
+      "target": "https://includedcc.org/fhir/code-systems/programs",
+      "element": [
+        {
+          "code": "ABC-DS",
+          "display": "ABC-DS",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRI-DSR",
+          "display": "BRI-DSR",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DSC",
+          "display": "DSC",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DS-Sleep",
+          "display": "DS-Sleep",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTP",
+          "display": "HTP",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-deSmith",
+          "display": "X01-deSmith",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-Hakon",
+          "display": "X01-Hakon",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "IncludeProgram",
+      "target": "self",
+      "element": [
+        {
+          "code": "ABC-DS",
+          "display": "ABC-DS",
+          "target": [
+            {
+              "code": "ABC-DS",
+              "display": "ABC-DS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRI-DSR",
+          "display": "BRI-DSR",
+          "target": [
+            {
+              "code": "BRI-DSR",
+              "display": "BRI-DSR",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DSC",
+          "display": "DSC",
+          "target": [
+            {
+              "code": "DSC",
+              "display": "DSC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DS-Sleep",
+          "display": "DS-Sleep",
+          "target": [
+            {
+              "code": "DS-Sleep",
+              "display": "DS-Sleep",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTP",
+          "display": "HTP",
+          "target": [
+            {
+              "code": "HTP",
+              "display": "HTP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-deSmith",
+          "display": "X01-deSmith",
+          "target": [
+            {
+              "code": "X01-deSmith",
+              "display": "X01-deSmith",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-Hakon",
+          "display": "X01-Hakon",
+          "target": [
+            {
+              "code": "X01-Hakon",
+              "display": "X01-Hakon",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "DataSet",
       "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/dataset",
       "element": [
@@ -4342,11 +4508,11 @@
         },
         {
           "code": "PBMC",
-          "display": "PBMC",
+          "display": "PBMCs",
           "target": [
             {
               "code": "PBMC",
-              "display": "PBMC",
+              "display": "PBMCs",
               "equivalence": "equivalent"
             }
           ]
