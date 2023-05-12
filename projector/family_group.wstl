@@ -9,7 +9,7 @@
 // We don't currently have access to consent details, so this just builds the 
 // entire enrollment for the study. 
 def FamilyGroup(study, subjects, famid) {
-    if (famid ~= "Not provided") {
+    if (famid ~= "Not provided" or famid ~= "NA") {
         var familymembers: subjects[where $.family_id=famid];
         var member_count: $ListLen(familymembers);
 
@@ -39,7 +39,7 @@ def FamilyGroup(study, subjects, famid) {
 //  study - This is the full study object created by Whistler
 //  demo - Array of demo objects  
 def ProcessFamilyGroups(study, participants, familyid) {
-    if (familyid ~= "Not provided") {
+    if (familyid ~= "Not provided" and familyid ~= "NA") {
         out family_members: FamilyGroup(study, participants, familyid);
 
         var familymembers: participants[where $.family_id=familyid];
