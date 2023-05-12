@@ -40,7 +40,7 @@ def FileDetailExtension(study, manifest) {
         hash: manifest.sha1_hash;
     }
     url: manifest.drs_uri;
-    title: manifest.filename; 
+    title: manifest.file_name; 
 }
 
 def KfDocReference(study, manifest, category) {
@@ -66,18 +66,26 @@ def KfDocReference(study, manifest, category) {
     }
     content[].attachment: KfFileDetailExtension(study, manifest);
 
+    // Makeshift mechanism to link Index files to their parent
+    if (manifest.source_file?) {
+        relatesTo[0].code: "transforms";
+        relatesTo[0].target: Reference_Key_Identifier(study, "DocumentReference",  DocumentReferenceID(study, manifest.source_file));
+    } else {
+        context.related[]: FileSpecimenReference(study, manifest);
+    }
+
     format.display: manifest.file_format;
 
     resourceType: "DocumentReference";
 }
 
 def FileSpecimenReference(study, manifest) {
-    $this: Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, manifest.subject_id, manifest.sample_id));
+    $this: Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, manifest.participant_external_id, manifest.sample_external_id));
 }
 
 def FileSpecimenAsInput(study, manifest) {
     type.text: "Specimen";
-    valueReference: Reference_Key_Identifier(study, "Specimen", SpecimenIdentifier(study, manifest.subject_id, manifest.sample_id));
+    valueReference: Reference_Key_Identifier(study, "Specimen", SpecimenIdentifier(study, manifest.participant_external_id, manifest.sample_external_id));
 }
 
 def KfFileTask(study, fileid, all_manifests) {
@@ -153,6 +161,15 @@ def FileDocumentReference(study, manifest) {
     var subject_id: manifest.participant_external_id;
     var specimen_id: manifest.sample_external_id;
 
+
+    // Identify derivative file types and link back to their parent file
+    if ($MatchesRegex(manifest.file_name, ".tbi$")) {
+        var source_file: StringReplace(manifest.file_name, ".tbi", "");
+    }
+    if ($MatchesRegex(manifest.file_name, ".crai$")) {
+        var source_file: StringReplace(manifest.file_name, ".crai", "");
+    }
+
     meta.tag[]: StudyMeta(study);
 
     // DRS DocRef requires an actual DRS ID, which can only happen if our magic 
@@ -173,8 +190,8 @@ def FileDocumentReference(study, manifest) {
     securityLabel[]: HarmonizeAsCoding(manifest.data_access_type, "Data Access");
 
     // This doesn't seem to be present in the current data
-    if (manifest.acl_list?) {
-        var acls: $StrSplit(manifest.acl_list, ";");
+    if (manifest.data_access?) {
+        var acls: $StrSplit(manifest.data_access, ";");
         securityLabel[]: FileAcl(study, acls[]);
     }
     category[]: FileCategoryMap(study, "Experimental Strategy", manifest.experimental_strategy);
@@ -184,9 +201,9 @@ def FileDocumentReference(study, manifest) {
     content[0].format.display: manifest.file_format
 
     // Makeshift mechanism to link Index files to their parent
-    if (manifest.source_file?) {
+    if (source_file?) {
         relatesTo[0].code: "transforms";
-        relatesTo[0].target: Reference_Key_Identifier(study, "DocumentReference",  DocumentReferenceID(study, manifest.source_file));
+        relatesTo[0].target: Reference_Key_Identifier(study, "DocumentReference",  DocumentReferenceID(study, source_file));
     } else {
         context.related[]: FileSpecimenReference(study, manifest);
     }
