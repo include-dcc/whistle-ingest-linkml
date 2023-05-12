@@ -48,7 +48,7 @@ dataset:
       filename: data/dd/family.csv
     code_harmonization: harmony/bri-dsr/data-harmony.csv
   specimen:
-    filename: data/tables/BRI-DSR/FV_8ZY1CTV2_khor_biospecimen_manifest_draft.csv
+    filename: data/tables/BRI-DSR/FV_DYE2YKY2_FV_8ZY1CTV2_khor_biospecimen_manifest_draft_age_days.csv
     data_dictionary:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/bri-dsr/data-harmony.csv
