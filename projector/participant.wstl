@@ -23,6 +23,7 @@ def Participant(study, subject) {
 
     identifier[]: Key_Identifier(study, "Patient", subject.participant_external_id);
     if (subject.participant_global_id ~= "NA") {
+        identifier[0].use: "secondary";
         identifier[]: Key_Identifier(study, "Patient", subject.participant_global_id);
         identifier[1].use: "official";
 
