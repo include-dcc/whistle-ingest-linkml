@@ -1,8 +1,8 @@
 study_id: X01-deSmith
-study_accession:  
-study_title: Alzheimer's Biomarker Consortium - Down Syndrome
-study_desc: The goal of the Alzheimer Biomarker Consortium – Down Syndrome (X01-deSmith) is to study a group of adults with Down syndrome over their lives to single out early biomarkers of the onset of Alzheimer's disease.
-url: https://includedcc.org/studies/alzheimer-biomarker-consortium-down-syndrome-abc-ds
+study_accession: phs002982
+study_title: The epidemiology of transient leukemia in newborns with Down syndrome
+study_desc: 
+url: 
 identifier_prefix: https://includedcc.org/fhir/x01-desmith
 dd_prefix: https://includedcc.org/fhir
 output_filename: x01-desmith
