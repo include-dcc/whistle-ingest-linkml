@@ -1,0 +1,31 @@
+// Definition: Create an Observation to represent a value from the dataset such as a Condition and it's T/F Status
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - This is the participant ID which will be used to build a proper reference to the Patient resource
+//  tablename - The table where the variable's data was originally captured
+//  varname - the name of the variable being represented
+//  value - The value (of varname) being recorded
+//  
+// Notes:
+//  
+def VariableObservation(study, subject_id, tablename, varname, value) {
+    var coding: HarmonizeMapped(value, varname);
+
+    meta.tag[]: StudyMeta(study);
+    
+    identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, tablename, $StrCat(varname, "-", $StrJoin(".", $StrSplit(value, " ")))));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    // This is technically how you are expected to link to ODs, but it isn't working in the current version of FHIR
+    // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
+    code.text: HarmonizedLocalDisplay(varname, tablename);
+    code.coding[]: HarmonizeMapped(varname, tablename);
+    
+    valueCodeableConcept.text: value;
+    valueCodeableConcept.coding[]: coding;
+    status: "final";
+    resourceType: "Observation";
+}
+
+
