@@ -154,13 +154,13 @@ def FileAcl(study, acl) {
     }
 }
 
-def FileDocumentReference(study, manifest) {
-    // I think this was an issue way back at the beginning when we had one file 
-    // for many subjects. That is no longer the case so we can ignore it. 
-    // var manifests: all_manifests[where $.file_id=fileid];
-    var subject_id: manifest.participant_external_id;
-    var specimen_id: manifest.sample_external_id;
+def FileDocumentReference(study, fileid, all_manifests) {
+    var manifests: all_manifests[where $.file_external_id=fileid];
+    var subject_ids: $Unique(manifests[*].participant_external_id);
+    var manifest: manifests[0];
 
+    var subject_id: manifest.participant_external_id;
+    // var specimen_id: manifest.sample_external_id;
 
     // Identify derivative file types and link back to their parent file
     if ($MatchesRegex(manifest.file_name, ".tbi$")) {
@@ -185,9 +185,11 @@ def FileDocumentReference(study, manifest) {
     docStatus: "final";
     type: FileCategoryMap(study, "Data Type", manifest.data_type);
 
-    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    if ($ListLen(subject_ids) = 1) {
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    }
 
-    securityLabel[]: HarmonizeAsCoding(manifest.data_access_type, "Data Access");
+    securityLabel[].coding[]: HarmonizeMappedFirst(manifest.data_access, "Data Access");
 
     // This doesn't seem to be present in the current data
     if (manifest.data_access?) {
@@ -205,18 +207,18 @@ def FileDocumentReference(study, manifest) {
         relatesTo[0].code: "transforms";
         relatesTo[0].target: Reference_Key_Identifier(study, "DocumentReference",  DocumentReferenceID(study, source_file));
     } else {
-        context.related[]: FileSpecimenReference(study, manifest);
+        context.related[]: FileSpecimenReference(study, manifests[]);
     }
 
 
     resourceType: "DocumentReference";
 }
 
-def ProcessFileManifestData(study, file) {
-    // var fileids: $Unique(files[*].file_id);
+def ProcessFileManifestData(study, files) {
+    var fileids: $Unique(files[*].file_external_id);
 
     //out files: KfFileTask(study, fileids[], files[*]);
     // out files: FileDocumentReference(study, fileids[], files[*]);
-    out files: FileDocumentReference(study, file);
+    out files: FileDocumentReference(study, fileids[], files[*]);
     //out files: KfDocReference(study, files[], category);
 }
