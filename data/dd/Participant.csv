@@ -12,7 +12,7 @@ Family Relationship,Relationship of Participant to proband,enumeration,Proband;F
 Sex,Sex of Participant,enumeration,Female;Male;Other;Unknown
 Race,Race of Participant,enumeration,American Indian or Alaska Native;Asian;Black or African American;More than one race;Native Hawaiian or Other Pacific Islander;Other;White;Prefer not to answer;Unknown;East Asian;Latin American;Middle Eastern or North African;South Asian
 Ethnicity,Ethnicity of Participant,enumeration,Hispanic or Latino;Not Hispanic or Latino;Prefer not to answer;Unknown
-Down Syndrome Status,Down Syndrome status of participant,enumeration,D21;T21
+Down Syndrome Status,Down Syndrome status of participant,enumeration,D21=Disomy 21 (euploid);T21=Trisomy 21 (Down syndrome)
 Age at First Patient Engagement,"Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",integer,
 First Patient Engagement Event,"Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",string,
 Outcomes Vital Status,Whether participant is alive or dead,enumeration,Dead;Alive;Unknown or not available
