@@ -19,6 +19,7 @@ def ProcessSpecimen(study, specimen) {
     identifier[]: Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.sample_external_id));
     
     if (specimen.sample_global_id?) {
+        identifier[0].use: "secondary";
         identifier[]: Key_Identifier(study, "Specimen", specimen.sample_global_id);
         identifier[1].use: "official";
     } else {
