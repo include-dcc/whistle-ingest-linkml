@@ -26,6 +26,6 @@ def Transform_Dataset(resource) {
     }
 
     if resource.file_manifest? {
-        $this: ProcessFileManifestData(resource.study, resource.file_manifest[]);
+        $this: ProcessFileManifestData(resource.study, resource.file_manifest);
     }
 }

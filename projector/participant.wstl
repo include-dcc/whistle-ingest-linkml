@@ -52,4 +52,5 @@ def ProcessParticipant(study, demo) {
     //out patient: AgeAtEnrollmentObservation(study, demo);
     //out patient: AgeAt(study, demo, "AgeAtLastVitalStatus", "participant", demo.age_at_last_vital_status);
     out patient: Participant(study, demo);
+    out ds_status: VariableObservation(study, demo.participant_external_id, "participant", "Down Syndrome Status", demo.down_syndrome_status);
 }
