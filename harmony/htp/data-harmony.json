@@ -2265,6 +2265,17 @@
           ]
         },
         {
+          "code": "Transcriptomic",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Transcriptomics",
           "display": "Transcriptomics",
           "target": [
@@ -2288,6 +2299,17 @@
             {
               "code": "Genomics",
               "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomic",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomic",
+              "display": "Transcriptomics",
               "equivalence": "equivalent"
             }
           ]

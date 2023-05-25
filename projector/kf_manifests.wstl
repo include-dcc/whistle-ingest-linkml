@@ -198,7 +198,7 @@ def FileDocumentReference(study, fileid, all_manifests) {
     }
     category[]: FileCategoryMap(study, "Experimental Strategy", manifest.experimental_strategy);
     category[]: FileCategoryMap(study, "Data Category", manifest.data_category);
-
+    
     content[0].attachment: FileDetailExtension(study, manifest);
     content[0].format.display: manifest.file_format
 

@@ -75,6 +75,7 @@ Open,Open,datafile,Data Access,Data Access,open,Open,https://includedcc.org/fhir
 Registered,Registered,datafile,Data Access,Data Access,registered,Registered,https://includedcc.org/fhir/code-systems/data_access_types,
 Genomics,Genomics,datafile,Data Category,Data Category,Genomics,Genomics,https://includedcc.org/fhir/code-systems/data_categories,
 Transcriptomics,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
+Transcriptomic,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
 Aligned reads,Aligned reads,datafile,Data Type,Data Type,Aligned-Reads,Aligned Reads,https://includedcc.org/fhir/code-systems/data_types,
 Aligned reads index,Aligned reads index,datafile,Data Type,Data Type,Aligned-Reads-Index,Aligned Reads Index,https://includedcc.org/fhir/code-systems/data_types,
 Gene expression quantifications,Gene expression quantifications,datafile,Data Type,Data Type,Gene-Expression-Quantifications,Gene Expression Quantifications,https://includedcc.org/fhir/code-systems/data_types,
