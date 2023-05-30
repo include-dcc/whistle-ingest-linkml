@@ -27,7 +27,7 @@ dataset:
       filename: data/dd/participant.csv
     code_harmonization: harmony/dsc/data-harmony.csv
   condition:
-    filename: data/tables/DSC/condition.csv
+    filename: data/tables/DSC/conditions-dsc.csv
     embed:
       dataset: participant
       colname: Participant External ID
