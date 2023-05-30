@@ -9352,6 +9352,398 @@
       ]
     },
     {
+      "source": "Family Type",
+      "target": "https://includedcc.org/fhir/code-systems/family_types",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control Only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control Only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control Only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control Only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Preservation_Method",
+      "target": "https://includedcc.org/fhir/code-systems/specimen-additive",
+      "element": [
+        {
+          "code": "Cell Staining Buffer",
+          "display": "Cell Staining Buffer",
+          "target": [
+            {
+              "code": "Cell Staining Buffer",
+              "display": "Cell Staining Buffer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CryoStor",
+          "display": "CryoStor",
+          "target": [
+            {
+              "code": "CryoStor",
+              "display": "CryoStor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Elution buffer",
+          "display": "Elution buffer",
+          "target": [
+            {
+              "code": "Elution buffer",
+              "display": "Elution buffer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Freezing Media",
+          "display": "Freezing Media",
+          "target": [
+            {
+              "code": "Freezing Media",
+              "display": "Freezing Media",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "No Additive",
+          "display": "No Additive",
+          "target": [
+            {
+              "code": "No Additive",
+              "display": "No Additive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNAse free water",
+          "display": "RNAse free water",
+          "target": [
+            {
+              "code": "RNAse free water",
+              "display": "RNAse free water",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+          "display": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+          "target": [
+            {
+              "code": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+              "display": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Preservation_Method",
+      "target": "self",
+      "element": [
+        {
+          "code": "Cell Staining Buffer",
+          "display": "Cell Staining Buffer",
+          "target": [
+            {
+              "code": "Cell Staining Buffer",
+              "display": "Cell Staining Buffer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CryoStor",
+          "display": "CryoStor",
+          "target": [
+            {
+              "code": "CryoStor",
+              "display": "CryoStor",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "CryoStor",
+              "display": "CryoStor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Elution buffer",
+          "display": "Elution buffer",
+          "target": [
+            {
+              "code": "Elution buffer",
+              "display": "Elution buffer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Freezing Media",
+          "display": "Freezing Media",
+          "target": [
+            {
+              "code": "Freezing Media",
+              "display": "Freezing Media",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Freezing Media",
+              "display": "Freezing Media",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "No Additive",
+          "display": "No Additive",
+          "target": [
+            {
+              "code": "No Additive",
+              "display": "No Additive",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "No Additive",
+              "display": "No Additive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNAse free water",
+          "display": "RNAse free water",
+          "target": [
+            {
+              "code": "RNAse free water",
+              "display": "RNAse free water",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+          "display": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+          "target": [
+            {
+              "code": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+              "display": "RNeasy Lysis Buffer /2-Mercaptoethanol",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Preservation_Method",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0493",
+      "element": [
+        {
+          "code": "CryoStor",
+          "display": "CryoStor",
+          "target": [
+            {
+              "code": "FROZ",
+              "display": "Frozen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Freezing Media",
+          "display": "Freezing Media",
+          "target": [
+            {
+              "code": "FROZ",
+              "display": "Frozen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "No Additive",
+          "display": "No Additive",
+          "target": [
+            {
+              "code": "FROZ",
+              "display": "Frozen",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Preservation_Method",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "DataSet",
       "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/HTP/dataset",
       "element": [

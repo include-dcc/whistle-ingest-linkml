@@ -446,3 +446,20 @@ HTP,HTP,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-s
 X01-deSmith,X01-deSmith,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-Hakon,X01-Hakon,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 Down Syndrome Status,Down Syndrome Status,Participant,,Participant,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Control-only,Control Only,family,family_type,Family Type,Control-only,Control Only,https://includedcc.org/fhir/code-systems/family_types
+Duo,Duo,family,family_type,Family Type,Duo,Duo,https://includedcc.org/fhir/code-systems/family_types
+Other,Other,family,family_type,Family Type,Other,Other,https://includedcc.org/fhir/code-systems/family_types
+Proband-only,Proband-only,family,family_type,Family Type,Proband-only,Proband-only,https://includedcc.org/fhir/code-systems/family_types
+Trio,Trio,family,family_type,Family Type,Trio,Trio,https://includedcc.org/fhir/code-systems/family_types
+Trio+,Trio+,family,family_type,Family Type,Trio+,Trio+,https://includedcc.org/fhir/code-systems/family_types
+Cell Staining Buffer,Cell Staining Buffer,aliquot,Preservation_Method,Preservation_Method,Cell Staining Buffer,Cell Staining Buffer,https://includedcc.org/fhir/code-systems/specimen-additive,
+CryoStor,CryoStor,aliquot,Preservation_Method,Preservation_Method,FROZ,Frozen,http://terminology.hl7.org/CodeSystem/v2-0493,
+CryoStor,CryoStor,aliquot,Preservation_Method,Preservation_Method,CryoStor,CryoStor,https://includedcc.org/fhir/code-systems/specimen-additive,
+Elution buffer,Elution buffer,aliquot,Preservation_Method,Preservation_Method,Elution buffer,Elution buffer,https://includedcc.org/fhir/code-systems/specimen-additive,
+Freezing Media,Freezing Media,aliquot,Preservation_Method,Preservation_Method,FROZ,Frozen,http://terminology.hl7.org/CodeSystem/v2-0493,
+Freezing Media,Freezing Media,aliquot,Preservation_Method,Preservation_Method,Freezing Media,Freezing Media,https://includedcc.org/fhir/code-systems/specimen-additive,
+NA,NA,aliquot,Preservation_Method,Preservation_Method,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,FROZ,Frozen,http://terminology.hl7.org/CodeSystem/v2-0493,
+No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,No Additive,No Additive,https://includedcc.org/fhir/code-systems/specimen-additive,
+RNAse free water,RNAse free water,aliquot,Preservation_Method,Preservation_Method,RNAse free water,RNAse free water,https://includedcc.org/fhir/code-systems/specimen-additive,
+RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,aliquot,Preservation_Method,Preservation_Method,RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,https://includedcc.org/fhir/code-systems/specimen-additive,

@@ -798,3 +798,9 @@ DS-Sleep,DS-Sleep,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/f
 HTP,HTP,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-deSmith,X01-deSmith,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-Hakon,X01-Hakon,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
+Control-only,Control Only,family,family_type,Family Type,Control-only,Control Only,https://includedcc.org/fhir/code-systems/family_types
+Duo,Duo,family,family_type,Family Type,Duo,Duo,https://includedcc.org/fhir/code-systems/family_types
+Other,Other,family,family_type,Family Type,Other,Other,https://includedcc.org/fhir/code-systems/family_types
+Proband-only,Proband-only,family,family_type,Family Type,Proband-only,Proband-only,https://includedcc.org/fhir/code-systems/family_types
+Trio,Trio,family,family_type,Family Type,Trio,Trio,https://includedcc.org/fhir/code-systems/family_types
+Trio+,Trio+,family,family_type,Family Type,Trio+,Trio+,https://includedcc.org/fhir/code-systems/family_types
