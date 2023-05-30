@@ -1,0 +1,8 @@
+// Definition: Uniform method for building Substance Identifiers
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  substance_name - name of the substance being created
+def BuildSubstanceIdentifier(study, substance_name) {
+    $this: $StrCat(study.id, ".", substance_name);
+}

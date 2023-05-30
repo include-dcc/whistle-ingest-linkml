@@ -64,7 +64,7 @@ def Condition(study, condition) {
         code.text: condition.condition_or_measure_source_text;
 
         resourceType: "Condition";
-    }
+    } 
 }
 
 def ProcessCondition(study, condition) {
