@@ -21,6 +21,9 @@ def Transform_Dataset(resource) {
         $this: ProcessFamilyRelationships(resource.study, resource.family[])
     }
 
+    if resource.additive? {
+        $this: ProcessSubstanceData(resource.study, resource.additive[]);
+    }
     if resource.specimen? {
         $this: ProcessSpecimenData(resource.study, resource.specimen[]);
     }
