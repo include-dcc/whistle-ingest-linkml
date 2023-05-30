@@ -4092,6 +4092,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "Down syndrome - specific diagnosis not provided",
+          "display": "Down syndrome - specific diagnosis not provided",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -6311,6 +6322,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "Down syndrome - specific diagnosis not provided",
+          "display": "Down syndrome - specific diagnosis not provided",
+          "target": [
+            {
+              "code": "Down syndrome - specific diagnosis not provided",
+              "display": "Down syndrome - specific diagnosis not provided",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -7978,6 +8000,150 @@
       ]
     },
     {
+      "source": "Family Type",
+      "target": "https://includedcc.org/fhir/code-systems/family_types",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control Only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control Only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Control-only",
+          "display": "Control Only",
+          "target": [
+            {
+              "code": "Control-only",
+              "display": "Control Only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Duo",
+          "display": "Duo",
+          "target": [
+            {
+              "code": "Duo",
+              "display": "Duo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband-only",
+          "display": "Proband-only",
+          "target": [
+            {
+              "code": "Proband-only",
+              "display": "Proband-only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio",
+          "display": "Trio",
+          "target": [
+            {
+              "code": "Trio",
+              "display": "Trio",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Trio+",
+          "display": "Trio+",
+          "target": [
+            {
+              "code": "Trio+",
+              "display": "Trio+",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "DataSet",
       "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/DSC/dataset",
       "element": [
@@ -8608,22 +8774,22 @@
       "element": [
         {
           "code": "D21",
-          "display": "D21",
+          "display": "Disomy 21 (euploid)",
           "target": [
             {
               "code": "D21",
-              "display": "D21",
+              "display": "Disomy 21 (euploid)",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "T21",
-          "display": "T21",
+          "display": "Trisomy 21 (Down syndrome)",
           "target": [
             {
               "code": "T21",
-              "display": "T21",
+              "display": "Trisomy 21 (Down syndrome)",
               "equivalence": "equivalent"
             }
           ]
