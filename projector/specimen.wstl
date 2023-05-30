@@ -6,7 +6,7 @@
 //
 def ProcessSpecimen(study, specimen) {
     // Aliquots should be embedded 
-    var aliquots: specimen.aliquots;
+    // var aliquots: specimen.aliquots;
     var subject_id: specimen.participant_external_id;
     var sample_status: HarmonizeMappedFirst(specimen.in_out, "In/Out");
 
@@ -51,7 +51,7 @@ def ProcessSpecimen(study, specimen) {
     type.text: sample_type;
 
     collection._collectedDateTime.extension[0] (if specimen.age_at_biospecimen_collection?): AgeAtExtension(study, subject_id, specimen.age_at_biospecimen_collection, "days");
-    //container[]: ProcessAliquot(study, subject_id, aliquots[0].content[]);
+    container[]: ProcessAliquot(study, subject_id, specimen.aliquot[]);
 
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
 

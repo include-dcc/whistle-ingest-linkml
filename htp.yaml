@@ -47,13 +47,29 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/htp/data-harmony.csv
+  additive:
+    hidden: true
+    filename: data/tables/HTP/additive.csv
+    key_columns: Additive ID 
+    data_dictionary:
+      filename: data/dd/additive.csv
+    code_harmonization: harmony/htp/data-harmony.csv
   specimen:
     filename: data/tables/HTP/htp_samples_AND_COLLECTIONS_with_KF_global_ids_2023-05-18_v2.csv
-    subject_id: participantid
-    key_columns: Sample ID
+    subject_id: Participant External ID
+    key_columns: Sample Global ID
     data_dictionary:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/htp/data-harmony.csv   
+  aliquot:
+    hidden: true
+    filename: data/tables/HTP/aliquot.csv
+    embed:
+      dataset: specimen
+      colname: Sample External ID
+    data_dictionary:
+      filename: data/dd/aliquot.csv
+    code_harmonization: harmony/htp/data-harmony.csv
   file_manifest:
     filename: data/tables/HTP/FV_GZDE24E9_FV_TK38SNSP_htp_data_file_manifest_w_global_ids_updated.csv
     data_dictionary:

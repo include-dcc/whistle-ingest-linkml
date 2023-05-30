@@ -13,7 +13,7 @@ def ProcessSubstance(study, substance) {
         identifier[0].use: "official";
         status: "active";
         category[0].text: "chemical";
-        category[0].coding[]: BuildCodeableConcept("chemical", "http://terminology.hl7.org/CodeSystem/substance-category", "Chemical");
+        category[0].coding[]: BuildCoding("chemical", "Chemical", "http://terminology.hl7.org/CodeSystem/substance-category");
         code.coding[]: substance_code;
         code.text: substance;
         resourceType: "Substance";
