@@ -37,8 +37,8 @@ def VsInclude(study, code_group) {
 //  code_groups - One or more chunks of codes with a common source (system)
 //  vs_name - The name to be assigned to the ValueSet 
 def HarmonyValueSet(study, code_groups, vs_name) {
-    meta.tag[]: StudyMeta(study);
-    identifier[]: Key_Identifier(study, "ValueSet", $StrCat(study.id, ".cm-valueset.", vs_name));
+    meta.tag[]: DdMeta(study);
+    identifier[]: Dd_Identifier(study, "ValueSet", $StrCat(study.id, ".cm-valueset.", vs_name));
     identifier[0].use: "official";
     name: BuildVariableTerminologyId(study.id, "concept-map-vs", vs_name);
     title: $StrCat("ValueSet for values associated with ", vs_name, " codes in data harmonization from study, ", study.id, ".");

@@ -32,18 +32,18 @@ def BuildCodeSystem(study, cs_entry) {
     // categorical values...
     var entry_count: $ListLen(cs_entry.values[*]);
     if (entry_count > 0) {
-        meta.tag[]: StudyMeta(study);
+        meta.tag[]: DdMeta(study);
 
         if (cs_entry.varname) {
-            identifier[]: Key_Identifier(study, "CodeSystem", $StrCat(cs_entry.study, ".", cs_entry.table_name, ".", cs_entry.varname));
+            identifier[]: Dd_Identifier(study, "CodeSystem", $StrCat(cs_entry.table_name, ".", cs_entry.varname));
             identifier[0].use: "official";
-            name: $StrCat(cs_entry.study, ".", cs_entry.table_name, ".", cs_entry.varname);
-            title: $StrCat("Values associated with variable, ", cs_entry.table_name, ".", cs_entry.varname, ", from study, ", cs_entry.study, ".");
+            name: BuildVariableTerminologyId(cs_entry.study, cs_entry.table_name, ".", cs_entry.varname);
+            title: $StrCat("Values associated with variable, ", cs_entry.table_name, ".", cs_entry.varname,  ", from INCLUDE datasets.");
         } else {
-            identifier[]: Key_Identifier(study, "CodeSystem", $StrCat(cs_entry.study, ".", cs_entry.table_name));
+            identifier[]: Dd_Identifier(study, "CodeSystem", $StrCat(cs_entry.table_name));
             identifier[0].use: "official";
-            name: $StrCat(cs_entry.study, ".", cs_entry.table_name);
-            title: $StrCat("Variables associated with table, ", cs_entry.table_name, ", from study, ", cs_entry.study, ".");
+            name: BuildTableTerminologyId(cs_entry.study, cs_entry.table_name);
+            title: $StrCat("Variables associated with table, ", cs_entry.table_name,  ", from INCLUDE datasets.");
         }
         url: cs_entry.url;
         status: "active";

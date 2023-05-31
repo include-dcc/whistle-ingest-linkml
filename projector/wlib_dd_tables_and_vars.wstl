@@ -20,8 +20,9 @@ def BuildActivityDefinitionUrl(dd_entry) {
 //  study_id - unique study id
 //  table_name - table name (demo, ihq, etc)
 //  varname - name of the variable for which the identifier is created
+// For INCLUDE, because of the shared DD, we don't need the study id as part of the ID
 def DdVariableId(study_id, table_name, varname) {
-    $this: $StrCat(study_id, ".", table_name, ".", varname);
+    $this: $StrCat(table_name, ".", varname);
 }
 
 // Description: Build ObservationDefinition to represent a variable from the data-dictionary
@@ -34,9 +35,9 @@ def DdVariableId(study_id, table_name, varname) {
 //      - desc is the descriptive text associated with it (such as the original question)
 //  permDataType - The data type(s) expected to be found for the variable's value
 def DdVariable(study, table_name, dd_entry, permDataType, code_system) {
-    meta.tag[]: StudyMeta(study);
+    meta.tag[]: DdMeta(study);
     meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
-    identifier[]: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_entry.varname));
+    identifier[]: Dd_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_entry.varname));
     identifier[0].use: "official";
     permittedDataType: permDataType;
     
@@ -51,7 +52,7 @@ def DdVariable(study, table_name, dd_entry, permDataType, code_system) {
         qualifiedInterval.range.high (if dd_entry.max?): dd_entry.max;
     }
     if ($ListLen(dd_entry.values[*]) > 1) {
-        validCodedValueSet: Reference_Key_Identifier(study, "ValueSet", BuildVariableTerminologyId(study.id, dd_entry.values-details.table-name, dd_entry.values-details.varname));
+        validCodedValueSet: Reference_Dd_Identifier(study, "ValueSet", BuildVariableTerminologyId(dd_entry.values-details.table-name, dd_entry.values-details.varname));
     }
     resourceType: "ObservationDefinition";
 }
@@ -65,7 +66,7 @@ def DdVariable(study, table_name, dd_entry, permDataType, code_system) {
 //      - varname is the name associated with the dd entry itself
 //      - desc is the descriptive text associated with it (such as the original question)
 def BuildObservationDefReference(study, table_name, dd_var) {
-    $this: Reference_Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_var.varname));
+    $this: Reference_Dd_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_var.varname));
 }
 
 // Description: Build ActivityDefinition which acts as the data-dictionary representation 
@@ -78,12 +79,11 @@ def BuildObservationDefReference(study, table_name, dd_var) {
 //      - variables is an array with all contained varables
 
 def DdTable(study, dd_entry) {
-    meta.tag[]: StudyMeta(study);
+    meta.tag[]: DdMeta(study);
 
     meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table"
     
- 
-    identifier[]: Key_Identifier(study, "ActivityDefinition", dd_entry.table_name);
+    identifier[]: Dd_Identifier(study, "ActivityDefinition", dd_entry.table_name);
     identifier[0].use: "official";
 
     code.coding: HarmonizeMapped(dd_entry.table_name, "DataSet");
