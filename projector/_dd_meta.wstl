@@ -1,0 +1,11 @@
+// META Tags to be used with data-dictionary components. 
+// For include, that will not incorporate the study ID, only INCLUDE
+
+// Until we work out all the details around building out a common DD config 
+// chunk, I'll just "hardcode" the behavior in whistle itself. 
+def DdMeta(study) { 
+    system: $StrCat(study.dd-prefix, "/", "data-dictionary");
+    code: "INCLUDE";
+}
+  
+

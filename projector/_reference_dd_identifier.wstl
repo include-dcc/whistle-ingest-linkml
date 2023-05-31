@@ -1,0 +1,15 @@
+// Description: Returns the identifier object as an "identifier". 
+//              This is suitable for using as references within 
+//              transaction bundles. 
+// 
+// Arguments: 
+//  study - The Whistler study object
+//  resourceType - The string value representing the FHIR's 
+//                 resource type such as Observation or Condition
+//  value - Most likely an id such as a subject_id 
+
+def Reference_Dd_Identifier(study, required resourceType, required value) {
+    identifier: Dd_Identifier(study, resourceType, value);
+}
+
+

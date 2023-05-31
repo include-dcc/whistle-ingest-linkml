@@ -1,0 +1,8 @@
+// The Dd Identifier is to replace the key_identifier function normally used
+// to generate basic identifiers. For include, though, since the 
+// data-dictionary is not specific to the study, we'll make them a bit simpler
+def Dd_Identifier(study, required resourceType, required value) {
+    system: $StrCat(study.dd-prefix, "/", "data-dictionary", "/", resourceType);
+    value: $StrCat(value);
+}
+
