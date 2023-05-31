@@ -47,3 +47,13 @@ dataset:
     data_dictionary: 
       filename: data/dd/family.csv
     code_harmonization: harmony/ds-sleep/data-harmony.csv
+  specimen:
+    filename: None
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv
+  file_manifest:
+    filename: None
+    data_dictionary:
+      filename: data/dd/datafile.csv
+    code_harmonization: harmony/ds-sleep/data-harmony.csv
