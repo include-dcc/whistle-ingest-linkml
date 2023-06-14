@@ -39,7 +39,11 @@ def FileDetailExtension(study, manifest) {
     if (manifest.sha1_hash?) {
         hash: manifest.sha1_hash;
     }
-    url: manifest.drs_uri;
+    if (manifest.drs_access_url?) {
+        url: manifest.drs_access_url;
+    } else {
+        url: manifest.access_url;
+    }
     title: manifest.file_name; 
 }
 
@@ -134,7 +138,7 @@ def SubjectGroup(study, subjectids, filename) {
     resourceType: "Group";
 }
 
-def FileCategoryMap(study, varname, value) {
+def FileCategoryMap(study, varname, value) {    
     var code: HarmonizeMappedFirst(value, varname);
 
     if (code?) {
@@ -172,9 +176,16 @@ def FileDocumentReference(study, fileid, all_manifests) {
 
     meta.tag[]: StudyMeta(study);
 
+    // Handle inconsistent field names
+    if (manifest.drs_access_url?) {
+        var drs_url: manifest.drs_access_url;
+    } else {
+        var drs_url: manifest.access_url;
+    }
+
     // DRS DocRef requires an actual DRS ID, which can only happen if our magic 
     // column is present and isn't just a placeholder
-    if (manifest.access_url? and manifest.access_url ~= "NA") {
+    if (drs_url? and drs_url ~= "NA") {
         meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
     }
 
@@ -209,7 +220,6 @@ def FileDocumentReference(study, fileid, all_manifests) {
     } else {
         context.related[]: FileSpecimenReference(study, manifests[]);
     }
-
 
     resourceType: "DocumentReference";
 }
