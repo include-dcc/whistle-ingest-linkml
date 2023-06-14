@@ -53,7 +53,7 @@ dataset:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/x01-hakon/data-harmony.csv
   file_manifest:
-    filename: data/tables/X01-Hakon/FV_134WQA3Q_FV_SKRXZA5W_hakon_data_file_manifest_v4.csv
+    filename: data/tables/X01-Hakon/FV_CPMH73AG_hakon_datafilemanifest_v5.csv
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/x01-hakon/data-harmony.csv
