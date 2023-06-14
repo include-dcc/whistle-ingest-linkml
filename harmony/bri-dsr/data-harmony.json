@@ -3453,7 +3453,7 @@
     },
     {
       "source": "DataSet",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/dataset",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/dataset",
       "element": [
         {
           "code": "participant",
@@ -3503,7 +3503,7 @@
     },
     {
       "source": "participant",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant",
       "element": [
         {
           "code": "Study Code",
@@ -3707,7 +3707,7 @@
     },
     {
       "source": "Family Type",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/family_type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/family_type",
       "element": [
         {
           "code": "Control-only",
@@ -3779,7 +3779,7 @@
     },
     {
       "source": "Family Relationship",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/family_relationship",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/family_relationship",
       "element": [
         {
           "code": "Proband",
@@ -3851,7 +3851,7 @@
     },
     {
       "source": "Sex",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/sex",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/sex",
       "element": [
         {
           "code": "Female",
@@ -3901,7 +3901,7 @@
     },
     {
       "source": "Race",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/race",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/race",
       "element": [
         {
           "code": "American Indian or Alaska Native",
@@ -4050,7 +4050,7 @@
     },
     {
       "source": "Ethnicity",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/ethnicity",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/ethnicity",
       "element": [
         {
           "code": "Hispanic or Latino",
@@ -4100,7 +4100,7 @@
     },
     {
       "source": "Down Syndrome Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/down_syndrome_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/down_syndrome_status",
       "element": [
         {
           "code": "D21",
@@ -4128,7 +4128,7 @@
     },
     {
       "source": "Outcomes Vital Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/participant/outcomes_vital_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/outcomes_vital_status",
       "element": [
         {
           "code": "Dead",
@@ -4167,7 +4167,7 @@
     },
     {
       "source": "condition",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/condition",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition",
       "element": [
         {
           "code": "Participant External ID",
@@ -4371,7 +4371,7 @@
     },
     {
       "source": "Condition Interpretation",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/condition/condition_interpretation",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_interpretation",
       "element": [
         {
           "code": "Observed",
@@ -4399,7 +4399,7 @@
     },
     {
       "source": "Condition Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/condition/condition_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_status",
       "element": [
         {
           "code": "Current",
@@ -4438,7 +4438,7 @@
     },
     {
       "source": "Condition Data Source",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/condition/condition_data_source",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_data_source",
       "element": [
         {
           "code": "Clinical",
@@ -4466,7 +4466,7 @@
     },
     {
       "source": "specimen",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/specimen",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen",
       "element": [
         {
           "code": "Participant External ID",
@@ -4560,7 +4560,7 @@
     },
     {
       "source": "Sample Type",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/specimen/sample_type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen/sample_type",
       "element": [
         {
           "code": "B Cells",
@@ -4764,7 +4764,7 @@
     },
     {
       "source": "In/Out",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/specimen/in_out",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen/in_out",
       "element": [
         {
           "code": "NA",
@@ -4803,7 +4803,7 @@
     },
     {
       "source": "file_manifest",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest",
       "element": [
         {
           "code": "Study Code",
@@ -4996,7 +4996,7 @@
     },
     {
       "source": "Data Access",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest/data_access",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_access",
       "element": [
         {
           "code": "Controlled",
@@ -5035,7 +5035,7 @@
     },
     {
       "source": "Data Category",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest/data_category",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_category",
       "element": [
         {
           "code": "Genomics",
@@ -5063,7 +5063,7 @@
     },
     {
       "source": "Data Type",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest/data_type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_type",
       "element": [
         {
           "code": "Aligned reads",
@@ -5245,7 +5245,7 @@
     },
     {
       "source": "Experimental Strategy",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest/experimental_strategy",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/experimental_strategy",
       "element": [
         {
           "code": "RNAseq",
@@ -5273,7 +5273,7 @@
     },
     {
       "source": "File Format",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/BRI-DSR/file_manifest/file_format",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/file_format",
       "element": [
         {
           "code": "tsv",

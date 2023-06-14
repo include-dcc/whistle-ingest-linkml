@@ -5621,7 +5621,7 @@
     },
     {
       "source": "DataSet",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/dataset",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/dataset",
       "element": [
         {
           "code": "participant",
@@ -5644,12 +5644,34 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "specimen",
+          "display": "specimen",
+          "target": [
+            {
+              "code": "specimen",
+              "display": "specimen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "file_manifest",
+          "display": "file_manifest",
+          "target": [
+            {
+              "code": "file_manifest",
+              "display": "file_manifest",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
     {
       "source": "participant",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant",
       "element": [
         {
           "code": "Study Code",
@@ -5853,7 +5875,7 @@
     },
     {
       "source": "Family Type",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/family_type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/family_type",
       "element": [
         {
           "code": "Control-only",
@@ -5925,7 +5947,7 @@
     },
     {
       "source": "Family Relationship",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/family_relationship",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/family_relationship",
       "element": [
         {
           "code": "Proband",
@@ -5997,7 +6019,7 @@
     },
     {
       "source": "Sex",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/sex",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/sex",
       "element": [
         {
           "code": "Female",
@@ -6047,7 +6069,7 @@
     },
     {
       "source": "Race",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/race",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/race",
       "element": [
         {
           "code": "American Indian or Alaska Native",
@@ -6196,7 +6218,7 @@
     },
     {
       "source": "Ethnicity",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/ethnicity",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/ethnicity",
       "element": [
         {
           "code": "Hispanic or Latino",
@@ -6246,7 +6268,7 @@
     },
     {
       "source": "Down Syndrome Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/down_syndrome_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/down_syndrome_status",
       "element": [
         {
           "code": "D21",
@@ -6274,7 +6296,7 @@
     },
     {
       "source": "Outcomes Vital Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/participant/outcomes_vital_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/outcomes_vital_status",
       "element": [
         {
           "code": "Dead",
@@ -6313,7 +6335,7 @@
     },
     {
       "source": "condition",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition",
       "element": [
         {
           "code": "Participant External ID",
@@ -6517,7 +6539,7 @@
     },
     {
       "source": "Condition Interpretation",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_interpretation",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_interpretation",
       "element": [
         {
           "code": "Observed",
@@ -6545,7 +6567,7 @@
     },
     {
       "source": "Condition Status",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_status",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_status",
       "element": [
         {
           "code": "Current",
@@ -6584,7 +6606,7 @@
     },
     {
       "source": "Condition Data Source",
-      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/ABC-DS/condition/condition_data_source",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/condition/condition_data_source",
       "element": [
         {
           "code": "Clinical",
@@ -6604,6 +6626,885 @@
             {
               "code": "Self-reported",
               "display": "Self-reported",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "specimen",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen",
+      "element": [
+        {
+          "code": "Participant External ID",
+          "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique, de-identified identifier for the participant, assigned by data contributor. External IDs must be two steps removed from personal information in the study records.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Age at Biospecimen Collection",
+          "display": "Age in days of participant at time of biospecimen collection",
+          "target": [
+            {
+              "code": "Age at Biospecimen Collection",
+              "display": "Age in days of participant at time of biospecimen collection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Global ID",
+          "display": "INCLUDE global identifier for sample, assigned by DCC",
+          "target": [
+            {
+              "code": "Sample Global ID",
+              "display": "INCLUDE global identifier for sample, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample External ID",
+          "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+          "target": [
+            {
+              "code": "Sample External ID",
+              "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample Type",
+          "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+          "target": [
+            {
+              "code": "Sample Type",
+              "display": "Type of biological material comprising the Sample (e.g. Plasma, White blood cells, Red blood cells, DNA, RNA, Peripheral blood mononuclear cells, CD4+ Tconv cells, NK cells, Monocytes, CD8+ T cells, B cells, Granulocytes, Treg cells)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Parent Sample External ID",
+          "display": "Unique identifier for the parent sample, assigned by data contributor",
+          "target": [
+            {
+              "code": "Parent Sample External ID",
+              "display": "Unique identifier for the parent sample, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Laboratory Procedure",
+          "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+          "target": [
+            {
+              "code": "Laboratory Procedure",
+              "display": "Procedure by which Sample was derived from Parent Sample (e.g. Centrifugation, RBC lysis, Lyse/fix buffer, FACS, PAXgene DNA, PAXgene RNA, Qiagen Allprep, Ficoll)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In/Out",
+          "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+          "target": [
+            {
+              "code": "In/Out",
+              "display": "Sample Availability where In indcates available and Out indicates Unavailable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen/sample_type",
+      "element": [
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "B Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy coat",
+          "target": [
+            {
+              "code": "Buffy coat",
+              "display": "Buffy coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+ Tconv Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+ T Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "Granulocytes",
+              "display": "Granulocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "Monocytes",
+              "display": "Monocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "NK Cells",
+              "display": "NK Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "Plasma",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "Red Blood Cells",
+              "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tregs",
+          "display": "Tregs",
+          "target": [
+            {
+              "code": "Tregs",
+              "display": "Tregs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "WBCs",
+          "target": [
+            {
+              "code": "WBCs",
+              "display": "WBCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Whole blood",
+          "target": [
+            {
+              "code": "Whole blood",
+              "display": "Whole blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "In/Out",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/specimen/in_out",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "In",
+          "display": "In",
+          "target": [
+            {
+              "code": "In",
+              "display": "In",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Out",
+          "display": "Out",
+          "target": [
+            {
+              "code": "Out",
+              "display": "Out",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "file_manifest",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest",
+      "element": [
+        {
+          "code": "Study Code",
+          "display": "Study Code",
+          "target": [
+            {
+              "code": "Study Code",
+              "display": "Study Code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant External ID",
+          "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+          "target": [
+            {
+              "code": "Participant External ID",
+              "display": "Unique INCLUDE global identifier for the participant, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sample External ID",
+          "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+          "target": [
+            {
+              "code": "Sample External ID",
+              "display": "Unique identifier for sample, assigned by data contributor. A sample is a unique biological material; two samples with two different IDs are biologically distinct.",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Global ID",
+          "display": "INCLUDE global file identifier, assigned by DCC",
+          "target": [
+            {
+              "code": "File Global ID",
+              "display": "INCLUDE global file identifier, assigned by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File External ID",
+          "display": "Unique identifier for data file, assigned by data contributor",
+          "target": [
+            {
+              "code": "File External ID",
+              "display": "Unique identifier for data file, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Name",
+          "display": "Name of file, assigned by data contributor",
+          "target": [
+            {
+              "code": "File Name",
+              "display": "Name of file, assigned by data contributor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Hash",
+          "display": "md5 hash of this file for validation (if known)",
+          "target": [
+            {
+              "code": "File Hash",
+              "display": "md5 hash of this file for validation (if known)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Data Access",
+          "display": "Type of access control on this file, determined by DCC",
+          "target": [
+            {
+              "code": "Data Access",
+              "display": "Type of access control on this file, determined by DCC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Data Category",
+          "display": "General category of data in file (e.g. Clinical, Genomics, Proteomics, Metabolomics, Immune profiling, Transcriptomics)",
+          "target": [
+            {
+              "code": "Data Category",
+              "display": "General category of data in file (e.g. Clinical, Genomics, Proteomics, Metabolomics, Immune profiling, Transcriptomics)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Data Type",
+          "display": "Specific type of data contained in file (e.g. Preprocessed metabolite relative abundance, Absolute protein concentration, Aligned reads, Simple nucleotide variations, GVCF, Gene expression quantifications, Gene fusions, Somatic copy number variations, Somatic structural variations)",
+          "target": [
+            {
+              "code": "Data Type",
+              "display": "Specific type of data contained in file (e.g. Preprocessed metabolite relative abundance, Absolute protein concentration, Aligned reads, Simple nucleotide variations, GVCF, Gene expression quantifications, Gene fusions, Somatic copy number variations, Somatic structural variations)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Experimental Strategy",
+          "display": "Experimental method used to obtain data in file (e.g. Whole genome sequencing, RNAseq, Multiplex immunoassay, Mass spec metabolomics)",
+          "target": [
+            {
+              "code": "Experimental Strategy",
+              "display": "Experimental method used to obtain data in file (e.g. Whole genome sequencing, RNAseq, Multiplex immunoassay, Mass spec metabolomics)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Experimental Platform",
+          "display": "Specific platform used to perform experiment (e.g. SOMAscan, MSD, Luminex, Illumina)",
+          "target": [
+            {
+              "code": "Experimental Platform",
+              "display": "Specific platform used to perform experiment (e.g. SOMAscan, MSD, Luminex, Illumina)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Format",
+          "display": "Format of file (e.g. tsv, cram, gvcf, vcf, maf, txt, pdf, html, png)",
+          "target": [
+            {
+              "code": "File Format",
+              "display": "Format of file (e.g. tsv, cram, gvcf, vcf, maf, txt, pdf, html, png)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Size",
+          "display": "Size of file, if known (mainly important if large)",
+          "target": [
+            {
+              "code": "File Size",
+              "display": "Size of file, if known (mainly important if large)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "File Size Unit",
+          "display": "Unit of file size",
+          "target": [
+            {
+              "code": "File Size Unit",
+              "display": "Unit of file size",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Access URL",
+          "display": "URL/URI to file repository location",
+          "target": [
+            {
+              "code": "Access URL",
+              "display": "URL/URI to file repository location",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Publication DOI",
+          "display": "DOI of publication associated with this file, if published",
+          "target": [
+            {
+              "code": "Publication DOI",
+              "display": "DOI of publication associated with this file, if published",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Access",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_access",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "Controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Open",
+          "display": "Open",
+          "target": [
+            {
+              "code": "Open",
+              "display": "Open",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "Registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Category",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_category",
+      "element": [
+        {
+          "code": "Genomics",
+          "display": "Genomics",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Data Type",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/data_type",
+      "element": [
+        {
+          "code": "Aligned reads",
+          "display": "Aligned reads",
+          "target": [
+            {
+              "code": "Aligned reads",
+              "display": "Aligned reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Aligned reads index",
+          "display": "Aligned reads index",
+          "target": [
+            {
+              "code": "Aligned reads index",
+              "display": "Aligned reads index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Gene Fusion",
+          "display": "Annotated Gene Fusion",
+          "target": [
+            {
+              "code": "Annotated Gene Fusion",
+              "display": "Annotated Gene Fusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene expression quantifications",
+          "display": "Gene expression quantifications",
+          "target": [
+            {
+              "code": "Gene expression quantifications",
+              "display": "Gene expression quantifications",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Isoform Expression Quantification",
+          "display": "Isoform Expression Quantification",
+          "target": [
+            {
+              "code": "Isoform Expression Quantification",
+              "display": "Isoform Expression Quantification",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Raw Gene Fusion",
+          "display": "Raw Gene Fusion",
+          "target": [
+            {
+              "code": "Raw Gene Fusion",
+              "display": "Raw Gene Fusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant",
+          "display": "Genomic Variant",
+          "target": [
+            {
+              "code": "Genomic Variant",
+              "display": "Genomic Variant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomic Variant Index",
+          "display": "Genomic Variant Index",
+          "target": [
+            {
+              "code": "Genomic Variant Index",
+              "display": "Genomic Variant Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call",
+          "display": "Annotated Variant Call",
+          "target": [
+            {
+              "code": "Annotated Variant Call",
+              "display": "Annotated Variant Call",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Annotated Variant Call Index",
+          "display": "Annotated Variant Call Index",
+          "target": [
+            {
+              "code": "Annotated Variant Call Index",
+              "display": "Annotated Variant Call Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Familial Relationships Report",
+          "display": "Familial Relationships Report",
+          "target": [
+            {
+              "code": "Familial Relationships Report",
+              "display": "Familial Relationships Report",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Gene Expression Quantification",
+          "display": "Gene Expression Quantification",
+          "target": [
+            {
+              "code": "Gene Expression Quantification",
+              "display": "Gene Expression Quantification",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read",
+          "display": "Genome Aligned Read",
+          "target": [
+            {
+              "code": "Genome Aligned Read",
+              "display": "Genome Aligned Read",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genome Aligned Read Index",
+          "display": "Genome Aligned Read Index",
+          "target": [
+            {
+              "code": "Genome Aligned Read Index",
+              "display": "Genome Aligned Read Index",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Alternative Splicing",
+          "display": "Alternative Splicing",
+          "target": [
+            {
+              "code": "Alternative Splicing",
+              "display": "Alternative Splicing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Experimental Strategy",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/experimental_strategy",
+      "element": [
+        {
+          "code": "RNAseq",
+          "display": "RNAseq",
+          "target": [
+            {
+              "code": "RNAseq",
+              "display": "RNAseq",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole genome sequencing",
+          "display": "Whole genome sequencing",
+          "target": [
+            {
+              "code": "Whole genome sequencing",
+              "display": "Whole genome sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "File Format",
+      "target": "https://includedcc.org/fhir/CodeSystem/data-dictionary/file_manifest/file_format",
+      "element": [
+        {
+          "code": "tsv",
+          "display": "tsv",
+          "target": [
+            {
+              "code": "tsv",
+              "display": "tsv",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "txt",
+          "display": "txt",
+          "target": [
+            {
+              "code": "txt",
+              "display": "txt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cram",
+          "display": "cram",
+          "target": [
+            {
+              "code": "cram",
+              "display": "cram",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "crai",
+          "display": "crai",
+          "target": [
+            {
+              "code": "crai",
+              "display": "crai",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bam",
+          "display": "bam",
+          "target": [
+            {
+              "code": "bam",
+              "display": "bam",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bai",
+          "display": "bai",
+          "target": [
+            {
+              "code": "bai",
+              "display": "bai",
               "equivalence": "equivalent"
             }
           ]
