@@ -212,6 +212,9 @@ def FileDocumentReference(study, fileid, all_manifests) {
     
     content[0].attachment: FileDetailExtension(study, manifest);
     content[0].format.display: manifest.file_format
+    if (manifest.file_external_id? and manifest.file_external_id ~= "NA") {
+        content[].attachment.url: $StrCat("s3://", manifest.file_external_id);
+    }
 
     // Makeshift mechanism to link Index files to their parent
     if (source_file?) {
