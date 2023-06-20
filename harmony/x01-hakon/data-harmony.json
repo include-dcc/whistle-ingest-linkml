@@ -928,6 +928,112 @@
       ]
     },
     {
+      "source": "Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "FTH",
+              "display": "father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "MTH",
+              "display": "mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "SIB",
+              "display": "sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "element": [
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "Inverse Family Relationship",
       "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "element": [
@@ -1662,7 +1768,7 @@
       ]
     },
     {
-      "source": "Sample_Type",
+      "source": "Sample Type",
       "target": "http://purl.obolibrary.org/obo/ncit.owl",
       "element": [
         {
@@ -1743,6 +1849,28 @@
           ]
         },
         {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "C12954",
+              "display": "Peripheral Blood Mononuclear Cell Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "C12954",
+              "display": "Peripheral Blood Mononuclear Cell Sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Plasma",
           "display": "Plasma",
           "target": [
@@ -1765,12 +1893,34 @@
           ]
         },
         {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva Sample",
+              "display": "C174119",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "WBCs",
           "display": "WBCs",
           "target": [
             {
               "code": "C12529",
               "display": "Leukocyte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "C17610",
+              "display": "Blood Sample",
               "equivalence": "equivalent"
             }
           ]
@@ -1789,7 +1939,7 @@
       ]
     },
     {
-      "source": "Sample_Type",
+      "source": "Sample Type",
       "target": "self",
       "element": [
         {
@@ -1837,6 +1987,17 @@
           ]
         },
         {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Granulocytes",
           "display": "Granulocytes",
           "target": [
@@ -1870,6 +2031,28 @@
           ]
         },
         {
+          "code": "PBMC",
+          "display": "PBMC",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Plasma",
           "display": "Plasma",
           "target": [
@@ -1881,12 +2064,34 @@
           ]
         },
         {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Red Blood Cells",
           "display": "Red Blood Cells",
           "target": [
             {
               "code": "Red Blood Cells",
               "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
               "equivalence": "equivalent"
             }
           ]
@@ -1914,29 +2119,23 @@
           ]
         },
         {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Whole blood",
           "display": "Whole blood",
           "target": [
             {
               "code": "Whole blood",
               "display": "Whole blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample_Type",
-      "target": "http://purl.obolibrary.org/obo/cl.owl",
-      "element": [
-        {
-          "code": "Tregs",
-          "display": "Tregs",
-          "target": [
-            {
-              "code": "CL:0000815",
-              "display": "regulatory T cell",
               "equivalence": "equivalent"
             }
           ]
@@ -1973,120 +2172,15 @@
     },
     {
       "source": "Sample Type",
-      "target": "self",
+      "target": "http://purl.obolibrary.org/obo/cl.owl",
       "element": [
         {
-          "code": "DNA",
-          "display": "DNA",
+          "code": "Tregs",
+          "display": "Tregs",
           "target": [
             {
-              "code": "DNA",
-              "display": "DNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMC",
-          "display": "PBMC",
-          "target": [
-            {
-              "code": "PBMC",
-              "display": "PBMC",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMCs",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "RNA",
-          "display": "RNA",
-          "target": [
-            {
-              "code": "RNA",
-              "display": "RNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "Saliva",
-              "display": "Saliva",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Peripheral Whole Blood",
-              "display": "Peripheral Whole Blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Type",
-      "target": "http://purl.obolibrary.org/obo/ncit.owl",
-      "element": [
-        {
-          "code": "PBMC",
-          "display": "PBMC",
-          "target": [
-            {
-              "code": "C12954",
-              "display": "Peripheral Blood Mononuclear Cell Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "C12954",
-              "display": "Peripheral Blood Mononuclear Cell Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "Saliva Sample",
-              "display": "C174119",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "C17610",
-              "display": "Blood Sample",
+              "code": "CL:0000815",
+              "display": "regulatory T cell",
               "equivalence": "equivalent"
             }
           ]
@@ -16058,8 +16152,8 @@
           ]
         },
         {
-          "code": "X01-Hakon",
-          "display": "X01-Hakon",
+          "code": "X01-Hakonarson",
+          "display": "X01-Hakonarson",
           "target": [
             {
               "code": "INCLUDE",
@@ -16141,12 +16235,12 @@
           ]
         },
         {
-          "code": "X01-Hakon",
-          "display": "X01-Hakon",
+          "code": "X01-Hakonarson",
+          "display": "X01-Hakonarson",
           "target": [
             {
-              "code": "X01-Hakon",
-              "display": "X01-Hakon",
+              "code": "X01-Hakonarson",
+              "display": "X01-Hakonarson",
               "equivalence": "equivalent"
             }
           ]

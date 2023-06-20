@@ -38,6 +38,10 @@ BMI,Body Mass Index,encounter,,encounter,BMI,Body Mass Index,http://includedcc.o
 Observed,Condition was observed or reported (this will be the case for most conditions),Condition,Condition Interpretation,Condition Interpretation,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Current,Condition is ongoing,Condition,Condition Status,Condition Status,LA9040-2,Ongoing,http://loinc.org,
 Resolved,Condition has been resolved,Condition,Condition Status,Condition Status,LA9041-0,Resolved,http://loinc.org,
+Father,Father,Participant,Family Relationship,Family Relationship,FTH,father,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Mother,Mother,Participant,Family Relationship,Family Relationship,MTH,mother,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Sibling,Sibling,Participant,Family Relationship,Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Other relative,Other relative,Participant,Family Relationship,Family Relationship,O,Other,http://terminology.hl7.org/CodeSystem/v2-0131,
 Father,Father,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Mother,Mother,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Sibling,Sibling,Participant,Family Relationship,Inverse Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
@@ -67,24 +71,24 @@ T21,Trisomy 21 (Down syndrome),Participant,Down Syndrome Status,Down Syndrome St
 Dead,Dead,Participant,Outcomes Vital Status,Outcomes Vital Status,LA9627-6,Dead,http://loinc.org,
 Alive,Alive,Participant,Outcomes Vital Status,Outcomes Vital Status,LA4247-8,Alive,http://loinc.org,
 Unknown or not available,Unknown or not available,Participant,Outcomes Vital Status,Outcomes Vital Status,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
-B Cells,B Cells,specimen,Sample Type,Sample_Type,C12474,B-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12474
-Buffy coat,Buffy coat,specimen,Sample Type,Sample_Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
-CD4+ Tconv Cells,CD4+ Tconv Cells,specimen,Sample Type,Sample_Type,C12537,CD4-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12537
-CD8+ T Cells,CD8+ T Cells,specimen,Sample Type,Sample_Type,C12542,CD8-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12542
+B Cells,B Cells,specimen,Sample Type,Sample Type,C12474,B-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12474
+Buffy coat,Buffy coat,specimen,Sample Type,Sample Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
+CD4+ Tconv Cells,CD4+ Tconv Cells,specimen,Sample Type,Sample Type,C12537,CD4-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12537
+CD8+ T Cells,CD8+ T Cells,specimen,Sample Type,Sample Type,C12542,CD8-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12542
 DNA,DNA,specimen,Sample Type,Sample Type,OBI:0001051,DNA extract,http://purl.obolibrary.org/obo/obi.owl,
-Granulocytes,Granulocytes,specimen,Sample Type,Sample_Type,C12530,Granulocyte,http://purl.obolibrary.org/obo/ncit.owl,
-Monocytes,Monocytes,specimen,Sample Type,Sample_Type,C12547,Monocyte,http://purl.obolibrary.org/obo/ncit.owl,
-NK Cells,NK Cells,specimen,Sample Type,Sample_Type,C12536,Natural Killer Cell,http://purl.obolibrary.org/obo/ncit.owl,
+Granulocytes,Granulocytes,specimen,Sample Type,Sample Type,C12530,Granulocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Monocytes,Monocytes,specimen,Sample Type,Sample Type,C12547,Monocyte,http://purl.obolibrary.org/obo/ncit.owl,
+NK Cells,NK Cells,specimen,Sample Type,Sample Type,C12536,Natural Killer Cell,http://purl.obolibrary.org/obo/ncit.owl,
 PBMC,PBMC,specimen,Sample Type,Sample Type,C12954,Peripheral Blood Mononuclear Cell Sample,http://purl.obolibrary.org/obo/ncit.owl,
 PBMCs,PBMCs,specimen,Sample Type,Sample Type,C12954,Peripheral Blood Mononuclear Cell Sample,http://purl.obolibrary.org/obo/ncit.owl,
-Plasma,Plasma,specimen,Sample Type,Sample_Type,C13356,Plasma,http://purl.obolibrary.org/obo/ncit.owl,
+Plasma,Plasma,specimen,Sample Type,Sample Type,C13356,Plasma,http://purl.obolibrary.org/obo/ncit.owl,
 RNA,RNA,specimen,Sample Type,Sample Type,OBI:0000880,RNA extract,http://purl.obolibrary.org/obo/obi.owl,
-Red Blood Cells,Red Blood Cells,specimen,Sample Type,Sample_Type,C12521,Erythrocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Red Blood Cells,Red Blood Cells,specimen,Sample Type,Sample Type,C12521,Erythrocyte,http://purl.obolibrary.org/obo/ncit.owl,
 Saliva,Saliva,specimen,Sample Type,Sample Type,Saliva Sample,C174119,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C174119
-Tregs,Tregs,specimen,Sample Type,Sample_Type,CL:0000815,regulatory T cell,http://purl.obolibrary.org/obo/cl.owl,
-WBCs,WBCs,specimen,Sample Type,Sample_Type,C12529,Leukocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Tregs,Tregs,specimen,Sample Type,Sample Type,CL:0000815,regulatory T cell,http://purl.obolibrary.org/obo/cl.owl,
+WBCs,WBCs,specimen,Sample Type,Sample Type,C12529,Leukocyte,http://purl.obolibrary.org/obo/ncit.owl,
 Peripheral Whole Blood,Peripheral Whole Blood,specimen,Sample Type,Sample Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,
-Whole blood,Whole blood,specimen,Sample Type,Sample_Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C17610
+Whole blood,Whole blood,specimen,Sample Type,Sample Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C17610
 NA,NA,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
 In,In,specimen,In/Out,In/Out,available,Available,http://hl7.org/fhir/specimen-status,
 Out,Out,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
@@ -797,7 +801,7 @@ DSC,DSC,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-s
 DS-Sleep,DS-Sleep,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 HTP,HTP,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-deSmith,X01-deSmith,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
-X01-Hakon,X01-Hakon,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
+X01-Hakonarson,X01-Hakonarson,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 Control-only,Control Only,family,family_type,Family Type,Control-only,Control Only,https://includedcc.org/fhir/code-systems/family_types
 Duo,Duo,family,family_type,Family Type,Duo,Duo,https://includedcc.org/fhir/code-systems/family_types
 Other,Other,family,family_type,Family Type,Other,Other,https://includedcc.org/fhir/code-systems/family_types

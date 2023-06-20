@@ -928,6 +928,112 @@
       ]
     },
     {
+      "source": "Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "FTH",
+              "display": "father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "MTH",
+              "display": "mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "SIB",
+              "display": "sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sibling",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "Sibling",
+              "display": "Sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "Other relative",
+              "display": "Other relative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Family Relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "element": [
+        {
+          "code": "Other relative",
+          "display": "Other relative",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "Inverse Family Relationship",
       "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "element": [
@@ -7245,6 +7351,17 @@
           ]
         },
         {
+          "code": "Unaligned Reads",
+          "display": "Unaligned Reads",
+          "target": [
+            {
+              "code": "Unaligned Reads",
+              "display": "Unaligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Aligned reads index",
           "display": "Aligned reads index",
           "target": [
@@ -7505,6 +7622,72 @@
             {
               "code": "bai",
               "display": "bai",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fastq",
+          "display": "fastq",
+          "target": [
+            {
+              "code": "fastq",
+              "display": "fastq",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gvcf",
+          "display": "gvcf",
+          "target": [
+            {
+              "code": "gvcf",
+              "display": "gvcf",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "html",
+          "display": "html",
+          "target": [
+            {
+              "code": "html",
+              "display": "html",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pdf",
+          "display": "pdf",
+          "target": [
+            {
+              "code": "pdf",
+              "display": "pdf",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tbi",
+          "display": "tbi",
+          "target": [
+            {
+              "code": "tbi",
+              "display": "tbi",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "vcf",
+          "display": "vcf",
+          "target": [
+            {
+              "code": "vcf",
+              "display": "vcf",
               "equivalence": "equivalent"
             }
           ]

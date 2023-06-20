@@ -38,6 +38,10 @@ BMI,Body Mass Index,encounter,,encounter,BMI,Body Mass Index,http://includedcc.o
 Observed,Condition was observed or reported (this will be the case for most conditions),Condition,Condition Interpretation,Condition Interpretation,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Current,Condition is ongoing,Condition,Condition Status,Condition Status,LA9040-2,Ongoing,http://loinc.org,
 Resolved,Condition has been resolved,Condition,Condition Status,Condition Status,LA9041-0,Resolved,http://loinc.org,
+Father,Father,Participant,Family Relationship,Family Relationship,FTH,father,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Mother,Mother,Participant,Family Relationship,Family Relationship,MTH,mother,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Sibling,Sibling,Participant,Family Relationship,Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Other relative,Other relative,Participant,Family Relationship,Family Relationship,O,Other,http://terminology.hl7.org/CodeSystem/v2-0131,
 Father,Father,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Mother,Mother,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Sibling,Sibling,Participant,Family Relationship,Inverse Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
@@ -67,24 +71,25 @@ T21,Trisomy 21 (Down syndrome),Participant,Down Syndrome Status,Down Syndrome St
 Dead,Dead,Participant,Outcomes Vital Status,Outcomes Vital Status,LA9627-6,Dead,http://loinc.org,
 Alive,Alive,Participant,Outcomes Vital Status,Outcomes Vital Status,LA4247-8,Alive,http://loinc.org,
 Unknown or not available,Unknown or not available,Participant,Outcomes Vital Status,Outcomes Vital Status,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
-B Cells,B Cells,specimen,Sample Type,Sample_Type,C12474,B-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12474
-Buffy coat,Buffy coat,specimen,Sample Type,Sample_Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
-CD4+ Tconv Cells,CD4+ Tconv Cells,specimen,Sample Type,Sample_Type,C12537,CD4-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12537
-CD8+ T Cells,CD8+ T Cells,specimen,Sample Type,Sample_Type,C12542,CD8-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12542
+B Cells,B Cells,specimen,Sample Type,Sample Type,C12474,B-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12474
+Buffy coat,Buffy coat,specimen,Sample Type,Sample Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
+Buffy Coat,Buffy Coat,specimen,Sample Type,Sample Type,C84507,Buffy Coat,http://purl.obolibrary.org/obo/ncit.owl,
+CD4+ Tconv Cells,CD4+ Tconv Cells,specimen,Sample Type,Sample Type,C12537,CD4-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12537
+CD8+ T Cells,CD8+ T Cells,specimen,Sample Type,Sample Type,C12542,CD8-Positive T-Lymphocyte,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C12542
 DNA,DNA,specimen,Sample Type,Sample Type,OBI:0001051,DNA extract,http://purl.obolibrary.org/obo/obi.owl,
-Granulocytes,Granulocytes,specimen,Sample Type,Sample_Type,C12530,Granulocyte,http://purl.obolibrary.org/obo/ncit.owl,
-Monocytes,Monocytes,specimen,Sample Type,Sample_Type,C12547,Monocyte,http://purl.obolibrary.org/obo/ncit.owl,
-NK Cells,NK Cells,specimen,Sample Type,Sample_Type,C12536,Natural Killer Cell,http://purl.obolibrary.org/obo/ncit.owl,
+Granulocytes,Granulocytes,specimen,Sample Type,Sample Type,C12530,Granulocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Monocytes,Monocytes,specimen,Sample Type,Sample Type,C12547,Monocyte,http://purl.obolibrary.org/obo/ncit.owl,
+NK Cells,NK Cells,specimen,Sample Type,Sample Type,C12536,Natural Killer Cell,http://purl.obolibrary.org/obo/ncit.owl,
 PBMC,PBMC,specimen,Sample Type,Sample Type,C12954,Peripheral Blood Mononuclear Cell Sample,http://purl.obolibrary.org/obo/ncit.owl,
 PBMCs,PBMCs,specimen,Sample Type,Sample Type,C12954,Peripheral Blood Mononuclear Cell Sample,http://purl.obolibrary.org/obo/ncit.owl,
-Plasma,Plasma,specimen,Sample Type,Sample_Type,C13356,Plasma,http://purl.obolibrary.org/obo/ncit.owl,
+Plasma,Plasma,specimen,Sample Type,Sample Type,C13356,Plasma,http://purl.obolibrary.org/obo/ncit.owl,
 RNA,RNA,specimen,Sample Type,Sample Type,OBI:0000880,RNA extract,http://purl.obolibrary.org/obo/obi.owl,
-Red Blood Cells,Red Blood Cells,specimen,Sample Type,Sample_Type,C12521,Erythrocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Red Blood Cells,Red Blood Cells,specimen,Sample Type,Sample Type,C12521,Erythrocyte,http://purl.obolibrary.org/obo/ncit.owl,
 Saliva,Saliva,specimen,Sample Type,Sample Type,Saliva Sample,C174119,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C174119
-Tregs,Tregs,specimen,Sample Type,Sample_Type,CL:0000815,regulatory T cell,http://purl.obolibrary.org/obo/cl.owl,
-WBCs,WBCs,specimen,Sample Type,Sample_Type,C12529,Leukocyte,http://purl.obolibrary.org/obo/ncit.owl,
+Tregs,Tregs,specimen,Sample Type,Sample Type,CL:0000815,regulatory T cell,http://purl.obolibrary.org/obo/cl.owl,
+WBCs,WBCs,specimen,Sample Type,Sample Type,C12529,Leukocyte,http://purl.obolibrary.org/obo/ncit.owl,
 Peripheral Whole Blood,Peripheral Whole Blood,specimen,Sample Type,Sample Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,
-Whole blood,Whole blood,specimen,Sample Type,Sample_Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C17610
+Whole blood,Whole blood,specimen,Sample Type,Sample Type,C17610,Blood Sample,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/NCIT_C17610
 NA,NA,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
 In,In,specimen,In/Out,In/Out,available,Available,http://hl7.org/fhir/specimen-status,
 Out,Out,specimen,In/Out,In/Out,unavailable,Unavailable,http://hl7.org/fhir/specimen-status,
@@ -95,17 +100,24 @@ Genomics,Genomics,datafile,Data Category,Data Category,Genomics,Genomics,https:/
 Transcriptomic,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
 Transcriptomics,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
 Aligned reads,Aligned reads,datafile,Data Type,Data Type,Aligned-Reads,Aligned Reads,https://includedcc.org/fhir/code-systems/data_types,
+Aligned Reads,Aligned Reads,datafile,Data Type,Data Type,Aligned-Reads,Aligned Reads,https://includedcc.org/fhir/code-systems/data_types,
 Aligned reads index,Aligned reads index,datafile,Data Type,Data Type,Aligned-Reads-Index,Aligned Reads Index,https://includedcc.org/fhir/code-systems/data_types,
+Aligned Reads Index,Aligned Reads Index,datafile,Data Type,Data Type,Aligned-Reads-Index,Aligned Reads Index,https://includedcc.org/fhir/code-systems/data_types,
 Unaligned reads,Unaligned reads,datafile,Data Type,Data Type,Unaligned-Reads,Unaligned Reads,https://includedcc.org/fhir/code-systems/data_types,
 Annotated Gene Fusion,Annotated Gene Fusion,datafile,Data Type,Data Type,Gene-Fusions,Gene Fusions,https://includedcc.org/fhir/code-systems/data_types,
 Gene expression quantifications,Gene expression quantifications,datafile,Data Type,Data Type,Gene-Expression-Quantifications,Gene Expression Quantifications,https://includedcc.org/fhir/code-systems/data_types,
 Isoform Expression Quantification,Isoform Expression Quantification,datafile,Data Type,Data Type,Isoform-Expression-Quantifications,Isoform Expression Quantifications,https://includedcc.org/fhir/code-systems/data_types,
 Other,Other,datafile,Data Type,Data Type,Other,Other,https://includedcc.org/fhir/code-systems/data_types,
+Gene Fusions,Gene Fusions,datafile, Data Type,Data Type,Gene-Fusions,Gene Fusions,https://includedcc.org/fhir/code-systems/data_types,
 Raw Gene Fusion,Raw Gene Fusion,datafile,Data Type,Data Type,Raw-Gene-Fusions,Raw Gene Fusions,https://includedcc.org/fhir/code-systems/data_types,
 Genomic Variant,Genomic Variant,datafile,Data Type,Data Type,gVCF,gVCF,https://includedcc.org/fhir/code-systems/data_types,
 Genomic Variant Index,Genomic Variant Index,datafile,Data Type,Data Type,gVCF-Index,gVCF Index,https://includedcc.org/fhir/code-systems/data_types,
+gVCF,Genomic Variant,datafile,Data Type,Data Type,gVCF,gVCF,https://includedcc.org/fhir/code-systems/data_types,
+gVCF Index,Genomic Variant Index,datafile,Data Type,Data Type,gVCF-Index,gVCF Index,https://includedcc.org/fhir/code-systems/data_types,
 Annotated Variant Call,Annotated Variant Call,datafile,Data Type,Data Type,Variant-Calls,Variant Calls,https://includedcc.org/fhir/code-systems/data_types,
 Annotated Variant Call Index,Annotated Variant Call Index,datafile,Data Type,Data Type,Variant-Calls-Index,Variant Calls,https://includedcc.org/fhir/code-systems/data_types,
+Variant Call,Annotated Variant Call,datafile,Data Type,Data Type,Variant-Calls,Variant Calls,https://includedcc.org/fhir/code-systems/data_types,
+Variant Call Index,Annotated Variant Call Index,datafile,Data Type,Data Type,Variant-Calls-Index,Variant Calls,https://includedcc.org/fhir/code-systems/data_types,
 Familial Relationships Report,Familial Relationships Report,datafile,Data Type,Data Type,Peddy-Family-Sex,Peddy - Family/Sex,https://includedcc.org/fhir/code-systems/data_types,
 Gene Expression Quantification,Gene Expression Quantification,datafile,Data Type,Data Type,Gene-Expression-Quantifications,Gene Expression Quantifications,https://includedcc.org/fhir/code-systems/data_types,
 Gene Expression,Gene Expression,datafile,Data Type,Data Type,Gene-Expression-Quantifications,Gene Expression Quantifications,https://includedcc.org/fhir/code-systems/data_types,
@@ -452,6 +464,7 @@ Control-only,Control Only,family,family_type,Family Type,Control-only,Control On
 Duo,Duo,family,family_type,Family Type,Duo,Duo,https://includedcc.org/fhir/code-systems/family_types
 Other,Other,family,family_type,Family Type,Other,Other,https://includedcc.org/fhir/code-systems/family_types
 Proband-only,Proband-only,family,family_type,Family Type,Proband-only,Proband-only,https://includedcc.org/fhir/code-systems/family_types
+Proband,Proband,family,family_type,Family Type,Proband-only,Proband-only,https://includedcc.org/fhir/code-systems/family_types
 Trio,Trio,family,family_type,Family Type,Trio,Trio,https://includedcc.org/fhir/code-systems/family_types
 Trio+,Trio+,family,family_type,Family Type,Trio+,Trio+,https://includedcc.org/fhir/code-systems/family_types
 Cell Staining Buffer,Cell Staining Buffer,aliquot,Preservation_Method,Preservation_Method,Cell Staining Buffer,Cell Staining Buffer,https://includedcc.org/fhir/code-systems/specimen-additive,
