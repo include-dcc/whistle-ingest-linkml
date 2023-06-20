@@ -75,4 +75,6 @@ dataset:
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/htp/data-harmony.csv
-    
+active_tables:
+  ALL: true
+#  family: true

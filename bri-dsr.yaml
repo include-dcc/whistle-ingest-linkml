@@ -57,3 +57,6 @@ dataset:
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/bri-dsr/data-harmony.csv
+active_tables:
+  ALL: true
+#  family: true
