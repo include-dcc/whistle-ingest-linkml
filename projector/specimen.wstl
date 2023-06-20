@@ -47,6 +47,10 @@ def ProcessSpecimen(study, specimen) {
     } else {
         var sample_type: specimen.sample_type;
     }
+
+    if (specimen.sample_type = "Whole blood") {
+        var sample_type!: "Peripheral Whole Blood";
+    }
     type.coding[]: HarmonizeMapped(sample_type, "Sample Type");
     type.text: sample_type;
 
