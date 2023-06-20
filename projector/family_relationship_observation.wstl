@@ -8,7 +8,7 @@
 // Note:
 //  Subject is the individual we whose relationship with focus_id we are describing in code
 //  so if code=mother, then subject_id is the "mother" of focus_id
-def FamilyRelationshipObservation(study, relationship, subject_id, focus_id, local_system) {
+def FamilyRelationshipObservation(study, relationship, focus_id, subject_id, local_system) {
     if (subject_id ~= focus_id) {
         //var varcode: HarmonizeMapped(relationship, local_system);
         var varcode: HarmonizeMappedFirst(relationship, local_system);
@@ -31,9 +31,33 @@ def FamilyRelationshipObservation(study, relationship, subject_id, focus_id, loc
     }
 }
 
+def ProbandRelationshipObservation(study, subject_id, proband_relationship) {
+    var varcode: HarmonizeMappedFirst("Proband", "Family Relationship");
+    meta.tag[]: StudyMeta(study);
+    // meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+
+    identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", "is_proband"));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+    code.coding[]: BuildCoding("85900004", "Proband (finding)", "http://snomed.info/sct");
+    code.coding[]: BuildCoding("Proband", "Proband", "https://includedcc.org/fhir/CodeSystem/data-dictionary/participant/family_relationship");
+    code.text: "Family Relationship";
+
+    
+    if (proband_relationship="Proband") {
+        valueCodeableConcept.coding[]: BuildCoding("Y", "YES", "http://terminology.hl7.org/CodeSystem/v2-0136");
+    } else {
+        valueCodeableConcept.coding[]: BuildCoding("N", "NO", "http://terminology.hl7.org/CodeSystem/v2-0136");
+    }
+    
+    status: "final";
+    resourceType: "Observation";
+}
+
 def FamilyRelationshipTypeObservation(study, family_relationship) {
     var subject_id: family_relationship.id1;
-    var varcode: HarmonizeMappedFirst(family_relationship.relationship, "Family Relationship");
+    var varcode: HarmonizeMappedFirst(family_relationship.family_type, "Family Relationship");
 
     meta.tag[]: StudyMeta(study);
     //meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
@@ -68,10 +92,11 @@ def FamilyRelationshipTypeObservation(study, family_relationship) {
 def ProcessFamilyRelationships(study, family_relationship) {
     if (family_relationship.id2 ~= "NA") {
         out family_relationships: FamilyRelationshipObservation(study, family_relationship.relationship, family_relationship.id1, family_relationship.id2, "Family Relationship");
-        out family_relationships: FamilyRelationshipObservation(study, family_relationship.relationship, family_relationship.id2, family_relationship.id1, "Inverse Family Relationship");
+        //out family_relationships: FamilyRelationshipObservation(study, family_relationship.relationship, family_relationship.id2, family_relationship.id1, "Inverse Family Relationship");
     } else {
         //out family_relationship: family_relationship;
-        out family_relationship_type: FamilyRelationshipTypeObservation(study, family_relationship);
+        out family_relationships: ProbandRelationshipObservation(study, family_relationship.id1, family_relationship.relationship);
+        //out family_relationship_type: FamilyRelationshipTypeObservation(study, family_relationship);
     }
 
 }
