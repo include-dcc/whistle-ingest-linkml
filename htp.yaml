@@ -71,7 +71,7 @@ dataset:
       filename: data/dd/aliquot.csv
     code_harmonization: harmony/htp/data-harmony.csv
   file_manifest:
-    filename: data/tables/HTP/FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files.csv
+    filename: data/tables/HTP/FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files.csv,data/tables/HTP/htp_omics_metadata_with_global_ids_2023-06-20.csv
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/htp/data-harmony.csv
