@@ -2161,6 +2161,204 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "B Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy Coat",
+          "target": [
+            {
+              "code": "Buffy coat",
+              "display": "Buffy Coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+ Tconv Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+ T Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "Granulocytes",
+              "display": "Granulocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "Monocytes",
+              "display": "Monocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "NK Cells",
+              "display": "NK Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMC",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "Plasma",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "Red Blood Cells",
+              "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tregs",
+          "display": "Regulatory T Cells",
+          "target": [
+            {
+              "code": "Tregs",
+              "display": "Regulatory T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "White Blood Cells",
+          "target": [
+            {
+              "code": "WBCs",
+              "display": "White Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral Whole Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Whole blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -2203,6 +2401,210 @@
             {
               "code": "CL:0000815",
               "display": "regulatory T cell",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sample Type",
+      "target": "https://includedcc.org/fhir/code-systems/sample_types",
+      "element": [
+        {
+          "code": "B Cells",
+          "display": "B Cells",
+          "target": [
+            {
+              "code": "B-Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Buffy coat",
+          "display": "Buffy Coat",
+          "target": [
+            {
+              "code": "Buffy-Coat",
+              "display": "Buffy Coat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD4+ Tconv Cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+-Tconv-Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+T-Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Granulocytes",
+          "display": "Granulocytes",
+          "target": [
+            {
+              "code": "Granulocytes",
+              "display": "Granulocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Monocytes",
+          "display": "Monocytes",
+          "target": [
+            {
+              "code": "Monocytes",
+              "display": "Monocytes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK Cells",
+          "display": "NK Cells",
+          "target": [
+            {
+              "code": "NK-Cells",
+              "display": "NK Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMC",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PBMCs",
+          "display": "PBMCs",
+          "target": [
+            {
+              "code": "PBMCs",
+              "display": "PBMCs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Plasma",
+          "display": "Plasma",
+          "target": [
+            {
+              "code": "Plasma",
+              "display": "Plasma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNA",
+          "display": "RNA",
+          "target": [
+            {
+              "code": "RNA",
+              "display": "RNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Red Blood Cells",
+          "display": "Red Blood Cells",
+          "target": [
+            {
+              "code": "Red-Blood-Cells",
+              "display": "Red Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Tregs",
+          "display": "Regulatory T Cells",
+          "target": [
+            {
+              "code": "Tregs",
+              "display": "Regulatory T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WBCs",
+          "display": "White Blood Cells",
+          "target": [
+            {
+              "code": "WBCs",
+              "display": "White Blood Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Peripheral Whole Blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral-Whole-Blood",
+              "display": "Peripheral Whole Blood",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Whole blood",
+          "display": "Peripheral Whole Blood",
+          "target": [
+            {
+              "code": "Peripheral-Whole-Blood",
+              "display": "Peripheral Whole Blood",
               "equivalence": "equivalent"
             }
           ]
@@ -2401,6 +2803,28 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "Metabolomics",
+          "display": "Metabolomics",
+          "target": [
+            {
+              "code": "Metabolomics",
+              "display": "Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proteomics",
+          "display": "Proteomics",
+          "target": [
+            {
+              "code": "Proteomics",
+              "display": "Proteomics",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -2440,6 +2864,28 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "Metabolomics",
+          "display": "Metabolomics",
+          "target": [
+            {
+              "code": "Metabolomics",
+              "display": "Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proteomics",
+          "display": "Proteomics",
+          "target": [
+            {
+              "code": "Proteomics",
+              "display": "Proteomics",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -2447,6 +2893,28 @@
       "source": "Data Type",
       "target": "https://includedcc.org/fhir/code-systems/data_types",
       "element": [
+        {
+          "code": "Preprocessed metabolite relative abundance",
+          "display": "Preprocessed metabolite relative abundance",
+          "target": [
+            {
+              "code": "Preprocessed-metabolite-relative-abundance",
+              "display": "Preprocessed metabolite relative abundance",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Protein abundance (absolute protein concentration)",
+          "display": "Protein abundance (absolute protein concentration)",
+          "target": [
+            {
+              "code": "Protein-abundance-absolute-protein-concentration",
+              "display": "Protein abundance (absolute protein concentration)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
         {
           "code": "Aligned reads",
           "display": "Aligned reads",
@@ -2728,6 +3196,28 @@
       "source": "Data Type",
       "target": "self",
       "element": [
+        {
+          "code": "Preprocessed metabolite relative abundance",
+          "display": "Preprocessed metabolite relative abundance",
+          "target": [
+            {
+              "code": "Preprocessed metabolite relative abundance",
+              "display": "Preprocessed metabolite relative abundance",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Protein abundance (absolute protein concentration)",
+          "display": "Protein abundance (absolute protein concentration)",
+          "target": [
+            {
+              "code": "Protein abundance (absolute protein concentration)",
+              "display": "Protein abundance (absolute protein concentration)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
         {
           "code": "Aligned reads",
           "display": "Aligned reads",
@@ -3030,6 +3520,28 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "LCMS_Metabolomics",
+          "display": "LCMS_Metabolomics",
+          "target": [
+            {
+              "code": "LCMS-Metabolomics",
+              "display": "LCMS_Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Multiplex Immunoassay",
+          "display": "Multiplex Immunoassay",
+          "target": [
+            {
+              "code": "Multiplex-Immunoassay",
+              "display": "Multiplex Immunoassay",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -3055,6 +3567,28 @@
             {
               "code": "Whole genome sequencing",
               "display": "Whole genome sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LCMS_Metabolomics",
+          "display": "LCMS_Metabolomics",
+          "target": [
+            {
+              "code": "LCMS_Metabolomics",
+              "display": "LCMS_Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Multiplex Immunoassay",
+          "display": "Multiplex Immunoassay",
+          "target": [
+            {
+              "code": "Multiplex Immunoassay",
+              "display": "Multiplex Immunoassay",
               "equivalence": "equivalent"
             }
           ]

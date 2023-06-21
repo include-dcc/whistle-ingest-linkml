@@ -99,6 +99,10 @@ Registered,Registered,datafile,Data Access,Data Access,registered,Registered,htt
 Genomics,Genomics,datafile,Data Category,Data Category,Genomics,Genomics,https://includedcc.org/fhir/code-systems/data_categories,
 Transcriptomic,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
 Transcriptomics,Transcriptomics,datafile,Data Category,Data Category,Transcriptomics,Transcriptomics,https://includedcc.org/fhir/code-systems/data_categories,
+Metabolomics,Metabolomics,datafile,data_category,Data Category,Metabolomics,Metabolomics,https://includedcc.org/fhir/code-systems/data_categories,
+Proteomics,Proteomics,datafile,data_category,Data Category,Proteomics,Proteomics,https://includedcc.org/fhir/code-systems/data_categories,
+Preprocessed metabolite relative abundance,Preprocessed metabolite relative abundance,datafile,data_type,Data Type,Preprocessed-metabolite-relative-abundance,Preprocessed metabolite relative abundance,https://includedcc.org/fhir/code-systems/data_types,
+Protein abundance (absolute protein concentration),Protein abundance (absolute protein concentration),datafile,data_type,Data Type,Protein-abundance-absolute-protein-concentration,Protein abundance (absolute protein concentration),https://includedcc.org/fhir/code-systems/data_types,
 Aligned reads,Aligned reads,datafile,Data Type,Data Type,Aligned-Reads,Aligned Reads,https://includedcc.org/fhir/code-systems/data_types,
 Aligned Reads,Aligned Reads,datafile,Data Type,Data Type,Aligned-Reads,Aligned Reads,https://includedcc.org/fhir/code-systems/data_types,
 Aligned reads index,Aligned reads index,datafile,Data Type,Data Type,Aligned-Reads-Index,Aligned Reads Index,https://includedcc.org/fhir/code-systems/data_types,
@@ -126,6 +130,8 @@ Genome Aligned Read Index,Genome Aligned Read Index,datafile,Data Type,Data Type
 Alternative Splicing,Alternative Splicing,datafile,Data Type,Data Type,Alternative-Splicing,Alternative Splicing,https://includedcc.org/fhir/code-systems/data_types,
 RNAseq,RNAseq,datafile,Experimental Strategy,Experimental Strategy,RNA-Seq,RNA-Seq,https://includedcc.org/fhir/code-systems/experimental_strategies,
 Whole genome sequencing,Whole genome sequencing,datafile,Experimental Strategy,Experimental Strategy,WGS,Whole Genome Sequencing,https://includedcc.org/fhir/code-systems/experimental_strategies,
+LCMS_Metabolomics,LCMS_Metabolomics,datafile,experiment_strategy,Experimental Strategy,LCMS-Metabolomics,LCMS_Metabolomics,https://includedcc.org/fhir/code-systems/experimental_strategies,
+Multiplex Immunoassay,Multiplex Immunoassay,datafile,experiment_strategy,Experimental Strategy,Multiplex-Immunoassay,Multiplex Immunoassay,https://includedcc.org/fhir/code-systems/experimental_strategies,
 Anxiety,Anxiety,condition,HPO Code,condition_description,0000739,Anxiety,http://purl.obolibrary.org/obo/hp.owl,
 Anxiety,anxiety,condition,MONDO Code,condition_description,0011918,anxiety,http://purl.obolibrary.org/obo/mondo.owl,
 GERD,Gastroesophageal reflux,condition,HPO Code,condition_description,0002020,Gastroesophageal reflux,http://purl.obolibrary.org/obo/hp.owl,
@@ -478,3 +484,21 @@ No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,FROZ,Fro
 No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,No Additive,No Additive,https://includedcc.org/fhir/code-systems/specimen-additive,
 RNAse free water,RNAse free water,aliquot,Preservation_Method,Preservation_Method,RNAse free water,RNAse free water,https://includedcc.org/fhir/code-systems/specimen-additive,
 RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,aliquot,Preservation_Method,Preservation_Method,RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,https://includedcc.org/fhir/code-systems/specimen-additive,
+B Cells,B Cells,Specimen,Sample Type,Sample Type,B-Cells,B Cells,https://includedcc.org/fhir/code-systems/sample_types
+Buffy coat,Buffy Coat,Specimen,Sample Type,Sample Type,Buffy-Coat,Buffy Coat,https://includedcc.org/fhir/code-systems/sample_types
+CD4+ Tconv Cells,CD4+ Tconv Cells,Specimen,Sample Type,Sample Type,CD4+-Tconv-Cells,CD4+ Tconv Cells,https://includedcc.org/fhir/code-systems/sample_types
+CD8+ T Cells,CD8+ T Cells,Specimen,Sample Type,Sample Type,CD8+T-Cells,CD8+ T Cells,https://includedcc.org/fhir/code-systems/sample_types
+DNA,DNA,Specimen,Sample Type,Sample Type,DNA,DNA,https://includedcc.org/fhir/code-systems/sample_types
+Granulocytes,Granulocytes,Specimen,Sample Type,Sample Type,Granulocytes,Granulocytes,https://includedcc.org/fhir/code-systems/sample_types
+Monocytes,Monocytes,Specimen,Sample Type,Sample Type,Monocytes,Monocytes,https://includedcc.org/fhir/code-systems/sample_types
+NK Cells,NK Cells,Specimen,Sample Type,Sample Type,NK-Cells,NK Cells,https://includedcc.org/fhir/code-systems/sample_types
+PBMC,PBMCs,Specimen,Sample Type,Sample Type,PBMCs,PBMCs,https://includedcc.org/fhir/code-systems/sample_types
+PBMCs,PBMCs,Specimen,Sample Type,Sample Type,PBMCs,PBMCs,https://includedcc.org/fhir/code-systems/sample_types
+Plasma,Plasma,Specimen,Sample Type,Sample Type,Plasma,Plasma,https://includedcc.org/fhir/code-systems/sample_types
+RNA,RNA,Specimen,Sample Type,Sample Type,RNA,RNA,https://includedcc.org/fhir/code-systems/sample_types
+Red Blood Cells,Red Blood Cells,Specimen,Sample Type,Sample Type,Red-Blood-Cells,Red Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+Saliva,Saliva,Specimen,Sample Type,Sample Type,Saliva,Saliva,https://includedcc.org/fhir/code-systems/sample_types
+Tregs,Regulatory T Cells,Specimen,Sample Type,Sample Type,Tregs,Regulatory T Cells,https://includedcc.org/fhir/code-systems/sample_types
+WBCs,White Blood Cells,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+Peripheral Whole Blood,Peripheral Whole Blood,Specimen,Sample Type,Sample Type,Peripheral-Whole-Blood,Peripheral Whole Blood,https://includedcc.org/fhir/code-systems/sample_types
+Whole blood,Peripheral Whole Blood,Specimen,Sample Type,Sample Type,Peripheral-Whole-Blood,Peripheral Whole Blood,https://includedcc.org/fhir/code-systems/sample_types
