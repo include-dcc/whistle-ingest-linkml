@@ -484,21 +484,39 @@ No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,FROZ,Fro
 No Additive,No Additive,aliquot,Preservation_Method,Preservation_Method,No Additive,No Additive,https://includedcc.org/fhir/code-systems/specimen-additive,
 RNAse free water,RNAse free water,aliquot,Preservation_Method,Preservation_Method,RNAse free water,RNAse free water,https://includedcc.org/fhir/code-systems/specimen-additive,
 RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,aliquot,Preservation_Method,Preservation_Method,RNeasy Lysis Buffer /2-Mercaptoethanol,RNeasy Lysis Buffer /2-Mercaptoethanol,https://includedcc.org/fhir/code-systems/specimen-additive,
+ATACseq,ATAC-Seq Sample,Specimen,Sample Type,Sample Type,ATAC-Seq-Sample,ATAC-Seq-Sample,https://includedcc.org/fhir/code-systems/sample_types
 B Cells,B Cells,Specimen,Sample Type,Sample Type,B-Cells,B Cells,https://includedcc.org/fhir/code-systems/sample_types
-Buffy coat,Buffy Coat,Specimen,Sample Type,Sample Type,Buffy-Coat,Buffy Coat,https://includedcc.org/fhir/code-systems/sample_types
+B cells Cryo,B Cells Cryo,Specimen,Sample Type,Sample Tyle,B-Cells,B Cells,https://includedcc.org/fhir/code-systems/sample_types
+Blood Smear Slide,Blood Smear Slide,Specimen,Sample Type,Sample Tyle,Blood-Smear-Slide,Blood Smear Slide,https://includedcc.org/fhir/code-systems/sample_types
+Buffy Coat,Buffy Coat,Specimen,Sample Type,Sample Type,Buffy-Coat,Buffy Coat,https://includedcc.org/fhir/code-systems/sample_types
 CD4+ Tconv Cells,CD4+ Tconv Cells,Specimen,Sample Type,Sample Type,CD4+-Tconv-Cells,CD4+ Tconv Cells,https://includedcc.org/fhir/code-systems/sample_types
 CD8+ T Cells,CD8+ T Cells,Specimen,Sample Type,Sample Type,CD8+T-Cells,CD8+ T Cells,https://includedcc.org/fhir/code-systems/sample_types
 DNA,DNA,Specimen,Sample Type,Sample Type,DNA,DNA,https://includedcc.org/fhir/code-systems/sample_types
 Granulocytes,Granulocytes,Specimen,Sample Type,Sample Type,Granulocytes,Granulocytes,https://includedcc.org/fhir/code-systems/sample_types
 Monocytes,Monocytes,Specimen,Sample Type,Sample Type,Monocytes,Monocytes,https://includedcc.org/fhir/code-systems/sample_types
-NK Cells,NK Cells,Specimen,Sample Type,Sample Type,NK-Cells,NK Cells,https://includedcc.org/fhir/code-systems/sample_types
+NK cells,NK Cells,Specimen,Sample Type,Sample Type,NK-Cells,NK Cells,https://includedcc.org/fhir/code-systems/sample_types
+PAXgene Whole Blood DNA,PAXgene Whole Blood DNA,Specimen,Sample Type,Sample Type,DNA,DNA,https://includedcc.org/fhir/code-systems/sample_types
+PAXgene Whole Blood DNA Tube,PAXgene Whole Blood DNA Tube,Specimen,Sample Type,Sample Type,DNA,DNA,https://includedcc.org/fhir/code-systems/sample_types
+PAXgene Whole Blood RNA,PAXgene Whole Blood RNA,Specimen,Sample Type,Sample Type,RNA,RNA,https://includedcc.org/fhir/code-systems/sample_types
+PAXgene Whole Blood RNA Tube,PAXgene Whole Blood RNA Tube,Specimen,Sample Type,Sample Type,RNA,RNA,https://includedcc.org/fhir/code-systems/sample_types
+Peripheral Blood Mononuclear Cells,Peripheral Blood Mononuclear Cells,Specimen,Sample Type,Sample Type,PBMCs,PBMCs,https://includedcc.org/fhir/code-systems/sample_types
 PBMC,PBMCs,Specimen,Sample Type,Sample Type,PBMCs,PBMCs,https://includedcc.org/fhir/code-systems/sample_types
 PBMCs,PBMCs,Specimen,Sample Type,Sample Type,PBMCs,PBMCs,https://includedcc.org/fhir/code-systems/sample_types
 Plasma,Plasma,Specimen,Sample Type,Sample Type,Plasma,Plasma,https://includedcc.org/fhir/code-systems/sample_types
 RNA,RNA,Specimen,Sample Type,Sample Type,RNA,RNA,https://includedcc.org/fhir/code-systems/sample_types
 Red Blood Cells,Red Blood Cells,Specimen,Sample Type,Sample Type,Red-Blood-Cells,Red Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
 Saliva,Saliva,Specimen,Sample Type,Sample Type,Saliva,Saliva,https://includedcc.org/fhir/code-systems/sample_types
+Skin Tape,Skin Tape,Specimen,Sample Type,Sample Type,Skin-Tape,Skin Tape,https://includedcc.org/fhir/code-systems/sample_types
+Tongue Swab,Tongue,Specimen,Sample Type,Sample Type,Tongue Swab,Tongue Swab,https://includedcc.org/fhir/code-systems/sample_types
 Tregs,Regulatory T Cells,Specimen,Sample Type,Sample Type,Tregs,Regulatory T Cells,https://includedcc.org/fhir/code-systems/sample_types
 WBCs,White Blood Cells,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells,White Blood Cells,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+CYTOF Ready White Blood Cells, CYTOF Ready White Blood Cells,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells DNA,White Blood Cells DNA,Specimen,Sample Type,Sample Type,DNA,DNA,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells RNA,White Blood Cells RNA,Specimen,Sample Type,Sample Type,RNA,RNA,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells Cryo,White Blood Cells Cryo,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells Lysate,White Blood Cells Lysate,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
+White Blood Cells Protein,White Blood Cells Protein,Specimen,Sample Type,Sample Type,WBCs,White Blood Cells,https://includedcc.org/fhir/code-systems/sample_types
 Peripheral Whole Blood,Peripheral Whole Blood,Specimen,Sample Type,Sample Type,Peripheral-Whole-Blood,Peripheral Whole Blood,https://includedcc.org/fhir/code-systems/sample_types
 Whole blood,Peripheral Whole Blood,Specimen,Sample Type,Sample Type,Peripheral-Whole-Blood,Peripheral Whole Blood,https://includedcc.org/fhir/code-systems/sample_types
+Whole Blood EDTA,Peripheral Whole Blood,Specimen,Sample Type,Sample Type,Peripheral-Whole-Blood,Peripheral Whole Blood,https://includedcc.org/fhir/code-systems/sample_types
