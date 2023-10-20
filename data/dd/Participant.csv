@@ -8,12 +8,12 @@ Father ID,Participant External ID for Participant's father (NA if Participant is
 Mother ID,Participant External ID for Participant's mother (NA if Participant is not the proband),string,
 Sibling ID,Participant External ID for Participant's sibling(s) (NA if Participant is not the proband),string,
 Other Family Member ID,Participant External ID for Participant's other family members (NA if Participant is not the proband),string,
-Family Relationship,Relationship of Participant to proband,enumeration,Proband;Father;Mother;Sibling;Other relative;Unrelated control
+Family Relationship,Relationship of Participant to proband,enumeration,Father;Mother;Other;Other relative;Parent;Proband;Sibling
 Sex,Sex of Participant,enumeration,Female;Male;Other;Unknown
 Race,Race of Participant,enumeration,American Indian or Alaska Native;Asian;Black or African American;More than one race;Native Hawaiian or Other Pacific Islander;Other;White;Prefer not to answer;Unknown;East Asian;Latin American;Middle Eastern or North African;South Asian
 Ethnicity,Ethnicity of Participant,enumeration,Hispanic or Latino;Not Hispanic or Latino;Prefer not to answer;Unknown
 Down Syndrome Status,Down Syndrome status of participant,enumeration,D21=Disomy 21 (euploid);T21=Trisomy 21 (Down syndrome)
 Age at First Patient Engagement,"Age in days of Participant at first recorded study event (enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",integer,
-First Patient Engagement Event,"Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",string,
-Outcomes Vital Status,Whether participant is alive or dead,enumeration,Dead;Alive;Unknown or not available
+First Patient Engagement Event,"Event for which Age at First Patient Engagement is given (e.g. enrollment, visit, observation, sample collection, survey completion, etc.). Age at enrollment is preferred, if available.",string,Baseline visit;Biospecimen collection;Enrollment
+Outcomes Vital Status,Whether participant is alive or dead,enumeration,Alive;Dead;Unknown or not available
 Age at Last Vital Status,Age in days when participant's vital status was last recorded,integer,
