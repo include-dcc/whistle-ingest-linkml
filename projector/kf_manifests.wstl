@@ -158,8 +158,8 @@ def FileAcl(study, acl) {
     }
 }
 
-def FileDocumentReference(study, fileid, all_manifests) {
-    var manifests: all_manifests[where $.file_external_id=fileid];
+def FileDocumentReference(study, fileid, manifests) {
+    // var manifests: all_manifests[where $.file_external_id=fileid];
     var subject_ids: $Unique(manifests[*].participant_external_id);
     var manifest: manifests[0];
 
@@ -182,6 +182,7 @@ def FileDocumentReference(study, fileid, all_manifests) {
     } else {
         var drs_url: manifest.access_url;
     }
+
 
     // DRS DocRef requires an actual DRS ID, which can only happen if our magic 
     // column is present and isn't just a placeholder
@@ -212,8 +213,8 @@ def FileDocumentReference(study, fileid, all_manifests) {
     
     content[0].attachment: FileDetailExtension(study, manifest);
     content[0].format.display: manifest.file_format
-    if (manifest.file_external_id? and manifest.file_external_id ~= "NA") {
-        content[].attachment.url: $StrCat("s3://", manifest.file_external_id);
+    if (fileid? and fileid ~= "NA") {
+        content[].attachment.url: $StrCat("s3://", fileid);
     }
 
     // Makeshift mechanism to link Index files to their parent
@@ -227,11 +228,11 @@ def FileDocumentReference(study, fileid, all_manifests) {
     resourceType: "DocumentReference";
 }
 
-def ProcessFileManifestData(study, files) {
-    var fileids: $Unique(files[*].file_external_id);
+def ProcessFileManifestData(study, file) {
+    // var fileids: $Unique(files[*].file_external_id);
 
     //out files: KfFileTask(study, fileids[], files[*]);
     // out files: FileDocumentReference(study, fileids[], files[*]);
-    out files: FileDocumentReference(study, fileids[], files[*]);
+    out files: FileDocumentReference(study, file.file_external_id, file.content);
     //out files: KfDocReference(study, files[], category);
 }
