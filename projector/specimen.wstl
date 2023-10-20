@@ -4,74 +4,109 @@
 //   * processing[x].additive - References to the appropriate Substance associated with the preservation_method
 //   * aliquots are stored inside the .container array
 //
-def ProcessSpecimen(study, specimen) {
-    // Aliquots should be embedded 
-    // var aliquots: specimen.aliquots;
-    var subject_id: specimen.participant_external_id;
-    var sample_status: HarmonizeMappedFirst(specimen.in_out, "In/Out");
+def ProcessSpecimen(study, subject_external_id, sample_external_id, subject_id, sample_id, specimen, aliquots) {
+    if subject_id? {
+        var sample_status: HarmonizeMappedFirst(specimen.sample_availability, "Sample Availability");
 
-    meta.tag[]: StudyMeta(study);
-    id (if specimen.sample_global_id?): StringReplace(specimen.sample_global_id, "_", "-");
+        meta.tag[]: StudyMeta(study);
+        id: sample_id;
 
-    status: sample_status.code;
-    resourceType: "Specimen";    
+        status: sample_status.code;
+        resourceType: "Specimen";    
 
-    identifier[]: Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.sample_external_id));
-    
-    if (specimen.sample_global_id?) {
-        identifier[0].use: "secondary";
-        identifier[]: Key_Identifier(study, "Specimen", specimen.sample_global_id);
-        identifier[1].use: "official";
+        identifier[]: Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, sample_external_id));
+        
+        if (sample_id?) {
+            identifier[0].use: "secondary";
+            identifier[]: Key_Identifier(study, "Specimen", sample_id);
+            identifier[1].use: "official";
+        } else {
+            //identifier[0].use: "official";
+        }
+
+        if (specimen.parent_sample_external_id? and specimen.parent_sample_external_id ~= "NA") {
+            parent[] (if specimen.parent_sample_external_id ~= sample_external_id): Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.parent_sample_external_id));
+        }
+
+        // Do we actually want to consider the volume inside "vial volume"
+
+        var substance_code: HarmonizeMapped(specimen.preservation_method, "Specimen Additive");
+        if (substance_code?) {
+            processing[0].additive[0]: Reference_Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, specimen.preservation_method));
+        }
+
+        processing[0].description (if specimen.laboratory_procedure ~= "NA"): specimen.laboratory_procedure;
+        condition[0].coding[]: HarmonizeMapped(specimen.preservation_method, "Specimen Condition");
+        condition[0].text: specimen.preservation_method;
+
+        if (specimen.sample_type = "PBMC") {
+            var sample_type: "PBMCs";
+        } else {
+            var sample_type: specimen.sample_type;
+        }
+
+        if (specimen.sample_type = "Whole blood") {
+            var sample_type!: "Peripheral Whole Blood";
+        }
+        type.coding[]: HarmonizeMapped(sample_type, "Sample Type");
+        type.text: sample_type;
+
+        collection._collectedDateTime.extension[0] (if specimen.age_at_biospecimen_collection?): AgeAtExtension(study, subject_external_id, specimen.age_at_biospecimen_collection, "days");
+        container[]: ProcessAliquot(study, subject_id, aliquots[]);
+        // container[]: ProcessAliquot(study, subject_id, specimen.aliquot[]);
+
+        subject: Reference_Key_Identifier(study, "Patient", subject_external_id);
+
     } else {
-        identifier[0].use: "official";
+        subject_id: subject_id;
+        sample_id: sample_id;
+        spec: specimen;
+        aliqs: aliquots;
+        ooga: "Booga";
     }
-
-    
-    if (specimen.parent_sample_external_id? and specimen.parent_sample_external_id ~= "NA") {
-        parent[] (if specimen.parent_sample_external_id ~= specimen.sample_id): Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.parent_sample_external_id));
-    }
-
-    // Do we actually want to consider the volume inside "vial volume"
-
-    var substance_code: HarmonizeMapped(specimen.preservation_method, "Specimen Additive");
-    if (substance_code?) {
-        processing[0].additive[0]: Reference_Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, specimen.preservation_method));
-    }
-
-    processing[0].description (if specimen.laboratory_procedure ~= "NA"): specimen.laboratory_procedure;
-    condition[0].coding[]: HarmonizeMapped(specimen.preservation_method, "Specimen Condition");
-    condition[0].text: specimen.preservation_method;
-
-    if (specimen.sample_type = "PBMC") {
-        var sample_type: "PBMCs";
-    } else {
-        var sample_type: specimen.sample_type;
-    }
-
-    if (specimen.sample_type = "Whole blood") {
-        var sample_type!: "Peripheral Whole Blood";
-    }
-    type.coding[]: HarmonizeMapped(sample_type, "Sample Type");
-    type.text: sample_type;
-
-    collection._collectedDateTime.extension[0] (if specimen.age_at_biospecimen_collection?): AgeAtExtension(study, subject_id, specimen.age_at_biospecimen_collection, "days");
-    container[]: ProcessAliquot(study, subject_id, specimen.aliquot[]);
-
-    subject: Reference_Key_Identifier(study, "Patient", subject_id);
-
 }
 
 //
-// We are assuming that the aliquots and file data have been embedded inside  
-// the specimen table 
+// Here, we permit that containers(aliquots) are extensions of the sample data, but 
+// we expect that the data has been properly grouped by the external ids
+// 
+// We are pulling the global IDs out of the first record since:
+//      1- They should be constant for the given pairing
+//      2- For some of the older data, we don't have all of this information
+//         and we need to embed the specimen inside the participant to get
+//         those fields. Whistler should be able to group by inside an 
+//         embedded table, but currently, that isn't working. So, since we are
+//         in crunch mode, we'll work around that limitation using a couple of
+//         functions. Therefore, we are putting all four IDs as parameters. 
 def ProcessSpecimenData(study, specimen) {
-    // out files: ProcessFileManifestData(study, all_specimen[]);
-    out specimen: ProcessSpecimen(study, specimen);
+    var participant_external_id: specimen.participant_external_id;
+    var sample_external_id: specimen.sample_external_id;
+    var subject_id: specimen.content[0].participant_global_id;
+    var sample_id: specimen.content[0].sample_global_id;
+
+    // We group by participant and sample id so that we can get distinct 
+    // containers (aliquots). The first entry should be the same for all of the
+    // regular sample content. 
+    out specimen: ProcessSpecimen(study, participant_external_id, sample_external_id, subject_id, sample_id, specimen.content[0], specimen.content[*]);
 }
 
+def ProcessParticipantSpecimenData(study, participant_external_id, participant_global_id, specimen) {
+    var sample_external_id: specimen.sample_external_id;
+    var sample_global_id: specimen.sample_global_id;
+    var specarray: [specimen];
+    $this:  ProcessSpecimen(study, participant_external_id, sample_external_id, participant_global_id, sample_global_id, specimen, specarray);
+}
 
-def ProcessSpecimenData_(study, all_specimen, all_aliquots) {
-    //out file_tasks: SpecimenTask(study, all_specimen[]);
-    // out files: ProcessFileManifestData(study, all_specimen[]);
-    out specimen: ProcessSpecimen(study, all_specimen[], all_aliquots[*]);
+// For some of the older data, we only had some of the required fields. To facilate the missing columns, we are 
+// embedding the specimen inside participant. Sadly, Whistler doesn't support 
+// embedding grouped_by data (it currently ignores the group_by). So, to work 
+// around this while we rush through some unexpected deadlines, we are just 
+// hacking stuff. 
+//
+// This function assumes no container information (i.e. there is only one sample 
+// row per unique sample ID)
+def ProcessPatientSpecimen(study, participant) {
+    var participant_external_id: participant.participant_external_id;
+    var participant_global_id: participant.participant_global_id;
+    out specimen: ProcessParticipantSpecimenData(study, participant_external_id, participant_global_id, participant.specimen[]);
 }

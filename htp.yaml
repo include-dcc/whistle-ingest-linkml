@@ -8,6 +8,11 @@ dd_prefix: https://includedcc.org/fhir
 output_filename: htp
 id_colname: Participant ID
 whistle_src: _entry.wstl
+annotations:
+  virtual_biorepository:
+    email: dsresearch@cuanschutz.edu
+    url: https://redcap.ucdenver.edu/surveys/?s=HXLXWCTPAT
+    readme: To request biospecimens from the HTP biobank, please use the request form (https://redcap.ucdenver.edu/surveys/?s=HXLXWCTPAT). General inquiries can be directed to dsresearch@cuanschutz.edu.
 code_harmonization_dir: harmony/htp
 require_official: True
 curies:
@@ -22,12 +27,12 @@ env:
   prod: prod-kf-inc
 dataset:
   participant:
-    filename: data/tables/HTP/htp_participant.csv
+    filename: data/tables/HTP/vbr_participants_harmonized_final.csv
     data_dictionary: 
       filename: data/dd/participant.csv
     code_harmonization: harmony/htp/data-harmony.csv
   condition:
-    filename: data/tables/HTP/condition.csv
+    filename: data/tables/HTP/vbr_participants_conditions.csv
     embed:
       dataset: participant
       colname: Participant External ID
@@ -55,23 +60,16 @@ dataset:
       filename: data/dd/additive.csv
     code_harmonization: harmony/htp/data-harmony.csv
   specimen:
-    filename: data/tables/HTP/FV_S71B1672_htp_samples_AND_COLLECTIONS_with_KF_global_ids_updated_2023-06-09.csv
+    filename: data/tables/HTP/vbr_biospecimens_harmonized_2023-10-05.csv
     subject_id: Participant External ID
     key_columns: Sample Global ID
+    group_by: Participant External ID, Sample External ID
     data_dictionary:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/htp/data-harmony.csv   
-  aliquot:
-    hidden: true
-    filename: data/tables/HTP/aliquot.csv
-    embed:
-      dataset: specimen
-      colname: Sample External ID
-    data_dictionary:
-      filename: data/dd/aliquot.csv
-    code_harmonization: harmony/htp/data-harmony.csv
   file_manifest:
-    filename: data/tables/HTP/FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files.csv,data/tables/HTP/htp_omics_metadata_with_global_ids_2023-06-20.csv
+    filename: data/tables/HTP/htp_v1_omics_datafiles_2023-10-10.csv,data/tables/HTP/FV_PJ79R4DY_FV_9Q2N4BTN_FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files_v5.csv
+    group_by: File External ID
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/htp/data-harmony.csv
