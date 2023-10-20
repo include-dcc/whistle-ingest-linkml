@@ -12,4 +12,5 @@ INCLUDE-Terms:
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-types.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-categories.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-access-types.json
-
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-family-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-sample-types.json

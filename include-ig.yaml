@@ -31,6 +31,15 @@ NCPI-FHIR-IG:
   # Each entry will be treated as surrounded by wildcards. 
   exclude-wildcards:
   -  example
+
+#    ig-supplement/CodeSystem-ncit.json              
+IG-Addendum:
+  source_type: FILES
+  resources:
+    - ../../../summary/summarize-vars/ig-supplement/observation_result_requirement.json
+    - ../../../summary/summarize-vars/ig-supplement/observation_definition_code.json  
+    - ../../../summary/summarize-vars/ig-supplement/StructureDefinition-study-group.json
+
 INCLUDE-Terms:
   source_type: FILES
 
