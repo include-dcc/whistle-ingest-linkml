@@ -10,7 +10,10 @@
 //  so if code=mother, then subject_id is the "mother" of focus_id
 def FamilyRelationshipObservation(study, relationship, focus_id, subject_id, local_system) {
     if (subject_id ~= focus_id) {
-        //var varcode: HarmonizeMapped(relationship, local_system);
+        // var varcode: HarmonizeMapped(relationship, local_system);
+        // This would normally contain the extra data-dictionary mappings, but
+        // the current IG is too strict, I think, to support these codes in 
+        // addition to the formal ones.
         var varcode: HarmonizeMappedFirst(relationship, local_system);
 
         meta.tag[]: StudyMeta(study);
