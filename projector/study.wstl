@@ -40,6 +40,21 @@ def Study(study) {
     relatedArtifact[] (if study.remote_access?): StudyArtifact("derived-from", study.remote_access.type, study.remote_access.url);
     relatedArtifact[] (if study.accession?): StudyArtifact("derived-from", "DbGaP", study.accession);
 
+    if study.annotations.virtual_biorepository? {
+        contact[]: {
+            name: "Virtual Biorepository Contact";
+            telecom[]: {
+                system: "email";
+                value: study.annotations.virtual_biorepository.email;
+            };
+            telecom[]: {
+                system: "url";
+                value: study.annotations.virtual_biorepository.url;
+            }
+        }
+        note[].text: study.annotations.virtual_biorepository.readme;
+    }
+
     resourceType: "ResearchStudy";
 }
 
