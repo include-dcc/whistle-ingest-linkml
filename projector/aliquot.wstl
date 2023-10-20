@@ -16,22 +16,27 @@ def ConcentrationQuantityExtension(study, aliquot) {
     }
 }
 
-
 // Arguments: 
 //  study - This is the full study object created by Whistler
 //  subject_id - This is the participant ID which will be used to build a proper reference to the Patient resource
 //  aliquot - Individual row containing details about the aliquot itself
 def ProcessAliquot(study, subject_id, aliquot) {
-    identifier[]: Key_Identifier(study,"biospecimen/container/id", aliquot.barcode );
-    identifier[0].use: "official";
-    specimenQuantity.value: $ParseFloat(aliquot.vial_volume);
-    specimenQuantity.unit: "ml";
-    specimenQuantity.code: "ml";
-    specimenQuantity.system: "http://ucum.org";
-    description: aliquot.biospecimen_storage;
-    extension[0]: ConcentrationQuantityExtension(study, aliquot);
+    if (aliquot.container_global_id?) {
+        if (aliquot.container_global_id ~= "NA") {
+            identifier[]: Key_Identifier(study,"biospecimen/container/id", aliquot.container_global_id);
+            identifier[0].use: "official";
+            identifier[]: Key_Identifier(study,"biospecimen/container/id", aliquot.container_external_id);
+            identifier[1].use: "secondary";
+            specimenQuantity.value: $ParseFloat(aliquot.volume);
+            specimenQuantity.unit: "mL";
+            specimenQuantity.code: "mL";
+            specimenQuantity.system: "http://ucum.org";
+            description: aliquot.biospecimen_storage;
+            extension[0]: ConcentrationQuantityExtension(study, aliquot);
 
-    if (aliquot.preservation_method? and aliquot.preservation_method ~= "NA") {
-        additiveReference: Reference_Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, aliquot.preservation_method))
+            if (aliquot.preservation_method? and aliquot.preservation_method ~= "NA") {
+                additiveReference: Reference_Key_Identifier(study, "Substance", BuildSubstanceIdentifier(study, aliquot.preservation_method))
+            }
+        }
     }
 }
