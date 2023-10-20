@@ -49,12 +49,16 @@ dataset:
     code_harmonization: harmony/x01-desmith/data-harmony.csv
   specimen:
     filename: data/tables/X01-deSmith/FV_JKH8GE6D_desmith_biospecimen_manifest_v2.csv
+    group_by: Participant External ID, Sample External ID
+    embed:
+      dataset: participant
+      colname: Participant External ID
     data_dictionary:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/x01-desmith/data-harmony.csv
   file_manifest:
-    filename: data/tables/X01-deSmith/FV_FVF4CYX6_datafile-not-controlled.csv
-    #filename: data/tables/X01-deSmith/FV_FVF4CYX6_datafile-not-controlled.csv,data/tables/X01-deSmith/FV_FVF4CYX6_datafile-controlled.csv
+    filename: None
+    #filename: data/tables/X01-deSmith/desmith_datafile_manifest_of_subset_of_files_w_updated_drs_links_access_control.csv
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/x01-desmith/data-harmony.csv

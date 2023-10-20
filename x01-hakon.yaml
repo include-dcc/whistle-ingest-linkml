@@ -8,6 +8,9 @@ dd_prefix: https://includedcc.org/fhir
 output_filename: x01-hakon
 id_colname: Participant ID
 whistle_src: _entry.wstl
+annotations:
+  virtual_biorepository:
+    email: hakonarson@chop.edu
 code_harmonization_dir: harmony/x01-hakon
 require_official: True
 curies:
@@ -49,14 +52,19 @@ dataset:
     code_harmonization: harmony/x01-hakon/data-harmony.csv
   specimen:
     filename: data/tables/X01-Hakon/FV_CFPDTD0T_hakon_biospecimen_manifest.csv
+    # group_by: Participant External ID, Sample External ID
+    embed:
+      dataset: participant
+      colname: Participant External ID
     data_dictionary:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/x01-hakon/data-harmony.csv
   file_manifest:
-    filename: data/tables/X01-Hakon/FV_CPMH73AG_datafile-not-controlled.csv
-    #filename: data/tables/X01-Hakon/FV_CPMH73AG_datafile-not-controlled.csv,filename: data/tables/X01-Hakon/FV_CPMH73AG_datafile-controlled.csv
+    filename: data/tables/X01-Hakon/hakon_datafile_manifest_subset_of_existing_registered_files_w_new_drs_links.csv
+    #filename: data/tables/X01-Hakon/hakon_datafile_manifest_subset_of_existing_registered_files_w_new_drs_links.csv,data/tables/X01-Hakon/hakon_ALL_controlled_datafile_manifest.csv
     data_dictionary:
       filename: data/dd/datafile.csv
+    group_by: File External ID
     code_harmonization: harmony/x01-hakon/data-harmony.csv
 active_tables:
   ALL: true

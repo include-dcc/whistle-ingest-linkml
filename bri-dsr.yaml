@@ -51,9 +51,13 @@ dataset:
     filename: data/tables/BRI-DSR/FV_DYE2YKY2_FV_8ZY1CTV2_khor_biospecimen_manifest_draft_age_days.csv
     data_dictionary:
       filename: data/dd/specimen.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
     code_harmonization: harmony/bri-dsr/data-harmony.csv
   file_manifest:
     filename: data/tables/BRI-DSR/FV_XS4Q6649_FV_XAS6JTHQ_brids_data_file_manifest_v3.csv
+    group_by: File External ID
     data_dictionary:
       filename: data/dd/datafile.csv
     code_harmonization: harmony/bri-dsr/data-harmony.csv
