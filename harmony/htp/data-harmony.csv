@@ -42,7 +42,7 @@ DS-Sleep,DS-Sleep,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/f
 HTP,HTP,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-deSmith,X01-deSmith,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
 X01-Hakonarson,X01-Hakonarson,study,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
-Observed,Condition was observed or reported (this will be the case for most conditions),condition,Condition Interpretation,Condition Interpretation,LA33635-6,Observed,http://loinc.org,,
+Observed,Condition was observed or reported (this will be the case for most conditions),condition,Condition Interpretation,Condition Interpretation,LA33635-6,Observed,http://loinc.org,
 Observed,Condition was observed or reported (this will be the case for most conditions),Condition,Condition Interpretation,Condition Interpretation,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Not Observed,Not Observed,condition,Condition Interpretation,Condition Interpretation,LA19655-2,Not Observed,http://loinc.org,,
 Current,Condition is ongoing,Condition,Condition Status,Condition Status,LA9040-2,Ongoing,http://loinc.org,
