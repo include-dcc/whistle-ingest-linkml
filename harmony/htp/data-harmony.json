@@ -1043,6 +1043,11 @@
               "code": "Observed",
               "display": "Condition was observed or reported (this will be the case for most conditions)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "Observed",
+              "display": "Condition was observed or reported (this will be the case for most conditions)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -1053,6 +1058,23 @@
             {
               "code": "Not Observed",
               "display": "Not Observed",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Condition Interpretation",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "Observed",
+          "display": "Condition was observed or reported (this will be the case for most conditions)",
+          "target": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
               "equivalence": "equivalent"
             }
           ]
@@ -2137,6 +2159,28 @@
           ]
         },
         {
+          "code": "B cells Cryo",
+          "display": "B Cells Cryo",
+          "target": [
+            {
+              "code": "B-Cells",
+              "display": "B Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Blood Smear Slide",
+          "display": "Blood Smear Slide",
+          "target": [
+            {
+              "code": "Blood-Smear-Slide",
+              "display": "Blood Smear Slide",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Buffy Coat",
           "display": "Buffy Coat",
           "target": [
@@ -2159,7 +2203,29 @@
           ]
         },
         {
+          "code": "CD4+ Tconv cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+-Tconv-Cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "CD8+ T Cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+T-Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T cells",
           "display": "CD8+ T Cells",
           "target": [
             {
@@ -2335,6 +2401,28 @@
           ]
         },
         {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Salivette",
+          "display": "Salivette",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Skin Tape",
           "display": "Skin Tape",
           "target": [
@@ -2350,7 +2438,7 @@
           "display": "Tongue",
           "target": [
             {
-              "code": "Tongue Swab",
+              "code": "Tongue-Swab",
               "display": "Tongue Swab",
               "equivalence": "equivalent"
             }
@@ -2473,6 +2561,28 @@
           ]
         },
         {
+          "code": "B cells Cryo",
+          "display": "B Cells Cryo",
+          "target": [
+            {
+              "code": "B cells Cryo",
+              "display": "B Cells Cryo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Blood Smear Slide",
+          "display": "Blood Smear Slide",
+          "target": [
+            {
+              "code": "Blood Smear Slide",
+              "display": "Blood Smear Slide",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Buffy Coat",
           "display": "Buffy Coat",
           "target": [
@@ -2495,11 +2605,33 @@
           ]
         },
         {
+          "code": "CD4+ Tconv cells",
+          "display": "CD4+ Tconv Cells",
+          "target": [
+            {
+              "code": "CD4+ Tconv cells",
+              "display": "CD4+ Tconv Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "CD8+ T Cells",
           "display": "CD8+ T Cells",
           "target": [
             {
               "code": "CD8+ T Cells",
+              "display": "CD8+ T Cells",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD8+ T cells",
+          "display": "CD8+ T Cells",
+          "target": [
+            {
+              "code": "CD8+ T cells",
               "display": "CD8+ T Cells",
               "equivalence": "equivalent"
             }
@@ -2678,6 +2810,11 @@
               "code": "Saliva",
               "display": "Saliva",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -2685,6 +2822,11 @@
           "code": "Salivette",
           "display": "Salivette",
           "target": [
+            {
+              "code": "Salivette",
+              "display": "Salivette",
+              "equivalence": "equivalent"
+            },
             {
               "code": "Salivette",
               "display": "Salivette",
@@ -2824,8 +2966,8 @@
           "display": "Saliva",
           "target": [
             {
-              "code": "Saliva Sample",
-              "display": "C174119",
+              "code": "C174119",
+              "display": "Saliva Sample",
               "equivalence": "equivalent"
             }
           ]
@@ -2835,64 +2977,8 @@
           "display": "Salivette",
           "target": [
             {
-              "code": "Saliva Sample",
-              "display": "C174119",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Tyle",
-      "target": "https://includedcc.org/fhir/code-systems/sample_types",
-      "element": [
-        {
-          "code": "B cells Cryo",
-          "display": "B Cells Cryo",
-          "target": [
-            {
-              "code": "B-Cells",
-              "display": "B Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Blood Smear Slide",
-          "display": "Blood Smear Slide",
-          "target": [
-            {
-              "code": "Blood-Smear-Slide",
-              "display": "Blood Smear Slide",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Tyle",
-      "target": "self",
-      "element": [
-        {
-          "code": "B cells Cryo",
-          "display": "B Cells Cryo",
-          "target": [
-            {
-              "code": "B cells Cryo",
-              "display": "B Cells Cryo",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Blood Smear Slide",
-          "display": "Blood Smear Slide",
-          "target": [
-            {
-              "code": "Blood Smear Slide",
-              "display": "Blood Smear Slide",
+              "code": "C174119",
+              "display": "Saliva Sample",
               "equivalence": "equivalent"
             }
           ]
@@ -2964,8 +3050,8 @@
           "display": "Saliva",
           "target": [
             {
-              "code": "Saliva Sample",
-              "display": "C174119",
+              "code": "C174119",
+              "display": "Saliva Sample",
               "equivalence": "equivalent"
             }
           ]
@@ -2980,6 +3066,11 @@
           "code": "Saliva",
           "display": "Saliva",
           "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            },
             {
               "code": "Saliva",
               "display": "Saliva",
@@ -3038,6 +3129,17 @@
       "target": "https://includedcc.org/fhir/code-systems/sample_types",
       "element": [
         {
+          "code": "Saliva",
+          "display": "Saliva",
+          "target": [
+            {
+              "code": "Saliva",
+              "display": "Saliva",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Skin Tape",
           "display": "Skin Tape",
           "target": [
@@ -3053,7 +3155,7 @@
           "display": "Tongue",
           "target": [
             {
-              "code": "Tongue Swab",
+              "code": "Tongue-Swab",
               "display": "Tongue Swab",
               "equivalence": "equivalent"
             }
@@ -3325,8 +3427,8 @@
           "display": "Saliva",
           "target": [
             {
-              "code": "Saliva Sample",
-              "display": "C174119",
+              "code": "C174119",
+              "display": "Saliva Sample",
               "equivalence": "equivalent"
             }
           ]
@@ -3570,6 +3672,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -3616,6 +3729,17 @@
           "target": [
             {
               "code": "Transcriptomic",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
               "display": "Transcriptomics",
               "equivalence": "equivalent"
             }
@@ -3688,7 +3812,7 @@
           "target": [
             {
               "code": "Variant-Calls-Index",
-              "display": "Variant Calls",
+              "display": "Variant Call Index",
               "equivalence": "equivalent"
             }
           ]
@@ -3870,6 +3994,17 @@
           ]
         },
         {
+          "code": "Unaligned Reads",
+          "display": "Unaligned Reads",
+          "target": [
+            {
+              "code": "Unaligned-Reads",
+              "display": "Unaligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Variant Calls",
           "display": "Variant Calls",
           "target": [
@@ -3886,7 +4021,7 @@
           "target": [
             {
               "code": "Variant-Calls-Index",
-              "display": "Variant Calls",
+              "display": "Variant Calls Index",
               "equivalence": "equivalent"
             }
           ]
@@ -4140,6 +4275,17 @@
           ]
         },
         {
+          "code": "Unaligned Reads",
+          "display": "Unaligned Reads",
+          "target": [
+            {
+              "code": "Unaligned Reads",
+              "display": "Unaligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Variant Calls",
           "display": "Variant Calls",
           "target": [
@@ -4210,6 +4356,17 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "WGS",
+          "display": "Whole genome sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -4256,6 +4413,17 @@
           "target": [
             {
               "code": "Whole genome sequencing",
+              "display": "Whole genome sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WGS",
+          "display": "Whole genome sequencing",
+          "target": [
+            {
+              "code": "WGS",
               "display": "Whole genome sequencing",
               "equivalence": "equivalent"
             }
