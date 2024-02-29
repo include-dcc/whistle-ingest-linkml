@@ -57,7 +57,7 @@ Trio+,Trio+,participant,Family Type,Family Type,Trio+,Trio+,https://includedcc.o
 Father,Father,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Mother,Mother,Participant,Family Relationship,Inverse Family Relationship,CHILD,child,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Sibling,Sibling,Participant,Family Relationship,Inverse Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
-Parent,Parent,Participant,Family Relationship,Family Relationship,PRN,parent,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Parent,Parent,Participant,Family Relationship,Family Relationship,PRN,parent,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Father,Father,Participant,Family Relationship,Family Relationship,FTH,father,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Mother,Mother,Participant,Family Relationship,Family Relationship,MTH,mother,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
 Sibling,Sibling,Participant,Family Relationship,Family Relationship,SIB,sibling,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
