@@ -1,0 +1,26 @@
+
+def FamilyMemberRationshipType(study, participant_row) {
+
+    var subject_id: participant_row.participant_external_id;
+    var family_relationship: participant_row.family_relationship;
+    var varcode: HarmonizeMappedFirst(family_relationship, "Family Membership");
+
+    meta.tag[]: StudyMeta(study);
+    identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", family_relationship));
+    identifier[0].use: "official";
+        
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    code.coding[]: BuildCoding("NCIT:C25648", "Relationship", "http://purl.obolibrary.org/obo/ncit.owl");
+    code.text: "Relationship Within Family";
+
+
+    valueCodeableConcept.coding[]: varcode;
+    valueCodeableConcept.text: varcode[0].display;
+        
+    status: "final";
+    resourceType: "Observation";
+}
+
+def ProcessFamilyMemberships(study, participants){
+    out family_memberships: FamilyMemberRationshipType(study, participants[]);
+}
