@@ -110,6 +110,8 @@ def pull_codes_from_condition(
 
         # HPO
         try:
+            print(condition_desc)
+            pdb.set_trace()
             coding = tlkup.hp(line)
             if coding:
                 key = "-".join([condition_desc, coding["code"]])
@@ -260,11 +262,15 @@ if __name__ == "__main__":
         help="Filename where we'll write our terms which don't have a meaningful harmony match",
     )
     parser.add_argument(
-        "--default", help="Filename from which to pull base code information."
+        "--default",
+        help="Filename from which to pull base code information.",
     )
 
     pdb.set_trace()
     args = parser.parse_args()
+
+    if args.default is None:
+        args.default = Path(__file__).parent / "_default_codes.csv"
     default_codings = DefaultCodings(Path(args.default))
 
     for f in args.config:

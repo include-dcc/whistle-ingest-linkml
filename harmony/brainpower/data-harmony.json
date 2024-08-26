@@ -4,1256 +4,6 @@
   "version": "v1",
   "group": [
     {
-      "source": "Research Domain",
-      "target": "urn:oid:2.16.840.1.113883.6.177",
-      "element": [
-        {
-          "code": "Behavior and Behavior Mechanisms",
-          "display": "Behavior and Behavior Mechanisms",
-          "target": [
-            {
-              "code": "D001520",
-              "display": "Behavior and Behavior Mechanisms",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Congenital Heart Defects",
-          "display": "Congenital Heart Defects",
-          "target": [
-            {
-              "code": "D006330",
-              "display": "Congenital Heart Defects",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immune System Diseases",
-          "display": "Immune System Diseases",
-          "target": [
-            {
-              "code": "D007154",
-              "display": "Immune System Diseases",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Hematologic Diseases",
-          "display": "Hematologic Diseases",
-          "target": [
-            {
-              "code": "D006402",
-              "display": "Hematologic Diseases",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Sleep Wake Disorders",
-          "display": "Sleep Wake Disorders",
-          "target": [
-            {
-              "code": "D012893",
-              "display": "Sleep Wake Disorders",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "All Co-occurring Conditions",
-          "display": "All Co-occurring Conditions",
-          "target": [
-            {
-              "code": "D013568",
-              "display": "All Co-occurring Conditions",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Research Domain",
-      "target": "self",
-      "element": [
-        {
-          "code": "Behavior and Behavior Mechanisms",
-          "display": "Behavior and Behavior Mechanisms",
-          "target": [
-            {
-              "code": "Behavior and Behavior Mechanisms",
-              "display": "Behavior and Behavior Mechanisms",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Congenital Heart Defects",
-          "display": "Congenital Heart Defects",
-          "target": [
-            {
-              "code": "Congenital Heart Defects",
-              "display": "Congenital Heart Defects",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immune System Diseases",
-          "display": "Immune System Diseases",
-          "target": [
-            {
-              "code": "Immune System Diseases",
-              "display": "Immune System Diseases",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Hematologic Diseases",
-          "display": "Hematologic Diseases",
-          "target": [
-            {
-              "code": "Hematologic Diseases",
-              "display": "Hematologic Diseases",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Sleep Wake Disorders",
-          "display": "Sleep Wake Disorders",
-          "target": [
-            {
-              "code": "Sleep Wake Disorders",
-              "display": "Sleep Wake Disorders",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "All Co-occurring Conditions",
-          "display": "All Co-occurring Conditions",
-          "target": [
-            {
-              "code": "All Co-occurring Conditions",
-              "display": "All Co-occurring Conditions",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Participant Lifespan Stage",
-      "target": "https://includedcc.org/fhir/code-systems/participant_lifespan_age",
-      "element": [
-        {
-          "code": "Fetal",
-          "display": "Fetal",
-          "target": [
-            {
-              "code": "fetal",
-              "display": "Fetal",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Neonatal",
-          "display": "Neonatal",
-          "target": [
-            {
-              "code": "neonatal",
-              "display": "Neonatal",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Pediatric",
-          "display": "Pediatric",
-          "target": [
-            {
-              "code": "pediatric",
-              "display": "Pediatric",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Adult",
-          "display": "Adult",
-          "target": [
-            {
-              "code": "adult",
-              "display": "Adult",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Participant Lifespan Stage",
-      "target": "self",
-      "element": [
-        {
-          "code": "Fetal",
-          "display": "Fetal",
-          "target": [
-            {
-              "code": "Fetal",
-              "display": "Fetal",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Neonatal",
-          "display": "Neonatal",
-          "target": [
-            {
-              "code": "Neonatal",
-              "display": "Neonatal",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Pediatric",
-          "display": "Pediatric",
-          "target": [
-            {
-              "code": "Pediatric",
-              "display": "Pediatric",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Adult",
-          "display": "Adult",
-          "target": [
-            {
-              "code": "Adult",
-              "display": "Adult",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Clinical Data Source Type",
-      "target": "https://includedcc.org/fhir/code-systems/clinical_data_source_types",
-      "element": [
-        {
-          "code": "Medical Record",
-          "display": "Medical Record",
-          "target": [
-            {
-              "code": "medical-record",
-              "display": "Medical Record",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Investigator Assessment",
-          "display": "Investigator Assessment",
-          "target": [
-            {
-              "code": "investigator-assessment",
-              "display": "Investigator Assessment",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Participant or Caregiver Report",
-          "display": "Participant or Caregiver Report",
-          "target": [
-            {
-              "code": "participant-or-caregiver-report",
-              "display": "Participant or Caregiver Report",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Unknown",
-          "display": "Unknown",
-          "target": [
-            {
-              "code": "unknown",
-              "display": "Unknown",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Clinical Data Source Type",
-      "target": "self",
-      "element": [
-        {
-          "code": "Medical Record",
-          "display": "Medical Record",
-          "target": [
-            {
-              "code": "Medical Record",
-              "display": "Medical Record",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Investigator Assessment",
-          "display": "Investigator Assessment",
-          "target": [
-            {
-              "code": "Investigator Assessment",
-              "display": "Investigator Assessment",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Participant or Caregiver Report",
-          "display": "Participant or Caregiver Report",
-          "target": [
-            {
-              "code": "Participant or Caregiver Report",
-              "display": "Participant or Caregiver Report",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Unknown",
-          "display": "Unknown",
-          "target": [
-            {
-              "code": "Unknown",
-              "display": "Unknown",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Expected Data Category",
-      "target": "https://includedcc.org/fhir/code-systems/expected_data_category",
-      "element": [
-        {
-          "code": "Unharmonized Demographic/Clinical Data",
-          "display": "Unharmonized Demographic/Clinical Data",
-          "target": [
-            {
-              "code": "unharmonized-demographic/clinical-data",
-              "display": "Unharmonized Demographic/Clinical Data",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Harmonized Demographic/Clinical Data",
-          "display": "Harmonized Demographic/Clinical Data",
-          "target": [
-            {
-              "code": "Harmonized Demographic/Clinical Data",
-              "display": "Harmonized Demographic/Clinical Data",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomics",
-          "display": "Genomics",
-          "target": [
-            {
-              "code": "genomics",
-              "display": "Genomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Transcriptomics",
-          "display": "Transcriptomics",
-          "target": [
-            {
-              "code": "transcriptomics",
-              "display": "Transcriptomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Proteomics",
-          "display": "Proteomics",
-          "target": [
-            {
-              "code": "proteomics",
-              "display": "Proteomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Metabolomics",
-          "display": "Metabolomics",
-          "target": [
-            {
-              "code": "metabolomics",
-              "display": "Metabolomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Cognitive/Behavioral",
-          "display": "Cognitive/Behavioral",
-          "target": [
-            {
-              "code": "cognitive/behavioral",
-              "display": "Cognitive/Behavioral",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immune Maps",
-          "display": "Immune Maps",
-          "target": [
-            {
-              "code": "immune-maps",
-              "display": "Immune Maps",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Imaging",
-          "display": "Imaging",
-          "target": [
-            {
-              "code": "imaging",
-              "display": "Imaging",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Microbiome",
-          "display": "Microbiome",
-          "target": [
-            {
-              "code": "microbiome",
-              "display": "Microbiome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Expected Data Category",
-      "target": "self",
-      "element": [
-        {
-          "code": "Unharmonized Demographic/Clinical Data",
-          "display": "Unharmonized Demographic/Clinical Data",
-          "target": [
-            {
-              "code": "Unharmonized Demographic/Clinical Data",
-              "display": "Unharmonized Demographic/Clinical Data",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Harmonized Demographic/Clinical Data",
-          "display": "Harmonized Demographic/Clinical Data",
-          "target": [
-            {
-              "code": "Harmonized Demographic/Clinical Data",
-              "display": "Harmonized Demographic/Clinical Data",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomics",
-          "display": "Genomics",
-          "target": [
-            {
-              "code": "Genomics",
-              "display": "Genomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Transcriptomics",
-          "display": "Transcriptomics",
-          "target": [
-            {
-              "code": "Transcriptomics",
-              "display": "Transcriptomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Proteomics",
-          "display": "Proteomics",
-          "target": [
-            {
-              "code": "Proteomics",
-              "display": "Proteomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Metabolomics",
-          "display": "Metabolomics",
-          "target": [
-            {
-              "code": "Metabolomics",
-              "display": "Metabolomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Cognitive/Behavioral",
-          "display": "Cognitive/Behavioral",
-          "target": [
-            {
-              "code": "Cognitive/Behavioral",
-              "display": "Cognitive/Behavioral",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immune Maps",
-          "display": "Immune Maps",
-          "target": [
-            {
-              "code": "Immune Maps",
-              "display": "Immune Maps",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Imaging",
-          "display": "Imaging",
-          "target": [
-            {
-              "code": "Imaging",
-              "display": "Imaging",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Microbiome",
-          "display": "Microbiome",
-          "target": [
-            {
-              "code": "Microbiome",
-              "display": "Microbiome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "GUID type",
-      "target": "https://includedcc.org/fhir/code-systems/guid_type",
-      "element": [
-        {
-          "code": "NDAR",
-          "display": "NDAR",
-          "target": [
-            {
-              "code": "ndar",
-              "display": "NDAR",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "None",
-          "display": "None",
-          "target": [
-            {
-              "code": "none",
-              "display": "None",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "GUID type",
-      "target": "self",
-      "element": [
-        {
-          "code": "NDAR",
-          "display": "NDAR",
-          "target": [
-            {
-              "code": "NDAR",
-              "display": "NDAR",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "None",
-          "display": "None",
-          "target": [
-            {
-              "code": "None",
-              "display": "None",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Study Page Codes",
-      "target": "https://includedcc.org/fhir/code-systems/study_page_codes",
-      "element": [
-        {
-          "code": "Study Code",
-          "display": "Study Code",
-          "target": [
-            {
-              "code": "study-code",
-              "display": "Study Code",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Title",
-          "display": "Study Title",
-          "target": [
-            {
-              "code": "study-title",
-              "display": "Study Title",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Program",
-          "display": "Program",
-          "target": [
-            {
-              "code": "program",
-              "display": "Program",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Description",
-          "display": "Study Description",
-          "target": [
-            {
-              "code": "study-description",
-              "display": "Study Description",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Principal Investigator Name",
-          "display": "Principal Investigator Name",
-          "target": [
-            {
-              "code": "principal-investigator-name",
-              "display": "Principal Investigator Name",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Name",
-          "display": "Study Contact Name",
-          "target": [
-            {
-              "code": "study-contact-name",
-              "display": "Study Contact Name",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Institution",
-          "display": "Study Contact Institution",
-          "target": [
-            {
-              "code": "study-contact-institution",
-              "display": "Study Contact Institution",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Email",
-          "display": "Study Contact Email",
-          "target": [
-            {
-              "code": "study-contact-email",
-              "display": "Study Contact Email",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository Email",
-          "display": "Virtual Biorepository Email",
-          "target": [
-            {
-              "code": "virtual-biorepository-email",
-              "display": "Virtual Biorepository Email",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository URL",
-          "display": "Virtual Biorepository URL",
-          "target": [
-            {
-              "code": "virtual-biorepository-url",
-              "display": "Virtual Biorepository URL",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository Readme",
-          "display": "Virtual Biorepository Readme",
-          "target": [
-            {
-              "code": "virtual-biorepository-readme",
-              "display": "Virtual Biorepository Readme",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Research Domain",
-          "display": "Research Domain",
-          "target": [
-            {
-              "code": "research-domain",
-              "display": "Research Domain",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Participant Lifespan Stage",
-          "display": "Participant Lifespan Stage",
-          "target": [
-            {
-              "code": "participant-lifespan-stage",
-              "display": "Participant Lifespan Stage",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Selection Criteria",
-          "display": "Selection Criteria",
-          "target": [
-            {
-              "code": "selection-criteria",
-              "display": "Selection Criteria",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Design",
-          "display": "Study Design",
-          "target": [
-            {
-              "code": "study-design",
-              "display": "Study Design",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Clinical Data Source Type",
-          "display": "Clinical Data Source Type",
-          "target": [
-            {
-              "code": "clinical-data-source-type",
-              "display": "Clinical Data Source Type",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Expected Data Category",
-          "display": "Expected Data Category",
-          "target": [
-            {
-              "code": "expected-data-category",
-              "display": "Expected Data Category",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Website",
-          "display": "Study Website",
-          "target": [
-            {
-              "code": "study-website",
-              "display": "Study Website",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "dbGaP",
-          "display": "dbGaP",
-          "target": [
-            {
-              "code": "dbgap",
-              "display": "dbGaP",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Publication",
-          "display": "Publication",
-          "target": [
-            {
-              "code": "publication",
-              "display": "Publication",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Expected Number of Participants",
-          "display": "Study Expected Number of Participants",
-          "target": [
-            {
-              "code": "study-expected-number-of-participants",
-              "display": "Study Expected Number of Participants",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "GUID type",
-          "display": "GUID type",
-          "target": [
-            {
-              "code": "guid-type",
-              "display": "GUID type",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Study Page Codes",
-      "target": "self",
-      "element": [
-        {
-          "code": "Study Code",
-          "display": "Study Code",
-          "target": [
-            {
-              "code": "Study Code",
-              "display": "Study Code",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Title",
-          "display": "Study Title",
-          "target": [
-            {
-              "code": "Study Title",
-              "display": "Study Title",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Program",
-          "display": "Program",
-          "target": [
-            {
-              "code": "Program",
-              "display": "Program",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Description",
-          "display": "Study Description",
-          "target": [
-            {
-              "code": "Study Description",
-              "display": "Study Description",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Principal Investigator Name",
-          "display": "Principal Investigator Name",
-          "target": [
-            {
-              "code": "Principal Investigator Name",
-              "display": "Principal Investigator Name",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Name",
-          "display": "Study Contact Name",
-          "target": [
-            {
-              "code": "Study Contact Name",
-              "display": "Study Contact Name",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Institution",
-          "display": "Study Contact Institution",
-          "target": [
-            {
-              "code": "Study Contact Institution",
-              "display": "Study Contact Institution",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Contact Email",
-          "display": "Study Contact Email",
-          "target": [
-            {
-              "code": "Study Contact Email",
-              "display": "Study Contact Email",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository Email",
-          "display": "Virtual Biorepository Email",
-          "target": [
-            {
-              "code": "Virtual Biorepository Email",
-              "display": "Virtual Biorepository Email",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository URL",
-          "display": "Virtual Biorepository URL",
-          "target": [
-            {
-              "code": "Virtual Biorepository URL",
-              "display": "Virtual Biorepository URL",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Virtual Biorepository Readme",
-          "display": "Virtual Biorepository Readme",
-          "target": [
-            {
-              "code": "Virtual Biorepository Readme",
-              "display": "Virtual Biorepository Readme",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Research Domain",
-          "display": "Research Domain",
-          "target": [
-            {
-              "code": "Research Domain",
-              "display": "Research Domain",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Participant Lifespan Stage",
-          "display": "Participant Lifespan Stage",
-          "target": [
-            {
-              "code": "Participant Lifespan Stage",
-              "display": "Participant Lifespan Stage",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Selection Criteria",
-          "display": "Selection Criteria",
-          "target": [
-            {
-              "code": "Selection Criteria",
-              "display": "Selection Criteria",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Design",
-          "display": "Study Design",
-          "target": [
-            {
-              "code": "Study Design",
-              "display": "Study Design",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Clinical Data Source Type",
-          "display": "Clinical Data Source Type",
-          "target": [
-            {
-              "code": "Clinical Data Source Type",
-              "display": "Clinical Data Source Type",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Expected Data Category",
-          "display": "Expected Data Category",
-          "target": [
-            {
-              "code": "Expected Data Category",
-              "display": "Expected Data Category",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Website",
-          "display": "Study Website",
-          "target": [
-            {
-              "code": "Study Website",
-              "display": "Study Website",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "dbGaP",
-          "display": "dbGaP",
-          "target": [
-            {
-              "code": "dbGaP",
-              "display": "dbGaP",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Publication",
-          "display": "Publication",
-          "target": [
-            {
-              "code": "Publication",
-              "display": "Publication",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Study Expected Number of Participants",
-          "display": "Study Expected Number of Participants",
-          "target": [
-            {
-              "code": "Study Expected Number of Participants",
-              "display": "Study Expected Number of Participants",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "GUID type",
-          "display": "GUID type",
-          "target": [
-            {
-              "code": "GUID type",
-              "display": "GUID type",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Study Program",
-      "target": "https://includedcc.org/fhir/code-systems/programs",
-      "element": [
-        {
-          "code": "INCLUDE",
-          "display": "INCLUDE",
-          "target": [
-            {
-              "code": "include",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "KF",
-          "display": "KF",
-          "target": [
-            {
-              "code": "kf",
-              "display": "Kids First",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Study Program",
-      "target": "self",
-      "element": [
-        {
-          "code": "INCLUDE",
-          "display": "INCLUDE",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "KF",
-          "display": "KF",
-          "target": [
-            {
-              "code": "KF",
-              "display": "KF",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "source": "units",
       "target": "http://unitsofmeasure.org",
       "element": [
@@ -2088,6 +838,194 @@
       ]
     },
     {
+      "source": "IncludeProgram",
+      "target": "https://includedcc.org/fhir/code-systems/programs",
+      "element": [
+        {
+          "code": "INCLUDE",
+          "display": "INCLUDE",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ABC-DS",
+          "display": "ABC-DS",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRI-DSR",
+          "display": "BRI-DSR",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DSC",
+          "display": "DSC",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DS-Sleep",
+          "display": "DS-Sleep",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTP",
+          "display": "HTP",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-deSmith",
+          "display": "X01-deSmith",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-Hakonarson",
+          "display": "X01-Hakonarson",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "IncludeProgram",
+      "target": "self",
+      "element": [
+        {
+          "code": "INCLUDE",
+          "display": "INCLUDE",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ABC-DS",
+          "display": "ABC-DS",
+          "target": [
+            {
+              "code": "ABC-DS",
+              "display": "ABC-DS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRI-DSR",
+          "display": "BRI-DSR",
+          "target": [
+            {
+              "code": "BRI-DSR",
+              "display": "BRI-DSR",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DSC",
+          "display": "DSC",
+          "target": [
+            {
+              "code": "DSC",
+              "display": "DSC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DS-Sleep",
+          "display": "DS-Sleep",
+          "target": [
+            {
+              "code": "DS-Sleep",
+              "display": "DS-Sleep",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTP",
+          "display": "HTP",
+          "target": [
+            {
+              "code": "HTP",
+              "display": "HTP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-deSmith",
+          "display": "X01-deSmith",
+          "target": [
+            {
+              "code": "X01-deSmith",
+              "display": "X01-deSmith",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X01-Hakonarson",
+          "display": "X01-Hakonarson",
+          "target": [
+            {
+              "code": "X01-Hakonarson",
+              "display": "X01-Hakonarson",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "Condition Interpretation",
       "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
       "element": [
@@ -2171,112 +1109,6 @@
             {
               "code": "Resolved",
               "display": "Condition has been resolved",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Family Relationship",
-      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "element": [
-        {
-          "code": "Father",
-          "display": "Father",
-          "target": [
-            {
-              "code": "FTH",
-              "display": "father",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Mother",
-          "display": "Mother",
-          "target": [
-            {
-              "code": "MTH",
-              "display": "mother",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Sibling",
-          "display": "Sibling",
-          "target": [
-            {
-              "code": "SIB",
-              "display": "sibling",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Family Relationship",
-      "target": "self",
-      "element": [
-        {
-          "code": "Father",
-          "display": "Father",
-          "target": [
-            {
-              "code": "Father",
-              "display": "Father",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Mother",
-          "display": "Mother",
-          "target": [
-            {
-              "code": "Mother",
-              "display": "Mother",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Sibling",
-          "display": "Sibling",
-          "target": [
-            {
-              "code": "Sibling",
-              "display": "Sibling",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other relative",
-          "display": "Other relative",
-          "target": [
-            {
-              "code": "Other relative",
-              "display": "Other relative",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Family Relationship",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "element": [
-        {
-          "code": "Other relative",
-          "display": "Other relative",
-          "target": [
-            {
-              "code": "O",
-              "display": "Other",
               "equivalence": "equivalent"
             }
           ]
@@ -2527,17 +1359,6 @@
           ]
         },
         {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "2131-1",
-              "display": "Other Race",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
           "code": "More than one race",
           "display": "More than one race",
           "target": [
@@ -2654,17 +1475,6 @@
           ]
         },
         {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
           "code": "More than one race",
           "display": "More than one race",
           "target": [
@@ -2682,6 +1492,17 @@
             {
               "code": "Native Hawaiian or Other Pacific Islander",
               "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
               "equivalence": "equivalent"
             }
           ]
@@ -2769,6 +1590,17 @@
       "source": "Race",
       "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
       "element": [
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "OTH",
+              "display": "other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
         {
           "code": "Prefer not to answer",
           "display": "Prefer not to answer",
@@ -2908,7 +1740,7 @@
           "display": "Trisomy 21 (Down syndrome)",
           "target": [
             {
-              "code": "MONDO:8608",
+              "code": "MONDO:0008608",
               "display": "Down Syndrome",
               "equivalence": "equivalent"
             }
@@ -3018,1481 +1850,71 @@
       ]
     },
     {
-      "source": "Sample Type",
-      "target": "http://purl.obolibrary.org/obo/ncit.owl",
-      "element": [
-        {
-          "code": "B Cells",
-          "display": "B Cells",
-          "target": [
-            {
-              "code": "NCIT:C12474",
-              "display": "B-Lymphocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Buffy coat",
-          "display": "Buffy coat",
-          "target": [
-            {
-              "code": "NCIT:C84507",
-              "display": "Buffy Coat",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD4+ Tconv Cells",
-          "display": "CD4+ Tconv Cells",
-          "target": [
-            {
-              "code": "NCIT:C12537",
-              "display": "CD4-Positive T-Lymphocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD8+ T Cells",
-          "display": "CD8+ T Cells",
-          "target": [
-            {
-              "code": "NCIT:C12542",
-              "display": "CD8-Positive T-Lymphocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Granulocytes",
-          "display": "Granulocytes",
-          "target": [
-            {
-              "code": "NCIT:C12530",
-              "display": "Granulocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Monocytes",
-          "display": "Monocytes",
-          "target": [
-            {
-              "code": "NCIT:C12547",
-              "display": "Monocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "NK Cells",
-          "display": "NK Cells",
-          "target": [
-            {
-              "code": "NCIT:C12536",
-              "display": "Natural Killer Cell",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMC",
-          "display": "PBMC",
-          "target": [
-            {
-              "code": "NCIT:C12954",
-              "display": "Peripheral Blood Mononuclear Cell Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "NCIT:C12954",
-              "display": "Peripheral Blood Mononuclear Cell Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Plasma",
-          "display": "Plasma",
-          "target": [
-            {
-              "code": "NCIT:C13356",
-              "display": "Plasma",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Red Blood Cells",
-          "display": "Red Blood Cells",
-          "target": [
-            {
-              "code": "NCIT:C12521",
-              "display": "Erythrocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "NCIT:Saliva Sample",
-              "display": "C174119",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "WBCs",
-          "display": "WBCs",
-          "target": [
-            {
-              "code": "NCIT:C12529",
-              "display": "Leukocyte",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "NCIT:C17610",
-              "display": "Blood Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole blood",
-          "display": "Whole blood",
-          "target": [
-            {
-              "code": "NCIT:C17610",
-              "display": "Blood Sample",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Type",
-      "target": "self",
-      "element": [
-        {
-          "code": "B Cells",
-          "display": "B Cells",
-          "target": [
-            {
-              "code": "B Cells",
-              "display": "B Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Buffy coat",
-          "display": "Buffy coat",
-          "target": [
-            {
-              "code": "Buffy coat",
-              "display": "Buffy coat",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD4+ Tconv Cells",
-          "display": "CD4+ Tconv Cells",
-          "target": [
-            {
-              "code": "CD4+ Tconv Cells",
-              "display": "CD4+ Tconv Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD8+ T Cells",
-          "display": "CD8+ T Cells",
-          "target": [
-            {
-              "code": "CD8+ T Cells",
-              "display": "CD8+ T Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DNA",
-          "display": "DNA",
-          "target": [
-            {
-              "code": "DNA",
-              "display": "DNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Granulocytes",
-          "display": "Granulocytes",
-          "target": [
-            {
-              "code": "Granulocytes",
-              "display": "Granulocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Monocytes",
-          "display": "Monocytes",
-          "target": [
-            {
-              "code": "Monocytes",
-              "display": "Monocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "NK Cells",
-          "display": "NK Cells",
-          "target": [
-            {
-              "code": "NK Cells",
-              "display": "NK Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMC",
-          "display": "PBMC",
-          "target": [
-            {
-              "code": "PBMC",
-              "display": "PBMC",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMCs",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Plasma",
-          "display": "Plasma",
-          "target": [
-            {
-              "code": "Plasma",
-              "display": "Plasma",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "RNA",
-          "display": "RNA",
-          "target": [
-            {
-              "code": "RNA",
-              "display": "RNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Red Blood Cells",
-          "display": "Red Blood Cells",
-          "target": [
-            {
-              "code": "Red Blood Cells",
-              "display": "Red Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "Saliva",
-              "display": "Saliva",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Tregs",
-          "display": "Tregs",
-          "target": [
-            {
-              "code": "Tregs",
-              "display": "Tregs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "WBCs",
-          "display": "WBCs",
-          "target": [
-            {
-              "code": "WBCs",
-              "display": "WBCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Peripheral Whole Blood",
-              "display": "Peripheral Whole Blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole blood",
-          "display": "Whole blood",
-          "target": [
-            {
-              "code": "Whole blood",
-              "display": "Whole blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "B Cells",
-          "display": "B Cells",
-          "target": [
-            {
-              "code": "B Cells",
-              "display": "B Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Buffy coat",
-          "display": "Buffy Coat",
-          "target": [
-            {
-              "code": "Buffy coat",
-              "display": "Buffy Coat",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD4+ Tconv Cells",
-          "display": "CD4+ Tconv Cells",
-          "target": [
-            {
-              "code": "CD4+ Tconv Cells",
-              "display": "CD4+ Tconv Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD8+ T Cells",
-          "display": "CD8+ T Cells",
-          "target": [
-            {
-              "code": "CD8+ T Cells",
-              "display": "CD8+ T Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DNA",
-          "display": "DNA",
-          "target": [
-            {
-              "code": "DNA",
-              "display": "DNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Granulocytes",
-          "display": "Granulocytes",
-          "target": [
-            {
-              "code": "Granulocytes",
-              "display": "Granulocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Monocytes",
-          "display": "Monocytes",
-          "target": [
-            {
-              "code": "Monocytes",
-              "display": "Monocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "NK Cells",
-          "display": "NK Cells",
-          "target": [
-            {
-              "code": "NK Cells",
-              "display": "NK Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMC",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMC",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMCs",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Plasma",
-          "display": "Plasma",
-          "target": [
-            {
-              "code": "Plasma",
-              "display": "Plasma",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "RNA",
-          "display": "RNA",
-          "target": [
-            {
-              "code": "RNA",
-              "display": "RNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Red Blood Cells",
-          "display": "Red Blood Cells",
-          "target": [
-            {
-              "code": "Red Blood Cells",
-              "display": "Red Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "Saliva",
-              "display": "Saliva",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Tregs",
-          "display": "Regulatory T Cells",
-          "target": [
-            {
-              "code": "Tregs",
-              "display": "Regulatory T Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "WBCs",
-          "display": "White Blood Cells",
-          "target": [
-            {
-              "code": "WBCs",
-              "display": "White Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Peripheral Whole Blood",
-              "display": "Peripheral Whole Blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Whole blood",
-              "display": "Peripheral Whole Blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Type",
-      "target": "http://purl.obolibrary.org/obo/obi.owl",
-      "element": [
-        {
-          "code": "DNA",
-          "display": "DNA",
-          "target": [
-            {
-              "code": "OBI:0001051",
-              "display": "DNA extract",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "RNA",
-          "display": "RNA",
-          "target": [
-            {
-              "code": "OBI:0000880",
-              "display": "RNA extract",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Type",
-      "target": "http://purl.obolibrary.org/obo/cl.owl",
-      "element": [
-        {
-          "code": "Tregs",
-          "display": "Tregs",
-          "target": [
-            {
-              "code": "CL:0000815",
-              "display": "regulatory T cell",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Sample Type",
-      "target": "https://includedcc.org/fhir/code-systems/sample_types",
-      "element": [
-        {
-          "code": "B Cells",
-          "display": "B Cells",
-          "target": [
-            {
-              "code": "B-Cells",
-              "display": "B Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Buffy coat",
-          "display": "Buffy Coat",
-          "target": [
-            {
-              "code": "Buffy-Coat",
-              "display": "Buffy Coat",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD4+ Tconv Cells",
-          "display": "CD4+ Tconv Cells",
-          "target": [
-            {
-              "code": "CD4+-Tconv-Cells",
-              "display": "CD4+ Tconv Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CD8+ T Cells",
-          "display": "CD8+ T Cells",
-          "target": [
-            {
-              "code": "CD8+T-Cells",
-              "display": "CD8+ T Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DNA",
-          "display": "DNA",
-          "target": [
-            {
-              "code": "DNA",
-              "display": "DNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Granulocytes",
-          "display": "Granulocytes",
-          "target": [
-            {
-              "code": "Granulocytes",
-              "display": "Granulocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Monocytes",
-          "display": "Monocytes",
-          "target": [
-            {
-              "code": "Monocytes",
-              "display": "Monocytes",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "NK Cells",
-          "display": "NK Cells",
-          "target": [
-            {
-              "code": "NK-Cells",
-              "display": "NK Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMC",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMCs",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PBMCs",
-          "display": "PBMCs",
-          "target": [
-            {
-              "code": "PBMCs",
-              "display": "PBMCs",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Plasma",
-          "display": "Plasma",
-          "target": [
-            {
-              "code": "Plasma",
-              "display": "Plasma",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "RNA",
-          "display": "RNA",
-          "target": [
-            {
-              "code": "RNA",
-              "display": "RNA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Red Blood Cells",
-          "display": "Red Blood Cells",
-          "target": [
-            {
-              "code": "Red-Blood-Cells",
-              "display": "Red Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Saliva",
-          "display": "Saliva",
-          "target": [
-            {
-              "code": "Saliva",
-              "display": "Saliva",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Tregs",
-          "display": "Regulatory T Cells",
-          "target": [
-            {
-              "code": "Tregs",
-              "display": "Regulatory T Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "WBCs",
-          "display": "White Blood Cells",
-          "target": [
-            {
-              "code": "WBCs",
-              "display": "White Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Peripheral Whole Blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Peripheral-Whole-Blood",
-              "display": "Peripheral Whole Blood",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole blood",
-          "display": "Peripheral Whole Blood",
-          "target": [
-            {
-              "code": "Peripheral-Whole-Blood",
-              "display": "White Blood Cells",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "In/Out",
-      "target": "http://hl7.org/fhir/specimen-status",
-      "element": [
-        {
-          "code": "NA",
-          "display": "NA",
-          "target": [
-            {
-              "code": "unavailable",
-              "display": "Unavailable",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "In",
-          "display": "In",
-          "target": [
-            {
-              "code": "available",
-              "display": "Available",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Out",
-          "display": "Out",
-          "target": [
-            {
-              "code": "unavailable",
-              "display": "Unavailable",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "In/Out",
-      "target": "self",
-      "element": [
-        {
-          "code": "NA",
-          "display": "NA",
-          "target": [
-            {
-              "code": "NA",
-              "display": "NA",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "In",
-          "display": "In",
-          "target": [
-            {
-              "code": "In",
-              "display": "In",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Out",
-          "display": "Out",
-          "target": [
-            {
-              "code": "Out",
-              "display": "Out",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Access",
-      "target": "https://includedcc.org/fhir/code-systems/data_access_types",
-      "element": [
-        {
-          "code": "Controlled",
-          "display": "Controlled",
-          "target": [
-            {
-              "code": "controlled",
-              "display": "Controlled",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Open",
-          "display": "Open",
-          "target": [
-            {
-              "code": "open",
-              "display": "Open",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Registered",
-          "display": "Registered",
-          "target": [
-            {
-              "code": "registered",
-              "display": "Registered",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Access",
-      "target": "self",
-      "element": [
-        {
-          "code": "Controlled",
-          "display": "Controlled",
-          "target": [
-            {
-              "code": "Controlled",
-              "display": "Controlled",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Open",
-          "display": "Open",
-          "target": [
-            {
-              "code": "Open",
-              "display": "Open",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Registered",
-          "display": "Registered",
-          "target": [
-            {
-              "code": "Registered",
-              "display": "Registered",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Category",
-      "target": "https://includedcc.org/fhir/code-systems/data_categories",
-      "element": [
-        {
-          "code": "Genomics",
-          "display": "Genomics",
-          "target": [
-            {
-              "code": "Genomics",
-              "display": "Genomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Transcriptomics",
-          "display": "Transcriptomics",
-          "target": [
-            {
-              "code": "Transcriptomics",
-              "display": "Transcriptomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Category",
-      "target": "self",
-      "element": [
-        {
-          "code": "Genomics",
-          "display": "Genomics",
-          "target": [
-            {
-              "code": "Genomics",
-              "display": "Genomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Transcriptomics",
-          "display": "Transcriptomics",
-          "target": [
-            {
-              "code": "Transcriptomics",
-              "display": "Transcriptomics",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Type",
-      "target": "https://includedcc.org/fhir/code-systems/data_types",
-      "element": [
-        {
-          "code": "Aligned reads",
-          "display": "Aligned reads",
-          "target": [
-            {
-              "code": "Aligned-Reads",
-              "display": "Aligned Reads",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Aligned reads index",
-          "display": "Aligned reads index",
-          "target": [
-            {
-              "code": "Aligned-Reads-Index",
-              "display": "Aligned Reads Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Gene Fusion",
-          "display": "Annotated Gene Fusion",
-          "target": [
-            {
-              "code": "Gene-Fusions",
-              "display": "Gene Fusions",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Gene expression quantifications",
-          "display": "Gene expression quantifications",
-          "target": [
-            {
-              "code": "Gene-Expression-Quantifications",
-              "display": "Gene Expression Quantifications",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Isoform Expression Quantification",
-          "display": "Isoform Expression Quantification",
-          "target": [
-            {
-              "code": "Isoform-Expression-Quantifications",
-              "display": "Isoform Expression Quantifications",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Raw Gene Fusion",
-          "display": "Raw Gene Fusion",
-          "target": [
-            {
-              "code": "Raw-Gene-Fusions",
-              "display": "Raw Gene Fusions",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomic Variant",
-          "display": "Genomic Variant",
-          "target": [
-            {
-              "code": "gVCF",
-              "display": "gVCF",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomic Variant Index",
-          "display": "Genomic Variant Index",
-          "target": [
-            {
-              "code": "gVCF-Index",
-              "display": "gVCF Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Variant Call",
-          "display": "Annotated Variant Call",
-          "target": [
-            {
-              "code": "Variant-Calls",
-              "display": "Variant Calls",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Variant Call Index",
-          "display": "Annotated Variant Call Index",
-          "target": [
-            {
-              "code": "Variant-Calls-Index",
-              "display": "Variant Calls",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Familial Relationships Report",
-          "display": "Familial Relationships Report",
-          "target": [
-            {
-              "code": "Peddy-Family-Sex",
-              "display": "Peddy - Family/Sex",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Gene Expression Quantification",
-          "display": "Gene Expression Quantification",
-          "target": [
-            {
-              "code": "Gene-Expression-Quantifications",
-              "display": "Gene Expression Quantifications",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genome Aligned Read",
-          "display": "Genome Aligned Read",
-          "target": [
-            {
-              "code": "Aligned-Reads",
-              "display": "Aligned Reads",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genome Aligned Read Index",
-          "display": "Genome Aligned Read Index",
-          "target": [
-            {
-              "code": "Aligned-Reads-Index",
-              "display": "Aligned Reads Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Alternative Splicing",
-          "display": "Alternative Splicing",
-          "target": [
-            {
-              "code": "Alternative-Splicing",
-              "display": "Alternative Splicing",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Data Type",
-      "target": "self",
-      "element": [
-        {
-          "code": "Aligned reads",
-          "display": "Aligned reads",
-          "target": [
-            {
-              "code": "Aligned reads",
-              "display": "Aligned reads",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Aligned reads index",
-          "display": "Aligned reads index",
-          "target": [
-            {
-              "code": "Aligned reads index",
-              "display": "Aligned reads index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Gene Fusion",
-          "display": "Annotated Gene Fusion",
-          "target": [
-            {
-              "code": "Annotated Gene Fusion",
-              "display": "Annotated Gene Fusion",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Gene expression quantifications",
-          "display": "Gene expression quantifications",
-          "target": [
-            {
-              "code": "Gene expression quantifications",
-              "display": "Gene expression quantifications",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Isoform Expression Quantification",
-          "display": "Isoform Expression Quantification",
-          "target": [
-            {
-              "code": "Isoform Expression Quantification",
-              "display": "Isoform Expression Quantification",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Raw Gene Fusion",
-          "display": "Raw Gene Fusion",
-          "target": [
-            {
-              "code": "Raw Gene Fusion",
-              "display": "Raw Gene Fusion",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomic Variant",
-          "display": "Genomic Variant",
-          "target": [
-            {
-              "code": "Genomic Variant",
-              "display": "Genomic Variant",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genomic Variant Index",
-          "display": "Genomic Variant Index",
-          "target": [
-            {
-              "code": "Genomic Variant Index",
-              "display": "Genomic Variant Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Variant Call",
-          "display": "Annotated Variant Call",
-          "target": [
-            {
-              "code": "Annotated Variant Call",
-              "display": "Annotated Variant Call",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Annotated Variant Call Index",
-          "display": "Annotated Variant Call Index",
-          "target": [
-            {
-              "code": "Annotated Variant Call Index",
-              "display": "Annotated Variant Call Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Familial Relationships Report",
-          "display": "Familial Relationships Report",
-          "target": [
-            {
-              "code": "Familial Relationships Report",
-              "display": "Familial Relationships Report",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Gene Expression Quantification",
-          "display": "Gene Expression Quantification",
-          "target": [
-            {
-              "code": "Gene Expression Quantification",
-              "display": "Gene Expression Quantification",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genome Aligned Read",
-          "display": "Genome Aligned Read",
-          "target": [
-            {
-              "code": "Genome Aligned Read",
-              "display": "Genome Aligned Read",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Genome Aligned Read Index",
-          "display": "Genome Aligned Read Index",
-          "target": [
-            {
-              "code": "Genome Aligned Read Index",
-              "display": "Genome Aligned Read Index",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Alternative Splicing",
-          "display": "Alternative Splicing",
-          "target": [
-            {
-              "code": "Alternative Splicing",
-              "display": "Alternative Splicing",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Experimental Strategy",
-      "target": "https://includedcc.org/fhir/code-systems/experimental_strategies",
-      "element": [
-        {
-          "code": "RNAseq",
-          "display": "RNAseq",
-          "target": [
-            {
-              "code": "RNA-Seq",
-              "display": "RNA-Seq",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole genome sequencing",
-          "display": "Whole genome sequencing",
-          "target": [
-            {
-              "code": "WGS",
-              "display": "Whole Genome Sequencing",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "Experimental Strategy",
-      "target": "self",
-      "element": [
-        {
-          "code": "RNAseq",
-          "display": "RNAseq",
-          "target": [
-            {
-              "code": "RNAseq",
-              "display": "RNAseq",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Whole genome sequencing",
-          "display": "Whole genome sequencing",
-          "target": [
-            {
-              "code": "Whole genome sequencing",
-              "display": "Whole genome sequencing",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "source": "condition_description",
       "target": "http://purl.obolibrary.org/obo/mondo.owl",
       "element": [
         {
-          "code": "Complete trisomy 21",
-          "display": "complete trisomy 21",
+          "code": "Diagnosis of Down Syndrome - yes",
+          "display": "Diagnosis of Down Syndrome - yes",
           "target": [
             {
-              "code": "MONDO:0700030",
-              "display": "complete trisomy 21",
+              "code": "MONDO:0008608",
+              "display": "Down syndrome",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Mosaic trisomy 21",
-          "display": "mosaic trisomy 21",
+          "code": "hypothyroidism",
+          "display": "hypothyroidism",
           "target": [
             {
-              "code": "MONDO:0700127",
-              "display": "mosaic trisomy 21",
+              "code": "MONDO:0005420",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "food allergies",
+          "display": "food allergies",
+          "target": [
+            {
+              "code": "MONDO:0005271",
+              "display": "allergic disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asthma",
+          "display": "asthma",
+          "target": [
+            {
+              "code": "MONDO:0004979",
+              "display": "asthma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type 2 diabetes",
+          "display": "type 2 diabetes",
+          "target": [
+            {
+              "code": "MONDO:0005148",
+              "display": "type 2 diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hypertension",
+          "display": "hypertension",
+          "target": [
+            {
+              "code": "MONDO:0005044",
+              "display": "hypertensive disorder",
               "equivalence": "equivalent"
             }
           ]
@@ -4504,23 +1926,103 @@
       "target": "self",
       "element": [
         {
-          "code": "Complete trisomy 21",
-          "display": "complete trisomy 21",
+          "code": "Diagnosis of Down Syndrome - yes",
+          "display": "Diagnosis of Down Syndrome - yes",
           "target": [
             {
-              "code": "Complete trisomy 21",
-              "display": "complete trisomy 21",
+              "code": "Diagnosis of Down Syndrome - yes",
+              "display": "Diagnosis of Down Syndrome - yes",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Mosaic trisomy 21",
-          "display": "mosaic trisomy 21",
+          "code": "hypothyroidism",
+          "display": "hypothyroidism",
           "target": [
             {
-              "code": "Mosaic trisomy 21",
-              "display": "mosaic trisomy 21",
+              "code": "hypothyroidism",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "hypothyroidism",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "food allergies",
+          "display": "food allergies",
+          "target": [
+            {
+              "code": "food allergies",
+              "display": "food allergies",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "food allergies",
+              "display": "food allergies",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asthma",
+          "display": "Asthma",
+          "target": [
+            {
+              "code": "asthma",
+              "display": "Asthma",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "asthma",
+              "display": "asthma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type 2 diabetes",
+          "display": "type 2 diabetes",
+          "target": [
+            {
+              "code": "type 2 diabetes",
+              "display": "type 2 diabetes",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "type 2 diabetes",
+              "display": "type 2 diabetes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hypertension",
+          "display": "hypertension",
+          "target": [
+            {
+              "code": "hypertension",
+              "display": "hypertension",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "hypertension",
+              "display": "hypertension",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
+          "display": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
+          "target": [
+            {
+              "code": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
+              "display": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
               "equivalence": "equivalent"
             }
           ]
@@ -4528,7 +2030,659 @@
       ]
     },
     {
-      "source": "IncludeProgram",
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "hypothyroidism",
+          "display": "hypothyroidism",
+          "target": [
+            {
+              "code": "HP:0000821",
+              "display": "Hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "food allergies",
+          "display": "food allergies",
+          "target": [
+            {
+              "code": "HP:0500093",
+              "display": "Food allergy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asthma",
+          "display": "Asthma",
+          "target": [
+            {
+              "code": "HP:0002099",
+              "display": "Asthma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type 2 diabetes",
+          "display": "type 2 diabetes",
+          "target": [
+            {
+              "code": "HP:0005978",
+              "display": "Type II diabetes mellitus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hypertension",
+          "display": "hypertension",
+          "target": [
+            {
+              "code": "HP:0000822",
+              "display": "Hypertension",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_description",
+      "target": "http://purl.obolibrary.org/obo/maxo.owl",
+      "element": [
+        {
+          "code": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
+          "display": "Has the participant ever had heart or blood vessel surgery or a cardiac catheterization? - yes",
+          "target": [
+            {
+              "code": "MAXO:0025001",
+              "display": "cardiac surgery",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "GUID type",
+      "target": "https://includedcc.org/fhir/code-systems/guid_type",
+      "element": [
+        {
+          "code": "NDAR",
+          "display": "NDAR",
+          "target": [
+            {
+              "code": "ndar",
+              "display": "NDAR",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "None",
+          "display": "None",
+          "target": [
+            {
+              "code": "none",
+              "display": "None",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "GUID type",
+      "target": "self",
+      "element": [
+        {
+          "code": "NDAR",
+          "display": "NDAR",
+          "target": [
+            {
+              "code": "NDAR",
+              "display": "NDAR",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "None",
+          "display": "None",
+          "target": [
+            {
+              "code": "None",
+              "display": "None",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Study Page Codes",
+      "target": "https://includedcc.org/fhir/code-systems/study_page_codes",
+      "element": [
+        {
+          "code": "Study Code",
+          "display": "Study Code",
+          "target": [
+            {
+              "code": "study-code",
+              "display": "Study Code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Title",
+          "display": "Study Title",
+          "target": [
+            {
+              "code": "study-title",
+              "display": "Study Title",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Program",
+          "display": "Program",
+          "target": [
+            {
+              "code": "program",
+              "display": "Program",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Description",
+          "display": "Study Description",
+          "target": [
+            {
+              "code": "study-description",
+              "display": "Study Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Principal Investigator Name",
+          "display": "Principal Investigator Name",
+          "target": [
+            {
+              "code": "principal-investigator-name",
+              "display": "Principal Investigator Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Name",
+          "display": "Study Contact Name",
+          "target": [
+            {
+              "code": "study-contact-name",
+              "display": "Study Contact Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Institution",
+          "display": "Study Contact Institution",
+          "target": [
+            {
+              "code": "study-contact-institution",
+              "display": "Study Contact Institution",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Email",
+          "display": "Study Contact Email",
+          "target": [
+            {
+              "code": "study-contact-email",
+              "display": "Study Contact Email",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository Email",
+          "display": "Virtual Biorepository Email",
+          "target": [
+            {
+              "code": "virtual-biorepository-email",
+              "display": "Virtual Biorepository Email",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository URL",
+          "display": "Virtual Biorepository URL",
+          "target": [
+            {
+              "code": "virtual-biorepository-url",
+              "display": "Virtual Biorepository URL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository Readme",
+          "display": "Virtual Biorepository Readme",
+          "target": [
+            {
+              "code": "virtual-biorepository-readme",
+              "display": "Virtual Biorepository Readme",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Research Domain",
+          "display": "Research Domain",
+          "target": [
+            {
+              "code": "research-domain",
+              "display": "Research Domain",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant Lifespan Stage",
+          "display": "Participant Lifespan Stage",
+          "target": [
+            {
+              "code": "participant-lifespan-stage",
+              "display": "Participant Lifespan Stage",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Selection Criteria",
+          "display": "Selection Criteria",
+          "target": [
+            {
+              "code": "selection-criteria",
+              "display": "Selection Criteria",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Design",
+          "display": "Study Design",
+          "target": [
+            {
+              "code": "study-design",
+              "display": "Study Design",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Clinical Data Source Type",
+          "display": "Clinical Data Source Type",
+          "target": [
+            {
+              "code": "clinical-data-source-type",
+              "display": "Clinical Data Source Type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Expected Data Category",
+          "display": "Expected Data Category",
+          "target": [
+            {
+              "code": "expected-data-category",
+              "display": "Expected Data Category",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Website",
+          "display": "Study Website",
+          "target": [
+            {
+              "code": "study-website",
+              "display": "Study Website",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbGaP",
+          "display": "dbGaP",
+          "target": [
+            {
+              "code": "dbgap",
+              "display": "dbGaP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Publication",
+          "display": "Publication",
+          "target": [
+            {
+              "code": "publication",
+              "display": "Publication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Expected Number of Participants",
+          "display": "Study Expected Number of Participants",
+          "target": [
+            {
+              "code": "study-expected-number-of-participants",
+              "display": "Study Expected Number of Participants",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GUID type",
+          "display": "GUID type",
+          "target": [
+            {
+              "code": "guid-type",
+              "display": "GUID type",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Study Page Codes",
+      "target": "self",
+      "element": [
+        {
+          "code": "Study Code",
+          "display": "Study Code",
+          "target": [
+            {
+              "code": "Study Code",
+              "display": "Study Code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Title",
+          "display": "Study Title",
+          "target": [
+            {
+              "code": "Study Title",
+              "display": "Study Title",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Program",
+          "display": "Program",
+          "target": [
+            {
+              "code": "Program",
+              "display": "Program",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Description",
+          "display": "Study Description",
+          "target": [
+            {
+              "code": "Study Description",
+              "display": "Study Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Principal Investigator Name",
+          "display": "Principal Investigator Name",
+          "target": [
+            {
+              "code": "Principal Investigator Name",
+              "display": "Principal Investigator Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Name",
+          "display": "Study Contact Name",
+          "target": [
+            {
+              "code": "Study Contact Name",
+              "display": "Study Contact Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Institution",
+          "display": "Study Contact Institution",
+          "target": [
+            {
+              "code": "Study Contact Institution",
+              "display": "Study Contact Institution",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Contact Email",
+          "display": "Study Contact Email",
+          "target": [
+            {
+              "code": "Study Contact Email",
+              "display": "Study Contact Email",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository Email",
+          "display": "Virtual Biorepository Email",
+          "target": [
+            {
+              "code": "Virtual Biorepository Email",
+              "display": "Virtual Biorepository Email",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository URL",
+          "display": "Virtual Biorepository URL",
+          "target": [
+            {
+              "code": "Virtual Biorepository URL",
+              "display": "Virtual Biorepository URL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Virtual Biorepository Readme",
+          "display": "Virtual Biorepository Readme",
+          "target": [
+            {
+              "code": "Virtual Biorepository Readme",
+              "display": "Virtual Biorepository Readme",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Research Domain",
+          "display": "Research Domain",
+          "target": [
+            {
+              "code": "Research Domain",
+              "display": "Research Domain",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant Lifespan Stage",
+          "display": "Participant Lifespan Stage",
+          "target": [
+            {
+              "code": "Participant Lifespan Stage",
+              "display": "Participant Lifespan Stage",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Selection Criteria",
+          "display": "Selection Criteria",
+          "target": [
+            {
+              "code": "Selection Criteria",
+              "display": "Selection Criteria",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Design",
+          "display": "Study Design",
+          "target": [
+            {
+              "code": "Study Design",
+              "display": "Study Design",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Clinical Data Source Type",
+          "display": "Clinical Data Source Type",
+          "target": [
+            {
+              "code": "Clinical Data Source Type",
+              "display": "Clinical Data Source Type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Expected Data Category",
+          "display": "Expected Data Category",
+          "target": [
+            {
+              "code": "Expected Data Category",
+              "display": "Expected Data Category",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Website",
+          "display": "Study Website",
+          "target": [
+            {
+              "code": "Study Website",
+              "display": "Study Website",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbGaP",
+          "display": "dbGaP",
+          "target": [
+            {
+              "code": "dbGaP",
+              "display": "dbGaP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Publication",
+          "display": "Publication",
+          "target": [
+            {
+              "code": "Publication",
+              "display": "Publication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Study Expected Number of Participants",
+          "display": "Study Expected Number of Participants",
+          "target": [
+            {
+              "code": "Study Expected Number of Participants",
+              "display": "Study Expected Number of Participants",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GUID type",
+          "display": "GUID type",
+          "target": [
+            {
+              "code": "GUID type",
+              "display": "GUID type",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Study Program",
       "target": "https://includedcc.org/fhir/code-systems/programs",
       "element": [
         {
@@ -4536,85 +2690,19 @@
           "display": "INCLUDE",
           "target": [
             {
-              "code": "INCLUDE",
+              "code": "include",
               "display": "INCLUDE",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "ABC-DS",
-          "display": "ABC-DS",
+          "code": "KF",
+          "display": "KF",
           "target": [
             {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "BRI-DSR",
-          "display": "BRI-DSR",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DSC",
-          "display": "DSC",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DS-Sleep",
-          "display": "DS-Sleep",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "HTP",
-          "display": "HTP",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "X01-deSmith",
-          "display": "X01-deSmith",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "X01-Hakon",
-          "display": "X01-Hakon",
-          "target": [
-            {
-              "code": "INCLUDE",
-              "display": "INCLUDE",
+              "code": "kf",
+              "display": "Kids First",
               "equivalence": "equivalent"
             }
           ]
@@ -4622,7 +2710,7 @@
       ]
     },
     {
-      "source": "IncludeProgram",
+      "source": "Study Program",
       "target": "self",
       "element": [
         {
@@ -4637,78 +2725,12 @@
           ]
         },
         {
-          "code": "ABC-DS",
-          "display": "ABC-DS",
+          "code": "KF",
+          "display": "KF",
           "target": [
             {
-              "code": "ABC-DS",
-              "display": "ABC-DS",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "BRI-DSR",
-          "display": "BRI-DSR",
-          "target": [
-            {
-              "code": "BRI-DSR",
-              "display": "BRI-DSR",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DSC",
-          "display": "DSC",
-          "target": [
-            {
-              "code": "DSC",
-              "display": "DSC",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DS-Sleep",
-          "display": "DS-Sleep",
-          "target": [
-            {
-              "code": "DS-Sleep",
-              "display": "DS-Sleep",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "HTP",
-          "display": "HTP",
-          "target": [
-            {
-              "code": "HTP",
-              "display": "HTP",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "X01-deSmith",
-          "display": "X01-deSmith",
-          "target": [
-            {
-              "code": "X01-deSmith",
-              "display": "X01-deSmith",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "X01-Hakon",
-          "display": "X01-Hakon",
-          "target": [
-            {
-              "code": "X01-Hakon",
-              "display": "X01-Hakon",
+              "code": "KF",
+              "display": "KF",
               "equivalence": "equivalent"
             }
           ]
@@ -4716,71 +2738,71 @@
       ]
     },
     {
-      "source": "Family Type",
-      "target": "https://includedcc.org/fhir/code-systems/family_types",
+      "source": "Research Domain",
+      "target": "urn:oid:2.16.840.1.113883.6.177",
       "element": [
         {
-          "code": "Control-only",
-          "display": "Control Only",
+          "code": "Behavior and Behavior Mechanisms",
+          "display": "Behavior and Behavior Mechanisms",
           "target": [
             {
-              "code": "Control-only",
-              "display": "Control Only",
+              "code": "D001520",
+              "display": "Behavior and Behavior Mechanisms",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Duo",
-          "display": "Duo",
+          "code": "Congenital Heart Defects",
+          "display": "Congenital Heart Defects",
           "target": [
             {
-              "code": "Duo",
-              "display": "Duo",
+              "code": "D006330",
+              "display": "Congenital Heart Defects",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Other",
-          "display": "Other",
+          "code": "Immune System Diseases",
+          "display": "Immune System Diseases",
           "target": [
             {
-              "code": "Other",
-              "display": "Other",
+              "code": "D007154",
+              "display": "Immune System Diseases",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Proband-only",
-          "display": "Proband-only",
+          "code": "Hematologic Diseases",
+          "display": "Hematologic Diseases",
           "target": [
             {
-              "code": "Proband-only",
-              "display": "Proband-only",
+              "code": "D006402",
+              "display": "Hematologic Diseases",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Trio",
-          "display": "Trio",
+          "code": "Sleep Wake Disorders",
+          "display": "Sleep Wake Disorders",
           "target": [
             {
-              "code": "Trio",
-              "display": "Trio",
+              "code": "D012893",
+              "display": "Sleep Wake Disorders",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Trio+",
-          "display": "Trio+",
+          "code": "All Co-occurring Conditions",
+          "display": "All Co-occurring Conditions",
           "target": [
             {
-              "code": "Trio+",
-              "display": "Trio+",
+              "code": "D013568",
+              "display": "All Co-occurring Conditions",
               "equivalence": "equivalent"
             }
           ]
@@ -4788,27 +2810,271 @@
       ]
     },
     {
-      "source": "Family Type",
+      "source": "Research Domain",
       "target": "self",
       "element": [
         {
-          "code": "Control-only",
-          "display": "Control Only",
+          "code": "Behavior and Behavior Mechanisms",
+          "display": "Behavior and Behavior Mechanisms",
           "target": [
             {
-              "code": "Control-only",
-              "display": "Control Only",
+              "code": "Behavior and Behavior Mechanisms",
+              "display": "Behavior and Behavior Mechanisms",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Duo",
-          "display": "Duo",
+          "code": "Congenital Heart Defects",
+          "display": "Congenital Heart Defects",
           "target": [
             {
-              "code": "Duo",
-              "display": "Duo",
+              "code": "Congenital Heart Defects",
+              "display": "Congenital Heart Defects",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Immune System Diseases",
+          "display": "Immune System Diseases",
+          "target": [
+            {
+              "code": "Immune System Diseases",
+              "display": "Immune System Diseases",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Hematologic Diseases",
+          "display": "Hematologic Diseases",
+          "target": [
+            {
+              "code": "Hematologic Diseases",
+              "display": "Hematologic Diseases",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sleep Wake Disorders",
+          "display": "Sleep Wake Disorders",
+          "target": [
+            {
+              "code": "Sleep Wake Disorders",
+              "display": "Sleep Wake Disorders",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "All Co-occurring Conditions",
+          "display": "All Co-occurring Conditions",
+          "target": [
+            {
+              "code": "All Co-occurring Conditions",
+              "display": "All Co-occurring Conditions",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Participant Lifespan Stage",
+      "target": "https://includedcc.org/fhir/code-systems/participant_lifespan_age",
+      "element": [
+        {
+          "code": "Fetal",
+          "display": "Fetal",
+          "target": [
+            {
+              "code": "fetal",
+              "display": "Fetal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Neonatal",
+          "display": "Neonatal",
+          "target": [
+            {
+              "code": "neonatal",
+              "display": "Neonatal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pediatric",
+          "display": "Pediatric",
+          "target": [
+            {
+              "code": "pediatric",
+              "display": "Pediatric",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Adult",
+          "display": "Adult",
+          "target": [
+            {
+              "code": "adult",
+              "display": "Adult",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Participant Lifespan Stage",
+      "target": "self",
+      "element": [
+        {
+          "code": "Fetal",
+          "display": "Fetal",
+          "target": [
+            {
+              "code": "Fetal",
+              "display": "Fetal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Neonatal",
+          "display": "Neonatal",
+          "target": [
+            {
+              "code": "Neonatal",
+              "display": "Neonatal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Pediatric",
+          "display": "Pediatric",
+          "target": [
+            {
+              "code": "Pediatric",
+              "display": "Pediatric",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Adult",
+          "display": "Adult",
+          "target": [
+            {
+              "code": "Adult",
+              "display": "Adult",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Clinical Data Source Type",
+      "target": "https://includedcc.org/fhir/code-systems/clinical_data_source_types",
+      "element": [
+        {
+          "code": "Medical Record",
+          "display": "Medical Record",
+          "target": [
+            {
+              "code": "medical-record",
+              "display": "Medical Record",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Investigator Assessment",
+          "display": "Investigator Assessment",
+          "target": [
+            {
+              "code": "investigator-assessment",
+              "display": "Investigator Assessment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant or Caregiver Report",
+          "display": "Participant or Caregiver Report",
+          "target": [
+            {
+              "code": "participant-or-caregiver-report",
+              "display": "Participant or Caregiver Report",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Clinical Data Source Type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Medical Record",
+          "display": "Medical Record",
+          "target": [
+            {
+              "code": "Medical Record",
+              "display": "Medical Record",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Investigator Assessment",
+          "display": "Investigator Assessment",
+          "target": [
+            {
+              "code": "Investigator Assessment",
+              "display": "Investigator Assessment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Participant or Caregiver Report",
+          "display": "Participant or Caregiver Report",
+          "target": [
+            {
+              "code": "Participant or Caregiver Report",
+              "display": "Participant or Caregiver Report",
               "equivalence": "equivalent"
             }
           ]
@@ -4825,34 +3091,266 @@
           ]
         },
         {
-          "code": "Proband-only",
-          "display": "Proband-only",
+          "code": "Unknown",
+          "display": "Unknown",
           "target": [
             {
-              "code": "Proband-only",
-              "display": "Proband-only",
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Expected Data Category",
+      "target": "https://includedcc.org/fhir/code-systems/expected_data_category",
+      "element": [
+        {
+          "code": "Unharmonized Demographic/Clinical Data",
+          "display": "Unharmonized Demographic/Clinical Data",
+          "target": [
+            {
+              "code": "unharmonized-demographic/clinical-data",
+              "display": "Unharmonized Demographic/Clinical Data",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Trio",
-          "display": "Trio",
+          "code": "Harmonized Demographic/Clinical Data",
+          "display": "Harmonized Demographic/Clinical Data",
           "target": [
             {
-              "code": "Trio",
-              "display": "Trio",
+              "code": "Harmonized Demographic/Clinical Data",
+              "display": "Harmonized Demographic/Clinical Data",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "Trio+",
-          "display": "Trio+",
+          "code": "Genomics",
+          "display": "Genomics",
           "target": [
             {
-              "code": "Trio+",
-              "display": "Trio+",
+              "code": "genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proteomics",
+          "display": "Proteomics",
+          "target": [
+            {
+              "code": "proteomics",
+              "display": "Proteomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Metabolomics",
+          "display": "Metabolomics",
+          "target": [
+            {
+              "code": "metabolomics",
+              "display": "Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cognitive/Behavioral",
+          "display": "Cognitive/Behavioral",
+          "target": [
+            {
+              "code": "cognitive/behavioral",
+              "display": "Cognitive/Behavioral",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Immune Maps",
+          "display": "Immune Maps",
+          "target": [
+            {
+              "code": "immune-maps",
+              "display": "Immune Maps",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Imaging",
+          "display": "Imaging",
+          "target": [
+            {
+              "code": "imaging",
+              "display": "Imaging",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Microbiome",
+          "display": "Microbiome",
+          "target": [
+            {
+              "code": "microbiome",
+              "display": "Microbiome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Expected Data Category",
+      "target": "self",
+      "element": [
+        {
+          "code": "Unharmonized Demographic/Clinical Data",
+          "display": "Unharmonized Demographic/Clinical Data",
+          "target": [
+            {
+              "code": "Unharmonized Demographic/Clinical Data",
+              "display": "Unharmonized Demographic/Clinical Data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Harmonized Demographic/Clinical Data",
+          "display": "Harmonized Demographic/Clinical Data",
+          "target": [
+            {
+              "code": "Harmonized Demographic/Clinical Data",
+              "display": "Harmonized Demographic/Clinical Data",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Genomics",
+          "display": "Genomics",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Transcriptomics",
+          "display": "Transcriptomics",
+          "target": [
+            {
+              "code": "Transcriptomics",
+              "display": "Transcriptomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proteomics",
+          "display": "Proteomics",
+          "target": [
+            {
+              "code": "Proteomics",
+              "display": "Proteomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Metabolomics",
+          "display": "Metabolomics",
+          "target": [
+            {
+              "code": "Metabolomics",
+              "display": "Metabolomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Cognitive/Behavioral",
+          "display": "Cognitive/Behavioral",
+          "target": [
+            {
+              "code": "Cognitive/Behavioral",
+              "display": "Cognitive/Behavioral",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Immune Maps",
+          "display": "Immune Maps",
+          "target": [
+            {
+              "code": "Immune Maps",
+              "display": "Immune Maps",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Imaging",
+          "display": "Imaging",
+          "target": [
+            {
+              "code": "Imaging",
+              "display": "Imaging",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Microbiome",
+          "display": "Microbiome",
+          "target": [
+            {
+              "code": "Microbiome",
+              "display": "Microbiome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
               "equivalence": "equivalent"
             }
           ]

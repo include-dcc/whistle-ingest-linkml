@@ -9,9 +9,12 @@ from collections import defaultdict
 
 from yaml import safe_load
 
+_missing = set(["NA", ""])
+
 
 class Family:
     def __init__(self, row):
+        pdb.set_trace()
         self.family_id = row["Family ID"]
         self.family_type = row["Family Type"]
         self.proband_ids = set()
@@ -28,6 +31,9 @@ class Family:
                 self.relationships[colname].add(id)
 
     def add_participant(self, row):
+        if self.family_id == "240":
+            print(row)
+            pdb.set_trace()
         id = row["Participant External ID"]
         self.extract_id(row, "Sibling ID")
         self.extract_id(row, "Father ID")
@@ -52,7 +58,7 @@ class Family:
 
     @classmethod
     def write_relationship(cls, writer, line, pid, otherid, relationship):
-        if pid != "NA" and otherid != "NA":
+        if pid not in _missing and otherid not in _missing:
             writer.writerow(
                 [line["Family ID"], line["Family Type"], pid, otherid, relationship]
             )
@@ -126,7 +132,7 @@ if __name__ == "__main__":
                     # Why should we expect that the data is consistent between releases? One time it's
                     # comma separated and the next it's pipes. What will we get next time?
                     if "," in line["Sibling ID"]:
-                        line["Sibling ID"].replace(",", "|")
+                        line["Sibling ID"] = line["Sibling ID"].replace(",", "|")
                     siblings = [x.strip() for x in line["Sibling ID"].split("|")]
                     for sibling in siblings:
                         if sibling != "NA" and sibling not in observed_siblings:
@@ -134,7 +140,9 @@ if __name__ == "__main__":
                                 fwriter, line, pid, sibling, "Sibling"
                             )
                     if "," in line["Other Family Member ID"]:
-                        line["Other Family Member ID"].replace(",", "|")
+                        line["Other Family Member ID"] = line[
+                            "Other Family Member ID"
+                        ].replace(",", "|")
                     others = [
                         x.strip() for x in line["Other Family Member ID"].split("|")
                     ]

@@ -11,23 +11,48 @@ whistle_src: _entry.wstl
 annotations:
   virtual_biorepository:
     email: dsresearch@cuanschutz.edu
-    url: https://redcap.ucdenver.edu/surveys/?s=HXLXWCTPAT
-    readme: To request biospecimens from the HTP biobank, please use the request form (https://redcap.ucdenver.edu/surveys/?s=HXLXWCTPAT). General inquiries can be directed to dsresearch@cuanschutz.edu.
+    url: https://redcap.link/HTPVBRrequest
+    readme: To request biospecimens from the HTP biobank, please use the request form (https://redcap.link/HTPVBRrequest). General inquiries can be directed to dsresearch@cuanschutz.edu.
 code_harmonization_dir: harmony/htp
 require_official: True
 curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
   http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
 projector_lib: projector
 env:
-  local: dev
-  dev: dev
-  qa: qa-kf-inc
-  prod: prod-kf-inc
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
 dataset:
+  study_meta: 
+    filename: data/tables/HTP/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+  dataset_meta:
+    filename: data/tables/HTP/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/HTP/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/htp/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
   participant:
-    filename: data/tables/HTP/vbr_participants_harmonized_final.csv
+    #filename: data/tables/HTP/vbr_participants_harmonized_final_na_2023-11-07.csv
+    filename: data/tables/HTP/htp_v4_participant_updated_2024-06-21.csv
+    #filename: data/tables/HTP/vbr_participants_harmonized_final.csv
     data_dictionary: 
       filename: data/dd/participant.csv
     code_harmonization: harmony/htp/data-harmony.csv
@@ -60,7 +85,8 @@ dataset:
       filename: data/dd/additive.csv
     code_harmonization: harmony/htp/data-harmony.csv
   specimen:
-    filename: data/tables/HTP/vbr_biospecimens_harmonized_2023-10-05.csv
+    #filename: data/tables/HTP/vbr_biospecimens_harmonized_2023-10-05.csv
+    filename: data/tables/HTP/vbr_biospecimens_harmonized_20231116.csv
     subject_id: Participant External ID
     key_columns: Sample Global ID
     group_by: Participant External ID, Sample External ID
@@ -68,7 +94,11 @@ dataset:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/htp/data-harmony.csv   
   file_manifest:
-    filename: data/tables/HTP/htp_v1_omics_datafiles_2023-10-10.csv,data/tables/HTP/FV_PJ79R4DY_FV_9Q2N4BTN_FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files_v5.csv
+    #filename: data/tables/HTP/htp_v5_datafile_manifest_new_data_updated_descriptors.csv
+    # The following represents all of the File Manifests, including the one we have loaded and deleted repeatedly
+    filename: data/tables/HTP/htp_v1_omics_datafiles_2023-10-10.csv,data/tables/HTP/FV_PJ79R4DY_FV_9Q2N4BTN_FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files_v5.csv,data/tables/HTP/htp_v5_datafile_manifest_new_data_controlled_access_only.csv,data/tables/HTP/htp_v5_datafile_manifest_new_data_updated_registered_access_only.csv
+    # This represents all data that is currently accessible as of Mar 2024
+    # filename: data/tables/HTP/htp_v1_omics_datafiles_2023-10-10.csv,data/tables/HTP/FV_PJ79R4DY_FV_9Q2N4BTN_FV_7MVH1YCE_htp_datafile_manifest_w_crnic_files_v5.csv,data/tables/HTP/htp_v5_datafile_manifest_new_data_updated_registered_access_only.csv
     group_by: File External ID
     data_dictionary:
       filename: data/dd/datafile.csv

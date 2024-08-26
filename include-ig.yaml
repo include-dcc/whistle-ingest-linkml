@@ -40,6 +40,17 @@ IG-Addendum:
     - ../../../summary/summarize-vars/ig-supplement/observation_definition_code.json  
     - ../../../summary/summarize-vars/ig-supplement/StructureDefinition-study-group.json
 
+NCPI-FHIR-IG-2:
+  source_type: IG
+  url: https://torstees.github.io/ncpi-fhir-ig-2/
+
+  resources: 
+  -  CodeSystem
+  -  ValueSet
+  -  StructureDefinition
+  exclude-wildcards:
+  -  example
+
 INCLUDE-Terms:
   source_type: FILES
 
@@ -47,10 +58,31 @@ INCLUDE-Terms:
   # whether they are local file references or URLs, they can be enumerated
   # under resources. 
   resources:
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-clinical-data-source-types.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-experimental-strategy.json
-    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-types.json
-    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-categories.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-measurement-codes.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-access-types.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-family-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-participant-lifespan-age.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-categories.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-guid-type.json
     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-sample-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-data-types.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-study-program.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-study-page-codes.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-expected-data-category.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/CodeSystem-include-study-tables.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/ValueSet-family-types-vs.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/ValueSet-study-program-vs.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/ValueSet-sample-types-vs.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/ValueSet-measurement-vs.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/ValueSet-study-page-codes-vs.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/StructureDefinition-study-page-observation.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/StructureDefinition-contact-detail-institution.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/StructureDefinition-study-program.json
+    - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/StructureDefinition-study-page-observation.json
+#    - https://www.hl7.org/fhir/us/core/SearchParameter-us-core-race.json
+#    - https://www.hl7.org/fhir/us/core/SearchParameter-us-core-ethnicity.json
 
+# holdingoff on this until it's ready
+#     - https://raw.githubusercontent.com/include-dcc/include-model-forge/main/output/StructureDefinition-study-dataset.json

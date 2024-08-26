@@ -14,20 +14,51 @@ curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
   http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
 projector_lib: projector
 env:
-  local: dev
-  dev: dev
-  qa: qa-kf-inc
-  prod: prod-kf-inc
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
 dataset:
+  study_meta: 
+    filename: data/tables/DSC/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+  dataset_meta:
+    filename: data/tables/DSC/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/DSC/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  dataset_meta:
+    filename: data/tables/DSC/dataset_meta.csv
+    data_dictionary:
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/dsc/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
   participant:
-    filename: data/tables/DSC/participant.csv
+    filename: data/tables/DSC/dsc_participant_harmonized_2024-04-12.csv
     data_dictionary: 
       filename: data/dd/participant.csv
     code_harmonization: harmony/dsc/data-harmony.csv
   condition:
-    filename: data/tables/DSC/conditions-dsc.csv
+    filename: data/tables/DSC/dsc_condition_harmonized_2024-04-12.csv
     embed:
       dataset: participant
       colname: Participant External ID

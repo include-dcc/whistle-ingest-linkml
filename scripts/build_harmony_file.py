@@ -35,7 +35,7 @@ def pull_values_from_dd(dd_table, writer, empty_writer):
         value_list = line["enumerations"]
         varname = line["variable_name"]
 
-        if value_list != "" and varname not in skip_cols:
+        if value_list is not None and value_list != "" and varname not in skip_cols:
             values = value_list.split(";")
 
             for value in values:

@@ -14,13 +14,36 @@ curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
   http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
 projector_lib: projector
 env:
-  local: dev
-  dev: dev
-  qa: qa-kf-inc
-  prod: prod-kf-inc
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
 dataset:
+  study_meta: 
+    filename: data/tables/ABC-DS/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/abcds/data-harmony.csv
+  # dataset_meta:
+    # filename: data/tables/abcds/datasets.csv
+    # data_dictionary: 
+    #   filename: data/dd/dataset_meta.csv
+    # code_harmonization: harmony/abcds/data-harmony.csv
+    # embed:
+    #   dataset: study_meta
+    #   colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/ABC-DS/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/abcds/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
   participant:
     filename: data/tables/ABC-DS/participant.csv
     data_dictionary: 

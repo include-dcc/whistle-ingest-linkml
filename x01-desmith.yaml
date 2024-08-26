@@ -14,13 +14,36 @@ curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
   http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
 projector_lib: projector
 env:
-  local: dev
-  dev: dev
-  qa: qa-kf-inc
-  prod: prod-kf-inc
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
 dataset:
+  study_meta: 
+    filename: data/tables/X01-deSmith/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+  dataset_meta:
+    filename: data/tables/X01-deSmith/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/X01-deSmith/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/x01-desmith/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
   participant:
     filename: data/tables/X01-deSmith/participant.csv
     data_dictionary: 
@@ -57,10 +80,12 @@ dataset:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/x01-desmith/data-harmony.csv
   file_manifest:
-    filename: None
-    #filename: data/tables/X01-deSmith/desmith_datafile_manifest_of_subset_of_files_w_updated_drs_links_access_control.csv
+    filename: data/tables/X01-deSmith/desmith_final_datafile_manifest_w_controlled_and_registered_data_v2.csv
+    # The data is currently unavailable to users due to RAS approval
+    # filename: None
     data_dictionary:
       filename: data/dd/datafile.csv
+    group_by: File External ID
     code_harmonization: harmony/x01-desmith/data-harmony.csv
 active_tables:
   ALL: true

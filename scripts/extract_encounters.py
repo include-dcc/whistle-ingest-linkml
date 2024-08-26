@@ -26,6 +26,10 @@ class Encounter:
 
         if self.age_at == "NA":
             pdb.set_trace()
+        elif self.age_at.strip() != "" and self.event_type.strip() == "":
+            self.event_type = "Visit"
+            if self.encounter_id.strip() == "":
+                self.encounter_id = "Baseline"
 
     @property
     def key(self):
@@ -88,6 +92,7 @@ if __name__ == "__main__":
         with open(condition_filename, "rt") as condf:
             conditions = csv.DictReader(condf, delimiter=",", quotechar='"')
 
+            pdb.set_trace()
             for line in conditions:
                 # For actual conditions, there is no actual event, so we have
                 # neither age nor event id. So, those are ignored for these

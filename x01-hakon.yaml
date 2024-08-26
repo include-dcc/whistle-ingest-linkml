@@ -17,13 +17,36 @@ curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
   http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
 projector_lib: projector
 env:
-  local: dev
-  dev: dev
-  qa: qa-kf-inc
-  prod: prod-kf-inc
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
 dataset:
+  study_meta: 
+    filename: data/tables/X01-Hakon/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+  dataset_meta:
+    filename: data/tables/X01-Hakon/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/X01-Hakon/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/x01-hakon/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
   participant:
     filename: data/tables/X01-Hakon/participant.csv
     data_dictionary: 
@@ -60,12 +83,18 @@ dataset:
       filename: data/dd/specimen.csv
     code_harmonization: harmony/x01-hakon/data-harmony.csv
   file_manifest:
-    filename: data/tables/X01-Hakon/hakon_datafile_manifest_subset_of_existing_registered_files_w_new_drs_links.csv
-    #filename: data/tables/X01-Hakon/hakon_datafile_manifest_subset_of_existing_registered_files_w_new_drs_links.csv,data/tables/X01-Hakon/hakon_ALL_controlled_datafile_manifest.csv
+    #filename: data/tables/X01-Hakon/final_hakon_datafile_manfiest_w_controlled_and_registered_data_v2.csv
+    filename: data/tables/X01-Hakon/hakon_file_manifest_controlled-20240314.csv,data/tables/X01-Hakon/hakon_file_manifest_registered-20240314.csv
+    # filename: data/tables/X01-Hakon/hakon_file_manifest_registered-20240314.csv
     data_dictionary:
       filename: data/dd/datafile.csv
     group_by: File External ID
     code_harmonization: harmony/x01-hakon/data-harmony.csv
 active_tables:
   ALL: true
+
+#only_study:
+#  study_meta: true
+#  study_contacts: true
+#  ALL: true
 #  family: true
