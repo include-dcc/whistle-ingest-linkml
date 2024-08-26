@@ -77,7 +77,7 @@ def ProcessCondition(study, condition) {
         // I didn't have data for these before, but it looks like testing for 
         // measure_value is the only reliable way to capture these non-lab 
         // type measurements
-        out measurement: BodyMeasurement(study, condition);
+        out measurement (if condition.measure_value?): BodyMeasurement(study, condition);
     }
 }
 

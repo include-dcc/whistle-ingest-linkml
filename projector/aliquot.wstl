@@ -7,7 +7,7 @@
 // This extracts the concentration value from the aliquot and assigns it 
 // to the valueQuantity along with the appropriate units
 def ConcentrationQuantityExtension(study, aliquot) {
-    if (aliquot.concentration ~= "NA") {
+    if (aliquot.concentration and aliquot.concentration ~= "NA") {
         url: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/concentration-quantity";
         valueQuantity.unit: "Cells/mL";
         valueQuantity.system: "http://ucum.org";

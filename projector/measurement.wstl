@@ -147,8 +147,8 @@ def Measurement(study, measurement) {
     //code.coding[]: BuildCoding("363787002", "Observable entity (observable entity)", "http://snomed.info/sct");
     code.coding[]: varcode;
     
-    if (value ~= "NA") {
-        valueQuantity.value (if value ): $ParseFloat(value);
+    if (value ~= "NA" and value?) {
+        valueQuantity.value: $ParseFloat(value);
         valueQuantity.unit: measurement.measure_units;
         valueQuantity.system: unitcode.system;
         valueQuantity.code: unitcode.code;

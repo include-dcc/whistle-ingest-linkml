@@ -78,6 +78,7 @@ def FamilyRelationshipTypeObservation(study, family_relationship) {
     resourceType: "Observation";
 }
 
+
 // Iterate over family_members and build all possible "relationships" with subject_id
 // 
 // Arguments:
@@ -93,6 +94,7 @@ def FamilyRelationshipTypeObservation(study, family_relationship) {
 //  one pointed to with parent_id). In this case, parent_id is not an 
 //  appropriate descriptor for the contents of the variable 
 def ProcessFamilyRelationships(study, family_relationship) {
+    
     if (family_relationship.id2 ~= "NA") {
         out family_relationships: FamilyRelationshipObservation(study, family_relationship.relationship, family_relationship.id1, family_relationship.id2, "Family Relationship");
         //out family_relationships: FamilyRelationshipObservation(study, family_relationship.relationship, family_relationship.id2, family_relationship.id1, "Inverse Family Relationship");

@@ -9,8 +9,3 @@ def SelfOnly(coding) {
     $this: coding;
   }
 }
-
-def HarmonizedLocal(code, system) {
-    var coding: Harmonize(code, system);
-    $this: SelfOnly(coding[]);
-}

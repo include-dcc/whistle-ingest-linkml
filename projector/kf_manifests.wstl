@@ -186,9 +186,13 @@ def FileDocumentReference(study, fileid, manifests) {
 
     // DRS DocRef requires an actual DRS ID, which can only happen if our magic 
     // column is present and isn't just a placeholder
-    if (drs_url? and drs_url ~= "NA") {
-        meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
-    }
+    // 
+    // I'm skipping this profile for now (2024-03-22) due to the fact that we are
+    // also adding links to the s3 bucket, which isn't a DRS URL and fails 
+    // validation. We can switch back later, if need be. 
+    // if (drs_url? and drs_url ~= "NA") {
+    //    meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
+    // }
 
     identifier[]: Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, manifest.file_name));
     identifier[0].use: "official";

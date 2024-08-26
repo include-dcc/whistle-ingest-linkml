@@ -3,7 +3,7 @@
 // a single study. Currently, we treat all of DS-Connect as one study. Patients 
 // are tied to a study by way of the ResearchSubject. 
 
-def StudyArtifact(artifact_type, artifact_label, artifact_url) {
+def StudyArtifactUrl(artifact_type, artifact_label, artifact_url) {
     if (artifact_url?) {
         type: artifact_type;
         label: artifact_label;
@@ -11,59 +11,190 @@ def StudyArtifact(artifact_type, artifact_label, artifact_url) {
     }
 }
 
+def StudyArtifactCitation(artifact_type, artifact_label, artifact_citation) {
+    if (artifact_citation?) {
+        type: artifact_type;
+        label: artifact_label;
+        citation: artifact_citation;
+    }
+}
+
+def StudyArtifactDisplay(artifact_type, artifact_label, artifact_value) {
+    if (artifact_value?) {
+        type: artifact_type;
+        label: artifact_label;
+        display: artifact_value;
+    }
+}
+
+def study_contact(name, email, institute) {
+    name: name;
+    telecom[0].system: "email";
+    telecom[0].value: email;
+    extension[0].url: "https://include-dcc.github.io/include-model-forge/StructureDefinition/contact-detail-institution"
+    extension[0].valueString: institute;
+}
+
+def add_contact(study_contact) {
+    $this: study_contact(study_contact.study_contact_name, study_contact.study_contact_email, study_contact.study_contact_institution);
+}
+
+def StudyProgram(study_program) {
+    url: "https://include-dcc.github.io/include-model-forge/StructureDefinition/study-program";
+    valueCodeableConcept.coding: HarmonizeMapped(study_program, "Study Program");
+    // udles: study_program;
+    // valueString: study_program;
+}
+
+def StudyDbGaP(required id) {
+    value: id;
+    system: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
+    use: "secondary";
+}
+
+def ResearchStudyAssociatedParty(investigator_name) {
+    url: "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party";
+    extension[0].url: "name";
+    extension[0].valueString: investigator_name
+}
+
+
 // Definition: Build the ResearchStudy resource
 //
 // Argument:
 //  study - This is the full study object created by Whistler
 //
-def Study(study) {
+def Study(study, studymeta) {
     meta.tag[]: StudyMeta(study);
     meta.profile[]: "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study";
 
-    title: study.title;
-    description: study.desc;
+    var dbgap_ids: $Unique(studymeta.dataset_meta[*].dbgap);
+    
+    title: studymeta.study_title;
+    description: studymeta.study_description;
     status: "completed"
 
-    enrollment[0]: Reference_Key_Identifier(study, "Group", study.id);
-    identifier[0]: Key_Identifier(study, "ResearchStudy", study.id);
+    enrollment[0]: Reference_Key_Identifier(study, "Group", studymeta.study_code);
+    identifier[0]: Key_Identifier(study, "ResearchStudy", studymeta.study_code);
     identifier[0].use: "official";
-    identifier[1].value (if study.accession?): study.accession;
-    identifier[1].system (if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
 
-    // As per request 2022-03-15, we'll add a couple keywords 
-    keyword[0].coding: HarmonizeMapped(study.id, "IncludeProgram");
+
+    if (dbgap_ids?) {
+      // var ids: $StrSplit(studymeta.study_dbgap, "|");
+      identifier[]: StudyDbGaP(dbgap_ids[]);
+    }
+
+    keyword[0].coding: HarmonizeMapped(studymeta.program, "IncludeProgram");
     keyword[0].text: "INCLUDE";
-    keyword[].coding[].code: study.id;
+    keyword[1].coding[]: BuildCoding(studymeta.study_code, studymeta.study_code, identifier[0].system);
+    keyword[1].text: studymeta.study_code;
 
-    // As per request 2022-03-26, we'll stash the URL for the project's website in relatedArtifact
-    relatedArtifact[] (if study.url?): StudyArtifact("documentation", "Study Website", study.url);
-    relatedArtifact[] (if study.remote_access?): StudyArtifact("derived-from", study.remote_access.type, study.remote_access.url);
-    relatedArtifact[] (if study.accession?): StudyArtifact("derived-from", "DbGaP", study.accession);
+    relatedArtifact[] (if studymeta.study_website?): StudyArtifactUrl("documentation", "Study Website", studymeta.study_website);
+    relatedArtifact[] (if studymeta.selection_criteria?): StudyArtifactCitation("documentation", "SelectionCriteria", studymeta.selection_criteria);
+    relatedArtifact[] (if studymeta.study_design?): StudyArtifactCitation("citation", "StudyDesign", studymeta.study_design);
 
-    if study.annotations.virtual_biorepository? {
+    // Publications
+    var publications: $StrSplit(studymeta.study_publication, "|");
+    relatedArtifact[]: StudyArtifactCitation("citation", "Publication", publications[]);
+
+    relatedArtifact[] (if study.remote_access?): StudyArtifactUrl("derived-from", study.remote_access.type, study.remote_access.url);
+
+    // This has been moved into datasets. Do we still want to use this even though it's also in the identifier?
+    relatedArtifact[]: StudyArtifactDisplay("derived-from", "DbGaP", dbgap_ids[]);
+
+    var research_domains: $StrSplit(studymeta.research_domain, "|");
+    focus[].coding[]: HarmonizeMappedFirst(research_domains[], "Research Domain");
+
+    var lifespan: $StrSplit(studymeta.participant_lifespan_stage, "|");
+    focus[].coding[]: HarmonizeMappedFirst(lifespan[], "Participant Lifespan Stage");
+
+    if studymeta.vbr_email? {
         contact[]: {
             name: "Virtual Biorepository Contact";
             telecom[]: {
                 system: "email";
-                value: study.annotations.virtual_biorepository.email;
+                value: studymeta.vbr_email;
             };
             telecom[]: {
                 system: "url";
-                value: study.annotations.virtual_biorepository.url;
+                value: studymeta.vbr_url;
             }
         }
-        note[].text: study.annotations.virtual_biorepository.readme;
+        note[].text: studymeta.vbr_readme;
     }
 
     resourceType: "ResearchStudy";
+    var investigator_names: $StrSplit(studymeta.principal_investigator_name, "|");
+    extension[]: ResearchStudyAssociatedParty(investigator_names[]);
+
+    var programs: $StrSplit(studymeta.program, "|");
+    extension[]: StudyProgram(programs[]);
+
+    contact[]: add_contact(studymeta.study_contacts[]);
+    // contact[]: study_contact(studymeta.study_contact_name, studymeta.study_contact_email, studymeta.study_contact_institution)
 }
 
 
+def StudyPageObsIdentifier(study, studymeta, colname, value) {
+    $this: Key_Identifier(study, "Observation", $StrCat(studymeta.study_code, "-", colname, "-", value));
+}
+
+def StudyPageObservation(study, studymeta, colname, value, datatype) {
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://include-dcc.github.io/include-model-forge/StructureDefinition/study-page-observation";
+    identifier[]: StudyPageObsIdentifier(study, studymeta, colname, value);
+    identifier[0].use: "official";
+    status: "final";
+    
+    code.coding[]: HarmonizeMapped(colname, "Study Page Codes");
+    code.text: colname;
+
+    // Not sure why this is here. I assume this is right? 
+    if (value="100 enrolled in trial + participants screened") {
+        value: 100;
+    }
+
+    if (datatype="code") {
+        valueCodeableConcept.coding: HarmonizeMapped(value, colname);
+    } else {
+        if (datatype="integer") {
+            if (value ~= "") {
+                valueInteger: $ParseInt(value);
+            } else {
+                valueString: $StrCat("Oooga ", value);
+            }
+        } else {
+            valueString: value;
+        }
+    }
+    focus[]: Reference_Key_Identifier(study, "ResearchStudy", studymeta.study_code);
+    resourceType: "Observation";
+}
 
 // Description: Wrapper for all research studies in the dataset. For now, it's just the one
 //
 // Argument:
 //  study - This is the full study object created by Whistler
-def ProcessStudy(study) {
-    out research_study: Study(study);
+def ProcessStudy(study, studymeta) {
+
+    out research_study: Study(study, studymeta);
+    if (studymeta.study_expected_number_of_participants = "100 enrolled in trial + participants screened") {
+        // Kinda sucks that whistle can't convert ints to int...
+        var exp_participant_count: "122";
+    } else {
+        var exp_participant_count: studymeta.study_expected_number_of_participants;
+    }
+    out research_study: StudyPageObservation(study, studymeta, "Study Expected Number of Participants", exp_participant_count, "integer");
+
+    out research_study: StudyPageObservation(study, studymeta, "Selection Criteria", studymeta.selection_criteria, "string");
+
+    var lifespans: $StrSplit(studymeta.participant_lifespan_stage, "|");
+    out research_study: StudyPageObservation(study, studymeta, "Participant Lifespan Stage", lifespans[], "code");
+
+    var source_types: $StrSplit(studymeta.clinical_data_source_type, "|");
+    out research_study: StudyPageObservation(study, studymeta, "Clinical Data Source Type", source_types[], "code");
+
+    var data_categories: $StrSplit(studymeta.expected_data_category, "|");
+    out research_study: StudyPageObservation(study, studymeta, "Expected Data Category", data_categories[], "code");
+    out research_study: StudyPageObservation(study, studymeta, "GUID type", studymeta.guid_type, "code");
 }
