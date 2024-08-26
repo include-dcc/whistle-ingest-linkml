@@ -1,0 +1,85 @@
+study_id: BrainPower
+study_accession:  
+study_title: Brainpower
+study_desc: 
+url: 
+identifier_prefix: https://includedcc.org/fhir/brainpower
+dd_prefix: https://includedcc.org/fhir
+output_filename: brainpower
+id_colname: Participant ID
+whistle_src: _entry.wstl
+code_harmonization_dir: harmony/brainpower
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+  http://purl.obolibrary.org/obo/ncit.owl: NCIT
+projector_lib: projector
+env:
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
+dataset:
+  study_meta: 
+    filename: data/tables/BrainPower/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  study_contacts:
+    hidden: true
+    filename: data/tables/BrainPower/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  dataset_meta:
+    filename: data/tables/BrainPower/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  participant:
+    filename: data/tables/BrainPower/participant.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  condition:
+    filename: data/tables/BrainPower/condition.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/BrainPower/encounter.csv    
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/BrainPower/family.csv    
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  specimen:
+    filename: None
+    data_dictionary:
+      filename: data/dd/specimen.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+  file_manifest:
+    filename: None
+    data_dictionary:
+      filename: data/dd/datafile.csv
+    code_harmonization: harmony/brainpower/data-harmony.csv
+active_tables:
+  ALL: true
+#  family: true

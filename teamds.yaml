@@ -1,0 +1,76 @@
+study_id: TEAM-DS
+study_accession:  
+study_title: TBD
+study_desc: TBD
+url: TBD
+identifier_prefix: https://includedcc.org/fhir/teamds
+dd_prefix: https://includedcc.org/fhir
+output_filename: teamds
+id_colname: Participant ID
+whistle_src: _entry.wstl
+annotations:
+  virtual_biorepository:
+    email: TBD
+    url: TBD
+    readme: TBD
+code_harmonization_dir: harmony/teamds
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+  http://purl.obolibrary.org/obo/maxo.owl: MAXO
+projector_lib: projector
+env:
+  local: dev0
+  dev: dev0
+  qa: qa-kf2-inc
+  prod: prod-kf2-inc
+dataset:
+  study_meta: 
+    filename: data/tables/TEAM-DS/study.csv
+    data_dictionary:
+      filename: data/dd/study.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+  dataset_meta:
+    filename: data/tables/TEAM-DS/datasets.csv
+    data_dictionary: 
+      filename: data/dd/dataset_meta.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  study_contacts:
+    hidden: true
+    filename: data/tables/TEAM-DS/contacts.csv
+    data_dictionary: 
+      filename: data/dd/contacts.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+    embed:
+      dataset: study_meta
+      colname: Study Code
+  participant:
+    filename: data/tables/TEAM-DS/teamds_participant_harmonized_2024-04-12.csv
+    data_dictionary: 
+      filename: data/dd/participant.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+  condition:
+    filename: data/tables/TEAM-DS/teamds_structured_conditions_bmi_2024-04-23.csv
+    embed:
+      dataset: participant
+      colname: Participant External ID
+    data_dictionary: 
+      filename: data/dd/condition.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+  encounter:
+    hidden: true
+    filename: data/tables/TEAM-DS/encounter.csv
+    data_dictionary: 
+      filename: data/dd/encounter.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
+  family:
+    hidden: true
+    #group_by: Family ID,Family Type
+    filename: data/tables/TEAM-DS/family.csv  
+    data_dictionary: 
+      filename: data/dd/family.csv
+    code_harmonization: harmony/teamds/data-harmony.csv
